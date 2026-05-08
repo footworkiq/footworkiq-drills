@@ -1,0 +1,77 @@
+[
+  {
+    "id": "inside-outside-switch",
+    "name": "Inside-Outside feet switching",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "rhythm"
+    ],
+    "description": "Extend the inside-outside pattern by moving your foot between zones, combining ball travel with precise touch alternation."
+  },
+  {
+    "id": "inside-outside",
+    "name": "Inside-Outside",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "rhythm"
+    ],
+    "description": "Shift the ball laterally using the inside and outside of the same foot in a steady rhythm. Foundation drill for developing touch variety."
+  },
+  {
+    "id": "sole-roll-forward-back",
+    "name": "Sole Roll — Forward & Back",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-roll",
+      "first-touch"
+    ],
+    "description": "Roll the ball from the centre to the top of the mat and back using the sole of your foot. A slow, controlled drill to build confidence with sole contact."
+  },
+  {
+    "id": "step-overs",
+    "name": "Step-Overs",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 75,
+    "tags": [
+      "feints",
+      "coordination",
+      "rhythm"
+    ],
+    "description": "Feint over the ball with one foot, then use the other foot's outside touch to push it away and inside touch to bring it back."
+  },
+  {
+    "id": "toe-taps",
+    "name": "Toe Taps",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 90,
+    "tags": [
+      "ball-control",
+      "coordination"
+    ],
+    "description": "Alternate tapping the ball with each foot to build touch sensitivity and rhythm. The ideal first drill for players new to the mat."
+  },
+  {
+    "id": "v-pull",
+    "name": "V-Pull",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "drag",
+      "change-of-direction"
+    ],
+    "description": "Roll the ball back from the top of the mat with your sole, then redirect it with an outside touch. Builds drag-and-push ball mastery."
+  }
+]
