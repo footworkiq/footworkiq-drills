@@ -19,6 +19,8 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
+      - name: Validate drill JSON files
+        run: node scripts/validate-drills.js
       - name: Build index.json
         run: node scripts/build-index.js
       - uses: stefanzweifel/git-auto-commit-action@v7

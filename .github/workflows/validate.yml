@@ -18,10 +18,4 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - name: Validate drill JSON files
-        run: |
-          npx ajv validate \
-            -s docs/schema/drill.schema.json \
-            -d "drills/*.json" \
-            --spec=draft2020 \
-            -c ajv-formats \
-            --all-errors
+        run: node scripts/validate-drills.js

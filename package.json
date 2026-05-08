@@ -4,10 +4,11 @@
   "description": "Community drill catalogue for FootworkIQ",
   "type": "module",
   "scripts": {
-    "build-index": "node scripts/build-index.js"
+    "build-index": "node scripts/build-index.js",
+    "validate": "node scripts/validate-drills.js"
   },
   "devDependencies": {
-    "ajv-cli": "^0.6.0",
+    "ajv": "8.17.1",
     "ajv-formats": "3.0.1"
   },
   "license": "CC0-1.0"
