@@ -11,6 +11,7 @@ const ajv = new Ajv2020({ strict: false, allErrors: true, validateSchema: false 
 addFormats(ajv);
 
 const schema = JSON.parse(readFileSync(schemaPath, 'utf8'));
+delete schema['$schema']; // prevent AJV meta-schema lookup — constraints still fully enforced
 const validate = ajv.compile(schema);
 
 const files = readdirSync(drillsDir).filter((f) => f.endsWith('.json'));
