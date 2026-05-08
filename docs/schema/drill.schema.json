@@ -78,6 +78,16 @@
           "default": 1,
           "description": "Beat subdivision: 1=quarter notes, 2=eighth notes, 4=sixteenth notes"
         },
+        "mirror": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "ballMirrors": { "type": "boolean" }
+          },
+          "required": ["enabled"],
+          "description": "Mirror mode — flips left/right foot assignments and optionally ball direction"
+        },
         "description": { "type": "string" },
         "video_reference": { "type": "string", "format": "uri" },
         "prerequisites": {
