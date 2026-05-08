@@ -1,0 +1,32 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "sole-roll-forward-back",
+    "name": "Sole Roll — Forward & Back",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": ["ball-control", "sole-roll", "first-touch"],
+    "description": "Roll the ball from the centre to the top of the mat and back using the sole of your foot. A slow, controlled drill to build confidence with sole contact.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 4, "action": "SOLE_ROLL" },
+      "ball":       { "pos": 4, "action": "ROLL" }
+    },
+    {
+      "beat": 2,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "SOLE_ROLL" },
+      "ball":       { "pos": 1, "action": "ROLL" }
+    }
+  ]
+}

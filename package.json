@@ -1,0 +1,14 @@
+{
+  "name": "footworkiq-drills",
+  "version": "1.0.0",
+  "description": "Community drill catalogue for FootworkIQ",
+  "type": "module",
+  "scripts": {
+    "build-index": "node scripts/build-index.js"
+  },
+  "devDependencies": {
+    "ajv-cli": "5.0.0",
+    "ajv-formats": "3.0.1"
+  },
+  "license": "CC0-1.0"
+}

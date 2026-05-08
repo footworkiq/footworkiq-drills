@@ -1,0 +1,44 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "toe-taps",
+    "name": "Toe Taps",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 90,
+    "tags": ["ball-control", "coordination"],
+    "description": "Alternate tapping the ball with each foot to build touch sensitivity and rhythm. The ideal first drill for players new to the mat.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "TAP" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    },
+    {
+      "beat": 2,
+      "left_foot":  { "pos": 1, "action": "TAP" },
+      "right_foot": { "pos": 6, "action": "PLANT" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    },
+    {
+      "beat": 3,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "TAP" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    },
+    {
+      "beat": 4,
+      "left_foot":  { "pos": 1, "action": "TAP" },
+      "right_foot": { "pos": 6, "action": "PLANT" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    }
+  ]
+}

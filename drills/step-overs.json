@@ -1,0 +1,63 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "step-overs",
+    "name": "Step-Overs",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 75,
+    "tags": ["feints", "coordination", "rhythm"],
+    "description": "Feint over the ball with one foot, then use the other foot's outside touch to push it away and inside touch to bring it back.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "mirror": { "enabled": true, "ballMirrors": true },
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "PLANT" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    },
+    {
+      "beat": 2,
+      "left_foot":  { "pos": 1, "action": "STEP_OVER" },
+      "right_foot": { "pos": 6, "action": "PLANT" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    },
+    {
+      "beat": 3,
+      "left_foot":  { "pos": 2, "action": "STEP" },
+      "right_foot": { "pos": 1, "action": "INSIDE_TOUCH" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    },
+    {
+      "beat": 4,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "STEP" },
+      "ball":       { "pos": 6, "action": "ROLL" }
+    },
+    {
+      "beat": 5,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "OUTSIDE_TOUCH" },
+      "ball":       { "pos": 6, "action": "STILL" }
+    },
+    {
+      "beat": 6,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "PLANT" },
+      "ball":       { "pos": 1, "action": "ROLL" }
+    },
+    {
+      "beat": 7,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "PLANT" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    }
+  ]
+}

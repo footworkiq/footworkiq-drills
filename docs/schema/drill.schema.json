@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openmat.dev/schema/drill/1.0",
+  "title": "OpenMat Drill",
+  "description": "Schema for OpenMat drill definition files (v1.0)",
+  "type": "object",
+  "required": ["schema", "metadata", "sequence"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["id", "name", "contributor", "difficulty", "default_bpm", "tags", "license"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Unique kebab-case identifier"
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "contributor": { "type": "string", "minLength": 1 },
+        "difficulty": {
+          "type": "string",
+          "enum": ["Beginner", "Intermediate", "Advanced", "Elite"]
+        },
+        "default_bpm": {
+          "type": "integer",
+          "minimum": 40,
+          "maximum": 240
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "time_signature": {
+          "type": "string",
+          "pattern": "^[0-9]+/[0-9]+$",
+          "default": "4/4"
+        },
+        "count_in": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0,
+          "description": "Number of silent lead-in beats before the sequence starts"
+        },
+        "reps": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 4,
+          "description": "Number of times the sequence loops per set (what athletes call 'reps')"
+        },
+        "sets": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 3,
+          "description": "Default number of sets for the UI player"
+        },
+        "loop_count": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 4,
+          "description": "DEPRECATED — use reps instead. Kept for backward compatibility with older drill files."
+        },
+        "rest_beats": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0,
+          "description": "Silent beats inserted between loops"
+        },
+        "subdivision": {
+          "type": "integer",
+          "enum": [1, 2, 4],
+          "default": 1,
+          "description": "Beat subdivision: 1=quarter notes, 2=eighth notes, 4=sixteenth notes"
+        },
+        "description": { "type": "string" },
+        "video_reference": { "type": "string", "format": "uri" },
+        "prerequisites": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Array of drill IDs that should be mastered first"
+        },
+        "license": {
+          "type": "string",
+          "enum": ["CC0"],
+          "description": "All drills in footworkiq/footworkiq-drills must be CC0"
+        }
+      }
+    },
+    "sequence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["beat"],
+        "additionalProperties": false,
+        "properties": {
+          "beat": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "description": "Beat number (can be fractional for sub-beat precision)"
+          },
+          "left_foot": { "$ref": "#/$defs/footAction" },
+          "right_foot": { "$ref": "#/$defs/footAction" },
+          "ball": { "$ref": "#/$defs/ballAction" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "pos": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "description": "Named zone — top row: 3=Top Left, 4=Top Centre, 5=Top Right; bottom row: 2=Bottom Left, 1=Bottom Centre (home), 6=Bottom Right"
+        },
+        {
+          "type": "object",
+          "required": ["x", "y"],
+          "additionalProperties": false,
+          "properties": {
+            "x": { "type": "number", "minimum": 0, "maximum": 1 },
+            "y": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "description": "Explicit normalised screen-space coordinate (origin top-left)"
+        }
+      ]
+    },
+    "footAction": {
+      "type": "object",
+      "required": ["pos", "action"],
+      "additionalProperties": false,
+      "properties": {
+        "pos": { "$ref": "#/$defs/pos" },
+        "action": {
+          "type": "string",
+          "enum": [
+            "PLANT",
+            "STEP",
+            "INSIDE_TOUCH",
+            "OUTSIDE_TOUCH",
+            "SOLE_ROLL",
+            "TAP",
+            "DRAG",
+            "STEP_OVER",
+            "LIFT"
+          ]
+        }
+      }
+    },
+    "ballAction": {
+      "type": "object",
+      "required": ["pos", "action"],
+      "additionalProperties": false,
+      "properties": {
+        "pos": { "$ref": "#/$defs/pos" },
+        "action": {
+          "type": "string",
+          "enum": ["STILL", "ROLL", "PUSH", "LIFT"]
+        },
+        "from": { "$ref": "#/$defs/pos" },
+        "to": { "$ref": "#/$defs/pos" }
+      }
+    }
+  }
+}

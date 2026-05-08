@@ -1,0 +1,44 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "v-pull",
+    "name": "V-Pull",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 80,
+    "tags": ["ball-control", "drag", "change-of-direction"],
+    "description": "Roll the ball back from the top of the mat with your sole, then redirect it with an outside touch. Builds drag-and-push ball mastery.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 4, "action": "SOLE_ROLL" },
+      "ball":       { "pos": 4, "action": "STILL" }
+    },
+    {
+      "beat": 2,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "DRAG" },
+      "ball":       { "pos": 1, "action": "ROLL" }
+    },
+    {
+      "beat": 3,
+      "left_foot":  { "pos": 3, "action": "OUTSIDE_TOUCH" },
+      "right_foot": { "pos": 6, "action": "PLANT" },
+      "ball":       { "pos": 3, "action": "PUSH" }
+    },
+    {
+      "beat": 4,
+      "left_foot":  { "pos": 2, "action": "STEP" },
+      "right_foot": { "pos": 4, "action": "SOLE_ROLL" },
+      "ball":       { "pos": 4, "action": "ROLL" }
+    }
+  ]
+}

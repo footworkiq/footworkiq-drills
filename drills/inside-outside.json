@@ -1,0 +1,45 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "inside-outside",
+    "name": "Inside-Outside",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": ["ball-control", "rhythm"],
+    "description": "Shift the ball laterally using the inside and outside of the same foot in a steady rhythm. Foundation drill for developing touch variety.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "mirror": { "enabled": true },
+    "rest_beats": 0,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "INSIDE_TOUCH" },
+      "ball":       { "pos": 1, "action": "STILL" }
+    },
+    {
+      "beat": 2,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "OUTSIDE_TOUCH" },
+      "ball":       { "pos": 6, "action": "ROLL" }
+    },
+    {
+      "beat": 3,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "INSIDE_TOUCH" },
+      "ball":       { "pos": 1, "action": "ROLL" }
+    },
+    {
+      "beat": 4,
+      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "OUTSIDE_TOUCH" },
+      "ball":       { "pos": 6, "action": "ROLL" }
+    }
+  ]
+}

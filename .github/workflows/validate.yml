@@ -1,0 +1,27 @@
+name: Validate Drills
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'drills/**'
+      - 'docs/schema/drill.schema.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - name: Validate drill JSON files
+        run: |
+          npx ajv validate \
+            -s docs/schema/drill.schema.json \
+            -d "drills/*.json" \
+            --spec=draft2020 \
+            -c ajv-formats \
+            --all-errors
