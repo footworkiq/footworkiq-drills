@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'drills/**'
+  workflow_dispatch:
 
 jobs:
   rebuild-index:
