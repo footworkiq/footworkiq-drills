@@ -1,12 +1,12 @@
 import { readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
-import Ajv from 'ajv';
+import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 
 const drillsDir = new URL('../drills', import.meta.url).pathname;
 const schemaPath = new URL('../docs/schema/drill.schema.json', import.meta.url).pathname;
 
-const ajv = new Ajv({ strict: false, allErrors: true });
+const ajv = new Ajv2020({ strict: false, allErrors: true });
 addFormats(ajv);
 
 const schema = JSON.parse(readFileSync(schemaPath, 'utf8'));
