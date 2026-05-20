@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "build-index": "node scripts/build-index.js",
-    "validate": "node scripts/validate-drills.js"
+    "validate": "node scripts/validate-drills.js",
+    "generate": "node scripts/generate.js"
   },
   "devDependencies": {
     "ajv": "8.17.1",
-    "ajv-formats": "3.0.1"
+    "ajv-formats": "3.0.1",
+    "openai": "^6.38.0"
   },
   "license": "CC0-1.0"
 }
