@@ -1,0 +1,88 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "marseille-roulette",
+    "name": "Marseille Roulette",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 95,
+    "tags": [
+      "turn",
+      "iconic-move"
+    ],
+    "description": "Plant on the ball with one sole, spin, then drag away with the other sole.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": 1,
+        "action": "DRAG"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": 2,
+        "action": "ROLL",
+        "from": 1,
+        "to": 2
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "PUSH",
+        "from": 2,
+        "to": 1
+      }
+    }
+  ]
+}

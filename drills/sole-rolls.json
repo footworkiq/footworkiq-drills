@@ -1,0 +1,84 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "sole-rolls",
+    "name": "Sole Rolls",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "first-touch"
+    ],
+    "description": "Roll the sole over the top of the ball, switching feet to develop soft control.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    }
+  ]
+}

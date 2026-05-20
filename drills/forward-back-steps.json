@@ -1,0 +1,84 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "forward-back-steps",
+    "name": "Forward-Back Steps",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 90,
+    "tags": [
+      "footwork",
+      "agility"
+    ],
+    "description": "Step forward into the far row and back, building a clean push-off and recovery.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": 3,
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": 4,
+        "action": "STEP"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": 3,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 4,
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": 2,
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "STEP"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "diagonal-touches",
+    "name": "Diagonal Touches",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 90,
+    "tags": [
+      "dribbling",
+      "orientation"
+    ],
+    "description": "Push the ball diagonally across the grid, controlling at each corner.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 5,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 5,
+        "action": "PUSH",
+        "from": 1,
+        "to": 5
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 5,
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": 5,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "PUSH",
+        "from": 5,
+        "to": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "flip-flap",
+    "name": "Flip-Flap",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 115,
+    "tags": [
+      "feint",
+      "iconic-move",
+      "skill-move"
+    ],
+    "description": "Rivelino's flick: snap the ball one way with the inside, then back with the outside.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 6,
+        "action": "PUSH",
+        "from": 1,
+        "to": 6
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "OUTSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 2,
+        "action": "PUSH",
+        "from": 6,
+        "to": 2
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": 2,
+        "action": "OUTSIDE_TOUCH"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "PUSH",
+        "from": 2,
+        "to": 1
+      }
+    }
+  ]
+}

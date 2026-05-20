@@ -1,0 +1,90 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "l-drag",
+    "name": "L-Drag",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 85,
+    "tags": [
+      "ball-control",
+      "drag"
+    ],
+    "description": "Drag the ball forward then sharply sideways, tracing an L on the mat.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 4,
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": 4,
+        "action": "ROLL",
+        "from": 1,
+        "to": 4
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 5,
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": 5,
+        "action": "ROLL",
+        "from": 4,
+        "to": 5
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "ROLL",
+        "from": 5,
+        "to": 1
+      }
+    }
+  ]
+}

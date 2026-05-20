@@ -1,5 +1,250 @@
 [
   {
+    "id": "alternating-soles",
+    "name": "Alternating Soles",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 95,
+    "tags": [
+      "ball-control",
+      "coordination"
+    ],
+    "description": "Alternate which foot rests on top of the ball, swapping cleanly each beat."
+  },
+  {
+    "id": "ball-stop-start",
+    "name": "Ball Stop-Start",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 85,
+    "tags": [
+      "ball-control",
+      "first-touch"
+    ],
+    "description": "Stop the ball with the sole, then push it gently and stop it again."
+  },
+  {
+    "id": "box-dribble",
+    "name": "Box Dribble",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 90,
+    "tags": [
+      "dribbling",
+      "orientation"
+    ],
+    "description": "Push the ball clockwise around four zones, controlling each corner with a clean touch."
+  },
+  {
+    "id": "complex-zigzag",
+    "name": "Complex Zigzag",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 105,
+    "tags": [
+      "dribbling",
+      "change-of-direction",
+      "feint"
+    ],
+    "description": "Weave through every zone with feints, finishing back at home in eight beats."
+  },
+  {
+    "id": "cross-cut",
+    "name": "Cross-Cut",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 110,
+    "tags": [
+      "change-of-direction",
+      "feint"
+    ],
+    "description": "Push the ball across the body, sell the run, then cut hard back the other way."
+  },
+  {
+    "id": "cruyff-turn",
+    "name": "Cruyff Turn",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 95,
+    "tags": [
+      "feint",
+      "turn",
+      "iconic-move"
+    ],
+    "description": "Plant outside foot, drag the ball behind it with the inside, and rotate the hips."
+  },
+  {
+    "id": "cut-and-go",
+    "name": "Cut and Go",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 105,
+    "tags": [
+      "change-of-direction",
+      "acceleration"
+    ],
+    "description": "Sharp lateral cut to change line, then push the ball forward into space."
+  },
+  {
+    "id": "diagonal-steps",
+    "name": "Diagonal Steps",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 85,
+    "tags": [
+      "footwork",
+      "orientation"
+    ],
+    "description": "Step diagonally across the mat, then return, to learn cross-grid movement."
+  },
+  {
+    "id": "diagonal-touches",
+    "name": "Diagonal Touches",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 90,
+    "tags": [
+      "dribbling",
+      "orientation"
+    ],
+    "description": "Push the ball diagonally across the grid, controlling at each corner."
+  },
+  {
+    "id": "double-scissors",
+    "name": "Double Scissors",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 115,
+    "tags": [
+      "feint",
+      "deception"
+    ],
+    "description": "Two crisp step-overs in succession before pushing the ball away."
+  },
+  {
+    "id": "drag-back",
+    "name": "Drag Back",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 75,
+    "tags": [
+      "ball-control",
+      "drag"
+    ],
+    "description": "Drag the ball back under the body with the sole and reset to home position."
+  },
+  {
+    "id": "elastico",
+    "name": "Elastico",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 110,
+    "tags": [
+      "feint",
+      "iconic-move",
+      "skill-move"
+    ],
+    "description": "Touch the ball with the outside of the foot, then snap it back with the inside."
+  },
+  {
+    "id": "figure-eight",
+    "name": "Figure-Eight",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 85,
+    "tags": [
+      "dribbling",
+      "ball-control"
+    ],
+    "description": "Trace a figure-eight around the grid, weaving the ball through each zone."
+  },
+  {
+    "id": "flip-flap",
+    "name": "Flip-Flap",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 115,
+    "tags": [
+      "feint",
+      "iconic-move",
+      "skill-move"
+    ],
+    "description": "Rivelino's flick: snap the ball one way with the inside, then back with the outside."
+  },
+  {
+    "id": "foot-fire",
+    "name": "Foot Fire",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 140,
+    "tags": [
+      "agility",
+      "conditioning"
+    ],
+    "description": "Rapid alternating plants on home zone to build foot speed and a low athletic base."
+  },
+  {
+    "id": "forward-back-steps",
+    "name": "Forward-Back Steps",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 90,
+    "tags": [
+      "footwork",
+      "agility"
+    ],
+    "description": "Step forward into the far row and back, building a clean push-off and recovery."
+  },
+  {
+    "id": "heel-toe-taps",
+    "name": "Heel-Toe Taps",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 95,
+    "tags": [
+      "ball-control",
+      "coordination"
+    ],
+    "description": "Combine top-of-ball taps with quick plants for a syncopated touch pattern."
+  },
+  {
+    "id": "home-base-touches",
+    "name": "Home Base Touches",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 100,
+    "tags": [
+      "ball-control",
+      "coordination"
+    ],
+    "description": "Both feet take turns touching the home-zone ball with a clean plant on the other."
+  },
+  {
+    "id": "hop-step-overs",
+    "name": "Hop Step-Overs",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 115,
+    "tags": [
+      "feint",
+      "deception",
+      "agility"
+    ],
+    "description": "Step over the ball while hopping on the plant foot, then attack with the other."
+  },
+  {
+    "id": "inside-outside-roll",
+    "name": "Inside-Outside Roll",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 100,
+    "tags": [
+      "ball-control",
+      "first-touch"
+    ],
+    "description": "Alternate inside and outside touches on the ball, building both edges of the foot."
+  },
+  {
     "id": "inside-outside-switch",
     "name": "Inside-Outside feet switching",
     "contributor": "FootworkIQ",
@@ -24,6 +269,224 @@
     "description": "Shift the ball laterally using the inside and outside of the same foot in a steady rhythm. Foundation drill for developing touch variety."
   },
   {
+    "id": "inside-touches",
+    "name": "Inside Touches",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 100,
+    "tags": [
+      "ball-control",
+      "first-touch"
+    ],
+    "description": "Light inside-of-foot touches against a stationary ball, alternating feet."
+  },
+  {
+    "id": "l-drag",
+    "name": "L-Drag",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 85,
+    "tags": [
+      "ball-control",
+      "drag"
+    ],
+    "description": "Drag the ball forward then sharply sideways, tracing an L on the mat."
+  },
+  {
+    "id": "lateral-cuts",
+    "name": "Lateral Cuts",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 100,
+    "tags": [
+      "change-of-direction",
+      "agility"
+    ],
+    "description": "Sharp lateral cuts, switching the ball between left and right feet on each beat."
+  },
+  {
+    "id": "lateral-shuffle",
+    "name": "Lateral Shuffle",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 100,
+    "tags": [
+      "agility",
+      "footwork"
+    ],
+    "description": "Shuffle laterally across the mat, leading with one foot then the other."
+  },
+  {
+    "id": "lift-and-plant",
+    "name": "Lift and Plant",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 110,
+    "tags": [
+      "agility",
+      "rhythm"
+    ],
+    "description": "Lift each foot in turn while the other plants firmly, building rhythm and proprioception."
+  },
+  {
+    "id": "maradona-spin",
+    "name": "Maradona Spin",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 100,
+    "tags": [
+      "turn",
+      "iconic-move"
+    ],
+    "description": "Sole-roll the ball and spin 360 degrees over it, finishing facing the same way."
+  },
+  {
+    "id": "marseille-roulette",
+    "name": "Marseille Roulette",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 95,
+    "tags": [
+      "turn",
+      "iconic-move"
+    ],
+    "description": "Plant on the ball with one sole, spin, then drag away with the other sole."
+  },
+  {
+    "id": "matthews-feint",
+    "name": "Matthews Feint",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 105,
+    "tags": [
+      "feint",
+      "iconic-move",
+      "deception"
+    ],
+    "description": "Show the ball one way with the inside, then burst past with the outside of the same foot."
+  },
+  {
+    "id": "outside-touches",
+    "name": "Outside Touches",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 100,
+    "tags": [
+      "ball-control",
+      "first-touch"
+    ],
+    "description": "Tap the ball with the outside of each foot to build cleaner outside-foot contact."
+  },
+  {
+    "id": "pendulum-roll",
+    "name": "Pendulum Roll",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "ball-control",
+      "rhythm"
+    ],
+    "description": "Roll the ball back and forth across the body like a pendulum, using the sole."
+  },
+  {
+    "id": "pressure-escape",
+    "name": "Pressure Escape",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 100,
+    "tags": [
+      "change-of-direction",
+      "ball-control"
+    ],
+    "description": "Drag the ball away from a pressing defender, spin, then accelerate into space."
+  },
+  {
+    "id": "pull-push",
+    "name": "Pull-Push",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 90,
+    "tags": [
+      "ball-control",
+      "tempo"
+    ],
+    "description": "Pull the ball back under the body then immediately push it forward through the line."
+  },
+  {
+    "id": "rainbow-flick",
+    "name": "Rainbow Flick",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 80,
+    "tags": [
+      "skill-move",
+      "lift",
+      "iconic-move"
+    ],
+    "description": "Trap the ball between feet, flick it up and over the head with the back of the heel."
+  },
+  {
+    "id": "rapid-v-pulls",
+    "name": "Rapid V-Pulls",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 120,
+    "tags": [
+      "ball-control",
+      "tempo"
+    ],
+    "description": "Drag the ball back and immediately push at angle, repeating at high tempo."
+  },
+  {
+    "id": "roll-and-cut",
+    "name": "Roll and Cut",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "change-of-direction",
+      "ball-control"
+    ],
+    "description": "Roll the ball across the body with the sole, then cut sharply back with the inside."
+  },
+  {
+    "id": "scissor-feint",
+    "name": "Scissor Feint",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 100,
+    "tags": [
+      "feint",
+      "deception"
+    ],
+    "description": "Step over the ball with one foot in a scissors motion, selling a fake before resetting."
+  },
+  {
+    "id": "single-foot-balance",
+    "name": "Single Foot Balance",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "balance",
+      "stability"
+    ],
+    "description": "Lift one foot off the mat while planting the other to develop single-leg stability."
+  },
+  {
+    "id": "single-step-over",
+    "name": "Single Step-Over",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "feint",
+      "deception"
+    ],
+    "description": "One clean step-over per cycle, selling the fake before pushing the ball away."
+  },
+  {
     "id": "sole-roll-forward-back",
     "name": "Sole Roll — Forward & Back",
     "contributor": "FootworkIQ",
@@ -35,6 +498,78 @@
       "first-touch"
     ],
     "description": "Roll the ball from the centre to the top of the mat and back using the sole of your foot. A slow, controlled drill to build confidence with sole contact."
+  },
+  {
+    "id": "sole-rolls",
+    "name": "Sole Rolls",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "first-touch"
+    ],
+    "description": "Roll the sole over the top of the ball, switching feet to develop soft control."
+  },
+  {
+    "id": "sole-transfer",
+    "name": "Sole Transfer",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "ball-control",
+      "coordination"
+    ],
+    "description": "Pass the ball under the soles from one foot to the other, building soft control."
+  },
+  {
+    "id": "speed-shuttle",
+    "name": "Speed Shuttle",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 130,
+    "tags": [
+      "dribbling",
+      "tempo"
+    ],
+    "description": "Shuttle the ball left-right at high speed using alternating inside touches."
+  },
+  {
+    "id": "square-walk",
+    "name": "Square Walk",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": [
+      "footwork",
+      "orientation"
+    ],
+    "description": "Walk a clockwise square through the four corner zones to internalise the grid."
+  },
+  {
+    "id": "step-back-push",
+    "name": "Step-Back Push",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "change-of-direction",
+      "acceleration"
+    ],
+    "description": "Step backward to draw pressure, then push the ball forward to attack the gap."
+  },
+  {
+    "id": "step-over-chain",
+    "name": "Step-Over Chain",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Advanced",
+    "default_bpm": 120,
+    "tags": [
+      "feint",
+      "deception"
+    ],
+    "description": "Chain four step-overs together at speed, alternating which foot crosses the ball."
   },
   {
     "id": "step-overs",
@@ -50,6 +585,18 @@
     "description": "Feint over the ball with one foot, then use the other foot's outside touch to push it away and inside touch to bring it back."
   },
   {
+    "id": "stop-go-stop",
+    "name": "Stop-Go-Stop",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "ball-control",
+      "tempo"
+    ],
+    "description": "Push, stop dead, push again — varying tempo to wrongfoot a defender."
+  },
+  {
     "id": "toe-taps",
     "name": "Toe Taps",
     "contributor": "FootworkIQ",
@@ -60,6 +607,30 @@
       "coordination"
     ],
     "description": "Alternate tapping the ball with each foot to build touch sensitivity and rhythm. The ideal first drill for players new to the mat."
+  },
+  {
+    "id": "triangle-ball-move",
+    "name": "Triangle Ball Move",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 90,
+    "tags": [
+      "dribbling",
+      "orientation"
+    ],
+    "description": "Move the ball through three zones, returning to home, in a tight triangular path."
+  },
+  {
+    "id": "triangle-pattern",
+    "name": "Triangle Pattern",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": [
+      "footwork",
+      "orientation"
+    ],
+    "description": "Step through a triangle of three zones to build directional awareness."
   },
   {
     "id": "v-pull",
@@ -73,5 +644,17 @@
       "change-of-direction"
     ],
     "description": "Roll the ball back from the top of the mat with your sole, then redirect it with an outside touch. Builds drag-and-push ball mastery."
+  },
+  {
+    "id": "zigzag-dribble",
+    "name": "Zigzag Dribble",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "dribbling",
+      "change-of-direction"
+    ],
+    "description": "Push the ball through a zigzag of zones, alternating which foot touches it."
   }
 ]

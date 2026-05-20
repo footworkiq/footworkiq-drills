@@ -1,0 +1,88 @@
+{
+  "schema": "1.0",
+  "metadata": {
+    "id": "stop-go-stop",
+    "name": "Stop-Go-Stop",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Intermediate",
+    "default_bpm": 95,
+    "tags": [
+      "ball-control",
+      "tempo"
+    ],
+    "description": "Push, stop dead, push again \u2014 varying tempo to wrongfoot a defender.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 6,
+        "action": "PUSH",
+        "from": 1,
+        "to": 6
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 6,
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": 6,
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": 2,
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": 1,
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": 1,
+        "action": "PUSH",
+        "from": 6,
+        "to": 1
+      }
+    }
+  ]
+}
