@@ -17,6 +17,7 @@
     "sets": 3,
     "rest_beats": 0,
     "subdivision": 1,
+    "mirror": { "enabled": true, "ballMirrors": true },
     "license": "CC0"
   },
   "sequence": [
@@ -43,7 +44,7 @@
       },
       "right_foot": {
         "pos": 6,
-        "action": "INSIDE_TOUCH"
+        "action": "OUTSIDE_TOUCH"
       },
       "ball": {
         "pos": 6,
