@@ -5,7 +5,8 @@
 // runs over the same input are byte-identical.
 //
 // This script does NOT validate against the schema; CI runs validate-cards.js
-// first. It does exit 1 on invalid JSON or a missing id (never skips a file).
+// first. It does exit 1 on invalid JSON, a missing id or a duplicate id (never
+// skips a file), so a bundle with colliding ids is never published.
 //
 // Usage: node scripts/build-card-bundle.js [--dir <path>] [--out <path>]
 import { readFileSync, readdirSync, writeFileSync } from 'fs';
@@ -36,6 +37,7 @@ const files = readdirSync(cardsDir)
   .sort();
 
 const cards = [];
+const seenIds = new Map(); // id -> file
 let failed = 0;
 
 for (const file of files) {
@@ -52,6 +54,12 @@ for (const file of files) {
     failed++;
     continue;
   }
+  if (seenIds.has(data.id)) {
+    console.error(`FAIL ${file}: duplicate id "${data.id}" (also in ${seenIds.get(data.id)})`);
+    failed++;
+    continue;
+  }
+  seenIds.set(data.id, file);
   cards.push(data);
 }
 
