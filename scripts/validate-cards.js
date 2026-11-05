@@ -29,7 +29,23 @@ const cardsDir = dirArg
   : new URL('../cards/decision', import.meta.url).pathname;
 const schemaPath = new URL('../docs/schema/card.schema.json', import.meta.url).pathname;
 
-const ajv = new Ajv2020({ strict: true, allErrors: true });
+// unicode: false makes maxLength/minLength count UTF-16 code units, matching
+// zod's .max()/.min() in the app. AJV's default counts code points, so strings
+// with astral-plane characters (most emoji) would pass here and then be dropped
+// by the app at runtime.
+const ajv = new Ajv2020({
+  strict: true,
+  allErrors: true,
+  unicode: false,
+  // AJV flags `unicode` as deprecated but still honours it; silence only that notice.
+  logger: {
+    log: console.log.bind(console),
+    warn: (...args) => {
+      if (!String(args[0]).startsWith('DEPRECATED: option unicode')) console.warn(...args);
+    },
+    error: console.error.bind(console),
+  },
+});
 addKeywords(ajv, ['uniqueItemProperties']);
 
 const schema = JSON.parse(readFileSync(schemaPath, 'utf8'));
