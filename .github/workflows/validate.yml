@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history so the frozen-id check can read the PR base branch.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -23,5 +26,7 @@ jobs:
       - run: npm ci
       - name: Validate drill JSON files
         run: node scripts/validate-drills.js
-      - name: Validate decision cards
-        run: node scripts/validate-cards.js
+      - name: Validate decision cards (schema + frozen ids vs the PR base)
+        env:
+          BASE_REF: origin/${{ github.base_ref }}
+        run: node scripts/validate-cards.js --base "$BASE_REF"
