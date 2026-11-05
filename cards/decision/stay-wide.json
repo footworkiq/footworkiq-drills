@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "stay-wide",
+  "legacy_id": "a29",
+  "rev": 1,
+  "category": "attack",
+  "title": "Stay wide",
+  "text": "You're the right winger. The ball is on the left and you've drifted into the middle where it's crowded.",
+  "tip": "When your team has the ball, make the pitch big.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 56,
+      "y": 32
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 20,
+      "y": 35
+    },
+    "mates": [
+      {
+        "x": 18,
+        "y": 38
+      },
+      {
+        "x": 38,
+        "y": 42
+      }
+    ],
+    "opps": [
+      {
+        "x": 24,
+        "y": 31
+      },
+      {
+        "x": 40,
+        "y": 25
+      },
+      {
+        "x": 52,
+        "y": 27
+      },
+      {
+        "x": 62,
+        "y": 25
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "move-back-out",
+      "text": "Move back out wide on the right",
+      "grade": "best",
+      "why": "Staying wide stretches the defence and gives your team an option to switch play."
+    },
+    {
+      "id": "run-over-ball",
+      "text": "Run over to the ball to help",
+      "grade": "poor",
+      "why": "That squeezes everyone into one area and makes it easy to defend."
+    },
+    {
+      "id": "stay-where-are",
+      "text": "Stay where you are",
+      "grade": "ok",
+      "why": "You're not in the way, but you're not adding anything either."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

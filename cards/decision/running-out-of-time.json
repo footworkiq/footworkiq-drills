@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "running-out-of-time",
+  "legacy_id": "m5",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Running out of time",
+  "text": "Five minutes left and your team is losing.",
+  "tip": "Stay calm, play quicker, keep believing.",
+  "scene": {
+    "kind": "board",
+    "score": "0–1",
+    "clock": "85'"
+  },
+  "options": [
+    {
+      "id": "keep-playing-way",
+      "text": "Keep playing your way, but move the ball quicker",
+      "grade": "best",
+      "why": "Calm, quick passing creates chances. Panic doesn't."
+    },
+    {
+      "id": "kick-long-every",
+      "text": "Kick it long every time",
+      "grade": "ok",
+      "why": "Sometimes works, but mostly gives the ball away."
+    },
+    {
+      "id": "give-its-over",
+      "text": "Give up, it's over",
+      "grade": "poor",
+      "why": "Plenty of games turn around in the last five minutes."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

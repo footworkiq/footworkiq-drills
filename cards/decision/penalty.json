@@ -1,0 +1,56 @@
+{
+  "schema": "1.0",
+  "id": "penalty",
+  "legacy_id": "a10",
+  "rev": 1,
+  "category": "attack",
+  "title": "Penalty",
+  "text": "You've put the ball on the spot. The keeper is bouncing on the line, trying to put you off.",
+  "tip": "Pick your spot, breathe, and don't change your mind.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 16
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 50,
+      "y": 11.5
+    },
+    "mates": [],
+    "opps": [],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pick-corner-before",
+      "text": "Pick a corner before your run-up and stick to it",
+      "grade": "best",
+      "why": "Deciding early means a confident strike. Changing your mind mid run-up leads to scuffed kicks."
+    },
+    {
+      "id": "change-mind-run",
+      "text": "Change your mind as you run up",
+      "grade": "poor",
+      "why": "Last-second changes make your body unsure, and the shot usually ends up weak."
+    },
+    {
+      "id": "blast-hard-can",
+      "text": "Blast it as hard as you can, no aim",
+      "grade": "ok",
+      "why": "Power can beat a keeper, but without a target it often flies over or straight at them."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

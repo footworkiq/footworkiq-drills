@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "dummy",
+  "legacy_id": "a30",
+  "rev": 1,
+  "category": "attack",
+  "title": "Dummy",
+  "text": "A low cross is coming to you, but a defender is right behind you. Your teammate is free just behind you.",
+  "tip": "Sometimes the best touch is no touch.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 48,
+      "y": 22
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 76,
+      "y": 25
+    },
+    "mates": [
+      {
+        "x": 34,
+        "y": 26
+      }
+    ],
+    "opps": [
+      {
+        "x": 47,
+        "y": 17
+      },
+      {
+        "x": 60,
+        "y": 12
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 80,
+          "y": 26
+        },
+        "to": {
+          "x": 51,
+          "y": 23
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "let-run-through",
+      "text": "Let it run through to your teammate (a dummy)",
+      "grade": "best",
+      "why": "Your dummy fools the defender, and your teammate gets a free shot."
+    },
+    {
+      "id": "try-control-defender",
+      "text": "Try to control it with the defender on you",
+      "grade": "ok",
+      "why": "You might keep it, but the defender will be all over you."
+    },
+    {
+      "id": "stop-wait-help",
+      "text": "Stop it and wait for help",
+      "grade": "poor",
+      "why": "The defender will nick it straight away."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "find-the-gap",
+  "legacy_id": "a27",
+  "rev": 1,
+  "category": "attack",
+  "title": "Find the gap",
+  "text": "Your teammate has the ball behind you. You're a midfielder looking to receive it.",
+  "tip": "Move to where your teammate can see you and pass to you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 28,
+      "y": 38
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 54,
+      "y": 55
+    },
+    "mates": [
+      {
+        "x": 52,
+        "y": 58
+      }
+    ],
+    "opps": [
+      {
+        "x": 40,
+        "y": 46
+      },
+      {
+        "x": 62,
+        "y": 46
+      },
+      {
+        "x": 34,
+        "y": 22
+      },
+      {
+        "x": 50,
+        "y": 22
+      },
+      {
+        "x": 66,
+        "y": 22
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "move-gap-between",
+      "text": "Move into the gap between their midfield and defence",
+      "grade": "best",
+      "why": "In that pocket you can receive the ball and turn to face goal."
+    },
+    {
+      "id": "stand-behind-midfielder",
+      "text": "Stand behind their midfielder",
+      "grade": "poor",
+      "why": "Your teammate can't pass to you with someone in the way."
+    },
+    {
+      "id": "run-right-next",
+      "text": "Run right up next to their defenders",
+      "grade": "ok",
+      "why": "You might get a ball over the top, but it's much harder to receive and turn there."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

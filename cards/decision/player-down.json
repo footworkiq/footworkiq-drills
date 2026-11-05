@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "player-down",
+  "legacy_id": "m10",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Player down",
+  "text": "An opponent is lying on the ground hurt. Your team has the ball.",
+  "tip": "Respect first, always.",
+  "scene": {
+    "kind": "board",
+    "score": "0–0",
+    "clock": "30'"
+  },
+  "options": [
+    {
+      "id": "kick-ball-out",
+      "text": "Kick the ball out so they can get help",
+      "grade": "best",
+      "why": "Their safety comes first. That's good sportsmanship."
+    },
+    {
+      "id": "keep-attacking",
+      "text": "Keep attacking",
+      "grade": "poor",
+      "why": "Winning matters less than someone being hurt."
+    },
+    {
+      "id": "stop-stand-there",
+      "text": "Stop and stand there",
+      "grade": "ok",
+      "why": "Kindly meant, but kicking it out makes the game stop properly."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

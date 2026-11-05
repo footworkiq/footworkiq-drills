@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "which-way",
+  "legacy_id": "d2",
+  "rev": 1,
+  "category": "defend",
+  "title": "Which way?",
+  "text": "You're facing an attacker in the middle of the pitch. They could go either way.",
+  "tip": "Pick a side and show them where you want them to go.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 34
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 53,
+      "y": 44.5
+    },
+    "mates": [
+      {
+        "x": 28,
+        "y": 28
+      }
+    ],
+    "opps": [
+      {
+        "x": 52,
+        "y": 48
+      },
+      {
+        "x": 74,
+        "y": 52
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "stand-side-push",
+      "text": "Stand side-on and push them to the touchline",
+      "grade": "best",
+      "why": "The wing is less dangerous, and the touchline acts like an extra defender."
+    },
+    {
+      "id": "let-cut-inside",
+      "text": "Let them cut inside",
+      "grade": "poor",
+      "why": "Inside is the shortest route to goal and opens up a shot."
+    },
+    {
+      "id": "stand-square-front",
+      "text": "Stand square in front of them",
+      "grade": "ok",
+      "why": "Better than nothing, but they can go either way past you."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

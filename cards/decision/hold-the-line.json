@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "hold-the-line",
+  "legacy_id": "d19",
+  "rev": 1,
+  "category": "defend",
+  "title": "Hold the line",
+  "text": "Your other defenders have stepped up. You've stayed back, which keeps their striker onside.",
+  "tip": "Defend as a line, not alone. (Check whether your league uses offside.)",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 20
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 48,
+      "y": 41
+    },
+    "mates": [
+      {
+        "x": 30,
+        "y": 28
+      },
+      {
+        "x": 70,
+        "y": 28
+      }
+    ],
+    "opps": [
+      {
+        "x": 52,
+        "y": 24
+      },
+      {
+        "x": 46,
+        "y": 44
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "step-line-teammates",
+      "text": "Step up in line with your teammates",
+      "grade": "best",
+      "why": "A straight line can catch the striker offside and keeps your back line together."
+    },
+    {
+      "id": "stay-deep-behind",
+      "text": "Stay deep behind your teammates",
+      "grade": "poor",
+      "why": "You're keeping the striker onside, and they can get in behind."
+    },
+    {
+      "id": "run-out-player",
+      "text": "Run out to the player on the ball",
+      "grade": "ok",
+      "why": "Pressure helps, but now there's a gap in your line."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

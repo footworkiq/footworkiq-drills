@@ -1,0 +1,303 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "legacy_id": {
+      "type": "string",
+      "pattern": "^[a-z]\\d+$"
+    },
+    "rev": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "attack",
+        "defend",
+        "mindset"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "tip": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "scene": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "pitch"
+            },
+            "own": {
+              "type": "boolean"
+            },
+            "you": {
+              "$ref": "#/$defs/Point"
+            },
+            "gk": {
+              "$ref": "#/$defs/Point"
+            },
+            "ball": {
+              "$ref": "#/$defs/Point"
+            },
+            "mates": {
+              "maxItems": 22,
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Point"
+              }
+            },
+            "opps": {
+              "maxItems": 22,
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Point"
+              }
+            },
+            "runs": {
+              "maxItems": 22,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "$ref": "#/$defs/Point"
+                  },
+                  "to": {
+                    "$ref": "#/$defs/Point"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "mate",
+                      "opp",
+                      "ball"
+                    ]
+                  }
+                },
+                "required": [
+                  "from",
+                  "to",
+                  "kind"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "kind",
+            "own",
+            "you",
+            "ball",
+            "mates",
+            "opps",
+            "runs"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "const": "board"
+            },
+            "score": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40
+            },
+            "clock": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 40
+            }
+          },
+          "required": [
+            "kind",
+            "score",
+            "clock"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "options": {
+      "minItems": 3,
+      "maxItems": 3,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60,
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "grade": {
+            "type": "string",
+            "enum": [
+              "best",
+              "ok",
+              "poor"
+            ]
+          },
+          "why": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "grade",
+          "why"
+        ],
+        "additionalProperties": false
+      },
+      "contains": {
+        "type": "object",
+        "properties": {
+          "grade": {
+            "const": "best"
+          }
+        },
+        "required": [
+          "grade"
+        ]
+      },
+      "minContains": 1,
+      "maxContains": 1,
+      "uniqueItemProperties": [
+        "id"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    "age_band": {
+      "type": "string",
+      "enum": [
+        "U9",
+        "U12",
+        "U16",
+        "all"
+      ]
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "outfield",
+        "keeper"
+      ]
+    },
+    "tags": {
+      "maxItems": 20,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 40
+      }
+    },
+    "contributor": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "reviewed_by": {
+      "maxItems": 20,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 100
+      }
+    },
+    "license": {
+      "type": "string",
+      "const": "CC0"
+    }
+  },
+  "required": [
+    "schema",
+    "id",
+    "rev",
+    "category",
+    "title",
+    "text",
+    "tip",
+    "scene",
+    "options",
+    "difficulty",
+    "age_band",
+    "role",
+    "tags",
+    "contributor",
+    "reviewed_by",
+    "license"
+  ],
+  "additionalProperties": false,
+  "$id": "https://footworkiq.com/schema/card/1.0",
+  "title": "FootworkIQ Decision Card",
+  "description": "Schema for FootworkIQ decision-deck card files (v1.0)",
+  "$defs": {
+    "Point": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 70
+        }
+      },
+      "required": [
+        "x",
+        "y"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

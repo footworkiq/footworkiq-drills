@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "throw-in",
+  "legacy_id": "a15",
+  "rev": 1,
+  "category": "attack",
+  "title": "Throw-in",
+  "text": "You're taking a throw-in. One teammate is close and free. Another is further away with a defender on them.",
+  "tip": "Throw-ins are a free pass. Don't waste them.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 98,
+      "y": 46
+    },
+    "ball": {
+      "x": 98,
+      "y": 43
+    },
+    "mates": [
+      {
+        "x": 88,
+        "y": 50
+      },
+      {
+        "x": 72,
+        "y": 30
+      }
+    ],
+    "opps": [
+      {
+        "x": 73,
+        "y": 26
+      },
+      {
+        "x": 80,
+        "y": 38
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "throw-free-teammates",
+      "text": "Throw to the free teammate's feet",
+      "grade": "best",
+      "why": "A short, easy throw keeps the ball. Feet are easier to control than a bouncing ball at head height."
+    },
+    {
+      "id": "throw-long-marked",
+      "text": "Throw long to the marked teammate",
+      "grade": "poor",
+      "why": "The defender is right there and will probably win it."
+    },
+    {
+      "id": "throw-down-line",
+      "text": "Throw it down the line for someone to chase",
+      "grade": "ok",
+      "why": "Can work, but often gives the ball back to the other team."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

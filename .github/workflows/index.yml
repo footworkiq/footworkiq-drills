@@ -1,14 +1,22 @@
-name: Rebuild Index
+name: Rebuild Artifacts
 
 on:
   push:
     branches: [main]
     paths:
       - 'drills/**'
+      - 'cards/**'
+      - 'docs/schema/card.schema.json'
+      - 'scripts/build-card-bundle.js'
   workflow_dispatch:
 
+# One rebuild at a time so two auto-commits never race (non-fast-forward).
+concurrency:
+  group: rebuild-artifacts
+  cancel-in-progress: false
+
 jobs:
-  rebuild-index:
+  rebuild-artifacts:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,9 +29,17 @@ jobs:
       - run: npm ci
       - name: Validate drill JSON files
         run: node scripts/validate-drills.js
+      - name: Validate decision cards
+        run: node scripts/validate-cards.js
       - name: Build index.json
         run: node scripts/build-index.js
+      - name: Build decision card bundle
+        run: node scripts/build-card-bundle.js
       - uses: stefanzweifel/git-auto-commit-action@v7
+        id: autocommit
         with:
-          commit_message: "chore: rebuild index.json [skip ci]"
-          file_pattern: "index.json"
+          commit_message: "chore: rebuild index.json and card bundle [skip ci]"
+          file_pattern: "index.json cards/decision.bundle.json"
+      - name: Purge jsDelivr card bundle
+        if: steps.autocommit.outputs.changes_detected == 'true'
+        run: sleep 15 && curl -fsS --retry 3 --retry-delay 10 https://purge.jsdelivr.net/gh/footworkiq/footworkiq-drills@main/cards/decision.bundle.json

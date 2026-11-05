@@ -1,0 +1,78 @@
+{
+  "schema": "1.0",
+  "id": "goal-kick",
+  "legacy_id": "a21",
+  "rev": 1,
+  "category": "attack",
+  "title": "Goal kick",
+  "text": "You're the keeper with the ball. The other team are pressing high, but one of your defenders is free on the right.",
+  "tip": "Building from the back starts with finding the free player.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 50,
+      "y": 7
+    },
+    "mates": [
+      {
+        "x": 22,
+        "y": 14
+      },
+      {
+        "x": 78,
+        "y": 14
+      },
+      {
+        "x": 50,
+        "y": 34
+      }
+    ],
+    "opps": [
+      {
+        "x": 30,
+        "y": 16
+      },
+      {
+        "x": 50,
+        "y": 20
+      },
+      {
+        "x": 52,
+        "y": 38
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pass-short-free",
+      "text": "Pass short to your free defender",
+      "grade": "best",
+      "why": "An easy pass to a free teammate keeps the ball and beats their press."
+    },
+    {
+      "id": "pass-teammate-middle",
+      "text": "Pass to the teammate in the middle",
+      "grade": "poor",
+      "why": "There are opponents right around them. Losing it here could mean a goal."
+    },
+    {
+      "id": "kick-far-can",
+      "text": "Kick it as far as you can",
+      "grade": "ok",
+      "why": "Safe from danger, but it's often a 50-50 that hands them the ball."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "1.0",
+  "id": "runner-in-behind",
+  "legacy_id": "a6",
+  "rev": 1,
+  "category": "attack",
+  "title": "Runner in behind",
+  "text": "Your teammate starts sprinting past the defenders.",
+  "tip": "Watch your teammates' runs, not only the ball.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 46,
+      "y": 54
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 49,
+      "y": 51.4
+    },
+    "mates": [
+      {
+        "x": 68,
+        "y": 44
+      }
+    ],
+    "opps": [
+      {
+        "x": 36,
+        "y": 40
+      },
+      {
+        "x": 54,
+        "y": 40
+      },
+      {
+        "x": 80,
+        "y": 40
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 68,
+          "y": 44
+        },
+        "to": {
+          "x": 73,
+          "y": 22
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "pass-space-ahead",
+      "text": "Pass into the space ahead of them",
+      "grade": "best",
+      "why": "Passing into space lets your teammate run onto it without slowing down."
+    },
+    {
+      "id": "pass-teammates-feet",
+      "text": "Pass to your teammate's feet",
+      "grade": "ok",
+      "why": "They'd have to stop running, and the defenders would catch up."
+    },
+    {
+      "id": "shoot-here",
+      "text": "Shoot from here",
+      "grade": "poor",
+      "why": "It's too far out with three defenders in the way."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

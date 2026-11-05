@@ -1,0 +1,66 @@
+{
+  "schema": "1.0",
+  "id": "two-against-one",
+  "legacy_id": "a2",
+  "rev": 1,
+  "category": "attack",
+  "title": "Two against one",
+  "text": "You and a teammate are attacking. There's one defender between you.",
+  "tip": "In a 2v1, attack the defender so they have to pick one of you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 38,
+      "y": 34
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 41,
+      "y": 31.4
+    },
+    "mates": [
+      {
+        "x": 66,
+        "y": 30
+      }
+    ],
+    "opps": [
+      {
+        "x": 52,
+        "y": 27
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "run-defender-pass",
+      "text": "Run at the defender, pass when they come to you",
+      "grade": "best",
+      "why": "Making the defender choose leaves your teammate free. Pass the moment they commit to you."
+    },
+    {
+      "id": "pass-teammate-straight",
+      "text": "Pass to your teammate straight away",
+      "grade": "ok",
+      "why": "Not bad, but the defender can just shift across. Draw them in first."
+    },
+    {
+      "id": "shoot-where-are",
+      "text": "Shoot from where you are",
+      "grade": "poor",
+      "why": "It's a long way out with a defender in the way. You have a better option."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

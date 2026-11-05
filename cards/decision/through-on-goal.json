@@ -1,0 +1,73 @@
+{
+  "schema": "1.0",
+  "id": "through-on-goal",
+  "legacy_id": "a1",
+  "rev": 1,
+  "category": "attack",
+  "title": "Through on goal",
+  "text": "You've beaten the last defender. Only the keeper is left, and a defender is chasing back.",
+  "tip": "Glance at where the keeper is standing before you strike, then aim for the bigger gap.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 24
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 53,
+      "y": 21.4
+    },
+    "mates": [],
+    "opps": [
+      {
+        "x": 46,
+        "y": 40
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 46,
+          "y": 40
+        },
+        "to": {
+          "x": 48,
+          "y": 30
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "shoot-low-corner",
+      "text": "Shoot low into a corner",
+      "grade": "best",
+      "why": "Low shots into the corners are the hardest for a keeper to reach. Shoot early, before the defender catches you."
+    },
+    {
+      "id": "dribble-round-keeper",
+      "text": "Dribble round the keeper",
+      "grade": "ok",
+      "why": "It can work, but every extra touch gives the chasing defender time to get back."
+    },
+    {
+      "id": "stop-wait-teammate",
+      "text": "Stop and wait for a teammate",
+      "grade": "poor",
+      "why": "Stopping lets the defender recover. Chances like this don't last."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

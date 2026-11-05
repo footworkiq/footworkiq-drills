@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "outnumbered",
+  "legacy_id": "d15",
+  "rev": 1,
+  "category": "defend",
+  "title": "Outnumbered",
+  "text": "Two attackers are coming at you. You're the only defender back.",
+  "tip": "Outnumbered? Delay, delay, delay.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 30
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 40,
+      "y": 41
+    },
+    "mates": [
+      {
+        "x": 50,
+        "y": 60
+      }
+    ],
+    "opps": [
+      {
+        "x": 38,
+        "y": 44
+      },
+      {
+        "x": 64,
+        "y": 44
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "stay-between-slow",
+      "text": "Stay between them and slow them down",
+      "grade": "best",
+      "why": "Delaying gives teammates time to recover, and the attackers might make a mistake."
+    },
+    {
+      "id": "run-player-ball",
+      "text": "Run at the player with the ball",
+      "grade": "poor",
+      "why": "They'll just pass to the free attacker."
+    },
+    {
+      "id": "mark-player-without",
+      "text": "Mark the player without the ball",
+      "grade": "ok",
+      "why": "The ball carrier can then run in and shoot."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

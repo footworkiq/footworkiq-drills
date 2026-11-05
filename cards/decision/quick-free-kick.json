@@ -1,0 +1,78 @@
+{
+  "schema": "1.0",
+  "id": "quick-free-kick",
+  "legacy_id": "a32",
+  "rev": 1,
+  "category": "attack",
+  "title": "Quick free kick",
+  "text": "You've been fouled in midfield. The other team have turned away and are chatting.",
+  "tip": "Be the first to switch back on after a stoppage.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 46
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 50,
+      "y": 43
+    },
+    "mates": [
+      {
+        "x": 74,
+        "y": 30
+      }
+    ],
+    "opps": [
+      {
+        "x": 44,
+        "y": 51
+      },
+      {
+        "x": 57,
+        "y": 53
+      },
+      {
+        "x": 40,
+        "y": 24
+      },
+      {
+        "x": 60,
+        "y": 24
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "take-quickly-free",
+      "text": "Take it quickly to your free teammate",
+      "grade": "best",
+      "why": "While they're switched off, a quick free kick can set up a big chance."
+    },
+    {
+      "id": "argue-player-who",
+      "text": "Argue with the player who fouled you",
+      "grade": "poor",
+      "why": "You waste the chance and might get a card."
+    },
+    {
+      "id": "wait-everyone-get",
+      "text": "Wait for everyone to get set",
+      "grade": "ok",
+      "why": "Fine, but you lose the surprise."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

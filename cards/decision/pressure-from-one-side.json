@@ -1,0 +1,89 @@
+{
+  "schema": "1.0",
+  "id": "pressure-from-one-side",
+  "legacy_id": "a26",
+  "rev": 1,
+  "category": "attack",
+  "title": "Pressure from one side",
+  "text": "A pass is coming to you. A defender is rushing in from your left. There's space on your right.",
+  "tip": "Know where the pressure is coming from before the ball arrives.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 40
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 51.5,
+      "y": 56
+    },
+    "mates": [
+      {
+        "x": 50,
+        "y": 60
+      }
+    ],
+    "opps": [
+      {
+        "x": 34,
+        "y": 38
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 50,
+          "y": 58
+        },
+        "to": {
+          "x": 50,
+          "y": 44
+        },
+        "kind": "ball"
+      },
+      {
+        "from": {
+          "x": 34,
+          "y": 38
+        },
+        "to": {
+          "x": 43,
+          "y": 39
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "first-touch-right",
+      "text": "First touch to your right, away from the defender",
+      "grade": "best",
+      "why": "Taking the ball away from pressure gives you time and space."
+    },
+    {
+      "id": "first-touch-left",
+      "text": "First touch to your left",
+      "grade": "poor",
+      "why": "That takes the ball straight towards the defender."
+    },
+    {
+      "id": "pass-straight-back",
+      "text": "Pass it straight back first time",
+      "grade": "ok",
+      "why": "Safe, but you had space to turn into."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

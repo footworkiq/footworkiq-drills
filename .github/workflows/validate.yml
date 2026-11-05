@@ -1,4 +1,4 @@
-name: Validate Drills
+name: Validate Content
 
 on:
   pull_request:
@@ -6,6 +6,10 @@ on:
     paths:
       - 'drills/**'
       - 'docs/schema/drill.schema.json'
+      - 'cards/**'
+      - 'docs/schema/card.schema.json'
+      - 'scripts/**'
+      - 'package*.json'
 
 jobs:
   validate:
@@ -19,3 +23,5 @@ jobs:
       - run: npm ci
       - name: Validate drill JSON files
         run: node scripts/validate-drills.js
+      - name: Validate decision cards
+        run: node scripts/validate-cards.js

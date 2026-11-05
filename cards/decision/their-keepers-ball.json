@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "their-keepers-ball",
+  "legacy_id": "d17",
+  "rev": 1,
+  "category": "defend",
+  "title": "Their keeper's ball",
+  "text": "You're a striker. Their keeper has the ball and wants to pass to a defender.",
+  "tip": "Strikers are the first defenders.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 22
+    },
+    "gk": {
+      "x": 50,
+      "y": 5
+    },
+    "ball": {
+      "x": 52,
+      "y": 7.5
+    },
+    "mates": [
+      {
+        "x": 40,
+        "y": 40
+      }
+    ],
+    "opps": [
+      {
+        "x": 24,
+        "y": 14
+      },
+      {
+        "x": 76,
+        "y": 14
+      },
+      {
+        "x": 50,
+        "y": 32
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "curve-run-block",
+      "text": "Curve your run to block the pass to one defender",
+      "grade": "best",
+      "why": "You stop one option and push the keeper to the other side, where your teammates can press."
+    },
+    {
+      "id": "sprint-straight-keeper",
+      "text": "Sprint straight at the keeper",
+      "grade": "ok",
+      "why": "Puts them under pressure, but they can pass either way."
+    },
+    {
+      "id": "walk-back-halfway",
+      "text": "Walk back to halfway",
+      "grade": "poor",
+      "why": "It gives them an easy start."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

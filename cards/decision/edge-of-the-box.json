@@ -1,0 +1,78 @@
+{
+  "schema": "1.0",
+  "id": "edge-of-the-box",
+  "legacy_id": "a11",
+  "rev": 1,
+  "category": "attack",
+  "title": "Edge of the box",
+  "text": "You're just outside the box with space to shoot. Defenders are behind you and the box is crowded.",
+  "tip": "If you can see the goal and nobody's blocking, shoot.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 52,
+      "y": 21
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 55,
+      "y": 18.4
+    },
+    "mates": [
+      {
+        "x": 30,
+        "y": 26
+      }
+    ],
+    "opps": [
+      {
+        "x": 40,
+        "y": 32
+      },
+      {
+        "x": 64,
+        "y": 31
+      },
+      {
+        "x": 45,
+        "y": 9
+      },
+      {
+        "x": 56,
+        "y": 8
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "shoot-now-while",
+      "text": "Shoot now, while you have space",
+      "grade": "best",
+      "why": "A clear sight of goal doesn't last. Take the shot before the defenders behind you catch up."
+    },
+    {
+      "id": "dribble-crowded-box",
+      "text": "Dribble into the crowded box",
+      "grade": "poor",
+      "why": "There are two defenders waiting in there. You'll lose the space you have now."
+    },
+    {
+      "id": "pass-sideways-teammate",
+      "text": "Pass sideways to your teammate",
+      "grade": "ok",
+      "why": "Safe, but they're further out and wider. You have the better chance."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

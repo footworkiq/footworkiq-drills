@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "skill-gone-wrong",
+  "legacy_id": "m3",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Skill gone wrong",
+  "text": "You tried a new skill in a match and lost the ball.",
+  "tip": "Brave, but smart: right skill, right moment.",
+  "scene": {
+    "kind": "board",
+    "score": "2–2",
+    "clock": "18'"
+  },
+  "options": [
+    {
+      "id": "keep-trying-when",
+      "text": "Keep trying it when the moment is right",
+      "grade": "best",
+      "why": "Every good player failed loads while learning. Pick a better moment next time."
+    },
+    {
+      "id": "never-try-again",
+      "text": "Never try it again",
+      "grade": "poor",
+      "why": "Then you'll never get good at it."
+    },
+    {
+      "id": "try-every-time",
+      "text": "Try it every time you get the ball",
+      "grade": "ok",
+      "why": "Skills work when they fit the situation. Choosing when is the real skill."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

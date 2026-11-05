@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "at-the-byline",
+  "legacy_id": "a7",
+  "rev": 1,
+  "category": "attack",
+  "title": "At the byline",
+  "text": "You've reached the goal line at a tight angle. A teammate is free in the middle.",
+  "tip": "From the byline, a pull-back to the edge of the six-yard box is one of the most dangerous passes in football.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 86,
+      "y": 9
+    },
+    "gk": {
+      "x": 60,
+      "y": 3
+    },
+    "ball": {
+      "x": 89,
+      "y": 6.4
+    },
+    "mates": [
+      {
+        "x": 50,
+        "y": 17
+      }
+    ],
+    "opps": [
+      {
+        "x": 72,
+        "y": 24
+      },
+      {
+        "x": 34,
+        "y": 8
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pull-back-teammate",
+      "text": "Pull it back to your teammate",
+      "grade": "best",
+      "why": "Your teammate is facing goal with nobody on them. That's a much easier chance."
+    },
+    {
+      "id": "shoot-tight-angle",
+      "text": "Shoot from the tight angle",
+      "grade": "poor",
+      "why": "The keeper is covering the near post, so there's almost nothing to aim at."
+    },
+    {
+      "id": "cross-high-far",
+      "text": "Cross it high to the far post",
+      "grade": "ok",
+      "why": "Nobody is there yet, so the ball may just go out."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "1.0",
+  "id": "last-defender",
+  "legacy_id": "d1",
+  "rev": 1,
+  "category": "defend",
+  "title": "Last defender",
+  "text": "An attacker is running at you with the ball. Your teammates are racing back.",
+  "tip": "Side-on, knees bent, eyes on the ball, not on their tricks.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 30
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 51.5,
+      "y": 42.5
+    },
+    "mates": [
+      {
+        "x": 30,
+        "y": 60
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 46
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 30,
+          "y": 60
+        },
+        "to": {
+          "x": 36,
+          "y": 44
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "stay-feet-slow",
+      "text": "Stay on your feet and slow them down",
+      "grade": "best",
+      "why": "Jockeying buys time for your teammates to get back. Make the attacker make the decision."
+    },
+    {
+      "id": "dive-slide-tackle",
+      "text": "Dive in with a slide tackle",
+      "grade": "poor",
+      "why": "If you miss, they're through on goal. Stay patient."
+    },
+    {
+      "id": "run-back-goal",
+      "text": "Run back to your goal line",
+      "grade": "poor",
+      "why": "That gives them a free shot from the edge of the box."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "your-mistake",
+  "legacy_id": "m13",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Your mistake",
+  "text": "Your mistake has just led to a goal for the other team.",
+  "tip": "Mistake, reset, go again.",
+  "scene": {
+    "kind": "board",
+    "score": "1–2",
+    "clock": "40'"
+  },
+  "options": [
+    {
+      "id": "shake-off-focus",
+      "text": "Shake it off and focus on your next action",
+      "grade": "best",
+      "why": "Mistakes happen to everyone. The next action is the one you can control."
+    },
+    {
+      "id": "hide-dont-make",
+      "text": "Hide so you don't make another",
+      "grade": "poor",
+      "why": "Your team needs you involved."
+    },
+    {
+      "id": "blame-keeper",
+      "text": "Blame the keeper",
+      "grade": "poor",
+      "why": "It upsets teammates and doesn't help."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "trapped-on-the-wing",
+  "legacy_id": "a5",
+  "rev": 1,
+  "category": "attack",
+  "title": "Trapped on the wing",
+  "text": "You're near the touchline and two defenders are closing you down.",
+  "tip": "When it's crowded, look where the defenders came from. That's where the space is now.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 90,
+      "y": 40
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 93,
+      "y": 37.4
+    },
+    "mates": [
+      {
+        "x": 54,
+        "y": 44
+      }
+    ],
+    "opps": [
+      {
+        "x": 84,
+        "y": 33
+      },
+      {
+        "x": 85,
+        "y": 47
+      },
+      {
+        "x": 40,
+        "y": 28
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pass-inside-free",
+      "text": "Pass inside to your free teammate",
+      "grade": "best",
+      "why": "Two defenders on you means someone else is free. Find them."
+    },
+    {
+      "id": "try-dribble-past",
+      "text": "Try to dribble past both",
+      "grade": "poor",
+      "why": "Beating two players in a tight space is really hard. You'll probably lose it."
+    },
+    {
+      "id": "kick-long-down",
+      "text": "Kick it long down the line",
+      "grade": "ok",
+      "why": "It gets you out of trouble, but you're likely to give the ball away."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

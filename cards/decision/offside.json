@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "offside",
+  "legacy_id": "a28",
+  "rev": 1,
+  "category": "attack",
+  "title": "Offside?",
+  "text": "You're the striker. Your teammate is about to pass, but you're already past the last defender.",
+  "tip": "Onside when the pass is played, then GO. (Many junior leagues don't use offside yet.)",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 58,
+      "y": 17
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 46,
+      "y": 43
+    },
+    "mates": [
+      {
+        "x": 44,
+        "y": 46
+      }
+    ],
+    "opps": [
+      {
+        "x": 40,
+        "y": 24
+      },
+      {
+        "x": 57,
+        "y": 24
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "step-back-level",
+      "text": "Step back level with the defender, then run as they pass",
+      "grade": "best",
+      "why": "Being level when the pass is played keeps you onside. Then you can run in behind."
+    },
+    {
+      "id": "stay-where-are",
+      "text": "Stay where you are and call for it",
+      "grade": "poor",
+      "why": "If they pass now, you're offside and the other team gets a free kick."
+    },
+    {
+      "id": "drop-deep-get",
+      "text": "Drop deep to get it to feet",
+      "grade": "ok",
+      "why": "Keeps you onside, but you lose the chance to get in behind."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

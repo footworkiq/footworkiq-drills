@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "back-to-goal",
+  "legacy_id": "a3",
+  "rev": 1,
+  "category": "attack",
+  "title": "Back to goal",
+  "text": "You receive the ball facing your own goal. A defender is tight behind you.",
+  "tip": "Check over your shoulder before the ball arrives, so you know what's behind you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 58
+    },
+    "ball": {
+      "x": 50,
+      "y": 61.5
+    },
+    "mates": [
+      {
+        "x": 28,
+        "y": 66
+      },
+      {
+        "x": 74,
+        "y": 47
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 52
+      },
+      {
+        "x": 71,
+        "y": 43
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pass-back-free",
+      "text": "Pass back to your free teammate",
+      "grade": "best",
+      "why": "Play the way you're facing. Your teammate can see the whole pitch and switch the attack."
+    },
+    {
+      "id": "spin-try-run",
+      "text": "Spin and try to run past",
+      "grade": "poor",
+      "why": "The defender is right behind you, so turning here usually loses the ball."
+    },
+    {
+      "id": "shield-ball-wait",
+      "text": "Shield the ball and wait",
+      "grade": "ok",
+      "why": "Good for protecting the ball, but waiting lets more defenders arrive."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "runner-on-your-blind-side",
+  "legacy_id": "d3",
+  "rev": 1,
+  "category": "defend",
+  "title": "Runner on your blind side",
+  "text": "Your teammate is closing down the ball. A striker starts a run behind you.",
+  "tip": "See ball, see player. Keep both in view.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 42,
+      "y": 24
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 60,
+      "y": 39
+    },
+    "mates": [
+      {
+        "x": 64,
+        "y": 36
+      }
+    ],
+    "opps": [
+      {
+        "x": 62,
+        "y": 42
+      },
+      {
+        "x": 34,
+        "y": 32
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 34,
+          "y": 32
+        },
+        "to": {
+          "x": 34,
+          "y": 11
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "follow-runner-stay",
+      "text": "Follow the runner and stay goal-side",
+      "grade": "best",
+      "why": "The runner is the danger. If you stay between them and goal, the pass is no use."
+    },
+    {
+      "id": "watch-ball",
+      "text": "Watch the ball",
+      "grade": "poor",
+      "why": "Ball-watching is how runners get in behind you."
+    },
+    {
+      "id": "run-out-tackle",
+      "text": "Run out to tackle the player on the ball",
+      "grade": "poor",
+      "why": "Your teammate is already there, and you'd leave the runner free."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

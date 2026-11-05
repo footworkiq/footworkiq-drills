@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "free-kick",
+  "legacy_id": "a18",
+  "rev": 1,
+  "category": "attack",
+  "title": "Free kick",
+  "text": "You have a free kick just outside the box. There's a wall of three, and the keeper is standing to one side.",
+  "tip": "Look at the wall and the keeper before you decide.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 27
+    },
+    "gk": {
+      "x": 58,
+      "y": 4
+    },
+    "ball": {
+      "x": 50,
+      "y": 24
+    },
+    "mates": [
+      {
+        "x": 28,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 43,
+        "y": 18
+      },
+      {
+        "x": 47,
+        "y": 18
+      },
+      {
+        "x": 51,
+        "y": 18
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "aim-over-wall",
+      "text": "Aim over the wall into the side the keeper left open",
+      "grade": "best",
+      "why": "The keeper has moved across, leaving one side of the goal more open."
+    },
+    {
+      "id": "smash-hard-straight",
+      "text": "Smash it hard straight ahead",
+      "grade": "poor",
+      "why": "That's where the wall is. It'll most likely be blocked."
+    },
+    {
+      "id": "quick-short-pass",
+      "text": "Quick short pass to your free teammate",
+      "grade": "ok",
+      "why": "Can catch defenders napping, but you'd lose a good shooting chance."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

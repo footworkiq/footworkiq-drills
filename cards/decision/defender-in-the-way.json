@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "defender-in-the-way",
+  "legacy_id": "a13",
+  "rev": 1,
+  "category": "attack",
+  "title": "Defender in the way",
+  "text": "A defender is right in front of you. Your teammate is just to the side.",
+  "tip": "Pass and move. Never pass and watch.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 44,
+      "y": 40
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 47,
+      "y": 37.4
+    },
+    "mates": [
+      {
+        "x": 64,
+        "y": 32
+      }
+    ],
+    "opps": [
+      {
+        "x": 45,
+        "y": 32
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 70,
+        "y": 18
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pass-teammate-run",
+      "text": "Pass to your teammate and run past for the return",
+      "grade": "best",
+      "why": "A one-two gets you past the defender without having to beat them."
+    },
+    {
+      "id": "pass-stand-still",
+      "text": "Pass and stand still",
+      "grade": "ok",
+      "why": "You keep the ball, but your teammate has nobody to pass to next."
+    },
+    {
+      "id": "dribble-straight-defender",
+      "text": "Dribble straight into the defender",
+      "grade": "poor",
+      "why": "They're set and waiting for you. A pass is quicker than any trick."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

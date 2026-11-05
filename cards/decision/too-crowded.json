@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "too-crowded",
+  "legacy_id": "a12",
+  "rev": 1,
+  "category": "attack",
+  "title": "Too crowded",
+  "text": "You have the ball on the left. Lots of players are packed around you. Your winger on the far side is completely free.",
+  "tip": "If it's busy, look at the other side of the pitch.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 20,
+      "y": 40
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 23,
+      "y": 37.4
+    },
+    "mates": [
+      {
+        "x": 86,
+        "y": 36
+      },
+      {
+        "x": 40,
+        "y": 54
+      }
+    ],
+    "opps": [
+      {
+        "x": 14,
+        "y": 32
+      },
+      {
+        "x": 27,
+        "y": 33
+      },
+      {
+        "x": 30,
+        "y": 47
+      },
+      {
+        "x": 60,
+        "y": 30
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "switch-ball-free",
+      "text": "Switch the ball to the free winger",
+      "grade": "best",
+      "why": "When one side is crowded, the other side is open. A switch moves the whole game."
+    },
+    {
+      "id": "keep-dribbling-left",
+      "text": "Keep dribbling on the left",
+      "grade": "poor",
+      "why": "Three defenders are close. You'll run out of space fast."
+    },
+    {
+      "id": "pass-back-teammate",
+      "text": "Pass back to your teammate behind",
+      "grade": "ok",
+      "why": "Keeps the ball, and they might be able to switch it. But you could do it now."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

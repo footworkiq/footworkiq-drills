@@ -1,0 +1,97 @@
+{
+  "schema": "1.0",
+  "id": "counter-attack",
+  "legacy_id": "a9",
+  "rev": 1,
+  "category": "attack",
+  "title": "Counter-attack",
+  "text": "You've just won the ball. It's three of you against two defenders.",
+  "tip": "On the counter: be fast, be direct, keep the last pass simple.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 54
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 53,
+      "y": 51.4
+    },
+    "mates": [
+      {
+        "x": 24,
+        "y": 46
+      },
+      {
+        "x": 76,
+        "y": 46
+      }
+    ],
+    "opps": [
+      {
+        "x": 42,
+        "y": 36
+      },
+      {
+        "x": 58,
+        "y": 36
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 24,
+          "y": 46
+        },
+        "to": {
+          "x": 22,
+          "y": 28
+        },
+        "kind": "mate"
+      },
+      {
+        "from": {
+          "x": 76,
+          "y": 46
+        },
+        "to": {
+          "x": 78,
+          "y": 28
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "run-pass-whoevers",
+      "text": "Run at them, then pass to whoever's free",
+      "grade": "best",
+      "why": "Driving forward forces a defender to step up, which leaves a teammate free."
+    },
+    {
+      "id": "slow-down-wait",
+      "text": "Slow down and wait for support",
+      "grade": "poor",
+      "why": "Counters work because the other team isn't set. Waiting gives them time."
+    },
+    {
+      "id": "pass-wide-straight",
+      "text": "Pass wide straight away",
+      "grade": "ok",
+      "why": "Fine, but running at them first drags a defender with you."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

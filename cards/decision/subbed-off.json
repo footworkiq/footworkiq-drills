@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "subbed-off",
+  "legacy_id": "m9",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Subbed off",
+  "text": "The coach takes you off and you thought you were playing well.",
+  "tip": "Everyone gets subbed. How you handle it is the key.",
+  "scene": {
+    "kind": "board",
+    "score": "2–1",
+    "clock": "55'"
+  },
+  "options": [
+    {
+      "id": "cheer-team-ask",
+      "text": "Cheer your team on, ask the coach later what to work on",
+      "grade": "best",
+      "why": "Supporting your team and learning from it shows great character."
+    },
+    {
+      "id": "sit-quietly-bench",
+      "text": "Sit quietly on the bench",
+      "grade": "ok",
+      "why": "Fine, but cheering helps your team."
+    },
+    {
+      "id": "kick-water-bottle",
+      "text": "Kick a water bottle",
+      "grade": "poor",
+      "why": "It upsets the team and the coach."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

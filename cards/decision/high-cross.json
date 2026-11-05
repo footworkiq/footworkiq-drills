@@ -1,0 +1,78 @@
+{
+  "schema": "1.0",
+  "id": "high-cross",
+  "legacy_id": "d14",
+  "rev": 1,
+  "category": "defend",
+  "title": "High cross",
+  "text": "You're the keeper. A high cross is coming into a crowded box.",
+  "tip": "Keepers: be loud, be decisive.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 68,
+      "y": 13
+    },
+    "mates": [
+      {
+        "x": 44,
+        "y": 9
+      }
+    ],
+    "opps": [
+      {
+        "x": 52,
+        "y": 10
+      },
+      {
+        "x": 60,
+        "y": 9
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 90,
+          "y": 20
+        },
+        "to": {
+          "x": 69,
+          "y": 13.5
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "shout-keeper-catch",
+      "text": "Shout \"Keeper!\" and catch it at its highest point",
+      "grade": "best",
+      "why": "Calling tells your team you're coming. Catching it high is above everyone else."
+    },
+    {
+      "id": "punch-clear",
+      "text": "Punch it clear",
+      "grade": "ok",
+      "why": "A good choice if it's too busy to catch, but the ball may come straight back."
+    },
+    {
+      "id": "stay-line",
+      "text": "Stay on your line",
+      "grade": "poor",
+      "why": "The attackers get a free header."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

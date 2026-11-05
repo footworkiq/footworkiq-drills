@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "open-grass-ahead",
+  "legacy_id": "a4",
+  "rev": 1,
+  "category": "attack",
+  "title": "Open grass ahead",
+  "text": "You've got the ball in midfield. Nobody is in front of you.",
+  "tip": "Big touches when it's open, small touches when it's busy.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 32,
+      "y": 56
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 35,
+      "y": 53.4
+    },
+    "mates": [
+      {
+        "x": 78,
+        "y": 42
+      }
+    ],
+    "opps": [
+      {
+        "x": 30,
+        "y": 22
+      },
+      {
+        "x": 62,
+        "y": 24
+      },
+      {
+        "x": 76,
+        "y": 38
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "dribble-forward-space",
+      "text": "Dribble forward into the space",
+      "grade": "best",
+      "why": "Running with the ball into space drags defenders out of position."
+    },
+    {
+      "id": "pass-teammate-right",
+      "text": "Pass to your teammate on the right",
+      "grade": "poor",
+      "why": "They have a defender right on them, so the pass will probably be cut out."
+    },
+    {
+      "id": "pass-back-defender",
+      "text": "Pass back to your defender",
+      "grade": "ok",
+      "why": "Safe, but you waste the chance to attack while the space is there."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

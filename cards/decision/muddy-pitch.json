@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "muddy-pitch",
+  "legacy_id": "m15",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Muddy pitch",
+  "text": "It's pouring with rain and the pitch is slippery.",
+  "tip": "Adapt to the conditions.",
+  "scene": {
+    "kind": "board",
+    "score": "0–0",
+    "clock": "20'"
+  },
+  "options": [
+    {
+      "id": "keep-passes-touches",
+      "text": "Keep passes and touches simple",
+      "grade": "best",
+      "why": "Slippery conditions make tricks hard. Simple football works best."
+    },
+    {
+      "id": "try-lots-fancy",
+      "text": "Try lots of fancy skills",
+      "grade": "poor",
+      "why": "The ball will skid away from you."
+    },
+    {
+      "id": "complain-about-weather",
+      "text": "Complain about the weather",
+      "grade": "poor",
+      "why": "It's the same for both teams."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}
