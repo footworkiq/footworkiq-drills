@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "half-time-losing-badly",
+  "legacy_id": "m6",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Half-time, losing badly",
+  "text": "It's half-time and your team is losing. Some teammates are arguing.",
+  "tip": "One thing to fix, together.",
+  "scene": {
+    "kind": "board",
+    "score": "0–3",
+    "clock": "HT"
+  },
+  "options": [
+    {
+      "id": "calm-things-down",
+      "text": "Calm things down and talk about one thing to fix",
+      "grade": "best",
+      "why": "A team that sticks together can come back. Arguing just makes it worse."
+    },
+    {
+      "id": "join-argument",
+      "text": "Join the argument",
+      "grade": "poor",
+      "why": "More shouting splits the team further."
+    },
+    {
+      "id": "sit-away-everyone",
+      "text": "Sit away from everyone",
+      "grade": "ok",
+      "why": "Avoids trouble, but your team needs you."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

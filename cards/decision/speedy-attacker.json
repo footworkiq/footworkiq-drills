@@ -1,0 +1,66 @@
+{
+  "schema": "1.0",
+  "id": "speedy-attacker",
+  "legacy_id": "d21",
+  "rev": 1,
+  "category": "defend",
+  "title": "Speedy attacker",
+  "text": "The attacker coming at you is much faster than you.",
+  "tip": "Against speed, use distance and angles.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 34
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 51.5,
+      "y": 44.5
+    },
+    "mates": [
+      {
+        "x": 30,
+        "y": 26
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 48
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "give-yourself-few",
+      "text": "Give yourself a few extra steps of space",
+      "grade": "best",
+      "why": "Then they can't knock it past and outrun you."
+    },
+    {
+      "id": "stand-really-close",
+      "text": "Stand really close to them",
+      "grade": "poor",
+      "why": "They'll knock it past and sprint away."
+    },
+    {
+      "id": "dive-early",
+      "text": "Dive in early",
+      "grade": "ok",
+      "why": "You might win it, but if you miss they're gone."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "teammate-in-a-better-spot",
+  "legacy_id": "a25",
+  "rev": 1,
+  "category": "attack",
+  "title": "Teammate in a better spot",
+  "text": "You're in a good area, but two defenders are blocking your shot. Your teammate is free in the middle.",
+  "tip": "The best players know when to shoot and when to pass.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 70,
+      "y": 24
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 73,
+      "y": 21.4
+    },
+    "mates": [
+      {
+        "x": 48,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 63,
+        "y": 18
+      },
+      {
+        "x": 67,
+        "y": 15
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pass-teammate-middle",
+      "text": "Pass to your teammate in the middle",
+      "grade": "best",
+      "why": "They have a clear view of goal. Setting up a goal is as good as scoring one."
+    },
+    {
+      "id": "shoot-through-defenders",
+      "text": "Shoot through the defenders",
+      "grade": "poor",
+      "why": "It will almost certainly be blocked."
+    },
+    {
+      "id": "dribble-wide-find",
+      "text": "Dribble wide to find space",
+      "grade": "ok",
+      "why": "You might find an angle, but the chance in the middle could disappear."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

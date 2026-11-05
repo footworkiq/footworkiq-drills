@@ -1,0 +1,78 @@
+{
+  "schema": "1.0",
+  "id": "keeper-one-on-one",
+  "legacy_id": "d6",
+  "rev": 1,
+  "category": "defend",
+  "title": "Keeper one-on-one",
+  "text": "You're the keeper. An attacker is through on goal with nobody else near.",
+  "tip": "Big, brave, patient: let the attacker blink first.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 5
+    },
+    "ball": {
+      "x": 50,
+      "y": 21
+    },
+    "mates": [
+      {
+        "x": 56,
+        "y": 36
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 24
+      },
+      {
+        "x": 70,
+        "y": 40
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 56,
+          "y": 36
+        },
+        "to": {
+          "x": 53,
+          "y": 28
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "come-off-line",
+      "text": "Come off your line, make yourself big, stay on your feet",
+      "grade": "best",
+      "why": "Coming out shrinks the goal they can see. Staying up makes them choose first."
+    },
+    {
+      "id": "stay-goal-line",
+      "text": "Stay on your goal line",
+      "grade": "ok",
+      "why": "Gives them the whole goal to aim at."
+    },
+    {
+      "id": "dive-feet-early",
+      "text": "Dive at their feet early",
+      "grade": "poor",
+      "why": "Go down too early and they just go round you or chip you."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

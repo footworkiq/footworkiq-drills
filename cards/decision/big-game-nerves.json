@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "big-game-nerves",
+  "legacy_id": "m11",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Big-game nerves",
+  "text": "It's a big match and you feel really nervous.",
+  "tip": "Nerves mean you care. Use them.",
+  "scene": {
+    "kind": "board",
+    "score": "0–0",
+    "clock": "0'"
+  },
+  "options": [
+    {
+      "id": "breathe-slowly-think",
+      "text": "Breathe slowly and think about your first easy pass",
+      "grade": "best",
+      "why": "Focusing on one small thing calms your nerves and gets you into the game."
+    },
+    {
+      "id": "think-about-everything",
+      "text": "Think about everything that could go wrong",
+      "grade": "poor",
+      "why": "That makes nerves bigger."
+    },
+    {
+      "id": "hide-dont-get",
+      "text": "Hide so you don't get the ball",
+      "grade": "poor",
+      "why": "Getting involved early is the best way to settle."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "missed-chance",
+  "legacy_id": "m2",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Missed chance",
+  "text": "Your teammate misses an easy chance in front of goal.",
+  "tip": "Good teammates make each other braver.",
+  "scene": {
+    "kind": "board",
+    "score": "0–0",
+    "clock": "52'"
+  },
+  "options": [
+    {
+      "id": "encourage-next-one",
+      "text": "Encourage them: \"Next one!\"",
+      "grade": "best",
+      "why": "A player who feels backed is more likely to score the next chance."
+    },
+    {
+      "id": "shout",
+      "text": "Shout at them",
+      "grade": "poor",
+      "why": "It knocks their confidence and doesn't help the team."
+    },
+    {
+      "id": "say-nothing",
+      "text": "Say nothing",
+      "grade": "ok",
+      "why": "Better than shouting, but a quick word of support helps a lot."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

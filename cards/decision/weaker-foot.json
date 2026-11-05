@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "weaker-foot",
+  "legacy_id": "a20",
+  "rev": 1,
+  "category": "attack",
+  "title": "Weaker foot",
+  "text": "You have a chance to shoot, but the ball is on your weaker foot. A defender is closing in from your strong side.",
+  "tip": "Practise with both feet so you never have to choose.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 38,
+      "y": 18
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 41,
+      "y": 15.4
+    },
+    "mates": [
+      {
+        "x": 64,
+        "y": 15
+      }
+    ],
+    "opps": [
+      {
+        "x": 46,
+        "y": 20
+      },
+      {
+        "x": 62,
+        "y": 12
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "shoot-weaker-foot",
+      "text": "Shoot with your weaker foot",
+      "grade": "best",
+      "why": "A quick shot with your weaker foot beats a perfect one that gets blocked."
+    },
+    {
+      "id": "take-touch-onto",
+      "text": "Take a touch onto your stronger foot",
+      "grade": "poor",
+      "why": "That touch takes you straight into the defender."
+    },
+    {
+      "id": "pass-teammate",
+      "text": "Pass to your teammate",
+      "grade": "ok",
+      "why": "They have a defender nearby too. You have the clearer chance."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

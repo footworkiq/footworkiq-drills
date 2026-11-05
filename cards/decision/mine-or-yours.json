@@ -1,0 +1,73 @@
+{
+  "schema": "1.0",
+  "id": "mine-or-yours",
+  "legacy_id": "d20",
+  "rev": 1,
+  "category": "defend",
+  "title": "Mine or yours?",
+  "text": "A ball is bouncing between you and your keeper. A striker is chasing it.",
+  "tip": "Talk. \"Keeper's!\" or \"Away!\" stops mix-ups.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 26
+    },
+    "gk": {
+      "x": 50,
+      "y": 6
+    },
+    "ball": {
+      "x": 50,
+      "y": 16
+    },
+    "mates": [],
+    "opps": [
+      {
+        "x": 58,
+        "y": 32
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 58,
+          "y": 32
+        },
+        "to": {
+          "x": 54,
+          "y": 20
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "call-loudly-keeper",
+      "text": "Call loudly so you and the keeper don't both go",
+      "grade": "best",
+      "why": "A loud, early call means only one of you goes for it."
+    },
+    {
+      "id": "run-without-saying",
+      "text": "Run for it without saying anything",
+      "grade": "ok",
+      "why": "You might get there, but you could crash into your keeper."
+    },
+    {
+      "id": "leave-hope-keeper",
+      "text": "Leave it and hope the keeper gets it",
+      "grade": "poor",
+      "why": "The striker could nip in."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

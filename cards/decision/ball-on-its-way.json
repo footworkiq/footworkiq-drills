@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "ball-on-its-way",
+  "legacy_id": "a8",
+  "rev": 1,
+  "category": "attack",
+  "title": "Ball on its way",
+  "text": "A pass is coming to you. The nearest defender is a long way off.",
+  "tip": "Decide what your first touch will do before the ball reaches you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 36,
+      "y": 46
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 27,
+      "y": 54.5
+    },
+    "mates": [
+      {
+        "x": 18,
+        "y": 62
+      }
+    ],
+    "opps": [
+      {
+        "x": 72,
+        "y": 40
+      },
+      {
+        "x": 58,
+        "y": 22
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 18,
+          "y": 62
+        },
+        "to": {
+          "x": 33,
+          "y": 48
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "first-touch-forward",
+      "text": "First touch forward into the space",
+      "grade": "best",
+      "why": "A forward first touch gets you moving and saves time."
+    },
+    {
+      "id": "stop-ball-dead",
+      "text": "Stop the ball dead under your foot",
+      "grade": "ok",
+      "why": "Safe, but you lose time and the defenders get organised."
+    },
+    {
+      "id": "kick-first-time",
+      "text": "Kick it first time without looking",
+      "grade": "poor",
+      "why": "With this much time, a rushed kick usually gives the ball away."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "corner-kick",
+  "legacy_id": "a23",
+  "rev": 1,
+  "category": "attack",
+  "title": "Corner kick",
+  "text": "You're taking a corner. Your teammates are waiting around the penalty spot and the keeper is on the line.",
+  "tip": "Pick a target area before you take the corner.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 97,
+      "y": 4
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "ball": {
+      "x": 99.4,
+      "y": 0.9
+    },
+    "mates": [
+      {
+        "x": 44,
+        "y": 13
+      },
+      {
+        "x": 57,
+        "y": 15
+      },
+      {
+        "x": 50,
+        "y": 27
+      }
+    ],
+    "opps": [
+      {
+        "x": 46,
+        "y": 9
+      },
+      {
+        "x": 59,
+        "y": 11
+      },
+      {
+        "x": 52,
+        "y": 17
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "whip-between-six",
+      "text": "Whip it in between the six-yard box and the spot",
+      "grade": "best",
+      "why": "That's where your teammates are, and it's too far out for the keeper to come and catch easily."
+    },
+    {
+      "id": "float-high-six",
+      "text": "Float it high into the six-yard box",
+      "grade": "poor",
+      "why": "A slow, high ball close to goal is easy for the keeper to catch."
+    },
+    {
+      "id": "play-short-corner",
+      "text": "Play a short corner",
+      "grade": "ok",
+      "why": "Can work, but only if a teammate comes over for it. Right now nobody is there."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "1.0",
+  "id": "crossing-time",
+  "legacy_id": "a22",
+  "rev": 1,
+  "category": "attack",
+  "title": "Crossing time",
+  "text": "You're wide on the right near the box. Your striker is making a run to the near post.",
+  "tip": "Look up before you cross so you know where your runners are.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 88,
+      "y": 22
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "ball": {
+      "x": 91,
+      "y": 19.4
+    },
+    "mates": [
+      {
+        "x": 42,
+        "y": 14
+      },
+      {
+        "x": 58,
+        "y": 28
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 10
+      },
+      {
+        "x": 62,
+        "y": 20
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 42,
+          "y": 14
+        },
+        "to": {
+          "x": 46,
+          "y": 6
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "whip-low-across",
+      "text": "Whip it low across the six-yard box",
+      "grade": "best",
+      "why": "Low, fast crosses are hard for keepers to catch and easy for strikers to tap in."
+    },
+    {
+      "id": "float-high-cross",
+      "text": "Float a high cross to the far post",
+      "grade": "ok",
+      "why": "Can work, but gives the keeper time to come and claim it."
+    },
+    {
+      "id": "shoot-out-wide",
+      "text": "Shoot from out wide",
+      "grade": "poor",
+      "why": "The angle is too tight. Your striker is in a much better spot."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

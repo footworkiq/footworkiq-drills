@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "cover-your-teammate",
+  "legacy_id": "d11",
+  "rev": 1,
+  "category": "defend",
+  "title": "Cover your teammate",
+  "text": "Your teammate is closing down the player with the ball. You're nearby.",
+  "tip": "Pressure and cover: one goes, one supports.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 44,
+      "y": 30
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 59,
+      "y": 41
+    },
+    "mates": [
+      {
+        "x": 56,
+        "y": 38
+      }
+    ],
+    "opps": [
+      {
+        "x": 58,
+        "y": 44
+      },
+      {
+        "x": 34,
+        "y": 40
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "cover-behind-teammate",
+      "text": "Cover behind your teammate at an angle",
+      "grade": "best",
+      "why": "If the attacker beats your teammate, you're there next."
+    },
+    {
+      "id": "run-ball-too",
+      "text": "Run at the ball too",
+      "grade": "poor",
+      "why": "Two of you on one player leaves another attacker free."
+    },
+    {
+      "id": "stay-where-are",
+      "text": "Stay where you are",
+      "grade": "ok",
+      "why": "Not terrible, but you're too far away to help if your teammate gets beaten."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "winning-one-minute-left",
+  "legacy_id": "a19",
+  "rev": 1,
+  "category": "attack",
+  "title": "Winning, one minute left",
+  "text": "Your team is 2–1 up with a minute to go. You have the ball near their corner flag.",
+  "tip": "Know the score and the time. They change the best decision.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 93,
+      "y": 5
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 96,
+      "y": 3
+    },
+    "mates": [
+      {
+        "x": 60,
+        "y": 34
+      }
+    ],
+    "opps": [
+      {
+        "x": 88,
+        "y": 9
+      },
+      {
+        "x": 60,
+        "y": 12
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "shield-ball-by",
+      "text": "Shield the ball by the corner flag",
+      "grade": "best",
+      "why": "Every second the ball stays there is a second they can't attack you."
+    },
+    {
+      "id": "cross-box",
+      "text": "Cross it into the box",
+      "grade": "poor",
+      "why": "Nobody is there, so you'd hand them the ball and a chance to attack."
+    },
+    {
+      "id": "pass-back-teammate",
+      "text": "Pass back to your teammate",
+      "grade": "ok",
+      "why": "Keeps the ball, but brings play back towards your own goal."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "1.0",
+  "id": "shot-coming",
+  "legacy_id": "d5",
+  "rev": 1,
+  "category": "defend",
+  "title": "Shot coming",
+  "text": "An attacker is about to shoot from the edge of your box. You're between them and goal.",
+  "tip": "Brave defending: stay on your feet and get in the way.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 16
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 50,
+      "y": 21
+    },
+    "mates": [
+      {
+        "x": 34,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 24
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "get-body-way",
+      "text": "Get your body in the way, side-on",
+      "grade": "best",
+      "why": "Blocking the shot is brave and stops danger. Side-on keeps your arms tucked in."
+    },
+    {
+      "id": "turn-back-jump",
+      "text": "Turn your back and jump away",
+      "grade": "poor",
+      "why": "The ball goes straight past you towards goal."
+    },
+    {
+      "id": "slide-last-second",
+      "text": "Slide in at the last second",
+      "grade": "ok",
+      "why": "It might block it, but you risk a foul or a penalty."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

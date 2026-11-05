@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "corner-against-you",
+  "legacy_id": "d9",
+  "rev": 1,
+  "category": "defend",
+  "title": "Corner against you",
+  "text": "The other team has a corner. You're marking their tallest player.",
+  "tip": "At set pieces, know your job and stick to it.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 45,
+      "y": 9
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "ball": {
+      "x": 99,
+      "y": 1
+    },
+    "mates": [
+      {
+        "x": 56,
+        "y": 10
+      }
+    ],
+    "opps": [
+      {
+        "x": 48,
+        "y": 11
+      },
+      {
+        "x": 60,
+        "y": 14
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "stay-close-goal",
+      "text": "Stay close, goal-side, watching ball and player",
+      "grade": "best",
+      "why": "If you stay touch-tight, they can't get a free jump at the ball."
+    },
+    {
+      "id": "stand-post",
+      "text": "Stand on the post",
+      "grade": "ok",
+      "why": "Useful, but your player is now completely free."
+    },
+    {
+      "id": "watch-corner-taker",
+      "text": "Watch the corner taker",
+      "grade": "poor",
+      "why": "Your player can run off you and score a header."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

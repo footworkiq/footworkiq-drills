@@ -1,0 +1,61 @@
+{
+  "schema": "1.0",
+  "id": "let-it-go-out",
+  "legacy_id": "d23",
+  "rev": 1,
+  "category": "defend",
+  "title": "Let it go out",
+  "text": "The ball is rolling out over your goal line. It last touched an attacker, and another attacker is chasing it.",
+  "tip": "Know when to let the ball go out.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 75,
+      "y": 4
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "ball": {
+      "x": 78,
+      "y": 1.5
+    },
+    "mates": [],
+    "opps": [
+      {
+        "x": 72,
+        "y": 9
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "shield-let-roll",
+      "text": "Shield it and let it roll out for a goal kick",
+      "grade": "best",
+      "why": "Your body keeps the attacker away until it's out, and you get the ball back."
+    },
+    {
+      "id": "try-dribble-out",
+      "text": "Try to dribble out",
+      "grade": "poor",
+      "why": "Risky right next to your goal."
+    },
+    {
+      "id": "clear-line",
+      "text": "Clear it up the line",
+      "grade": "ok",
+      "why": "Fine, but you'd give up a free goal kick."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

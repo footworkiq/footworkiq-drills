@@ -1,0 +1,65 @@
+{
+  "schema": "1.0",
+  "id": "cross-incoming",
+  "legacy_id": "d4",
+  "rev": 1,
+  "category": "defend",
+  "title": "Cross incoming",
+  "text": "The other team is about to cross. Their striker is next to you in the box.",
+  "tip": "In your own box, the striker is your job.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 46,
+      "y": 11
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "ball": {
+      "x": 86,
+      "y": 18.5
+    },
+    "mates": [],
+    "opps": [
+      {
+        "x": 55,
+        "y": 13
+      },
+      {
+        "x": 88,
+        "y": 16
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "get-between-striker",
+      "text": "Get between the striker and goal, watch both",
+      "grade": "best",
+      "why": "From there you can attack the ball and the striker can't get in front of you."
+    },
+    {
+      "id": "watch-only-ball",
+      "text": "Watch only the ball",
+      "grade": "ok",
+      "why": "You might win it, but the striker can sneak in front of you."
+    },
+    {
+      "id": "run-out-block",
+      "text": "Run out to block the crosser",
+      "grade": "poor",
+      "why": "That leaves the striker free right in front of goal."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

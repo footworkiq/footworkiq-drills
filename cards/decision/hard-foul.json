@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "hard-foul",
+  "legacy_id": "m7",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Hard foul",
+  "text": "An opponent fouls your teammate badly.",
+  "tip": "Keep your head when others lose theirs.",
+  "scene": {
+    "kind": "board",
+    "score": "1–1",
+    "clock": "60'"
+  },
+  "options": [
+    {
+      "id": "stay-calm-let",
+      "text": "Stay calm and let the ref deal with it",
+      "grade": "best",
+      "why": "The ref handles fouls. Staying calm keeps your team at full strength."
+    },
+    {
+      "id": "get-revenge-foul",
+      "text": "Get revenge with a foul of your own",
+      "grade": "poor",
+      "why": "You could get sent off, and the team suffers."
+    },
+    {
+      "id": "complain-about-all",
+      "text": "Complain about it all game",
+      "grade": "poor",
+      "why": "It takes your mind off playing well."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

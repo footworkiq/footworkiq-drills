@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "change-of-pace",
+  "legacy_id": "a24",
+  "rev": 1,
+  "category": "attack",
+  "title": "Change of pace",
+  "text": "You're dribbling and a defender is standing square in front of you. Your winger is marked.",
+  "tip": "Slow, slow, FAST. A change of speed beats defenders.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 42
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 53,
+      "y": 39.4
+    },
+    "mates": [
+      {
+        "x": 76,
+        "y": 36
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 33
+      },
+      {
+        "x": 78,
+        "y": 30
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "fake-one-way",
+      "text": "Fake one way, then burst the other",
+      "grade": "best",
+      "why": "A fake makes the defender shift their weight. A sudden change of speed takes you past."
+    },
+    {
+      "id": "dribble-slowly-straight",
+      "text": "Dribble slowly straight at them",
+      "grade": "poor",
+      "why": "At one speed you're easy to tackle."
+    },
+    {
+      "id": "pass-marked-winger",
+      "text": "Pass to the marked winger",
+      "grade": "ok",
+      "why": "Not a disaster, but the defender out wide is right on them."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

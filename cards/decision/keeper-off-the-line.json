@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "keeper-off-the-line",
+  "legacy_id": "a14",
+  "rev": 1,
+  "category": "attack",
+  "title": "Keeper off the line",
+  "text": "You're on the ball in midfield and notice the keeper is standing way out of goal.",
+  "tip": "Always know where the keeper is standing.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 38
+    },
+    "gk": {
+      "x": 50,
+      "y": 17
+    },
+    "ball": {
+      "x": 53,
+      "y": 35.4
+    },
+    "mates": [
+      {
+        "x": 70,
+        "y": 30
+      }
+    ],
+    "opps": [
+      {
+        "x": 38,
+        "y": 46
+      },
+      {
+        "x": 64,
+        "y": 48
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "chip-over-keeper",
+      "text": "Chip it over the keeper",
+      "grade": "best",
+      "why": "With the keeper so far out, a lofted shot over their head is the quickest way to score."
+    },
+    {
+      "id": "blast-low-goal",
+      "text": "Blast it low at goal",
+      "grade": "poor",
+      "why": "The keeper is right in the path of a low shot. Go over, not through."
+    },
+    {
+      "id": "pass-teammate",
+      "text": "Pass to your teammate",
+      "grade": "ok",
+      "why": "Fine, but you'd miss a rare chance to catch the keeper out."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

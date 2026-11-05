@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "pressing-their-defender",
+  "legacy_id": "d7",
+  "rev": 1,
+  "category": "defend",
+  "title": "Pressing their defender",
+  "text": "Their defender has the ball near their own goal. You're the closest player.",
+  "tip": "Press with your body angled to block the pass you don't want them to make.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 26
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 41,
+      "y": 15
+    },
+    "mates": [
+      {
+        "x": 70,
+        "y": 32
+      }
+    ],
+    "opps": [
+      {
+        "x": 38,
+        "y": 13
+      },
+      {
+        "x": 72,
+        "y": 13
+      },
+      {
+        "x": 52,
+        "y": 34
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "press-curved-run",
+      "text": "Press them with a curved run that blocks their easy pass",
+      "grade": "best",
+      "why": "A curved run cuts off one option, pushing them towards your teammates or a long hopeful kick."
+    },
+    {
+      "id": "sprint-straight",
+      "text": "Sprint straight at them",
+      "grade": "ok",
+      "why": "Puts them under pressure, but they can simply pass round you."
+    },
+    {
+      "id": "stand-still-wait",
+      "text": "Stand still and wait",
+      "grade": "poor",
+      "why": "It gives them time to pick the perfect pass."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

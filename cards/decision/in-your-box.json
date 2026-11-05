@@ -1,0 +1,66 @@
+{
+  "schema": "1.0",
+  "id": "in-your-box",
+  "legacy_id": "d18",
+  "rev": 1,
+  "category": "defend",
+  "title": "In your box",
+  "text": "An attacker is dribbling across your box, looking for a shot.",
+  "tip": "In your box: stay up, stay patient.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 15
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "ball": {
+      "x": 55,
+      "y": 17
+    },
+    "mates": [
+      {
+        "x": 36,
+        "y": 24
+      }
+    ],
+    "opps": [
+      {
+        "x": 58,
+        "y": 18
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "stay-feet-stay",
+      "text": "Stay on your feet and stay goal-side",
+      "grade": "best",
+      "why": "Any foul in the box is a penalty. Stay between them and goal."
+    },
+    {
+      "id": "slide-side",
+      "text": "Slide in from the side",
+      "grade": "poor",
+      "why": "Miss the ball and it's a penalty."
+    },
+    {
+      "id": "back-off-six",
+      "text": "Back off to the six-yard box",
+      "grade": "ok",
+      "why": "Gives them room to shoot."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

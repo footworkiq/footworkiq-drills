@@ -1,0 +1,74 @@
+{
+  "schema": "1.0",
+  "id": "pressed-in-your-box",
+  "legacy_id": "d13",
+  "rev": 1,
+  "category": "defend",
+  "title": "Pressed in your box",
+  "text": "You have the ball near your own box and two attackers are closing in fast.",
+  "tip": "Under pressure near your goal: safe first.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 40,
+      "y": 20
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 43,
+      "y": 17.4
+    },
+    "mates": [
+      {
+        "x": 80,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 44,
+        "y": 27
+      },
+      {
+        "x": 30,
+        "y": 24
+      },
+      {
+        "x": 60,
+        "y": 30
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pass-back-keeper",
+      "text": "Pass back to your keeper",
+      "grade": "best",
+      "why": "Your keeper is free, and it relieves the pressure safely."
+    },
+    {
+      "id": "dribble-across-own",
+      "text": "Dribble across your own box",
+      "grade": "poor",
+      "why": "Losing it here would give them a free shot."
+    },
+    {
+      "id": "kick-out-throw",
+      "text": "Kick it out for a throw-in",
+      "grade": "ok",
+      "why": "Safe, but you give the ball away close to your goal."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

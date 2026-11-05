@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "bigger-opponents",
+  "legacy_id": "m16",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Bigger opponents",
+  "text": "The other team are all much bigger than your team.",
+  "tip": "Play to your strengths.",
+  "scene": {
+    "kind": "board",
+    "score": "0–0",
+    "clock": "5'"
+  },
+  "options": [
+    {
+      "id": "use-quick-passing",
+      "text": "Use quick passing and movement",
+      "grade": "best",
+      "why": "Speed and smart passing beat size."
+    },
+    {
+      "id": "avoid-all-challenges",
+      "text": "Avoid all challenges",
+      "grade": "ok",
+      "why": "Sensible sometimes, but you still need to compete."
+    },
+    {
+      "id": "give-theyre-too",
+      "text": "Give up, they're too big",
+      "grade": "poor",
+      "why": "Size isn't everything in football."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

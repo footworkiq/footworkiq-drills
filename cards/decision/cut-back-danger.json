@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "cut-back-danger",
+  "legacy_id": "d24",
+  "rev": 1,
+  "category": "defend",
+  "title": "Cut-back danger",
+  "text": "An attacker has reached your byline. Another attacker is running into the middle. You're sprinting back.",
+  "tip": "When the ball goes wide, protect the middle.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 30
+    },
+    "gk": {
+      "x": 52,
+      "y": 3
+    },
+    "ball": {
+      "x": 84,
+      "y": 8
+    },
+    "mates": [
+      {
+        "x": 80,
+        "y": 12
+      }
+    ],
+    "opps": [
+      {
+        "x": 86,
+        "y": 6
+      },
+      {
+        "x": 56,
+        "y": 26
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 56,
+          "y": 26
+        },
+        "to": {
+          "x": 52,
+          "y": 16
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "get-space-front",
+      "text": "Get to the space in front of goal to block the pull-back",
+      "grade": "best",
+      "why": "Pull-backs are the danger. You need to be between that runner and the ball."
+    },
+    {
+      "id": "run-over-help",
+      "text": "Run over to help on the ball",
+      "grade": "ok",
+      "why": "Your teammate is already there. Now the runner is free."
+    },
+    {
+      "id": "jog-back-slowly",
+      "text": "Jog back slowly",
+      "grade": "poor",
+      "why": "The runner will beat you to it."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

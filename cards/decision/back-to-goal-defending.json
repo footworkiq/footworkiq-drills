@@ -1,0 +1,70 @@
+{
+  "schema": "1.0",
+  "id": "back-to-goal-defending",
+  "legacy_id": "d16",
+  "rev": 1,
+  "category": "defend",
+  "title": "Back to goal",
+  "text": "An attacker is receiving the ball with their back to your goal. You're right behind them.",
+  "tip": "Close enough to touch, but don't foul.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 24
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 50,
+      "y": 32.5
+    },
+    "mates": [
+      {
+        "x": 40,
+        "y": 48
+      }
+    ],
+    "opps": [
+      {
+        "x": 50,
+        "y": 29
+      },
+      {
+        "x": 30,
+        "y": 44
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "stay-tight-cant",
+      "text": "Stay tight so they can't turn",
+      "grade": "best",
+      "why": "An attacker facing away from goal isn't dangerous yet. Don't let them turn."
+    },
+    {
+      "id": "step-off-give",
+      "text": "Step off and give them space",
+      "grade": "ok",
+      "why": "Now they can turn and run at you."
+    },
+    {
+      "id": "tackle-through-back",
+      "text": "Tackle through the back of them",
+      "grade": "poor",
+      "why": "That's a foul and could earn a card."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

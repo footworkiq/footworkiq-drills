@@ -1,0 +1,65 @@
+{
+  "schema": "1.0",
+  "id": "scramble-in-the-box",
+  "legacy_id": "d10",
+  "rev": 1,
+  "category": "defend",
+  "title": "Scramble in the box",
+  "text": "The ball is bouncing around in your box with attackers close by.",
+  "tip": "In your own box: if in doubt, kick it out.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 48,
+      "y": 10
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "ball": {
+      "x": 49,
+      "y": 13
+    },
+    "mates": [],
+    "opps": [
+      {
+        "x": 55,
+        "y": 13
+      },
+      {
+        "x": 40,
+        "y": 14
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "clear-high-wide",
+      "text": "Clear it high and wide",
+      "grade": "best",
+      "why": "High and wide gets it away from danger and out of the middle."
+    },
+    {
+      "id": "try-dribble-out",
+      "text": "Try to dribble out",
+      "grade": "poor",
+      "why": "Lose it here and it's a goal. Keep it simple."
+    },
+    {
+      "id": "clear-straight-middle",
+      "text": "Clear it straight up the middle",
+      "grade": "ok",
+      "why": "Gets it away, but it might land at an opponent's feet in front of goal."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

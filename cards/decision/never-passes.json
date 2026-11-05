@@ -1,0 +1,42 @@
+{
+  "schema": "1.0",
+  "id": "never-passes",
+  "legacy_id": "m14",
+  "rev": 1,
+  "category": "mindset",
+  "title": "Never passes",
+  "text": "One teammate keeps the ball every time and never passes to you.",
+  "tip": "Make yourself easy to find.",
+  "scene": {
+    "kind": "board",
+    "score": "1–1",
+    "clock": "60'"
+  },
+  "options": [
+    {
+      "id": "keep-moving-space",
+      "text": "Keep moving into space and call for it",
+      "grade": "best",
+      "why": "It makes the pass easier to see. Keep offering."
+    },
+    {
+      "id": "stop-running",
+      "text": "Stop running",
+      "grade": "poor",
+      "why": "Then they'll never pass to you."
+    },
+    {
+      "id": "talk-calmly-after",
+      "text": "Talk to them calmly after the game",
+      "grade": "ok",
+      "why": "A good idea, but keep helping during the match too."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

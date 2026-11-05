@@ -1,0 +1,77 @@
+{
+  "schema": "1.0",
+  "id": "header-chance",
+  "legacy_id": "a31",
+  "rev": 1,
+  "category": "attack",
+  "title": "Header chance",
+  "text": "A cross is coming towards your head near the goal.",
+  "tip": "Eyes open, use your forehead, aim down.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 46,
+      "y": 10
+    },
+    "gk": {
+      "x": 53,
+      "y": 3
+    },
+    "ball": {
+      "x": 62,
+      "y": 8
+    },
+    "mates": [],
+    "opps": [
+      {
+        "x": 44,
+        "y": 14
+      },
+      {
+        "x": 58,
+        "y": 10
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 88,
+          "y": 14
+        },
+        "to": {
+          "x": 64,
+          "y": 8.5
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "head-down-towards",
+      "text": "Head it down towards the corner",
+      "grade": "best",
+      "why": "Downward headers bounce awkwardly and are hard for keepers."
+    },
+    {
+      "id": "head-straight-goal",
+      "text": "Head it straight at goal",
+      "grade": "ok",
+      "why": "On target, but probably right at the keeper."
+    },
+    {
+      "id": "let-hit",
+      "text": "Let it hit you",
+      "grade": "poor",
+      "why": "Attack the ball. Don't let it attack you."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}

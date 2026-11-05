@@ -1,0 +1,82 @@
+{
+  "schema": "1.0",
+  "id": "overlap",
+  "legacy_id": "a16",
+  "rev": 1,
+  "category": "attack",
+  "title": "Overlap",
+  "text": "You've got the ball on the wing, a defender is in front of you, and your teammate is sprinting round the outside.",
+  "tip": "A teammate making a run deserves a pass, or at least a look.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 80,
+      "y": 40
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 83,
+      "y": 37.4
+    },
+    "mates": [
+      {
+        "x": 70,
+        "y": 50
+      }
+    ],
+    "opps": [
+      {
+        "x": 80,
+        "y": 32
+      },
+      {
+        "x": 60,
+        "y": 28
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 70,
+          "y": 50
+        },
+        "to": {
+          "x": 92,
+          "y": 28
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "pass-teammates-path",
+      "text": "Pass into your teammate's path",
+      "grade": "best",
+      "why": "The defender can't mark both of you. Your teammate gets in behind."
+    },
+    {
+      "id": "try-beat-defender",
+      "text": "Try to beat the defender yourself",
+      "grade": "ok",
+      "why": "Possible, but you're ignoring a teammate who's already free."
+    },
+    {
+      "id": "hold-ball-until",
+      "text": "Hold the ball until the defender tackles",
+      "grade": "poor",
+      "why": "Waiting gives the defender time and wastes your teammate's run."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}
