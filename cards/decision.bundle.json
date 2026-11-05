@@ -1,0 +1,4834 @@
+{
+  "schema": "1.0",
+  "deck": "decision",
+  "cards": [
+    {
+      "schema": "1.0",
+      "id": "at-the-byline",
+      "legacy_id": "a7",
+      "rev": 1,
+      "category": "attack",
+      "title": "At the byline",
+      "text": "You've reached the goal line at a tight angle. A teammate is free in the middle.",
+      "tip": "From the byline, a pull-back to the edge of the six-yard box is one of the most dangerous passes in football.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 86,
+          "y": 9
+        },
+        "gk": {
+          "x": 60,
+          "y": 3
+        },
+        "ball": {
+          "x": 89,
+          "y": 6.4
+        },
+        "mates": [
+          {
+            "x": 50,
+            "y": 17
+          }
+        ],
+        "opps": [
+          {
+            "x": 72,
+            "y": 24
+          },
+          {
+            "x": 34,
+            "y": 8
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pull-back-teammate",
+          "text": "Pull it back to your teammate",
+          "grade": "best",
+          "why": "Your teammate is facing goal with nobody on them. That's a much easier chance."
+        },
+        {
+          "id": "shoot-tight-angle",
+          "text": "Shoot from the tight angle",
+          "grade": "poor",
+          "why": "The keeper is covering the near post, so there's almost nothing to aim at."
+        },
+        {
+          "id": "cross-high-far",
+          "text": "Cross it high to the far post",
+          "grade": "ok",
+          "why": "Nobody is there yet, so the ball may just go out."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "back-pass",
+      "legacy_id": "d22",
+      "rev": 1,
+      "category": "defend",
+      "title": "Back pass",
+      "text": "You're the keeper. A teammate passes back to you with their foot and a striker is chasing it.",
+      "tip": "Keepers need good feet too.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 45,
+          "y": 14
+        },
+        "mates": [
+          {
+            "x": 40,
+            "y": 22
+          },
+          {
+            "x": 80,
+            "y": 14
+          }
+        ],
+        "opps": [
+          {
+            "x": 57,
+            "y": 20
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 40,
+              "y": 22
+            },
+            "to": {
+              "x": 49,
+              "y": 7
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "pass-first-time",
+          "text": "Pass first time to the free defender",
+          "grade": "best",
+          "why": "Quick and safe. Keepers can't pick up a deliberate pass from a teammate's foot."
+        },
+        {
+          "id": "kick-long-pitch",
+          "text": "Kick it long up the pitch",
+          "grade": "ok",
+          "why": "Safe, but it might give the ball away."
+        },
+        {
+          "id": "pick-hands",
+          "text": "Pick it up with your hands",
+          "grade": "poor",
+          "why": "That breaks the rules and gives them a free kick in your box."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "back-to-goal",
+      "legacy_id": "a3",
+      "rev": 1,
+      "category": "attack",
+      "title": "Back to goal",
+      "text": "You receive the ball facing your own goal. A defender is tight behind you.",
+      "tip": "Check over your shoulder before the ball arrives, so you know what's behind you.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 58
+        },
+        "ball": {
+          "x": 50,
+          "y": 61.5
+        },
+        "mates": [
+          {
+            "x": 28,
+            "y": 66
+          },
+          {
+            "x": 74,
+            "y": 47
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 52
+          },
+          {
+            "x": 71,
+            "y": 43
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pass-back-free",
+          "text": "Pass back to your free teammate",
+          "grade": "best",
+          "why": "Play the way you're facing. Your teammate can see the whole pitch and switch the attack."
+        },
+        {
+          "id": "spin-try-run",
+          "text": "Spin and try to run past",
+          "grade": "poor",
+          "why": "The defender is right behind you, so turning here usually loses the ball."
+        },
+        {
+          "id": "shield-ball-wait",
+          "text": "Shield the ball and wait",
+          "grade": "ok",
+          "why": "Good for protecting the ball, but waiting lets more defenders arrive."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "back-to-goal-defending",
+      "legacy_id": "d16",
+      "rev": 1,
+      "category": "defend",
+      "title": "Back to goal",
+      "text": "An attacker is receiving the ball with their back to your goal. You're right behind them.",
+      "tip": "Close enough to touch, but don't foul.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 24
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 50,
+          "y": 32.5
+        },
+        "mates": [
+          {
+            "x": 40,
+            "y": 48
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 29
+          },
+          {
+            "x": 30,
+            "y": 44
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "stay-tight-cant",
+          "text": "Stay tight so they can't turn",
+          "grade": "best",
+          "why": "An attacker facing away from goal isn't dangerous yet. Don't let them turn."
+        },
+        {
+          "id": "step-off-give",
+          "text": "Step off and give them space",
+          "grade": "ok",
+          "why": "Now they can turn and run at you."
+        },
+        {
+          "id": "tackle-through-back",
+          "text": "Tackle through the back of them",
+          "grade": "poor",
+          "why": "That's a foul and could earn a card."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "bad-call",
+      "legacy_id": "m4",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Bad call",
+      "text": "The ref gives a free kick against you. You don't think it was a foul.",
+      "tip": "Next action is the most important action.",
+      "scene": {
+        "kind": "board",
+        "score": "1–2",
+        "clock": "77'"
+      },
+      "options": [
+        {
+          "id": "get-back-position",
+          "text": "Get back into position quickly",
+          "grade": "best",
+          "why": "Their free kick is coming either way. Being organised is what helps your team."
+        },
+        {
+          "id": "argue-referee",
+          "text": "Argue with the referee",
+          "grade": "poor",
+          "why": "It won't change the decision and could get you a yellow card."
+        },
+        {
+          "id": "stand-still-sulk",
+          "text": "Stand still and sulk",
+          "grade": "poor",
+          "why": "The other team will take it quickly while you're switched off."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "ball-on-its-way",
+      "legacy_id": "a8",
+      "rev": 1,
+      "category": "attack",
+      "title": "Ball on its way",
+      "text": "A pass is coming to you. The nearest defender is a long way off.",
+      "tip": "Decide what your first touch will do before the ball reaches you.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 36,
+          "y": 46
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 27,
+          "y": 54.5
+        },
+        "mates": [
+          {
+            "x": 18,
+            "y": 62
+          }
+        ],
+        "opps": [
+          {
+            "x": 72,
+            "y": 40
+          },
+          {
+            "x": 58,
+            "y": 22
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 18,
+              "y": 62
+            },
+            "to": {
+              "x": 33,
+              "y": 48
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "first-touch-forward",
+          "text": "First touch forward into the space",
+          "grade": "best",
+          "why": "A forward first touch gets you moving and saves time."
+        },
+        {
+          "id": "stop-ball-dead",
+          "text": "Stop the ball dead under your foot",
+          "grade": "ok",
+          "why": "Safe, but you lose time and the defenders get organised."
+        },
+        {
+          "id": "kick-first-time",
+          "text": "Kick it first time without looking",
+          "grade": "poor",
+          "why": "With this much time, a rushed kick usually gives the ball away."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "beaten",
+      "legacy_id": "d8",
+      "rev": 1,
+      "category": "defend",
+      "title": "Beaten",
+      "text": "An attacker has just got past you and is running towards your goal.",
+      "tip": "Beaten? Recover. Your next sprint matters most.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 42
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 52,
+          "y": 25
+        },
+        "mates": [
+          {
+            "x": 36,
+            "y": 18
+          }
+        ],
+        "opps": [
+          {
+            "x": 52,
+            "y": 28
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 52,
+              "y": 28
+            },
+            "to": {
+              "x": 52,
+              "y": 16
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "sprint-back-towards",
+          "text": "Sprint back towards your goal",
+          "grade": "best",
+          "why": "Getting back between the ball and goal means you can help again."
+        },
+        {
+          "id": "stop-appeal-foul",
+          "text": "Stop and appeal for a foul",
+          "grade": "poor",
+          "why": "The game carries on, and now your team is a player short."
+        },
+        {
+          "id": "pull-shirt",
+          "text": "Pull their shirt",
+          "grade": "poor",
+          "why": "That's a foul, maybe a yellow card, and a free kick in a dangerous place."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "big-game-nerves",
+      "legacy_id": "m11",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Big-game nerves",
+      "text": "It's a big match and you feel really nervous.",
+      "tip": "Nerves mean you care. Use them.",
+      "scene": {
+        "kind": "board",
+        "score": "0–0",
+        "clock": "0'"
+      },
+      "options": [
+        {
+          "id": "breathe-slowly-think",
+          "text": "Breathe slowly and think about your first easy pass",
+          "grade": "best",
+          "why": "Focusing on one small thing calms your nerves and gets you into the game."
+        },
+        {
+          "id": "think-about-everything",
+          "text": "Think about everything that could go wrong",
+          "grade": "poor",
+          "why": "That makes nerves bigger."
+        },
+        {
+          "id": "hide-dont-get",
+          "text": "Hide so you don't get the ball",
+          "grade": "poor",
+          "why": "Getting involved early is the best way to settle."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "bigger-opponents",
+      "legacy_id": "m16",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Bigger opponents",
+      "text": "The other team are all much bigger than your team.",
+      "tip": "Play to your strengths.",
+      "scene": {
+        "kind": "board",
+        "score": "0–0",
+        "clock": "5'"
+      },
+      "options": [
+        {
+          "id": "use-quick-passing",
+          "text": "Use quick passing and movement",
+          "grade": "best",
+          "why": "Speed and smart passing beat size."
+        },
+        {
+          "id": "avoid-all-challenges",
+          "text": "Avoid all challenges",
+          "grade": "ok",
+          "why": "Sensible sometimes, but you still need to compete."
+        },
+        {
+          "id": "give-theyre-too",
+          "text": "Give up, they're too big",
+          "grade": "poor",
+          "why": "Size isn't everything in football."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "change-of-pace",
+      "legacy_id": "a24",
+      "rev": 1,
+      "category": "attack",
+      "title": "Change of pace",
+      "text": "You're dribbling and a defender is standing square in front of you. Your winger is marked.",
+      "tip": "Slow, slow, FAST. A change of speed beats defenders.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 42
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 53,
+          "y": 39.4
+        },
+        "mates": [
+          {
+            "x": 76,
+            "y": 36
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 33
+          },
+          {
+            "x": 78,
+            "y": 30
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "fake-one-way",
+          "text": "Fake one way, then burst the other",
+          "grade": "best",
+          "why": "A fake makes the defender shift their weight. A sudden change of speed takes you past."
+        },
+        {
+          "id": "dribble-slowly-straight",
+          "text": "Dribble slowly straight at them",
+          "grade": "poor",
+          "why": "At one speed you're easy to tackle."
+        },
+        {
+          "id": "pass-marked-winger",
+          "text": "Pass to the marked winger",
+          "grade": "ok",
+          "why": "Not a disaster, but the defender out wide is right on them."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "corner-against-you",
+      "legacy_id": "d9",
+      "rev": 1,
+      "category": "defend",
+      "title": "Corner against you",
+      "text": "The other team has a corner. You're marking their tallest player.",
+      "tip": "At set pieces, know your job and stick to it.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 45,
+          "y": 9
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "ball": {
+          "x": 99,
+          "y": 1
+        },
+        "mates": [
+          {
+            "x": 56,
+            "y": 10
+          }
+        ],
+        "opps": [
+          {
+            "x": 48,
+            "y": 11
+          },
+          {
+            "x": 60,
+            "y": 14
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "stay-close-goal",
+          "text": "Stay close, goal-side, watching ball and player",
+          "grade": "best",
+          "why": "If you stay touch-tight, they can't get a free jump at the ball."
+        },
+        {
+          "id": "stand-post",
+          "text": "Stand on the post",
+          "grade": "ok",
+          "why": "Useful, but your player is now completely free."
+        },
+        {
+          "id": "watch-corner-taker",
+          "text": "Watch the corner taker",
+          "grade": "poor",
+          "why": "Your player can run off you and score a header."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "corner-kick",
+      "legacy_id": "a23",
+      "rev": 1,
+      "category": "attack",
+      "title": "Corner kick",
+      "text": "You're taking a corner. Your teammates are waiting around the penalty spot and the keeper is on the line.",
+      "tip": "Pick a target area before you take the corner.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 97,
+          "y": 4
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "ball": {
+          "x": 99.4,
+          "y": 0.9
+        },
+        "mates": [
+          {
+            "x": 44,
+            "y": 13
+          },
+          {
+            "x": 57,
+            "y": 15
+          },
+          {
+            "x": 50,
+            "y": 27
+          }
+        ],
+        "opps": [
+          {
+            "x": 46,
+            "y": 9
+          },
+          {
+            "x": 59,
+            "y": 11
+          },
+          {
+            "x": 52,
+            "y": 17
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "whip-between-six",
+          "text": "Whip it in between the six-yard box and the spot",
+          "grade": "best",
+          "why": "That's where your teammates are, and it's too far out for the keeper to come and catch easily."
+        },
+        {
+          "id": "float-high-six",
+          "text": "Float it high into the six-yard box",
+          "grade": "poor",
+          "why": "A slow, high ball close to goal is easy for the keeper to catch."
+        },
+        {
+          "id": "play-short-corner",
+          "text": "Play a short corner",
+          "grade": "ok",
+          "why": "Can work, but only if a teammate comes over for it. Right now nobody is there."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "counter-attack",
+      "legacy_id": "a9",
+      "rev": 1,
+      "category": "attack",
+      "title": "Counter-attack",
+      "text": "You've just won the ball. It's three of you against two defenders.",
+      "tip": "On the counter: be fast, be direct, keep the last pass simple.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 54
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 53,
+          "y": 51.4
+        },
+        "mates": [
+          {
+            "x": 24,
+            "y": 46
+          },
+          {
+            "x": 76,
+            "y": 46
+          }
+        ],
+        "opps": [
+          {
+            "x": 42,
+            "y": 36
+          },
+          {
+            "x": 58,
+            "y": 36
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 24,
+              "y": 46
+            },
+            "to": {
+              "x": 22,
+              "y": 28
+            },
+            "kind": "mate"
+          },
+          {
+            "from": {
+              "x": 76,
+              "y": 46
+            },
+            "to": {
+              "x": 78,
+              "y": 28
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "run-pass-whoevers",
+          "text": "Run at them, then pass to whoever's free",
+          "grade": "best",
+          "why": "Driving forward forces a defender to step up, which leaves a teammate free."
+        },
+        {
+          "id": "slow-down-wait",
+          "text": "Slow down and wait for support",
+          "grade": "poor",
+          "why": "Counters work because the other team isn't set. Waiting gives them time."
+        },
+        {
+          "id": "pass-wide-straight",
+          "text": "Pass wide straight away",
+          "grade": "ok",
+          "why": "Fine, but running at them first drags a defender with you."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "cover-your-teammate",
+      "legacy_id": "d11",
+      "rev": 1,
+      "category": "defend",
+      "title": "Cover your teammate",
+      "text": "Your teammate is closing down the player with the ball. You're nearby.",
+      "tip": "Pressure and cover: one goes, one supports.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 44,
+          "y": 30
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 59,
+          "y": 41
+        },
+        "mates": [
+          {
+            "x": 56,
+            "y": 38
+          }
+        ],
+        "opps": [
+          {
+            "x": 58,
+            "y": 44
+          },
+          {
+            "x": 34,
+            "y": 40
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "cover-behind-teammate",
+          "text": "Cover behind your teammate at an angle",
+          "grade": "best",
+          "why": "If the attacker beats your teammate, you're there next."
+        },
+        {
+          "id": "run-ball-too",
+          "text": "Run at the ball too",
+          "grade": "poor",
+          "why": "Two of you on one player leaves another attacker free."
+        },
+        {
+          "id": "stay-where-are",
+          "text": "Stay where you are",
+          "grade": "ok",
+          "why": "Not terrible, but you're too far away to help if your teammate gets beaten."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "cross-incoming",
+      "legacy_id": "d4",
+      "rev": 1,
+      "category": "defend",
+      "title": "Cross incoming",
+      "text": "The other team is about to cross. Their striker is next to you in the box.",
+      "tip": "In your own box, the striker is your job.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 46,
+          "y": 11
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "ball": {
+          "x": 86,
+          "y": 18.5
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 55,
+            "y": 13
+          },
+          {
+            "x": 88,
+            "y": 16
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "get-between-striker",
+          "text": "Get between the striker and goal, watch both",
+          "grade": "best",
+          "why": "From there you can attack the ball and the striker can't get in front of you."
+        },
+        {
+          "id": "watch-only-ball",
+          "text": "Watch only the ball",
+          "grade": "ok",
+          "why": "You might win it, but the striker can sneak in front of you."
+        },
+        {
+          "id": "run-out-block",
+          "text": "Run out to block the crosser",
+          "grade": "poor",
+          "why": "That leaves the striker free right in front of goal."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "crossing-time",
+      "legacy_id": "a22",
+      "rev": 1,
+      "category": "attack",
+      "title": "Crossing time",
+      "text": "You're wide on the right near the box. Your striker is making a run to the near post.",
+      "tip": "Look up before you cross so you know where your runners are.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 88,
+          "y": 22
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "ball": {
+          "x": 91,
+          "y": 19.4
+        },
+        "mates": [
+          {
+            "x": 42,
+            "y": 14
+          },
+          {
+            "x": 58,
+            "y": 28
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 10
+          },
+          {
+            "x": 62,
+            "y": 20
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 42,
+              "y": 14
+            },
+            "to": {
+              "x": 46,
+              "y": 6
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "whip-low-across",
+          "text": "Whip it low across the six-yard box",
+          "grade": "best",
+          "why": "Low, fast crosses are hard for keepers to catch and easy for strikers to tap in."
+        },
+        {
+          "id": "float-high-cross",
+          "text": "Float a high cross to the far post",
+          "grade": "ok",
+          "why": "Can work, but gives the keeper time to come and claim it."
+        },
+        {
+          "id": "shoot-out-wide",
+          "text": "Shoot from out wide",
+          "grade": "poor",
+          "why": "The angle is too tight. Your striker is in a much better spot."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "cut-back-danger",
+      "legacy_id": "d24",
+      "rev": 1,
+      "category": "defend",
+      "title": "Cut-back danger",
+      "text": "An attacker has reached your byline. Another attacker is running into the middle. You're sprinting back.",
+      "tip": "When the ball goes wide, protect the middle.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 30
+        },
+        "gk": {
+          "x": 52,
+          "y": 3
+        },
+        "ball": {
+          "x": 84,
+          "y": 8
+        },
+        "mates": [
+          {
+            "x": 80,
+            "y": 12
+          }
+        ],
+        "opps": [
+          {
+            "x": 86,
+            "y": 6
+          },
+          {
+            "x": 56,
+            "y": 26
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 56,
+              "y": 26
+            },
+            "to": {
+              "x": 52,
+              "y": 16
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "get-space-front",
+          "text": "Get to the space in front of goal to block the pull-back",
+          "grade": "best",
+          "why": "Pull-backs are the danger. You need to be between that runner and the ball."
+        },
+        {
+          "id": "run-over-help",
+          "text": "Run over to help on the ball",
+          "grade": "ok",
+          "why": "Your teammate is already there. Now the runner is free."
+        },
+        {
+          "id": "jog-back-slowly",
+          "text": "Jog back slowly",
+          "grade": "poor",
+          "why": "The runner will beat you to it."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "defender-in-the-way",
+      "legacy_id": "a13",
+      "rev": 1,
+      "category": "attack",
+      "title": "Defender in the way",
+      "text": "A defender is right in front of you. Your teammate is just to the side.",
+      "tip": "Pass and move. Never pass and watch.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 44,
+          "y": 40
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 47,
+          "y": 37.4
+        },
+        "mates": [
+          {
+            "x": 64,
+            "y": 32
+          }
+        ],
+        "opps": [
+          {
+            "x": 45,
+            "y": 32
+          },
+          {
+            "x": 30,
+            "y": 20
+          },
+          {
+            "x": 70,
+            "y": 18
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pass-teammate-run",
+          "text": "Pass to your teammate and run past for the return",
+          "grade": "best",
+          "why": "A one-two gets you past the defender without having to beat them."
+        },
+        {
+          "id": "pass-stand-still",
+          "text": "Pass and stand still",
+          "grade": "ok",
+          "why": "You keep the ball, but your teammate has nobody to pass to next."
+        },
+        {
+          "id": "dribble-straight-defender",
+          "text": "Dribble straight into the defender",
+          "grade": "poor",
+          "why": "They're set and waiting for you. A pass is quicker than any trick."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "dummy",
+      "legacy_id": "a30",
+      "rev": 1,
+      "category": "attack",
+      "title": "Dummy",
+      "text": "A low cross is coming to you, but a defender is right behind you. Your teammate is free just behind you.",
+      "tip": "Sometimes the best touch is no touch.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 48,
+          "y": 22
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 76,
+          "y": 25
+        },
+        "mates": [
+          {
+            "x": 34,
+            "y": 26
+          }
+        ],
+        "opps": [
+          {
+            "x": 47,
+            "y": 17
+          },
+          {
+            "x": 60,
+            "y": 12
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 80,
+              "y": 26
+            },
+            "to": {
+              "x": 51,
+              "y": 23
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "let-run-through",
+          "text": "Let it run through to your teammate (a dummy)",
+          "grade": "best",
+          "why": "Your dummy fools the defender, and your teammate gets a free shot."
+        },
+        {
+          "id": "try-control-defender",
+          "text": "Try to control it with the defender on you",
+          "grade": "ok",
+          "why": "You might keep it, but the defender will be all over you."
+        },
+        {
+          "id": "stop-wait-help",
+          "text": "Stop it and wait for help",
+          "grade": "poor",
+          "why": "The defender will nick it straight away."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "edge-of-the-box",
+      "legacy_id": "a11",
+      "rev": 1,
+      "category": "attack",
+      "title": "Edge of the box",
+      "text": "You're just outside the box with space to shoot. Defenders are behind you and the box is crowded.",
+      "tip": "If you can see the goal and nobody's blocking, shoot.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 52,
+          "y": 21
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 55,
+          "y": 18.4
+        },
+        "mates": [
+          {
+            "x": 30,
+            "y": 26
+          }
+        ],
+        "opps": [
+          {
+            "x": 40,
+            "y": 32
+          },
+          {
+            "x": 64,
+            "y": 31
+          },
+          {
+            "x": 45,
+            "y": 9
+          },
+          {
+            "x": 56,
+            "y": 8
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "shoot-now-while",
+          "text": "Shoot now, while you have space",
+          "grade": "best",
+          "why": "A clear sight of goal doesn't last. Take the shot before the defenders behind you catch up."
+        },
+        {
+          "id": "dribble-crowded-box",
+          "text": "Dribble into the crowded box",
+          "grade": "poor",
+          "why": "There are two defenders waiting in there. You'll lose the space you have now."
+        },
+        {
+          "id": "pass-sideways-teammate",
+          "text": "Pass sideways to your teammate",
+          "grade": "ok",
+          "why": "Safe, but they're further out and wider. You have the better chance."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "find-the-gap",
+      "legacy_id": "a27",
+      "rev": 1,
+      "category": "attack",
+      "title": "Find the gap",
+      "text": "Your teammate has the ball behind you. You're a midfielder looking to receive it.",
+      "tip": "Move to where your teammate can see you and pass to you.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 28,
+          "y": 38
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 54,
+          "y": 55
+        },
+        "mates": [
+          {
+            "x": 52,
+            "y": 58
+          }
+        ],
+        "opps": [
+          {
+            "x": 40,
+            "y": 46
+          },
+          {
+            "x": 62,
+            "y": 46
+          },
+          {
+            "x": 34,
+            "y": 22
+          },
+          {
+            "x": 50,
+            "y": 22
+          },
+          {
+            "x": 66,
+            "y": 22
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "move-gap-between",
+          "text": "Move into the gap between their midfield and defence",
+          "grade": "best",
+          "why": "In that pocket you can receive the ball and turn to face goal."
+        },
+        {
+          "id": "stand-behind-midfielder",
+          "text": "Stand behind their midfielder",
+          "grade": "poor",
+          "why": "Your teammate can't pass to you with someone in the way."
+        },
+        {
+          "id": "run-right-next",
+          "text": "Run right up next to their defenders",
+          "grade": "ok",
+          "why": "You might get a ball over the top, but it's much harder to receive and turn there."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "free-kick",
+      "legacy_id": "a18",
+      "rev": 1,
+      "category": "attack",
+      "title": "Free kick",
+      "text": "You have a free kick just outside the box. There's a wall of three, and the keeper is standing to one side.",
+      "tip": "Look at the wall and the keeper before you decide.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 27
+        },
+        "gk": {
+          "x": 58,
+          "y": 4
+        },
+        "ball": {
+          "x": 50,
+          "y": 24
+        },
+        "mates": [
+          {
+            "x": 28,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 43,
+            "y": 18
+          },
+          {
+            "x": 47,
+            "y": 18
+          },
+          {
+            "x": 51,
+            "y": 18
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "aim-over-wall",
+          "text": "Aim over the wall into the side the keeper left open",
+          "grade": "best",
+          "why": "The keeper has moved across, leaving one side of the goal more open."
+        },
+        {
+          "id": "smash-hard-straight",
+          "text": "Smash it hard straight ahead",
+          "grade": "poor",
+          "why": "That's where the wall is. It'll most likely be blocked."
+        },
+        {
+          "id": "quick-short-pass",
+          "text": "Quick short pass to your free teammate",
+          "grade": "ok",
+          "why": "Can catch defenders napping, but you'd lose a good shooting chance."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "goal-kick",
+      "legacy_id": "a21",
+      "rev": 1,
+      "category": "attack",
+      "title": "Goal kick",
+      "text": "You're the keeper with the ball. The other team are pressing high, but one of your defenders is free on the right.",
+      "tip": "Building from the back starts with finding the free player.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 50,
+          "y": 7
+        },
+        "mates": [
+          {
+            "x": 22,
+            "y": 14
+          },
+          {
+            "x": 78,
+            "y": 14
+          },
+          {
+            "x": 50,
+            "y": 34
+          }
+        ],
+        "opps": [
+          {
+            "x": 30,
+            "y": 16
+          },
+          {
+            "x": 50,
+            "y": 20
+          },
+          {
+            "x": 52,
+            "y": 38
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pass-short-free",
+          "text": "Pass short to your free defender",
+          "grade": "best",
+          "why": "An easy pass to a free teammate keeps the ball and beats their press."
+        },
+        {
+          "id": "pass-teammate-middle",
+          "text": "Pass to the teammate in the middle",
+          "grade": "poor",
+          "why": "There are opponents right around them. Losing it here could mean a goal."
+        },
+        {
+          "id": "kick-far-can",
+          "text": "Kick it as far as you can",
+          "grade": "ok",
+          "why": "Safe from danger, but it's often a 50-50 that hands them the ball."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "half-time-losing-badly",
+      "legacy_id": "m6",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Half-time, losing badly",
+      "text": "It's half-time and your team is losing. Some teammates are arguing.",
+      "tip": "One thing to fix, together.",
+      "scene": {
+        "kind": "board",
+        "score": "0–3",
+        "clock": "HT"
+      },
+      "options": [
+        {
+          "id": "calm-things-down",
+          "text": "Calm things down and talk about one thing to fix",
+          "grade": "best",
+          "why": "A team that sticks together can come back. Arguing just makes it worse."
+        },
+        {
+          "id": "join-argument",
+          "text": "Join the argument",
+          "grade": "poor",
+          "why": "More shouting splits the team further."
+        },
+        {
+          "id": "sit-away-everyone",
+          "text": "Sit away from everyone",
+          "grade": "ok",
+          "why": "Avoids trouble, but your team needs you."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "hard-foul",
+      "legacy_id": "m7",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Hard foul",
+      "text": "An opponent fouls your teammate badly.",
+      "tip": "Keep your head when others lose theirs.",
+      "scene": {
+        "kind": "board",
+        "score": "1–1",
+        "clock": "60'"
+      },
+      "options": [
+        {
+          "id": "stay-calm-let",
+          "text": "Stay calm and let the ref deal with it",
+          "grade": "best",
+          "why": "The ref handles fouls. Staying calm keeps your team at full strength."
+        },
+        {
+          "id": "get-revenge-foul",
+          "text": "Get revenge with a foul of your own",
+          "grade": "poor",
+          "why": "You could get sent off, and the team suffers."
+        },
+        {
+          "id": "complain-about-all",
+          "text": "Complain about it all game",
+          "grade": "poor",
+          "why": "It takes your mind off playing well."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "header-chance",
+      "legacy_id": "a31",
+      "rev": 1,
+      "category": "attack",
+      "title": "Header chance",
+      "text": "A cross is coming towards your head near the goal.",
+      "tip": "Eyes open, use your forehead, aim down.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 46,
+          "y": 10
+        },
+        "gk": {
+          "x": 53,
+          "y": 3
+        },
+        "ball": {
+          "x": 62,
+          "y": 8
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 44,
+            "y": 14
+          },
+          {
+            "x": 58,
+            "y": 10
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 88,
+              "y": 14
+            },
+            "to": {
+              "x": 64,
+              "y": 8.5
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "head-down-towards",
+          "text": "Head it down towards the corner",
+          "grade": "best",
+          "why": "Downward headers bounce awkwardly and are hard for keepers."
+        },
+        {
+          "id": "head-straight-goal",
+          "text": "Head it straight at goal",
+          "grade": "ok",
+          "why": "On target, but probably right at the keeper."
+        },
+        {
+          "id": "let-hit",
+          "text": "Let it hit you",
+          "grade": "poor",
+          "why": "Attack the ball. Don't let it attack you."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "high-cross",
+      "legacy_id": "d14",
+      "rev": 1,
+      "category": "defend",
+      "title": "High cross",
+      "text": "You're the keeper. A high cross is coming into a crowded box.",
+      "tip": "Keepers: be loud, be decisive.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 68,
+          "y": 13
+        },
+        "mates": [
+          {
+            "x": 44,
+            "y": 9
+          }
+        ],
+        "opps": [
+          {
+            "x": 52,
+            "y": 10
+          },
+          {
+            "x": 60,
+            "y": 9
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 90,
+              "y": 20
+            },
+            "to": {
+              "x": 69,
+              "y": 13.5
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "shout-keeper-catch",
+          "text": "Shout \"Keeper!\" and catch it at its highest point",
+          "grade": "best",
+          "why": "Calling tells your team you're coming. Catching it high is above everyone else."
+        },
+        {
+          "id": "punch-clear",
+          "text": "Punch it clear",
+          "grade": "ok",
+          "why": "A good choice if it's too busy to catch, but the ball may come straight back."
+        },
+        {
+          "id": "stay-line",
+          "text": "Stay on your line",
+          "grade": "poor",
+          "why": "The attackers get a free header."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "hold-the-line",
+      "legacy_id": "d19",
+      "rev": 1,
+      "category": "defend",
+      "title": "Hold the line",
+      "text": "Your other defenders have stepped up. You've stayed back, which keeps their striker onside.",
+      "tip": "Defend as a line, not alone. (Check whether your league uses offside.)",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 20
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 48,
+          "y": 41
+        },
+        "mates": [
+          {
+            "x": 30,
+            "y": 28
+          },
+          {
+            "x": 70,
+            "y": 28
+          }
+        ],
+        "opps": [
+          {
+            "x": 52,
+            "y": 24
+          },
+          {
+            "x": 46,
+            "y": 44
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "step-line-teammates",
+          "text": "Step up in line with your teammates",
+          "grade": "best",
+          "why": "A straight line can catch the striker offside and keeps your back line together."
+        },
+        {
+          "id": "stay-deep-behind",
+          "text": "Stay deep behind your teammates",
+          "grade": "poor",
+          "why": "You're keeping the striker onside, and they can get in behind."
+        },
+        {
+          "id": "run-out-player",
+          "text": "Run out to the player on the ball",
+          "grade": "ok",
+          "why": "Pressure helps, but now there's a gap in your line."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "in-your-box",
+      "legacy_id": "d18",
+      "rev": 1,
+      "category": "defend",
+      "title": "In your box",
+      "text": "An attacker is dribbling across your box, looking for a shot.",
+      "tip": "In your box: stay up, stay patient.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 15
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "ball": {
+          "x": 55,
+          "y": 17
+        },
+        "mates": [
+          {
+            "x": 36,
+            "y": 24
+          }
+        ],
+        "opps": [
+          {
+            "x": 58,
+            "y": 18
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "stay-feet-stay",
+          "text": "Stay on your feet and stay goal-side",
+          "grade": "best",
+          "why": "Any foul in the box is a penalty. Stay between them and goal."
+        },
+        {
+          "id": "slide-side",
+          "text": "Slide in from the side",
+          "grade": "poor",
+          "why": "Miss the ball and it's a penalty."
+        },
+        {
+          "id": "back-off-six",
+          "text": "Back off to the six-yard box",
+          "grade": "ok",
+          "why": "Gives them room to shoot."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "keeper-off-the-line",
+      "legacy_id": "a14",
+      "rev": 1,
+      "category": "attack",
+      "title": "Keeper off the line",
+      "text": "You're on the ball in midfield and notice the keeper is standing way out of goal.",
+      "tip": "Always know where the keeper is standing.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 38
+        },
+        "gk": {
+          "x": 50,
+          "y": 17
+        },
+        "ball": {
+          "x": 53,
+          "y": 35.4
+        },
+        "mates": [
+          {
+            "x": 70,
+            "y": 30
+          }
+        ],
+        "opps": [
+          {
+            "x": 38,
+            "y": 46
+          },
+          {
+            "x": 64,
+            "y": 48
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "chip-over-keeper",
+          "text": "Chip it over the keeper",
+          "grade": "best",
+          "why": "With the keeper so far out, a lofted shot over their head is the quickest way to score."
+        },
+        {
+          "id": "blast-low-goal",
+          "text": "Blast it low at goal",
+          "grade": "poor",
+          "why": "The keeper is right in the path of a low shot. Go over, not through."
+        },
+        {
+          "id": "pass-teammate",
+          "text": "Pass to your teammate",
+          "grade": "ok",
+          "why": "Fine, but you'd miss a rare chance to catch the keeper out."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "keeper-one-on-one",
+      "legacy_id": "d6",
+      "rev": 1,
+      "category": "defend",
+      "title": "Keeper one-on-one",
+      "text": "You're the keeper. An attacker is through on goal with nobody else near.",
+      "tip": "Big, brave, patient: let the attacker blink first.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 5
+        },
+        "ball": {
+          "x": 50,
+          "y": 21
+        },
+        "mates": [
+          {
+            "x": 56,
+            "y": 36
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 24
+          },
+          {
+            "x": 70,
+            "y": 40
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 56,
+              "y": 36
+            },
+            "to": {
+              "x": 53,
+              "y": 28
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "come-off-line",
+          "text": "Come off your line, make yourself big, stay on your feet",
+          "grade": "best",
+          "why": "Coming out shrinks the goal they can see. Staying up makes them choose first."
+        },
+        {
+          "id": "stay-goal-line",
+          "text": "Stay on your goal line",
+          "grade": "ok",
+          "why": "Gives them the whole goal to aim at."
+        },
+        {
+          "id": "dive-feet-early",
+          "text": "Dive at their feet early",
+          "grade": "poor",
+          "why": "Go down too early and they just go round you or chip you."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "last-defender",
+      "legacy_id": "d1",
+      "rev": 1,
+      "category": "defend",
+      "title": "Last defender",
+      "text": "An attacker is running at you with the ball. Your teammates are racing back.",
+      "tip": "Side-on, knees bent, eyes on the ball, not on their tricks.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 30
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 51.5,
+          "y": 42.5
+        },
+        "mates": [
+          {
+            "x": 30,
+            "y": 60
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 46
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 30,
+              "y": 60
+            },
+            "to": {
+              "x": 36,
+              "y": 44
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "stay-feet-slow",
+          "text": "Stay on your feet and slow them down",
+          "grade": "best",
+          "why": "Jockeying buys time for your teammates to get back. Make the attacker make the decision."
+        },
+        {
+          "id": "dive-slide-tackle",
+          "text": "Dive in with a slide tackle",
+          "grade": "poor",
+          "why": "If you miss, they're through on goal. Stay patient."
+        },
+        {
+          "id": "run-back-goal",
+          "text": "Run back to your goal line",
+          "grade": "poor",
+          "why": "That gives them a free shot from the edge of the box."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "let-it-go-out",
+      "legacy_id": "d23",
+      "rev": 1,
+      "category": "defend",
+      "title": "Let it go out",
+      "text": "The ball is rolling out over your goal line. It last touched an attacker, and another attacker is chasing it.",
+      "tip": "Know when to let the ball go out.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 75,
+          "y": 4
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "ball": {
+          "x": 78,
+          "y": 1.5
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 72,
+            "y": 9
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "shield-let-roll",
+          "text": "Shield it and let it roll out for a goal kick",
+          "grade": "best",
+          "why": "Your body keeps the attacker away until it's out, and you get the ball back."
+        },
+        {
+          "id": "try-dribble-out",
+          "text": "Try to dribble out",
+          "grade": "poor",
+          "why": "Risky right next to your goal."
+        },
+        {
+          "id": "clear-line",
+          "text": "Clear it up the line",
+          "grade": "ok",
+          "why": "Fine, but you'd give up a free goal kick."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "mine-or-yours",
+      "legacy_id": "d20",
+      "rev": 1,
+      "category": "defend",
+      "title": "Mine or yours?",
+      "text": "A ball is bouncing between you and your keeper. A striker is chasing it.",
+      "tip": "Talk. \"Keeper's!\" or \"Away!\" stops mix-ups.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 26
+        },
+        "gk": {
+          "x": 50,
+          "y": 6
+        },
+        "ball": {
+          "x": 50,
+          "y": 16
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 58,
+            "y": 32
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 58,
+              "y": 32
+            },
+            "to": {
+              "x": 54,
+              "y": 20
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "call-loudly-keeper",
+          "text": "Call loudly so you and the keeper don't both go",
+          "grade": "best",
+          "why": "A loud, early call means only one of you goes for it."
+        },
+        {
+          "id": "run-without-saying",
+          "text": "Run for it without saying anything",
+          "grade": "ok",
+          "why": "You might get there, but you could crash into your keeper."
+        },
+        {
+          "id": "leave-hope-keeper",
+          "text": "Leave it and hope the keeper gets it",
+          "grade": "poor",
+          "why": "The striker could nip in."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "missed-chance",
+      "legacy_id": "m2",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Missed chance",
+      "text": "Your teammate misses an easy chance in front of goal.",
+      "tip": "Good teammates make each other braver.",
+      "scene": {
+        "kind": "board",
+        "score": "0–0",
+        "clock": "52'"
+      },
+      "options": [
+        {
+          "id": "encourage-next-one",
+          "text": "Encourage them: \"Next one!\"",
+          "grade": "best",
+          "why": "A player who feels backed is more likely to score the next chance."
+        },
+        {
+          "id": "shout",
+          "text": "Shout at them",
+          "grade": "poor",
+          "why": "It knocks their confidence and doesn't help the team."
+        },
+        {
+          "id": "say-nothing",
+          "text": "Say nothing",
+          "grade": "ok",
+          "why": "Better than shouting, but a quick word of support helps a lot."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "muddy-pitch",
+      "legacy_id": "m15",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Muddy pitch",
+      "text": "It's pouring with rain and the pitch is slippery.",
+      "tip": "Adapt to the conditions.",
+      "scene": {
+        "kind": "board",
+        "score": "0–0",
+        "clock": "20'"
+      },
+      "options": [
+        {
+          "id": "keep-passes-touches",
+          "text": "Keep passes and touches simple",
+          "grade": "best",
+          "why": "Slippery conditions make tricks hard. Simple football works best."
+        },
+        {
+          "id": "try-lots-fancy",
+          "text": "Try lots of fancy skills",
+          "grade": "poor",
+          "why": "The ball will skid away from you."
+        },
+        {
+          "id": "complain-about-weather",
+          "text": "Complain about the weather",
+          "grade": "poor",
+          "why": "It's the same for both teams."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "never-passes",
+      "legacy_id": "m14",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Never passes",
+      "text": "One teammate keeps the ball every time and never passes to you.",
+      "tip": "Make yourself easy to find.",
+      "scene": {
+        "kind": "board",
+        "score": "1–1",
+        "clock": "60'"
+      },
+      "options": [
+        {
+          "id": "keep-moving-space",
+          "text": "Keep moving into space and call for it",
+          "grade": "best",
+          "why": "It makes the pass easier to see. Keep offering."
+        },
+        {
+          "id": "stop-running",
+          "text": "Stop running",
+          "grade": "poor",
+          "why": "Then they'll never pass to you."
+        },
+        {
+          "id": "talk-calmly-after",
+          "text": "Talk to them calmly after the game",
+          "grade": "ok",
+          "why": "A good idea, but keep helping during the match too."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "offside",
+      "legacy_id": "a28",
+      "rev": 1,
+      "category": "attack",
+      "title": "Offside?",
+      "text": "You're the striker. Your teammate is about to pass, but you're already past the last defender.",
+      "tip": "Onside when the pass is played, then GO. (Many junior leagues don't use offside yet.)",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 58,
+          "y": 17
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 46,
+          "y": 43
+        },
+        "mates": [
+          {
+            "x": 44,
+            "y": 46
+          }
+        ],
+        "opps": [
+          {
+            "x": 40,
+            "y": 24
+          },
+          {
+            "x": 57,
+            "y": 24
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "step-back-level",
+          "text": "Step back level with the defender, then run as they pass",
+          "grade": "best",
+          "why": "Being level when the pass is played keeps you onside. Then you can run in behind."
+        },
+        {
+          "id": "stay-where-are",
+          "text": "Stay where you are and call for it",
+          "grade": "poor",
+          "why": "If they pass now, you're offside and the other team gets a free kick."
+        },
+        {
+          "id": "drop-deep-get",
+          "text": "Drop deep to get it to feet",
+          "grade": "ok",
+          "why": "Keeps you onside, but you lose the chance to get in behind."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "open-grass-ahead",
+      "legacy_id": "a4",
+      "rev": 1,
+      "category": "attack",
+      "title": "Open grass ahead",
+      "text": "You've got the ball in midfield. Nobody is in front of you.",
+      "tip": "Big touches when it's open, small touches when it's busy.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 32,
+          "y": 56
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 35,
+          "y": 53.4
+        },
+        "mates": [
+          {
+            "x": 78,
+            "y": 42
+          }
+        ],
+        "opps": [
+          {
+            "x": 30,
+            "y": 22
+          },
+          {
+            "x": 62,
+            "y": 24
+          },
+          {
+            "x": 76,
+            "y": 38
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "dribble-forward-space",
+          "text": "Dribble forward into the space",
+          "grade": "best",
+          "why": "Running with the ball into space drags defenders out of position."
+        },
+        {
+          "id": "pass-teammate-right",
+          "text": "Pass to your teammate on the right",
+          "grade": "poor",
+          "why": "They have a defender right on them, so the pass will probably be cut out."
+        },
+        {
+          "id": "pass-back-defender",
+          "text": "Pass back to your defender",
+          "grade": "ok",
+          "why": "Safe, but you waste the chance to attack while the space is there."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "outnumbered",
+      "legacy_id": "d15",
+      "rev": 1,
+      "category": "defend",
+      "title": "Outnumbered",
+      "text": "Two attackers are coming at you. You're the only defender back.",
+      "tip": "Outnumbered? Delay, delay, delay.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 30
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 40,
+          "y": 41
+        },
+        "mates": [
+          {
+            "x": 50,
+            "y": 60
+          }
+        ],
+        "opps": [
+          {
+            "x": 38,
+            "y": 44
+          },
+          {
+            "x": 64,
+            "y": 44
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "stay-between-slow",
+          "text": "Stay between them and slow them down",
+          "grade": "best",
+          "why": "Delaying gives teammates time to recover, and the attackers might make a mistake."
+        },
+        {
+          "id": "run-player-ball",
+          "text": "Run at the player with the ball",
+          "grade": "poor",
+          "why": "They'll just pass to the free attacker."
+        },
+        {
+          "id": "mark-player-without",
+          "text": "Mark the player without the ball",
+          "grade": "ok",
+          "why": "The ball carrier can then run in and shoot."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "overlap",
+      "legacy_id": "a16",
+      "rev": 1,
+      "category": "attack",
+      "title": "Overlap",
+      "text": "You've got the ball on the wing, a defender is in front of you, and your teammate is sprinting round the outside.",
+      "tip": "A teammate making a run deserves a pass, or at least a look.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 80,
+          "y": 40
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 83,
+          "y": 37.4
+        },
+        "mates": [
+          {
+            "x": 70,
+            "y": 50
+          }
+        ],
+        "opps": [
+          {
+            "x": 80,
+            "y": 32
+          },
+          {
+            "x": 60,
+            "y": 28
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 70,
+              "y": 50
+            },
+            "to": {
+              "x": 92,
+              "y": 28
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "pass-teammates-path",
+          "text": "Pass into your teammate's path",
+          "grade": "best",
+          "why": "The defender can't mark both of you. Your teammate gets in behind."
+        },
+        {
+          "id": "try-beat-defender",
+          "text": "Try to beat the defender yourself",
+          "grade": "ok",
+          "why": "Possible, but you're ignoring a teammate who's already free."
+        },
+        {
+          "id": "hold-ball-until",
+          "text": "Hold the ball until the defender tackles",
+          "grade": "poor",
+          "why": "Waiting gives the defender time and wastes your teammate's run."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "penalty",
+      "legacy_id": "a10",
+      "rev": 1,
+      "category": "attack",
+      "title": "Penalty",
+      "text": "You've put the ball on the spot. The keeper is bouncing on the line, trying to put you off.",
+      "tip": "Pick your spot, breathe, and don't change your mind.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 16
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 50,
+          "y": 11.5
+        },
+        "mates": [],
+        "opps": [],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pick-corner-before",
+          "text": "Pick a corner before your run-up and stick to it",
+          "grade": "best",
+          "why": "Deciding early means a confident strike. Changing your mind mid run-up leads to scuffed kicks."
+        },
+        {
+          "id": "change-mind-run",
+          "text": "Change your mind as you run up",
+          "grade": "poor",
+          "why": "Last-second changes make your body unsure, and the shot usually ends up weak."
+        },
+        {
+          "id": "blast-hard-can",
+          "text": "Blast it as hard as you can, no aim",
+          "grade": "ok",
+          "why": "Power can beat a keeper, but without a target it often flies over or straight at them."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "player-down",
+      "legacy_id": "m10",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Player down",
+      "text": "An opponent is lying on the ground hurt. Your team has the ball.",
+      "tip": "Respect first, always.",
+      "scene": {
+        "kind": "board",
+        "score": "0–0",
+        "clock": "30'"
+      },
+      "options": [
+        {
+          "id": "kick-ball-out",
+          "text": "Kick the ball out so they can get help",
+          "grade": "best",
+          "why": "Their safety comes first. That's good sportsmanship."
+        },
+        {
+          "id": "keep-attacking",
+          "text": "Keep attacking",
+          "grade": "poor",
+          "why": "Winning matters less than someone being hurt."
+        },
+        {
+          "id": "stop-stand-there",
+          "text": "Stop and stand there",
+          "grade": "ok",
+          "why": "Kindly meant, but kicking it out makes the game stop properly."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "pressed-in-your-box",
+      "legacy_id": "d13",
+      "rev": 1,
+      "category": "defend",
+      "title": "Pressed in your box",
+      "text": "You have the ball near your own box and two attackers are closing in fast.",
+      "tip": "Under pressure near your goal: safe first.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 40,
+          "y": 20
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 43,
+          "y": 17.4
+        },
+        "mates": [
+          {
+            "x": 80,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 44,
+            "y": 27
+          },
+          {
+            "x": 30,
+            "y": 24
+          },
+          {
+            "x": 60,
+            "y": 30
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pass-back-keeper",
+          "text": "Pass back to your keeper",
+          "grade": "best",
+          "why": "Your keeper is free, and it relieves the pressure safely."
+        },
+        {
+          "id": "dribble-across-own",
+          "text": "Dribble across your own box",
+          "grade": "poor",
+          "why": "Losing it here would give them a free shot."
+        },
+        {
+          "id": "kick-out-throw",
+          "text": "Kick it out for a throw-in",
+          "grade": "ok",
+          "why": "Safe, but you give the ball away close to your goal."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "pressing-their-defender",
+      "legacy_id": "d7",
+      "rev": 1,
+      "category": "defend",
+      "title": "Pressing their defender",
+      "text": "Their defender has the ball near their own goal. You're the closest player.",
+      "tip": "Press with your body angled to block the pass you don't want them to make.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 26
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 41,
+          "y": 15
+        },
+        "mates": [
+          {
+            "x": 70,
+            "y": 32
+          }
+        ],
+        "opps": [
+          {
+            "x": 38,
+            "y": 13
+          },
+          {
+            "x": 72,
+            "y": 13
+          },
+          {
+            "x": 52,
+            "y": 34
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "press-curved-run",
+          "text": "Press them with a curved run that blocks their easy pass",
+          "grade": "best",
+          "why": "A curved run cuts off one option, pushing them towards your teammates or a long hopeful kick."
+        },
+        {
+          "id": "sprint-straight",
+          "text": "Sprint straight at them",
+          "grade": "ok",
+          "why": "Puts them under pressure, but they can simply pass round you."
+        },
+        {
+          "id": "stand-still-wait",
+          "text": "Stand still and wait",
+          "grade": "poor",
+          "why": "It gives them time to pick the perfect pass."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "pressure-from-one-side",
+      "legacy_id": "a26",
+      "rev": 1,
+      "category": "attack",
+      "title": "Pressure from one side",
+      "text": "A pass is coming to you. A defender is rushing in from your left. There's space on your right.",
+      "tip": "Know where the pressure is coming from before the ball arrives.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 40
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 51.5,
+          "y": 56
+        },
+        "mates": [
+          {
+            "x": 50,
+            "y": 60
+          }
+        ],
+        "opps": [
+          {
+            "x": 34,
+            "y": 38
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 50,
+              "y": 58
+            },
+            "to": {
+              "x": 50,
+              "y": 44
+            },
+            "kind": "ball"
+          },
+          {
+            "from": {
+              "x": 34,
+              "y": 38
+            },
+            "to": {
+              "x": 43,
+              "y": 39
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "first-touch-right",
+          "text": "First touch to your right, away from the defender",
+          "grade": "best",
+          "why": "Taking the ball away from pressure gives you time and space."
+        },
+        {
+          "id": "first-touch-left",
+          "text": "First touch to your left",
+          "grade": "poor",
+          "why": "That takes the ball straight towards the defender."
+        },
+        {
+          "id": "pass-straight-back",
+          "text": "Pass it straight back first time",
+          "grade": "ok",
+          "why": "Safe, but you had space to turn into."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "quick-free-kick",
+      "legacy_id": "a32",
+      "rev": 1,
+      "category": "attack",
+      "title": "Quick free kick",
+      "text": "You've been fouled in midfield. The other team have turned away and are chatting.",
+      "tip": "Be the first to switch back on after a stoppage.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 46
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 50,
+          "y": 43
+        },
+        "mates": [
+          {
+            "x": 74,
+            "y": 30
+          }
+        ],
+        "opps": [
+          {
+            "x": 44,
+            "y": 51
+          },
+          {
+            "x": 57,
+            "y": 53
+          },
+          {
+            "x": 40,
+            "y": 24
+          },
+          {
+            "x": 60,
+            "y": 24
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "take-quickly-free",
+          "text": "Take it quickly to your free teammate",
+          "grade": "best",
+          "why": "While they're switched off, a quick free kick can set up a big chance."
+        },
+        {
+          "id": "argue-player-who",
+          "text": "Argue with the player who fouled you",
+          "grade": "poor",
+          "why": "You waste the chance and might get a card."
+        },
+        {
+          "id": "wait-everyone-get",
+          "text": "Wait for everyone to get set",
+          "grade": "ok",
+          "why": "Fine, but you lose the surprise."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "rebound",
+      "legacy_id": "a17",
+      "rev": 1,
+      "category": "attack",
+      "title": "Rebound",
+      "text": "The keeper saves a shot but the ball bounces loose near you.",
+      "tip": "Always follow your teammates' shots in.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 40,
+          "y": 13
+        },
+        "gk": {
+          "x": 54,
+          "y": 5
+        },
+        "ball": {
+          "x": 45,
+          "y": 9
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 60,
+            "y": 12
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "react-fast-shoot",
+          "text": "React fast and shoot first time",
+          "grade": "best",
+          "why": "The keeper is on the floor. Hit it before they get up."
+        },
+        {
+          "id": "control-look-shoot",
+          "text": "Control it, look up, then shoot",
+          "grade": "ok",
+          "why": "Calm, but every second lets the keeper and defenders recover."
+        },
+        {
+          "id": "wait-see-if",
+          "text": "Wait to see if the ref gives a corner",
+          "grade": "poor",
+          "why": "The ball is still in play. Strikers who follow up score the most tap-ins."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "runner-in-behind",
+      "legacy_id": "a6",
+      "rev": 1,
+      "category": "attack",
+      "title": "Runner in behind",
+      "text": "Your teammate starts sprinting past the defenders.",
+      "tip": "Watch your teammates' runs, not only the ball.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 46,
+          "y": 54
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 49,
+          "y": 51.4
+        },
+        "mates": [
+          {
+            "x": 68,
+            "y": 44
+          }
+        ],
+        "opps": [
+          {
+            "x": 36,
+            "y": 40
+          },
+          {
+            "x": 54,
+            "y": 40
+          },
+          {
+            "x": 80,
+            "y": 40
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 68,
+              "y": 44
+            },
+            "to": {
+              "x": 73,
+              "y": 22
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "pass-space-ahead",
+          "text": "Pass into the space ahead of them",
+          "grade": "best",
+          "why": "Passing into space lets your teammate run onto it without slowing down."
+        },
+        {
+          "id": "pass-teammates-feet",
+          "text": "Pass to your teammate's feet",
+          "grade": "ok",
+          "why": "They'd have to stop running, and the defenders would catch up."
+        },
+        {
+          "id": "shoot-here",
+          "text": "Shoot from here",
+          "grade": "poor",
+          "why": "It's too far out with three defenders in the way."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "runner-on-your-blind-side",
+      "legacy_id": "d3",
+      "rev": 1,
+      "category": "defend",
+      "title": "Runner on your blind side",
+      "text": "Your teammate is closing down the ball. A striker starts a run behind you.",
+      "tip": "See ball, see player. Keep both in view.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 42,
+          "y": 24
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 60,
+          "y": 39
+        },
+        "mates": [
+          {
+            "x": 64,
+            "y": 36
+          }
+        ],
+        "opps": [
+          {
+            "x": 62,
+            "y": 42
+          },
+          {
+            "x": 34,
+            "y": 32
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 34,
+              "y": 32
+            },
+            "to": {
+              "x": 34,
+              "y": 11
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "follow-runner-stay",
+          "text": "Follow the runner and stay goal-side",
+          "grade": "best",
+          "why": "The runner is the danger. If you stay between them and goal, the pass is no use."
+        },
+        {
+          "id": "watch-ball",
+          "text": "Watch the ball",
+          "grade": "poor",
+          "why": "Ball-watching is how runners get in behind you."
+        },
+        {
+          "id": "run-out-tackle",
+          "text": "Run out to tackle the player on the ball",
+          "grade": "poor",
+          "why": "Your teammate is already there, and you'd leave the runner free."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "running-out-of-time",
+      "legacy_id": "m5",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Running out of time",
+      "text": "Five minutes left and your team is losing.",
+      "tip": "Stay calm, play quicker, keep believing.",
+      "scene": {
+        "kind": "board",
+        "score": "0–1",
+        "clock": "85'"
+      },
+      "options": [
+        {
+          "id": "keep-playing-way",
+          "text": "Keep playing your way, but move the ball quicker",
+          "grade": "best",
+          "why": "Calm, quick passing creates chances. Panic doesn't."
+        },
+        {
+          "id": "kick-long-every",
+          "text": "Kick it long every time",
+          "grade": "ok",
+          "why": "Sometimes works, but mostly gives the ball away."
+        },
+        {
+          "id": "give-its-over",
+          "text": "Give up, it's over",
+          "grade": "poor",
+          "why": "Plenty of games turn around in the last five minutes."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "scramble-in-the-box",
+      "legacy_id": "d10",
+      "rev": 1,
+      "category": "defend",
+      "title": "Scramble in the box",
+      "text": "The ball is bouncing around in your box with attackers close by.",
+      "tip": "In your own box: if in doubt, kick it out.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 48,
+          "y": 10
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "ball": {
+          "x": 49,
+          "y": 13
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 55,
+            "y": 13
+          },
+          {
+            "x": 40,
+            "y": 14
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "clear-high-wide",
+          "text": "Clear it high and wide",
+          "grade": "best",
+          "why": "High and wide gets it away from danger and out of the middle."
+        },
+        {
+          "id": "try-dribble-out",
+          "text": "Try to dribble out",
+          "grade": "poor",
+          "why": "Lose it here and it's a goal. Keep it simple."
+        },
+        {
+          "id": "clear-straight-middle",
+          "text": "Clear it straight up the middle",
+          "grade": "ok",
+          "why": "Gets it away, but it might land at an opponent's feet in front of goal."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "shot-coming",
+      "legacy_id": "d5",
+      "rev": 1,
+      "category": "defend",
+      "title": "Shot coming",
+      "text": "An attacker is about to shoot from the edge of your box. You're between them and goal.",
+      "tip": "Brave defending: stay on your feet and get in the way.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 16
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 50,
+          "y": 21
+        },
+        "mates": [
+          {
+            "x": 34,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 24
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "get-body-way",
+          "text": "Get your body in the way, side-on",
+          "grade": "best",
+          "why": "Blocking the shot is brave and stops danger. Side-on keeps your arms tucked in."
+        },
+        {
+          "id": "turn-back-jump",
+          "text": "Turn your back and jump away",
+          "grade": "poor",
+          "why": "The ball goes straight past you towards goal."
+        },
+        {
+          "id": "slide-last-second",
+          "text": "Slide in at the last second",
+          "grade": "ok",
+          "why": "It might block it, but you risk a foul or a penalty."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "skill-gone-wrong",
+      "legacy_id": "m3",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Skill gone wrong",
+      "text": "You tried a new skill in a match and lost the ball.",
+      "tip": "Brave, but smart: right skill, right moment.",
+      "scene": {
+        "kind": "board",
+        "score": "2–2",
+        "clock": "18'"
+      },
+      "options": [
+        {
+          "id": "keep-trying-when",
+          "text": "Keep trying it when the moment is right",
+          "grade": "best",
+          "why": "Every good player failed loads while learning. Pick a better moment next time."
+        },
+        {
+          "id": "never-try-again",
+          "text": "Never try it again",
+          "grade": "poor",
+          "why": "Then you'll never get good at it."
+        },
+        {
+          "id": "try-every-time",
+          "text": "Try it every time you get the ball",
+          "grade": "ok",
+          "why": "Skills work when they fit the situation. Choosing when is the real skill."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "speedy-attacker",
+      "legacy_id": "d21",
+      "rev": 1,
+      "category": "defend",
+      "title": "Speedy attacker",
+      "text": "The attacker coming at you is much faster than you.",
+      "tip": "Against speed, use distance and angles.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 34
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 51.5,
+          "y": 44.5
+        },
+        "mates": [
+          {
+            "x": 30,
+            "y": 26
+          }
+        ],
+        "opps": [
+          {
+            "x": 50,
+            "y": 48
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "give-yourself-few",
+          "text": "Give yourself a few extra steps of space",
+          "grade": "best",
+          "why": "Then they can't knock it past and outrun you."
+        },
+        {
+          "id": "stand-really-close",
+          "text": "Stand really close to them",
+          "grade": "poor",
+          "why": "They'll knock it past and sprint away."
+        },
+        {
+          "id": "dive-early",
+          "text": "Dive in early",
+          "grade": "ok",
+          "why": "You might win it, but if you miss they're gone."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "stay-wide",
+      "legacy_id": "a29",
+      "rev": 1,
+      "category": "attack",
+      "title": "Stay wide",
+      "text": "You're the right winger. The ball is on the left and you've drifted into the middle where it's crowded.",
+      "tip": "When your team has the ball, make the pitch big.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 56,
+          "y": 32
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 20,
+          "y": 35
+        },
+        "mates": [
+          {
+            "x": 18,
+            "y": 38
+          },
+          {
+            "x": 38,
+            "y": 42
+          }
+        ],
+        "opps": [
+          {
+            "x": 24,
+            "y": 31
+          },
+          {
+            "x": 40,
+            "y": 25
+          },
+          {
+            "x": 52,
+            "y": 27
+          },
+          {
+            "x": 62,
+            "y": 25
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "move-back-out",
+          "text": "Move back out wide on the right",
+          "grade": "best",
+          "why": "Staying wide stretches the defence and gives your team an option to switch play."
+        },
+        {
+          "id": "run-over-ball",
+          "text": "Run over to the ball to help",
+          "grade": "poor",
+          "why": "That squeezes everyone into one area and makes it easy to defend."
+        },
+        {
+          "id": "stay-where-are",
+          "text": "Stay where you are",
+          "grade": "ok",
+          "why": "You're not in the way, but you're not adding anything either."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "subbed-off",
+      "legacy_id": "m9",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Subbed off",
+      "text": "The coach takes you off and you thought you were playing well.",
+      "tip": "Everyone gets subbed. How you handle it is the key.",
+      "scene": {
+        "kind": "board",
+        "score": "2–1",
+        "clock": "55'"
+      },
+      "options": [
+        {
+          "id": "cheer-team-ask",
+          "text": "Cheer your team on, ask the coach later what to work on",
+          "grade": "best",
+          "why": "Supporting your team and learning from it shows great character."
+        },
+        {
+          "id": "sit-quietly-bench",
+          "text": "Sit quietly on the bench",
+          "grade": "ok",
+          "why": "Fine, but cheering helps your team."
+        },
+        {
+          "id": "kick-water-bottle",
+          "text": "Kick a water bottle",
+          "grade": "poor",
+          "why": "It upsets the team and the coach."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "tackled",
+      "legacy_id": "m1",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Tackled",
+      "text": "You've just lost the ball in midfield.",
+      "tip": "Lose it, react: five seconds of hard pressing.",
+      "scene": {
+        "kind": "board",
+        "score": "1–1",
+        "clock": "34'"
+      },
+      "options": [
+        {
+          "id": "press-straight-away",
+          "text": "Press straight away to win it back",
+          "grade": "best",
+          "why": "The best time to win the ball back is the first few seconds after losing it."
+        },
+        {
+          "id": "complain-referee",
+          "text": "Complain to the referee",
+          "grade": "poor",
+          "why": "The game doesn't stop. While you complain, they attack."
+        },
+        {
+          "id": "put-head-down",
+          "text": "Put your head down and jog back",
+          "grade": "poor",
+          "why": "Everyone loses the ball. How you react matters more."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "teammate-in-a-better-spot",
+      "legacy_id": "a25",
+      "rev": 1,
+      "category": "attack",
+      "title": "Teammate in a better spot",
+      "text": "You're in a good area, but two defenders are blocking your shot. Your teammate is free in the middle.",
+      "tip": "The best players know when to shoot and when to pass.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 70,
+          "y": 24
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 73,
+          "y": 21.4
+        },
+        "mates": [
+          {
+            "x": 48,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 63,
+            "y": 18
+          },
+          {
+            "x": 67,
+            "y": 15
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pass-teammate-middle",
+          "text": "Pass to your teammate in the middle",
+          "grade": "best",
+          "why": "They have a clear view of goal. Setting up a goal is as good as scoring one."
+        },
+        {
+          "id": "shoot-through-defenders",
+          "text": "Shoot through the defenders",
+          "grade": "poor",
+          "why": "It will almost certainly be blocked."
+        },
+        {
+          "id": "dribble-wide-find",
+          "text": "Dribble wide to find space",
+          "grade": "ok",
+          "why": "You might find an angle, but the chance in the middle could disappear."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "their-keepers-ball",
+      "legacy_id": "d17",
+      "rev": 1,
+      "category": "defend",
+      "title": "Their keeper's ball",
+      "text": "You're a striker. Their keeper has the ball and wants to pass to a defender.",
+      "tip": "Strikers are the first defenders.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 22
+        },
+        "gk": {
+          "x": 50,
+          "y": 5
+        },
+        "ball": {
+          "x": 52,
+          "y": 7.5
+        },
+        "mates": [
+          {
+            "x": 40,
+            "y": 40
+          }
+        ],
+        "opps": [
+          {
+            "x": 24,
+            "y": 14
+          },
+          {
+            "x": 76,
+            "y": 14
+          },
+          {
+            "x": 50,
+            "y": 32
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "curve-run-block",
+          "text": "Curve your run to block the pass to one defender",
+          "grade": "best",
+          "why": "You stop one option and push the keeper to the other side, where your teammates can press."
+        },
+        {
+          "id": "sprint-straight-keeper",
+          "text": "Sprint straight at the keeper",
+          "grade": "ok",
+          "why": "Puts them under pressure, but they can pass either way."
+        },
+        {
+          "id": "walk-back-halfway",
+          "text": "Walk back to halfway",
+          "grade": "poor",
+          "why": "It gives them an easy start."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "their-throw-in",
+      "legacy_id": "d12",
+      "rev": 1,
+      "category": "defend",
+      "title": "Their throw-in",
+      "text": "The other team has a throw-in near your box. The nearest attacker is close to you.",
+      "tip": "Set pieces count too. Switch on.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 82,
+          "y": 22
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 99,
+          "y": 27
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 99,
+            "y": 30
+          },
+          {
+            "x": 87,
+            "y": 28
+          },
+          {
+            "x": 70,
+            "y": 36
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "get-tight-goal",
+          "text": "Get tight and goal-side of the nearest attacker",
+          "grade": "best",
+          "why": "A throw-in is an easy pass for them, so make it hard to receive."
+        },
+        {
+          "id": "watch-thrower",
+          "text": "Watch the thrower",
+          "grade": "poor",
+          "why": "Your attacker can get free while you're looking."
+        },
+        {
+          "id": "stand-back-give",
+          "text": "Stand back to give yourself room",
+          "grade": "ok",
+          "why": "They can receive and turn easily."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "through-on-goal",
+      "legacy_id": "a1",
+      "rev": 1,
+      "category": "attack",
+      "title": "Through on goal",
+      "text": "You've beaten the last defender. Only the keeper is left, and a defender is chasing back.",
+      "tip": "Glance at where the keeper is standing before you strike, then aim for the bigger gap.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 24
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 53,
+          "y": 21.4
+        },
+        "mates": [],
+        "opps": [
+          {
+            "x": 46,
+            "y": 40
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 46,
+              "y": 40
+            },
+            "to": {
+              "x": 48,
+              "y": 30
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "shoot-low-corner",
+          "text": "Shoot low into a corner",
+          "grade": "best",
+          "why": "Low shots into the corners are the hardest for a keeper to reach. Shoot early, before the defender catches you."
+        },
+        {
+          "id": "dribble-round-keeper",
+          "text": "Dribble round the keeper",
+          "grade": "ok",
+          "why": "It can work, but every extra touch gives the chasing defender time to get back."
+        },
+        {
+          "id": "stop-wait-teammate",
+          "text": "Stop and wait for a teammate",
+          "grade": "poor",
+          "why": "Stopping lets the defender recover. Chances like this don't last."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "throw-in",
+      "legacy_id": "a15",
+      "rev": 1,
+      "category": "attack",
+      "title": "Throw-in",
+      "text": "You're taking a throw-in. One teammate is close and free. Another is further away with a defender on them.",
+      "tip": "Throw-ins are a free pass. Don't waste them.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 98,
+          "y": 46
+        },
+        "ball": {
+          "x": 98,
+          "y": 43
+        },
+        "mates": [
+          {
+            "x": 88,
+            "y": 50
+          },
+          {
+            "x": 72,
+            "y": 30
+          }
+        ],
+        "opps": [
+          {
+            "x": 73,
+            "y": 26
+          },
+          {
+            "x": 80,
+            "y": 38
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "throw-free-teammates",
+          "text": "Throw to the free teammate's feet",
+          "grade": "best",
+          "why": "A short, easy throw keeps the ball. Feet are easier to control than a bouncing ball at head height."
+        },
+        {
+          "id": "throw-long-marked",
+          "text": "Throw long to the marked teammate",
+          "grade": "poor",
+          "why": "The defender is right there and will probably win it."
+        },
+        {
+          "id": "throw-down-line",
+          "text": "Throw it down the line for someone to chase",
+          "grade": "ok",
+          "why": "Can work, but often gives the ball back to the other team."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "too-crowded",
+      "legacy_id": "a12",
+      "rev": 1,
+      "category": "attack",
+      "title": "Too crowded",
+      "text": "You have the ball on the left. Lots of players are packed around you. Your winger on the far side is completely free.",
+      "tip": "If it's busy, look at the other side of the pitch.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 20,
+          "y": 40
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 23,
+          "y": 37.4
+        },
+        "mates": [
+          {
+            "x": 86,
+            "y": 36
+          },
+          {
+            "x": 40,
+            "y": 54
+          }
+        ],
+        "opps": [
+          {
+            "x": 14,
+            "y": 32
+          },
+          {
+            "x": 27,
+            "y": 33
+          },
+          {
+            "x": 30,
+            "y": 47
+          },
+          {
+            "x": 60,
+            "y": 30
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "switch-ball-free",
+          "text": "Switch the ball to the free winger",
+          "grade": "best",
+          "why": "When one side is crowded, the other side is open. A switch moves the whole game."
+        },
+        {
+          "id": "keep-dribbling-left",
+          "text": "Keep dribbling on the left",
+          "grade": "poor",
+          "why": "Three defenders are close. You'll run out of space fast."
+        },
+        {
+          "id": "pass-back-teammate",
+          "text": "Pass back to your teammate behind",
+          "grade": "ok",
+          "why": "Keeps the ball, and they might be able to switch it. But you could do it now."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "trapped-on-the-wing",
+      "legacy_id": "a5",
+      "rev": 1,
+      "category": "attack",
+      "title": "Trapped on the wing",
+      "text": "You're near the touchline and two defenders are closing you down.",
+      "tip": "When it's crowded, look where the defenders came from. That's where the space is now.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 90,
+          "y": 40
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 93,
+          "y": 37.4
+        },
+        "mates": [
+          {
+            "x": 54,
+            "y": 44
+          }
+        ],
+        "opps": [
+          {
+            "x": 84,
+            "y": 33
+          },
+          {
+            "x": 85,
+            "y": 47
+          },
+          {
+            "x": 40,
+            "y": 28
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pass-inside-free",
+          "text": "Pass inside to your free teammate",
+          "grade": "best",
+          "why": "Two defenders on you means someone else is free. Find them."
+        },
+        {
+          "id": "try-dribble-past",
+          "text": "Try to dribble past both",
+          "grade": "poor",
+          "why": "Beating two players in a tight space is really hard. You'll probably lose it."
+        },
+        {
+          "id": "kick-long-down",
+          "text": "Kick it long down the line",
+          "grade": "ok",
+          "why": "It gets you out of trouble, but you're likely to give the ball away."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "two-against-one",
+      "legacy_id": "a2",
+      "rev": 1,
+      "category": "attack",
+      "title": "Two against one",
+      "text": "You and a teammate are attacking. There's one defender between you.",
+      "tip": "In a 2v1, attack the defender so they have to pick one of you.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 38,
+          "y": 34
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 41,
+          "y": 31.4
+        },
+        "mates": [
+          {
+            "x": 66,
+            "y": 30
+          }
+        ],
+        "opps": [
+          {
+            "x": 52,
+            "y": 27
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "run-defender-pass",
+          "text": "Run at the defender, pass when they come to you",
+          "grade": "best",
+          "why": "Making the defender choose leaves your teammate free. Pass the moment they commit to you."
+        },
+        {
+          "id": "pass-teammate-straight",
+          "text": "Pass to your teammate straight away",
+          "grade": "ok",
+          "why": "Not bad, but the defender can just shift across. Draw them in first."
+        },
+        {
+          "id": "shoot-where-are",
+          "text": "Shoot from where you are",
+          "grade": "poor",
+          "why": "It's a long way out with a defender in the way. You have a better option."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "weaker-foot",
+      "legacy_id": "a20",
+      "rev": 1,
+      "category": "attack",
+      "title": "Weaker foot",
+      "text": "You have a chance to shoot, but the ball is on your weaker foot. A defender is closing in from your strong side.",
+      "tip": "Practise with both feet so you never have to choose.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 38,
+          "y": 18
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 41,
+          "y": 15.4
+        },
+        "mates": [
+          {
+            "x": 64,
+            "y": 15
+          }
+        ],
+        "opps": [
+          {
+            "x": 46,
+            "y": 20
+          },
+          {
+            "x": 62,
+            "y": 12
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "shoot-weaker-foot",
+          "text": "Shoot with your weaker foot",
+          "grade": "best",
+          "why": "A quick shot with your weaker foot beats a perfect one that gets blocked."
+        },
+        {
+          "id": "take-touch-onto",
+          "text": "Take a touch onto your stronger foot",
+          "grade": "poor",
+          "why": "That touch takes you straight into the defender."
+        },
+        {
+          "id": "pass-teammate",
+          "text": "Pass to your teammate",
+          "grade": "ok",
+          "why": "They have a defender nearby too. You have the clearer chance."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "which-way",
+      "legacy_id": "d2",
+      "rev": 1,
+      "category": "defend",
+      "title": "Which way?",
+      "text": "You're facing an attacker in the middle of the pitch. They could go either way.",
+      "tip": "Pick a side and show them where you want them to go.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 34
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 53,
+          "y": 44.5
+        },
+        "mates": [
+          {
+            "x": 28,
+            "y": 28
+          }
+        ],
+        "opps": [
+          {
+            "x": 52,
+            "y": 48
+          },
+          {
+            "x": 74,
+            "y": 52
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "stand-side-push",
+          "text": "Stand side-on and push them to the touchline",
+          "grade": "best",
+          "why": "The wing is less dangerous, and the touchline acts like an extra defender."
+        },
+        {
+          "id": "let-cut-inside",
+          "text": "Let them cut inside",
+          "grade": "poor",
+          "why": "Inside is the shortest route to goal and opens up a shot."
+        },
+        {
+          "id": "stand-square-front",
+          "text": "Stand square in front of them",
+          "grade": "ok",
+          "why": "Better than nothing, but they can go either way past you."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "winning-easily",
+      "legacy_id": "m12",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Winning easily",
+      "text": "Your team is winning comfortably.",
+      "tip": "Win well, lose well.",
+      "scene": {
+        "kind": "board",
+        "score": "5–0",
+        "clock": "65'"
+      },
+      "options": [
+        {
+          "id": "keep-playing-properly",
+          "text": "Keep playing properly and respect the other team",
+          "grade": "best",
+          "why": "Playing the right way is how you keep improving, and it shows respect."
+        },
+        {
+          "id": "show-off-tricks",
+          "text": "Show off with tricks to embarrass them",
+          "grade": "poor",
+          "why": "Disrespectful and how injuries and fights start."
+        },
+        {
+          "id": "stop-trying",
+          "text": "Stop trying",
+          "grade": "ok",
+          "why": "You lose the chance to practise."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "winning-one-minute-left",
+      "legacy_id": "a19",
+      "rev": 1,
+      "category": "attack",
+      "title": "Winning, one minute left",
+      "text": "Your team is 2–1 up with a minute to go. You have the ball near their corner flag.",
+      "tip": "Know the score and the time. They change the best decision.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 93,
+          "y": 5
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 96,
+          "y": 3
+        },
+        "mates": [
+          {
+            "x": 60,
+            "y": 34
+          }
+        ],
+        "opps": [
+          {
+            "x": 88,
+            "y": 9
+          },
+          {
+            "x": 60,
+            "y": 12
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "shield-ball-by",
+          "text": "Shield the ball by the corner flag",
+          "grade": "best",
+          "why": "Every second the ball stays there is a second they can't attack you."
+        },
+        {
+          "id": "cross-box",
+          "text": "Cross it into the box",
+          "grade": "poor",
+          "why": "Nobody is there, so you'd hand them the ball and a chance to attack."
+        },
+        {
+          "id": "pass-back-teammate",
+          "text": "Pass back to your teammate",
+          "grade": "ok",
+          "why": "Keeps the ball, but brings play back towards your own goal."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "you-scored",
+      "legacy_id": "m8",
+      "rev": 1,
+      "category": "mindset",
+      "title": "You scored!",
+      "text": "You've just scored a great goal.",
+      "tip": "Enjoy it, then refocus.",
+      "scene": {
+        "kind": "board",
+        "score": "1–0",
+        "clock": "12'"
+      },
+      "options": [
+        {
+          "id": "celebrate-team-get",
+          "text": "Celebrate with your team, then get back ready",
+          "grade": "best",
+          "why": "Teams often concede right after scoring because they switch off."
+        },
+        {
+          "id": "show-off-front",
+          "text": "Show off in front of the other team",
+          "grade": "poor",
+          "why": "It's disrespectful and fires them up."
+        },
+        {
+          "id": "relax-hard-bit",
+          "text": "Relax, the hard bit is done",
+          "grade": "poor",
+          "why": "There's still lots of time left."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    },
+    {
+      "schema": "1.0",
+      "id": "your-mistake",
+      "legacy_id": "m13",
+      "rev": 1,
+      "category": "mindset",
+      "title": "Your mistake",
+      "text": "Your mistake has just led to a goal for the other team.",
+      "tip": "Mistake, reset, go again.",
+      "scene": {
+        "kind": "board",
+        "score": "1–2",
+        "clock": "40'"
+      },
+      "options": [
+        {
+          "id": "shake-off-focus",
+          "text": "Shake it off and focus on your next action",
+          "grade": "best",
+          "why": "Mistakes happen to everyone. The next action is the one you can control."
+        },
+        {
+          "id": "hide-dont-make",
+          "text": "Hide so you don't make another",
+          "grade": "poor",
+          "why": "Your team needs you involved."
+        },
+        {
+          "id": "blame-keeper",
+          "text": "Blame the keeper",
+          "grade": "poor",
+          "why": "It upsets teammates and doesn't help."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0"
+    }
+  ]
+}
