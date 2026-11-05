@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://openmat.dev/schema/drill/1.0",
+  "$id": "https://footworkiq.com/schema/drill/1.0",
   "title": "OpenMat Drill",
   "description": "Schema for OpenMat drill definition files (v1.0)",
   "type": "object",
