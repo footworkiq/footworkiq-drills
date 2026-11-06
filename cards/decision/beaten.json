@@ -50,16 +50,16 @@
   },
   "options": [
     {
-      "id": "pull-shirt",
-      "text": "Pull their shirt to slow them down",
-      "grade": "poor",
-      "why": "That's a foul, maybe a yellow card, and a free kick in a dangerous place."
-    },
-    {
       "id": "stop-appeal-foul",
       "text": "Stop and shout for a teammate to cover",
       "grade": "ok",
       "why": "Talking helps, but stopping takes you out of the game. Shout while you sprint back."
+    },
+    {
+      "id": "pull-shirt",
+      "text": "Pull their shirt to slow them down",
+      "grade": "poor",
+      "why": "That's a foul, maybe a yellow card, and a free kick in a dangerous place."
     },
     {
       "id": "sprint-back-towards",
