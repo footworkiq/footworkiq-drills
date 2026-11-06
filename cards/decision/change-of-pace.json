@@ -63,7 +63,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "dribbling",
+    "one-v-one"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

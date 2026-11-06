@@ -2,10 +2,10 @@
   "schema": "1.0",
   "id": "goal-kick",
   "legacy_id": "a21",
-  "rev": 1,
+  "rev": 2,
   "category": "attack",
   "title": "Goal kick",
-  "text": "You're the keeper with the ball. The other team are pressing high, but one of your defenders is free on the right.",
+  "text": "You're taking a goal kick. The other team are pressing high, but one of your defenders is free on the right.",
   "tip": "Building from the back starts with finding the free player.",
   "scene": {
     "kind": "pitch",
@@ -71,7 +71,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "set-piece",
+    "passing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
