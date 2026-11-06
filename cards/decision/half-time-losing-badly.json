@@ -15,19 +15,19 @@
   "options": [
     {
       "id": "calm-things-down",
-      "text": "Calm things down and talk about one thing to fix",
+      "text": "Calm them down and agree one thing to fix",
       "grade": "best",
       "why": "A team that sticks together can come back. Arguing just makes it worse."
     },
     {
       "id": "sit-away-everyone",
-      "text": "Sit away from everyone",
+      "text": "Sit away from everyone and stay quiet",
       "grade": "ok",
       "why": "Avoids trouble, but your team needs you."
     },
     {
       "id": "join-argument",
-      "text": "Join the argument",
+      "text": "Join in and tell them who's to blame",
       "grade": "poor",
       "why": "More shouting splits the team further."
     }
@@ -35,7 +35,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "teamwork",
+    "communication"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

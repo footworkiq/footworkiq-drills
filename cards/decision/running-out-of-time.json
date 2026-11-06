@@ -15,19 +15,19 @@
   "options": [
     {
       "id": "give-its-over",
-      "text": "Give up, it's over",
+      "text": "Give up, there's no time left now",
       "grade": "poor",
       "why": "Plenty of games turn around in the last five minutes."
     },
     {
       "id": "kick-long-every",
-      "text": "Kick it long every time",
+      "text": "Kick it long into their box every time",
       "grade": "ok",
       "why": "Sometimes works, but mostly gives the ball away."
     },
     {
       "id": "keep-playing-way",
-      "text": "Keep playing your way, but move the ball quicker",
+      "text": "Keep playing your way, only quicker",
       "grade": "best",
       "why": "Calm, quick passing creates chances. Panic doesn't."
     }
@@ -35,7 +35,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "game-management"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

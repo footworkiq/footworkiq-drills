@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "hard-foul",
   "legacy_id": "m7",
-  "rev": 1,
+  "rev": 2,
   "category": "mindset",
   "title": "Hard foul",
   "text": "An opponent fouls your teammate badly.",
@@ -15,7 +15,7 @@
   "options": [
     {
       "id": "get-revenge-foul",
-      "text": "Get revenge with a foul of your own",
+      "text": "Get your own back with a hard foul later",
       "grade": "poor",
       "why": "You could get sent off, and the team suffers."
     },
@@ -27,15 +27,18 @@
     },
     {
       "id": "complain-about-all",
-      "text": "Complain about it all game",
-      "grade": "poor",
-      "why": "It takes your mind off playing well."
+      "text": "Calmly ask the ref to watch that player",
+      "grade": "ok",
+      "why": "Fair to mention once and calmly, but it's the ref's job. Then forget it and play."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "fair-play",
+    "composure"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
