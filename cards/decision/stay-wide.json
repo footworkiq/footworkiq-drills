@@ -61,7 +61,7 @@
     },
     {
       "id": "stay-where-are",
-      "text": "Stay where you are",
+      "text": "Stay where you are in the middle",
       "grade": "ok",
       "why": "You're not in the way, but you're not adding anything either."
     },
@@ -75,7 +75,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

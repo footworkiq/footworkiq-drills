@@ -56,21 +56,24 @@
     },
     {
       "id": "let-hit",
-      "text": "Let it hit you",
+      "text": "Let it hit you and hope it goes in",
       "grade": "poor",
       "why": "Attack the ball. Don't let it attack you."
     },
     {
       "id": "head-straight-goal",
-      "text": "Head it straight at goal",
+      "text": "Head it straight towards goal",
       "grade": "ok",
       "why": "On target, but probably right at the keeper."
     }
   ],
   "difficulty": "Intermediate",
-  "age_band": "all",
+  "age_band": "U16",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "heading",
+    "finishing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

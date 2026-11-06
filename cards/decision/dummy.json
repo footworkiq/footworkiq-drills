@@ -55,27 +55,30 @@
   "options": [
     {
       "id": "let-run-through",
-      "text": "Let it run through to your teammate (a dummy)",
+      "text": "Let it run through to your teammate",
       "grade": "best",
       "why": "Your dummy fools the defender, and your teammate gets a free shot."
     },
     {
       "id": "try-control-defender",
-      "text": "Try to control it with the defender on you",
+      "text": "Control it, even with the defender on you",
       "grade": "ok",
       "why": "You might keep it, but the defender will be all over you."
     },
     {
       "id": "stop-wait-help",
-      "text": "Stop it and wait for help",
+      "text": "Stop it dead and wait for help",
       "grade": "poor",
       "why": "The defender will nick it straight away."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "passing",
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
