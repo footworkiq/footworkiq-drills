@@ -10,7 +10,7 @@
       "category": "attack",
       "title": "At the byline",
       "text": "You've reached the goal line at a tight angle. A teammate is free in the middle.",
-      "tip": "From the byline, a pull-back to the edge of the six-yard box is one of the most dangerous passes in football.",
+      "tip": "From the byline, look for a pull-back to the edge of the six-yard box. It's one of the most dangerous passes in football.",
       "scene": {
         "kind": "pitch",
         "own": false,
@@ -2752,7 +2752,7 @@
       "rev": 1,
       "category": "attack",
       "title": "Overlap",
-      "text": "You've got the ball on the wing, a defender is in front of you, and your teammate is sprinting round the outside.",
+      "text": "You've got the ball on the wing and a defender is in front of you. Your teammate is sprinting round the outside.",
       "tip": "A teammate making a run deserves a pass, or at least a look.",
       "scene": {
         "kind": "pitch",
