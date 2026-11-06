@@ -62,13 +62,13 @@
   "options": [
     {
       "id": "first-touch-left",
-      "text": "First touch to your left",
+      "text": "Take your first touch to the left",
       "grade": "poor",
       "why": "That takes the ball straight towards the defender."
     },
     {
       "id": "first-touch-right",
-      "text": "First touch to your right, away from the defender",
+      "text": "First touch away to your right",
       "grade": "best",
       "why": "Taking the ball away from pressure gives you time and space."
     },
@@ -82,7 +82,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "first-touch"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
