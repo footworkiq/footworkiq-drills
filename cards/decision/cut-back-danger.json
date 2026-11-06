@@ -55,27 +55,30 @@
   "options": [
     {
       "id": "get-space-front",
-      "text": "Get to the space in front of goal to block the pull-back",
+      "text": "Block the pull-back in front of goal",
       "grade": "best",
       "why": "Pull-backs are the danger. You need to be between that runner and the ball."
     },
     {
       "id": "jog-back-slowly",
-      "text": "Jog back slowly",
+      "text": "Jog back slowly and watch the ball",
       "grade": "poor",
       "why": "The runner will beat you to it."
     },
     {
       "id": "run-over-help",
-      "text": "Run over to help on the ball",
+      "text": "Run across to help on the ball",
       "grade": "ok",
       "why": "Your teammate is already there. Now the runner is free."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "marking",
+    "defensive-shape"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

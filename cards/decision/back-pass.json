@@ -57,21 +57,24 @@
     },
     {
       "id": "pick-hands",
-      "text": "Pick it up with your hands",
+      "text": "Pick it up safely with your hands",
       "grade": "poor",
       "why": "That breaks the rules and gives them a free kick in your box."
     },
     {
       "id": "kick-long-pitch",
-      "text": "Kick it long up the pitch",
+      "text": "Kick it as far up the pitch as you can",
       "grade": "ok",
       "why": "Safe, but it might give the ball away."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
-  "role": "outfield",
-  "tags": [],
+  "role": "keeper",
+  "tags": [
+    "keeper",
+    "laws"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
