@@ -10,6 +10,7 @@ on:
       - 'docs/schema/card.schema.json'
       - 'scripts/**'
       - 'package*.json'
+      - 'test/**'
 
 jobs:
   validate:
@@ -24,9 +25,11 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
+      - name: Run content tests
+        run: npm test
       - name: Validate drill JSON files
         run: node scripts/validate-drills.js
-      - name: Validate decision cards (schema + frozen ids vs the PR base)
+      - name: Validate decision cards (schema, quality lints, frozen ids and rev bumps vs the PR base)
         env:
           BASE_REF: origin/${{ github.base_ref }}
         run: node scripts/validate-cards.js --base "$BASE_REF"

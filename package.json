@@ -8,7 +8,10 @@
     "validate": "node scripts/validate-drills.js",
     "generate": "node scripts/generate.js",
     "validate-cards": "node scripts/validate-cards.js",
-    "build-cards": "node scripts/build-card-bundle.js"
+    "build-cards": "node scripts/build-card-bundle.js",
+    "reorder-cards": "node scripts/reorder-card-options.js",
+    "card-report": "node scripts/card-report.js",
+    "test": "node --test test/*.test.js"
   },
   "devDependencies": {
     "ajv": "8.17.1",

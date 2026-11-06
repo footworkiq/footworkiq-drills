@@ -1,0 +1,81 @@
+{
+  "schema": "1.0",
+  "id": "back-pass",
+  "legacy_id": "d22",
+  "rev": 1,
+  "category": "defend",
+  "title": "Back pass",
+  "text": "You're the keeper. A teammate passes back to you with their foot and a striker is chasing it.",
+  "tip": "Keepers need good feet too.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 45,
+      "y": 14
+    },
+    "mates": [
+      {
+        "x": 40,
+        "y": 22
+      },
+      {
+        "x": 80,
+        "y": 14
+      }
+    ],
+    "opps": [
+      {
+        "x": 57,
+        "y": 20
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 40,
+          "y": 22
+        },
+        "to": {
+          "x": 49,
+          "y": 7
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "pass-first-time",
+      "text": "Pass first time to the free defender",
+      "grade": "best",
+      "why": "Quick and safe. Keepers can't pick up a deliberate pass from a teammate's foot. See https://example.com"
+    },
+    {
+      "id": "kick-long-pitch",
+      "text": "Kick it long up the pitch",
+      "grade": "ok",
+      "why": "Safe, but it might give the ball away."
+    },
+    {
+      "id": "pick-hands",
+      "text": "Pick it up with your hands",
+      "grade": "poor",
+      "why": "That breaks the rules and gives them a free kick in your box."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "keeper",
+  "tags": [
+    "keeper",
+    "laws"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0"
+}
