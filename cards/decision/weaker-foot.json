@@ -42,12 +42,6 @@
   },
   "options": [
     {
-      "id": "shoot-weaker-foot",
-      "text": "Shoot with your weaker foot",
-      "grade": "best",
-      "why": "A quick shot with your weaker foot beats a perfect one that gets blocked."
-    },
-    {
       "id": "take-touch-onto",
       "text": "Take a touch onto your stronger foot",
       "grade": "poor",
@@ -58,6 +52,12 @@
       "text": "Pass to your teammate",
       "grade": "ok",
       "why": "They have a defender nearby too. You have the clearer chance."
+    },
+    {
+      "id": "shoot-weaker-foot",
+      "text": "Shoot with your weaker foot",
+      "grade": "best",
+      "why": "A quick shot with your weaker foot beats a perfect one that gets blocked."
     }
   ],
   "difficulty": "Intermediate",

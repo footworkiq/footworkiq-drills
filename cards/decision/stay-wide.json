@@ -54,12 +54,6 @@
   },
   "options": [
     {
-      "id": "move-back-out",
-      "text": "Move back out wide on the right",
-      "grade": "best",
-      "why": "Staying wide stretches the defence and gives your team an option to switch play."
-    },
-    {
       "id": "run-over-ball",
       "text": "Run over to the ball to help",
       "grade": "poor",
@@ -70,6 +64,12 @@
       "text": "Stay where you are",
       "grade": "ok",
       "why": "You're not in the way, but you're not adding anything either."
+    },
+    {
+      "id": "move-back-out",
+      "text": "Move back out wide on the right",
+      "grade": "best",
+      "why": "Staying wide stretches the defence and gives your team an option to switch play."
     }
   ],
   "difficulty": "Intermediate",

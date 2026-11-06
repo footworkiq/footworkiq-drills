@@ -46,10 +46,10 @@
   },
   "options": [
     {
-      "id": "pass-inside-free",
-      "text": "Pass inside to your free teammate",
-      "grade": "best",
-      "why": "Two defenders on you means someone else is free. Find them."
+      "id": "kick-long-down",
+      "text": "Kick it long down the line",
+      "grade": "ok",
+      "why": "It gets you out of trouble, but you're likely to give the ball away."
     },
     {
       "id": "try-dribble-past",
@@ -58,10 +58,10 @@
       "why": "Beating two players in a tight space is really hard. You'll probably lose it."
     },
     {
-      "id": "kick-long-down",
-      "text": "Kick it long down the line",
-      "grade": "ok",
-      "why": "It gets you out of trouble, but you're likely to give the ball away."
+      "id": "pass-inside-free",
+      "text": "Pass inside to your free teammate",
+      "grade": "best",
+      "why": "Two defenders on you means someone else is free. Find them."
     }
   ],
   "difficulty": "Intermediate",

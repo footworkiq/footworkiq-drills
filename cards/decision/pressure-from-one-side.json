@@ -61,16 +61,16 @@
   },
   "options": [
     {
-      "id": "first-touch-right",
-      "text": "First touch to your right, away from the defender",
-      "grade": "best",
-      "why": "Taking the ball away from pressure gives you time and space."
-    },
-    {
       "id": "first-touch-left",
       "text": "First touch to your left",
       "grade": "poor",
       "why": "That takes the ball straight towards the defender."
+    },
+    {
+      "id": "first-touch-right",
+      "text": "First touch to your right, away from the defender",
+      "grade": "best",
+      "why": "Taking the ball away from pressure gives you time and space."
     },
     {
       "id": "pass-straight-back",

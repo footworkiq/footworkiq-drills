@@ -42,10 +42,10 @@
   },
   "options": [
     {
-      "id": "throw-free-teammates",
-      "text": "Throw to the free teammate's feet",
-      "grade": "best",
-      "why": "A short, easy throw keeps the ball. Feet are easier to control than a bouncing ball at head height."
+      "id": "throw-down-line",
+      "text": "Throw it down the line for someone to chase",
+      "grade": "ok",
+      "why": "Can work, but often gives the ball back to the other team."
     },
     {
       "id": "throw-long-marked",
@@ -54,10 +54,10 @@
       "why": "The defender is right there and will probably win it."
     },
     {
-      "id": "throw-down-line",
-      "text": "Throw it down the line for someone to chase",
-      "grade": "ok",
-      "why": "Can work, but often gives the ball back to the other team."
+      "id": "throw-free-teammates",
+      "text": "Throw to the free teammate's feet",
+      "grade": "best",
+      "why": "A short, easy throw keeps the ball. Feet are easier to control than a bouncing ball at head height."
     }
   ],
   "difficulty": "Intermediate",

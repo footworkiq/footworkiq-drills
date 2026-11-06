@@ -55,16 +55,16 @@
       "why": "Downward headers bounce awkwardly and are hard for keepers."
     },
     {
-      "id": "head-straight-goal",
-      "text": "Head it straight at goal",
-      "grade": "ok",
-      "why": "On target, but probably right at the keeper."
-    },
-    {
       "id": "let-hit",
       "text": "Let it hit you",
       "grade": "poor",
       "why": "Attack the ball. Don't let it attack you."
+    },
+    {
+      "id": "head-straight-goal",
+      "text": "Head it straight at goal",
+      "grade": "ok",
+      "why": "On target, but probably right at the keeper."
     }
   ],
   "difficulty": "Intermediate",

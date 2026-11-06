@@ -50,12 +50,6 @@
   },
   "options": [
     {
-      "id": "pass-short-free",
-      "text": "Pass short to your free defender",
-      "grade": "best",
-      "why": "An easy pass to a free teammate keeps the ball and beats their press."
-    },
-    {
       "id": "pass-teammate-middle",
       "text": "Pass to the teammate in the middle",
       "grade": "poor",
@@ -66,6 +60,12 @@
       "text": "Kick it as far as you can",
       "grade": "ok",
       "why": "Safe from danger, but it's often a 50-50 that hands them the ball."
+    },
+    {
+      "id": "pass-short-free",
+      "text": "Pass short to your free defender",
+      "grade": "best",
+      "why": "An easy pass to a free teammate keeps the ball and beats their press."
     }
   ],
   "difficulty": "Intermediate",

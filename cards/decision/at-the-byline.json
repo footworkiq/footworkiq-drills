@@ -48,16 +48,16 @@
       "why": "Your teammate is facing goal with nobody on them. That's a much easier chance."
     },
     {
-      "id": "shoot-tight-angle",
-      "text": "Shoot from the tight angle",
-      "grade": "poor",
-      "why": "The keeper is covering the near post, so there's almost nothing to aim at."
-    },
-    {
       "id": "cross-high-far",
       "text": "Cross it high to the far post",
       "grade": "ok",
       "why": "Nobody is there yet, so the ball may just go out."
+    },
+    {
+      "id": "shoot-tight-angle",
+      "text": "Shoot from the tight angle",
+      "grade": "poor",
+      "why": "The keeper is covering the near post, so there's almost nothing to aim at."
     }
   ],
   "difficulty": "Intermediate",

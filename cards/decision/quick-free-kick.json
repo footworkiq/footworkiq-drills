@@ -56,16 +56,16 @@
       "why": "While they're switched off, a quick free kick can set up a big chance."
     },
     {
-      "id": "argue-player-who",
-      "text": "Argue with the player who fouled you",
-      "grade": "poor",
-      "why": "You waste the chance and might get a card."
-    },
-    {
       "id": "wait-everyone-get",
       "text": "Wait for everyone to get set",
       "grade": "ok",
       "why": "Fine, but you lose the surprise."
+    },
+    {
+      "id": "argue-player-who",
+      "text": "Argue with the player who fouled you",
+      "grade": "poor",
+      "why": "You waste the chance and might get a card."
     }
   ],
   "difficulty": "Intermediate",

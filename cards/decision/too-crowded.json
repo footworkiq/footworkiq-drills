@@ -60,16 +60,16 @@
       "why": "When one side is crowded, the other side is open. A switch moves the whole game."
     },
     {
-      "id": "keep-dribbling-left",
-      "text": "Keep dribbling on the left",
-      "grade": "poor",
-      "why": "Three defenders are close. You'll run out of space fast."
-    },
-    {
       "id": "pass-back-teammate",
       "text": "Pass back to your teammate behind",
       "grade": "ok",
       "why": "Keeps the ball, and they might be able to switch it. But you could do it now."
+    },
+    {
+      "id": "keep-dribbling-left",
+      "text": "Keep dribbling on the left",
+      "grade": "poor",
+      "why": "Three defenders are close. You'll run out of space fast."
     }
   ],
   "difficulty": "Intermediate",

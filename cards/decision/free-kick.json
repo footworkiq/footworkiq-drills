@@ -46,6 +46,12 @@
   },
   "options": [
     {
+      "id": "quick-short-pass",
+      "text": "Quick short pass to your free teammate",
+      "grade": "ok",
+      "why": "Can catch defenders napping, but you'd lose a good shooting chance."
+    },
+    {
       "id": "aim-over-wall",
       "text": "Aim over the wall into the side the keeper left open",
       "grade": "best",
@@ -56,12 +62,6 @@
       "text": "Smash it hard straight ahead",
       "grade": "poor",
       "why": "That's where the wall is. It'll most likely be blocked."
-    },
-    {
-      "id": "quick-short-pass",
-      "text": "Quick short pass to your free teammate",
-      "grade": "ok",
-      "why": "Can catch defenders napping, but you'd lose a good shooting chance."
     }
   ],
   "difficulty": "Intermediate",

@@ -56,16 +56,16 @@
       "why": "A clear sight of goal doesn't last. Take the shot before the defenders behind you catch up."
     },
     {
-      "id": "dribble-crowded-box",
-      "text": "Dribble into the crowded box",
-      "grade": "poor",
-      "why": "There are two defenders waiting in there. You'll lose the space you have now."
-    },
-    {
       "id": "pass-sideways-teammate",
       "text": "Pass sideways to your teammate",
       "grade": "ok",
       "why": "Safe, but they're further out and wider. You have the better chance."
+    },
+    {
+      "id": "dribble-crowded-box",
+      "text": "Dribble into the crowded box",
+      "grade": "poor",
+      "why": "There are two defenders waiting in there. You'll lose the space you have now."
     }
   ],
   "difficulty": "Intermediate",

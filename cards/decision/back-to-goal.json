@@ -42,16 +42,16 @@
   },
   "options": [
     {
-      "id": "pass-back-free",
-      "text": "Pass back to your free teammate",
-      "grade": "best",
-      "why": "Play the way you're facing. Your teammate can see the whole pitch and switch the attack."
-    },
-    {
       "id": "spin-try-run",
       "text": "Spin and try to run past",
       "grade": "poor",
       "why": "The defender is right behind you, so turning here usually loses the ball."
+    },
+    {
+      "id": "pass-back-free",
+      "text": "Pass back to your free teammate",
+      "grade": "best",
+      "why": "Play the way you're facing. Your teammate can see the whole pitch and switch the attack."
     },
     {
       "id": "shield-ball-wait",

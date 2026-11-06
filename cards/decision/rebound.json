@@ -33,6 +33,12 @@
   },
   "options": [
     {
+      "id": "wait-see-if",
+      "text": "Wait to see if the ref gives a corner",
+      "grade": "poor",
+      "why": "The ball is still in play. Strikers who follow up score the most tap-ins."
+    },
+    {
       "id": "react-fast-shoot",
       "text": "React fast and shoot first time",
       "grade": "best",
@@ -43,12 +49,6 @@
       "text": "Control it, look up, then shoot",
       "grade": "ok",
       "why": "Calm, but every second lets the keeper and defenders recover."
-    },
-    {
-      "id": "wait-see-if",
-      "text": "Wait to see if the ref gives a corner",
-      "grade": "poor",
-      "why": "The ball is still in play. Strikers who follow up score the most tap-ins."
     }
   ],
   "difficulty": "Intermediate",

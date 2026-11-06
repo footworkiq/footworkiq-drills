@@ -46,12 +46,6 @@
   },
   "options": [
     {
-      "id": "pass-teammate-run",
-      "text": "Pass to your teammate and run past for the return",
-      "grade": "best",
-      "why": "A one-two gets you past the defender without having to beat them."
-    },
-    {
       "id": "pass-stand-still",
       "text": "Pass and stand still",
       "grade": "ok",
@@ -62,6 +56,12 @@
       "text": "Dribble straight into the defender",
       "grade": "poor",
       "why": "They're set and waiting for you. A pass is quicker than any trick."
+    },
+    {
+      "id": "pass-teammate-run",
+      "text": "Pass to your teammate and run past for the return",
+      "grade": "best",
+      "why": "A one-two gets you past the defender without having to beat them."
     }
   ],
   "difficulty": "Intermediate",
