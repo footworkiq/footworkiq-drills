@@ -38,7 +38,7 @@
   "options": [
     {
       "id": "try-dribble-out",
-      "text": "Try to dribble out",
+      "text": "Try to dribble out of the box",
       "grade": "poor",
       "why": "Lose it here and it's a goal. Keep it simple."
     },
@@ -50,15 +50,17 @@
     },
     {
       "id": "clear-high-wide",
-      "text": "Clear it high and wide",
+      "text": "Clear it high and out wide",
       "grade": "best",
       "why": "High and wide gets it away from danger and out of the middle."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "clearing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

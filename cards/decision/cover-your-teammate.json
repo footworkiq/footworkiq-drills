@@ -49,13 +49,13 @@
     },
     {
       "id": "stay-where-are",
-      "text": "Stay where you are",
+      "text": "Stay where you are and keep watching it",
       "grade": "ok",
       "why": "Not terrible, but you're too far away to help if your teammate gets beaten."
     },
     {
       "id": "run-ball-too",
-      "text": "Run at the ball too",
+      "text": "Run at the ball to help them out",
       "grade": "poor",
       "why": "Two of you on one player leaves another attacker free."
     }
@@ -63,7 +63,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "pressing",
+    "defensive-shape"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

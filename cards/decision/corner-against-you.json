@@ -43,19 +43,19 @@
   "options": [
     {
       "id": "watch-corner-taker",
-      "text": "Watch the corner taker",
+      "text": "Watch the corner taker as they kick it",
       "grade": "poor",
-      "why": "Your player can run off you and score a header."
+      "why": "Your player can run off you and get a free shot at goal."
     },
     {
       "id": "stay-close-goal",
-      "text": "Stay close, goal-side, watching ball and player",
+      "text": "Stay tight and goal-side, see both",
       "grade": "best",
-      "why": "If you stay touch-tight, they can't get a free jump at the ball."
+      "why": "Stay touch-tight and keep ball and player in view. Then they can't get a free run at the ball."
     },
     {
       "id": "stand-post",
-      "text": "Stand on the post",
+      "text": "Leave them and go and stand on the post",
       "grade": "ok",
       "why": "Useful, but your player is now completely free."
     }
@@ -63,7 +63,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "marking",
+    "set-piece"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
