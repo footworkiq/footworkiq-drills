@@ -55,7 +55,7 @@
   "options": [
     {
       "id": "hold-ball-until",
-      "text": "Hold the ball until the defender tackles",
+      "text": "Hold it until the defender tackles",
       "grade": "poor",
       "why": "Waiting gives the defender time and wastes your teammate's run."
     },
@@ -75,7 +75,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "passing",
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

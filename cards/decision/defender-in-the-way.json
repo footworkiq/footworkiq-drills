@@ -47,7 +47,7 @@
   "options": [
     {
       "id": "pass-stand-still",
-      "text": "Pass and stand still",
+      "text": "Pass to your teammate, then stay put",
       "grade": "ok",
       "why": "You keep the ball, but your teammate has nobody to pass to next."
     },
@@ -59,7 +59,7 @@
     },
     {
       "id": "pass-teammate-run",
-      "text": "Pass to your teammate and run past for the return",
+      "text": "Pass and run past for the return",
       "grade": "best",
       "why": "A one-two gets you past the defender without having to beat them."
     }
@@ -67,7 +67,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "passing",
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
