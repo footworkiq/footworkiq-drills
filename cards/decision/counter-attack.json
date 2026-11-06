@@ -82,7 +82,7 @@
     },
     {
       "id": "pass-wide-straight",
-      "text": "Pass wide straight away",
+      "text": "Pass it out wide straight away",
       "grade": "ok",
       "why": "Fine, but running at them first drags a defender with you."
     }
@@ -90,7 +90,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "transition",
+    "passing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

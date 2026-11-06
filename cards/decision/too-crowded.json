@@ -55,7 +55,7 @@
   "options": [
     {
       "id": "switch-ball-free",
-      "text": "Switch the ball to the free winger",
+      "text": "Switch it to the free winger",
       "grade": "best",
       "why": "When one side is crowded, the other side is open. A switch moves the whole game."
     },
@@ -67,7 +67,7 @@
     },
     {
       "id": "keep-dribbling-left",
-      "text": "Keep dribbling on the left",
+      "text": "Keep dribbling down the left side",
       "grade": "poor",
       "why": "Three defenders are close. You'll run out of space fast."
     }
@@ -75,7 +75,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "passing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
