@@ -8,6 +8,8 @@ on:
       - 'cards/**'
       - 'docs/schema/card.schema.json'
       - 'scripts/build-card-bundle.js'
+      - 'scripts/validate-cards.js'
+      - 'scripts/lib/**'
   workflow_dispatch:
 
 # One rebuild at a time so two auto-commits never race (non-fast-forward).

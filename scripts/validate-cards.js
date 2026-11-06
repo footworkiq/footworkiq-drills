@@ -5,8 +5,15 @@
 // with ajv-keywords' uniqueItemProperties for unique option ids.
 //
 // Fails on: invalid JSON, schema errors, filename !== id, duplicate id across
-// files, duplicate legacy_id across files, and a current card whose id is
-// listed in the retired-id file.
+// files, duplicate legacy_id across files, a current card whose id is listed
+// in the retired-id file, and the quality lints in scripts/lib/card-lints.js:
+// format (2-space JSON plus trailing newline), field-cap (per-field length
+// caps), sentence-length (max words per sentence), no-url (no links or domains
+// in any string), and the tag rules (tag-unknown, tag-duplicate, tag-count).
+//
+// Warns (fails with BALANCE_LINTS_STRICT or --strict-balance): option-balance,
+// tags-missing, and the deck-share rules (deck-best-longest, deck-best-first,
+// deck-best-shortest).
 //
 // Frozen ids (ADR 0009 D-06..D-08): with --base <git-ref> (CI passes the PR's
 // base branch) each card file that exists at <ref> is compared with the
@@ -15,15 +22,25 @@
 //     pinned by filename === id);
 //   - an existing card may only be removed if its id is added to the
 //     retired-id file, so the id is never reused for different content;
-//   - ids may not be removed from the retired-id file.
+//   - ids may not be removed from the retired-id file;
+//   - an option's grade may not change unless the card's rev increases, and
+//     rev may never decrease (rev-bump, D-20).
 // Renaming a card is therefore "retire the old id + add a new card".
 //
-// Usage: node scripts/validate-cards.js [--dir <path>] [--retired <path>] [--base <git-ref>]
+// Usage: node scripts/validate-cards.js [--dir <path>] [--retired <path>] [--base <git-ref>] [--strict-balance]
 import { execFileSync } from 'child_process';
 import { existsSync, readFileSync, readdirSync, statSync } from 'fs';
 import { basename, join, resolve } from 'path';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addKeywords from 'ajv-keywords';
+import {
+  lintCard,
+  lintDeck,
+  checkFormat,
+  checkRevBump,
+  isFailure,
+  BALANCE_LINTS_STRICT,
+} from './lib/card-lints.js';
 
 function argValue(name) {
   const i = process.argv.indexOf(name);
@@ -50,6 +67,7 @@ const retiredPath = retiredArg
 const BASE_CARDS_DIR = 'cards/decision';
 const BASE_RETIRED_PATH = 'cards/decision.retired.json';
 const baseRef = argValue('--base');
+const strictBalance = BALANCE_LINTS_STRICT || process.argv.includes('--strict-balance');
 
 // unicode: false makes maxLength/minLength count UTF-16 code units, matching
 // zod's .max()/.min() in the app. AJV's default counts code points, so strings
@@ -88,9 +106,10 @@ if (files.length === 0 && !dirArg) {
 }
 
 let failed = 0;
+let warnings = 0;
 const seenIds = new Map(); // id -> file
 const seenLegacy = new Map(); // legacy_id -> file
-const current = new Map(); // id -> parsed card (valid cards only)
+const current = new Map(); // id -> parsed card (schema-valid cards, lint failures included)
 
 /** Parse a retired-id list: a JSON array of unique card id strings. */
 function parseRetired(text, label) {
@@ -120,11 +139,30 @@ if (existsSync(retiredPath)) {
 }
 const retiredSet = new Set(retired);
 
+console.log(
+  strictBalance
+    ? 'Balance lints: strict'
+    : 'Balance lints: warn only (set BALANCE_LINTS_STRICT or pass --strict-balance)',
+);
+
+/** Print a lint issue as FAIL or WARN; returns true when it fails. */
+function reportIssue(label, issue) {
+  if (isFailure(issue, strictBalance)) {
+    console.error(`FAIL ${label}: [${issue.rule}] ${issue.message}`);
+    return true;
+  }
+  console.warn(`WARN ${label}: [${issue.rule}] ${issue.message}`);
+  warnings++;
+  return false;
+}
+
 for (const file of files) {
   const filePath = join(cardsDir, file);
   let data;
+  let text;
   try {
-    data = JSON.parse(readFileSync(filePath, 'utf8'));
+    text = readFileSync(filePath, 'utf8');
+    data = JSON.parse(text);
   } catch (e) {
     console.error(`FAIL ${file}: invalid JSON — ${e.message}`);
     failed++;
@@ -171,8 +209,25 @@ for (const file of files) {
     seenLegacy.set(data.legacy_id, file);
   }
 
+  // Record the card before linting so the deck lints and the --base checks
+  // still see a card that fails a lint.
   current.set(data.id, data);
+
+  const issues = [checkFormat(text), ...lintCard(data)].filter(Boolean);
+  let lintFailed = false;
+  for (const issue of issues) {
+    if (reportIssue(file, issue)) lintFailed = true;
+  }
+  if (lintFailed) {
+    failed++;
+    continue;
+  }
   console.log(`OK   ${file}`);
+}
+
+for (const issue of lintDeck([...current.values()])) {
+  const deckIssue = { ...issue, message: `${issue.path}: ${issue.message}` };
+  if (reportIssue('deck', deckIssue)) failed++;
 }
 
 /** Run git in the repo root; returns stdout, or throws with git's message. */
@@ -260,12 +315,17 @@ if (baseRef) {
       );
       failed++;
     }
+    const revIssue = checkRevBump(before, after);
+    if (revIssue) {
+      console.error(`FAIL ${file}: [rev-bump] ${revIssue}`);
+      failed++;
+    }
   }
-  console.log(`\nFrozen-id check against ${baseRef}: ${baseFiles.length} base card(s), ${compared} compared.`);
+  console.log(`\nFrozen-id and rev check against ${baseRef}: ${baseFiles.length} base card(s), ${compared} compared.`);
 }
 
 if (failed > 0) {
-  console.error(`\n${failed} file(s) failed validation.`);
+  console.error(`\n${failed} file(s) failed validation (${warnings} warning(s)).`);
   process.exit(1);
 }
-console.log(`\nAll ${files.length} card(s) valid.`);
+console.log(`\nAll ${files.length} card(s) valid (${warnings} warning(s)).`);

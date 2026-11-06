@@ -5,7 +5,7 @@
   "rev": 1,
   "category": "attack",
   "title": "Overlap",
-  "text": "You've got the ball on the wing, a defender is in front of you, and your teammate is sprinting round the outside.",
+  "text": "You've got the ball on the wing and a defender is in front of you. Your teammate is sprinting round the outside.",
   "tip": "A teammate making a run deserves a pass, or at least a look.",
   "scene": {
     "kind": "pitch",
