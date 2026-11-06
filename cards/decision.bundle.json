@@ -52,22 +52,25 @@
           "why": "Your teammate is facing goal with nobody on them. That's a much easier chance."
         },
         {
+          "id": "cross-high-far",
+          "text": "Cross high to the far post",
+          "grade": "ok",
+          "why": "Nobody is there yet, so the ball may just go out."
+        },
+        {
           "id": "shoot-tight-angle",
           "text": "Shoot from the tight angle",
           "grade": "poor",
           "why": "The keeper is covering the near post, so there's almost nothing to aim at."
-        },
-        {
-          "id": "cross-high-far",
-          "text": "Cross it high to the far post",
-          "grade": "ok",
-          "why": "Nobody is there yet, so the ball may just go out."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "crossing",
+        "passing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -194,16 +197,16 @@
       },
       "options": [
         {
-          "id": "pass-back-free",
-          "text": "Pass back to your free teammate",
-          "grade": "best",
-          "why": "Play the way you're facing. Your teammate can see the whole pitch and switch the attack."
-        },
-        {
           "id": "spin-try-run",
           "text": "Spin and try to run past",
           "grade": "poor",
           "why": "The defender is right behind you, so turning here usually loses the ball."
+        },
+        {
+          "id": "pass-back-free",
+          "text": "Pass back to your free teammate",
+          "grade": "best",
+          "why": "Play the way you're facing. Your teammate can see the whole pitch and switch the attack."
         },
         {
           "id": "shield-ball-wait",
@@ -215,7 +218,10 @@
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing",
+        "first-touch"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -389,27 +395,29 @@
       "options": [
         {
           "id": "first-touch-forward",
-          "text": "First touch forward into the space",
+          "text": "Touch it forward into the space",
           "grade": "best",
           "why": "A forward first touch gets you moving and saves time."
         },
         {
-          "id": "stop-ball-dead",
-          "text": "Stop the ball dead under your foot",
-          "grade": "ok",
-          "why": "Safe, but you lose time and the defenders get organised."
-        },
-        {
           "id": "kick-first-time",
-          "text": "Kick it first time without looking",
+          "text": "Hit it first time without looking",
           "grade": "poor",
           "why": "With this much time, a rushed kick usually gives the ball away."
+        },
+        {
+          "id": "stop-ball-dead",
+          "text": "Stop it dead under your foot",
+          "grade": "ok",
+          "why": "Safe, but you lose time and the defenders get organised."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "first-touch"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -641,7 +649,10 @@
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "dribbling",
+        "one-v-one"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -773,7 +784,7 @@
       "options": [
         {
           "id": "whip-between-six",
-          "text": "Whip it in between the six-yard box and the spot",
+          "text": "Whip it in towards the penalty spot",
           "grade": "best",
           "why": "That's where your teammates are, and it's too far out for the keeper to come and catch easily."
         },
@@ -785,15 +796,18 @@
         },
         {
           "id": "play-short-corner",
-          "text": "Play a short corner",
+          "text": "Play it short along the ground",
           "grade": "ok",
           "why": "Can work, but only if a teammate comes over for it. Right now nobody is there."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "set-piece",
+        "crossing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -869,20 +883,20 @@
       },
       "options": [
         {
-          "id": "run-pass-whoevers",
-          "text": "Run at them, then pass to whoever's free",
-          "grade": "best",
-          "why": "Driving forward forces a defender to step up, which leaves a teammate free."
-        },
-        {
           "id": "slow-down-wait",
           "text": "Slow down and wait for support",
           "grade": "poor",
           "why": "Counters work because the other team isn't set. Waiting gives them time."
         },
         {
+          "id": "run-pass-whoevers",
+          "text": "Run at them, then pass to whoever's free",
+          "grade": "best",
+          "why": "Driving forward forces a defender to step up, which leaves a teammate free."
+        },
+        {
           "id": "pass-wide-straight",
-          "text": "Pass wide straight away",
+          "text": "Pass it out wide straight away",
           "grade": "ok",
           "why": "Fine, but running at them first drags a defender with you."
         }
@@ -890,7 +904,10 @@
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "transition",
+        "passing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1090,28 +1107,30 @@
       },
       "options": [
         {
-          "id": "whip-low-across",
-          "text": "Whip it low across the six-yard box",
-          "grade": "best",
-          "why": "Low, fast crosses are hard for keepers to catch and easy for strikers to tap in."
+          "id": "shoot-out-wide",
+          "text": "Shoot at the near post from out wide",
+          "grade": "poor",
+          "why": "The angle is too tight. Your striker is in a much better spot."
         },
         {
           "id": "float-high-cross",
-          "text": "Float a high cross to the far post",
+          "text": "Float a high cross over to the far post",
           "grade": "ok",
           "why": "Can work, but gives the keeper time to come and claim it."
         },
         {
-          "id": "shoot-out-wide",
-          "text": "Shoot from out wide",
-          "grade": "poor",
-          "why": "The angle is too tight. Your striker is in a much better spot."
+          "id": "whip-low-across",
+          "text": "Whip it low across the six-yard box",
+          "grade": "best",
+          "why": "Low, fast crosses are hard for keepers to catch and easy for strikers to tap in."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "crossing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1246,14 +1265,8 @@
       },
       "options": [
         {
-          "id": "pass-teammate-run",
-          "text": "Pass to your teammate and run past for the return",
-          "grade": "best",
-          "why": "A one-two gets you past the defender without having to beat them."
-        },
-        {
           "id": "pass-stand-still",
-          "text": "Pass and stand still",
+          "text": "Pass to your teammate, then stay put",
           "grade": "ok",
           "why": "You keep the ball, but your teammate has nobody to pass to next."
         },
@@ -1262,12 +1275,21 @@
           "text": "Dribble straight into the defender",
           "grade": "poor",
           "why": "They're set and waiting for you. A pass is quicker than any trick."
+        },
+        {
+          "id": "pass-teammate-run",
+          "text": "Pass and run past for the return",
+          "grade": "best",
+          "why": "A one-two gets you past the defender without having to beat them."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing",
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1329,27 +1351,30 @@
       "options": [
         {
           "id": "let-run-through",
-          "text": "Let it run through to your teammate (a dummy)",
+          "text": "Let it run through to your teammate",
           "grade": "best",
           "why": "Your dummy fools the defender, and your teammate gets a free shot."
         },
         {
           "id": "try-control-defender",
-          "text": "Try to control it with the defender on you",
+          "text": "Control it, even with the defender on you",
           "grade": "ok",
           "why": "You might keep it, but the defender will be all over you."
         },
         {
           "id": "stop-wait-help",
-          "text": "Stop it and wait for help",
+          "text": "Stop it dead and wait for help",
           "grade": "poor",
           "why": "The defender will nick it straight away."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing",
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1412,22 +1437,24 @@
           "why": "A clear sight of goal doesn't last. Take the shot before the defenders behind you catch up."
         },
         {
-          "id": "dribble-crowded-box",
-          "text": "Dribble into the crowded box",
-          "grade": "poor",
-          "why": "There are two defenders waiting in there. You'll lose the space you have now."
-        },
-        {
           "id": "pass-sideways-teammate",
           "text": "Pass sideways to your teammate",
           "grade": "ok",
           "why": "Safe, but they're further out and wider. You have the better chance."
+        },
+        {
+          "id": "dribble-crowded-box",
+          "text": "Dribble into the crowded box",
+          "grade": "poor",
+          "why": "There are two defenders waiting in there. You'll lose the space you have now."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "finishing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1489,13 +1516,13 @@
       "options": [
         {
           "id": "move-gap-between",
-          "text": "Move into the gap between their midfield and defence",
+          "text": "Move between their midfield and defence",
           "grade": "best",
           "why": "In that pocket you can receive the ball and turn to face goal."
         },
         {
           "id": "stand-behind-midfielder",
-          "text": "Stand behind their midfielder",
+          "text": "Stand just behind their midfielder",
           "grade": "poor",
           "why": "Your teammate can't pass to you with someone in the way."
         },
@@ -1506,10 +1533,12 @@
           "why": "You might get a ball over the top, but it's much harder to receive and turn there."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1562,28 +1591,31 @@
       },
       "options": [
         {
+          "id": "quick-short-pass",
+          "text": "Quick short pass to your free teammate",
+          "grade": "ok",
+          "why": "Can catch defenders napping, but you'd lose a good shooting chance."
+        },
+        {
           "id": "aim-over-wall",
-          "text": "Aim over the wall into the side the keeper left open",
+          "text": "Aim over the wall into the open side",
           "grade": "best",
           "why": "The keeper has moved across, leaving one side of the goal more open."
         },
         {
           "id": "smash-hard-straight",
-          "text": "Smash it hard straight ahead",
+          "text": "Smash it hard and straight at goal",
           "grade": "poor",
           "why": "That's where the wall is. It'll most likely be blocked."
-        },
-        {
-          "id": "quick-short-pass",
-          "text": "Quick short pass to your free teammate",
-          "grade": "ok",
-          "why": "Can catch defenders napping, but you'd lose a good shooting chance."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Advanced",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "set-piece",
+        "finishing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1592,10 +1624,10 @@
       "schema": "1.0",
       "id": "goal-kick",
       "legacy_id": "a21",
-      "rev": 1,
+      "rev": 2,
       "category": "attack",
       "title": "Goal kick",
-      "text": "You're the keeper with the ball. The other team are pressing high, but one of your defenders is free on the right.",
+      "text": "You're taking a goal kick. Their forwards are waiting on halfway to press, but one of your defenders is free on the right.",
       "tip": "Building from the back starts with finding the free player.",
       "scene": {
         "kind": "pitch",
@@ -1640,12 +1672,6 @@
       },
       "options": [
         {
-          "id": "pass-short-free",
-          "text": "Pass short to your free defender",
-          "grade": "best",
-          "why": "An easy pass to a free teammate keeps the ball and beats their press."
-        },
-        {
           "id": "pass-teammate-middle",
           "text": "Pass to the teammate in the middle",
           "grade": "poor",
@@ -1656,12 +1682,21 @@
           "text": "Kick it as far as you can",
           "grade": "ok",
           "why": "Safe from danger, but it's often a 50-50 that hands them the ball."
+        },
+        {
+          "id": "pass-short-free",
+          "text": "Pass short to your free defender",
+          "grade": "best",
+          "why": "An easy pass to a free teammate keeps the ball and beats their press."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "set-piece",
+        "passing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1807,22 +1842,25 @@
           "why": "Downward headers bounce awkwardly and are hard for keepers."
         },
         {
-          "id": "head-straight-goal",
-          "text": "Head it straight at goal",
-          "grade": "ok",
-          "why": "On target, but probably right at the keeper."
-        },
-        {
           "id": "let-hit",
-          "text": "Let it hit you",
+          "text": "Let it hit you and hope it goes in",
           "grade": "poor",
           "why": "Attack the ball. Don't let it attack you."
+        },
+        {
+          "id": "head-straight-goal",
+          "text": "Head it straight towards goal",
+          "grade": "ok",
+          "why": "On target, but probably right at the keeper."
         }
       ],
       "difficulty": "Intermediate",
-      "age_band": "all",
+      "age_band": "U16",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "heading",
+        "finishing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2049,7 +2087,7 @@
       "schema": "1.0",
       "id": "keeper-off-the-line",
       "legacy_id": "a14",
-      "rev": 1,
+      "rev": 2,
       "category": "attack",
       "title": "Keeper off the line",
       "text": "You're on the ball in midfield and notice the keeper is standing way out of goal.",
@@ -2089,28 +2127,30 @@
       },
       "options": [
         {
+          "id": "blast-low-goal",
+          "text": "Blast it low at goal",
+          "grade": "ok",
+          "why": "A shot on target can still go in, so it's not a bad idea. But the keeper is out in its path, so going over is better."
+        },
+        {
+          "id": "pass-teammate",
+          "text": "Pass forward to a teammate",
+          "grade": "ok",
+          "why": "Fine, but you'd miss a rare chance to catch the keeper out."
+        },
+        {
           "id": "chip-over-keeper",
           "text": "Chip it over the keeper",
           "grade": "best",
           "why": "With the keeper so far out, a lofted shot over their head is the quickest way to score."
-        },
-        {
-          "id": "blast-low-goal",
-          "text": "Blast it low at goal",
-          "grade": "poor",
-          "why": "The keeper is right in the path of a low shot. Go over, not through."
-        },
-        {
-          "id": "pass-teammate",
-          "text": "Pass to your teammate",
-          "grade": "ok",
-          "why": "Fine, but you'd miss a rare chance to catch the keeper out."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "finishing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2576,27 +2616,30 @@
       "options": [
         {
           "id": "step-back-level",
-          "text": "Step back level with the defender, then run as they pass",
+          "text": "Step back level, then run as they pass",
           "grade": "best",
           "why": "Being level when the pass is played keeps you onside. Then you can run in behind."
+        },
+        {
+          "id": "drop-deep-get",
+          "text": "Drop deep to get the ball to feet",
+          "grade": "ok",
+          "why": "Keeps you onside, but you lose the chance to get in behind."
         },
         {
           "id": "stay-where-are",
           "text": "Stay where you are and call for it",
           "grade": "poor",
           "why": "If they pass now, you're offside and the other team gets a free kick."
-        },
-        {
-          "id": "drop-deep-get",
-          "text": "Drop deep to get it to feet",
-          "grade": "ok",
-          "why": "Keeps you onside, but you lose the chance to get in behind."
         }
       ],
-      "difficulty": "Intermediate",
-      "age_band": "all",
+      "difficulty": "Advanced",
+      "age_band": "U12",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "laws",
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2667,10 +2710,12 @@
           "why": "Safe, but you waste the chance to attack while the space is there."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "dribbling"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2801,6 +2846,12 @@
       },
       "options": [
         {
+          "id": "hold-ball-until",
+          "text": "Hold it until the defender tackles",
+          "grade": "poor",
+          "why": "Waiting gives the defender time and wastes your teammate's run."
+        },
+        {
           "id": "pass-teammates-path",
           "text": "Pass into your teammate's path",
           "grade": "best",
@@ -2811,18 +2862,15 @@
           "text": "Try to beat the defender yourself",
           "grade": "ok",
           "why": "Possible, but you're ignoring a teammate who's already free."
-        },
-        {
-          "id": "hold-ball-until",
-          "text": "Hold the ball until the defender tackles",
-          "grade": "poor",
-          "why": "Waiting gives the defender time and wastes your teammate's run."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing",
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2857,12 +2905,6 @@
       },
       "options": [
         {
-          "id": "pick-corner-before",
-          "text": "Pick a corner before your run-up and stick to it",
-          "grade": "best",
-          "why": "Deciding early means a confident strike. Changing your mind mid run-up leads to scuffed kicks."
-        },
-        {
           "id": "change-mind-run",
           "text": "Change your mind as you run up",
           "grade": "poor",
@@ -2870,15 +2912,25 @@
         },
         {
           "id": "blast-hard-can",
-          "text": "Blast it as hard as you can, no aim",
+          "text": "Just blast it hard, with no aim",
           "grade": "ok",
           "why": "Power can beat a keeper, but without a target it often flies over or straight at them."
+        },
+        {
+          "id": "pick-corner-before",
+          "text": "Pick a corner early and stick to it",
+          "grade": "best",
+          "why": "Deciding early means a confident strike. Changing your mind mid run-up leads to scuffed kicks."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "finishing",
+        "set-piece",
+        "composure"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3136,16 +3188,16 @@
       },
       "options": [
         {
-          "id": "first-touch-right",
-          "text": "First touch to your right, away from the defender",
-          "grade": "best",
-          "why": "Taking the ball away from pressure gives you time and space."
-        },
-        {
           "id": "first-touch-left",
-          "text": "First touch to your left",
+          "text": "Take your first touch to the left",
           "grade": "poor",
           "why": "That takes the ball straight towards the defender."
+        },
+        {
+          "id": "first-touch-right",
+          "text": "First touch away to your right",
+          "grade": "best",
+          "why": "Taking the ball away from pressure gives you time and space."
         },
         {
           "id": "pass-straight-back",
@@ -3157,7 +3209,9 @@
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "first-touch"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3215,27 +3269,30 @@
       "options": [
         {
           "id": "take-quickly-free",
-          "text": "Take it quickly to your free teammate",
+          "text": "Take it quickly to a free teammate",
           "grade": "best",
           "why": "While they're switched off, a quick free kick can set up a big chance."
+        },
+        {
+          "id": "wait-everyone-get",
+          "text": "Wait until everyone is set and ready",
+          "grade": "ok",
+          "why": "Fine, but you lose the surprise."
         },
         {
           "id": "argue-player-who",
           "text": "Argue with the player who fouled you",
           "grade": "poor",
           "why": "You waste the chance and might get a card."
-        },
-        {
-          "id": "wait-everyone-get",
-          "text": "Wait for everyone to get set",
-          "grade": "ok",
-          "why": "Fine, but you lose the surprise."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "set-piece",
+        "fair-play"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3275,6 +3332,12 @@
       },
       "options": [
         {
+          "id": "wait-see-if",
+          "text": "Wait to see if the ref gives a corner",
+          "grade": "poor",
+          "why": "The ball is still in play. Strikers who follow up score the most tap-ins."
+        },
+        {
           "id": "react-fast-shoot",
           "text": "React fast and shoot first time",
           "grade": "best",
@@ -3282,21 +3345,18 @@
         },
         {
           "id": "control-look-shoot",
-          "text": "Control it, look up, then shoot",
+          "text": "Control it, look up, shoot",
           "grade": "ok",
           "why": "Calm, but every second lets the keeper and defenders recover."
-        },
-        {
-          "id": "wait-see-if",
-          "text": "Wait to see if the ref gives a corner",
-          "grade": "poor",
-          "why": "The ball is still in play. Strikers who follow up score the most tap-ins."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "finishing",
+        "laws"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3361,28 +3421,31 @@
       },
       "options": [
         {
-          "id": "pass-space-ahead",
-          "text": "Pass into the space ahead of them",
-          "grade": "best",
-          "why": "Passing into space lets your teammate run onto it without slowing down."
+          "id": "shoot-here",
+          "text": "Shoot now, before the defenders close in",
+          "grade": "poor",
+          "why": "It's too far out with three defenders in the way."
         },
         {
           "id": "pass-teammates-feet",
-          "text": "Pass to your teammate's feet",
+          "text": "Play it short to your teammate's feet",
           "grade": "ok",
           "why": "They'd have to stop running, and the defenders would catch up."
         },
         {
-          "id": "shoot-here",
-          "text": "Shoot from here",
-          "grade": "poor",
-          "why": "It's too far out with three defenders in the way."
+          "id": "pass-space-ahead",
+          "text": "Pass into the space ahead of them",
+          "grade": "best",
+          "why": "Passing into space lets your teammate run onto it without slowing down."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing",
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3806,12 +3869,6 @@
       },
       "options": [
         {
-          "id": "move-back-out",
-          "text": "Move back out wide on the right",
-          "grade": "best",
-          "why": "Staying wide stretches the defence and gives your team an option to switch play."
-        },
-        {
           "id": "run-over-ball",
           "text": "Run over to the ball to help",
           "grade": "poor",
@@ -3819,15 +3876,23 @@
         },
         {
           "id": "stay-where-are",
-          "text": "Stay where you are",
+          "text": "Stay where you are in the middle",
           "grade": "ok",
           "why": "You're not in the way, but you're not adding anything either."
+        },
+        {
+          "id": "move-back-out",
+          "text": "Move back out wide on the right",
+          "grade": "best",
+          "why": "Staying wide stretches the defence and gives your team an option to switch play."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3981,7 +4046,11 @@
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing",
+        "finishing",
+        "teamwork"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4176,10 +4245,10 @@
       },
       "options": [
         {
-          "id": "shoot-low-corner",
-          "text": "Shoot low into a corner",
-          "grade": "best",
-          "why": "Low shots into the corners are the hardest for a keeper to reach. Shoot early, before the defender catches you."
+          "id": "stop-wait-teammate",
+          "text": "Stop and wait for a teammate",
+          "grade": "poor",
+          "why": "Stopping lets the defender recover. Chances like this don't last."
         },
         {
           "id": "dribble-round-keeper",
@@ -4188,16 +4257,18 @@
           "why": "It can work, but every extra touch gives the chasing defender time to get back."
         },
         {
-          "id": "stop-wait-teammate",
-          "text": "Stop and wait for a teammate",
-          "grade": "poor",
-          "why": "Stopping lets the defender recover. Chances like this don't last."
+          "id": "shoot-low-corner",
+          "text": "Shoot low into a corner",
+          "grade": "best",
+          "why": "Low shots into the corners are the hardest for a keeper to reach. Shoot early, before the defender catches you."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "finishing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4246,28 +4317,31 @@
       },
       "options": [
         {
-          "id": "throw-free-teammates",
-          "text": "Throw to the free teammate's feet",
-          "grade": "best",
-          "why": "A short, easy throw keeps the ball. Feet are easier to control than a bouncing ball at head height."
+          "id": "throw-down-line",
+          "text": "Throw it down the line for a chase",
+          "grade": "ok",
+          "why": "Can work, but often gives the ball back to the other team."
         },
         {
           "id": "throw-long-marked",
-          "text": "Throw long to the marked teammate",
+          "text": "Throw it long to the marked teammate",
           "grade": "poor",
           "why": "The defender is right there and will probably win it."
         },
         {
-          "id": "throw-down-line",
-          "text": "Throw it down the line for someone to chase",
-          "grade": "ok",
-          "why": "Can work, but often gives the ball back to the other team."
+          "id": "throw-free-teammates",
+          "text": "Throw to the free teammate's feet",
+          "grade": "best",
+          "why": "A short, easy throw keeps the ball. Feet are easier to control than a bouncing ball at head height."
         }
       ],
       "difficulty": "Intermediate",
-      "age_band": "all",
+      "age_band": "U12",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "set-piece",
+        "passing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4329,27 +4403,29 @@
       "options": [
         {
           "id": "switch-ball-free",
-          "text": "Switch the ball to the free winger",
+          "text": "Switch it to the free winger",
           "grade": "best",
           "why": "When one side is crowded, the other side is open. A switch moves the whole game."
-        },
-        {
-          "id": "keep-dribbling-left",
-          "text": "Keep dribbling on the left",
-          "grade": "poor",
-          "why": "Three defenders are close. You'll run out of space fast."
         },
         {
           "id": "pass-back-teammate",
           "text": "Pass back to your teammate behind",
           "grade": "ok",
           "why": "Keeps the ball, and they might be able to switch it. But you could do it now."
+        },
+        {
+          "id": "keep-dribbling-left",
+          "text": "Keep dribbling down the left side",
+          "grade": "poor",
+          "why": "Three defenders are close. You'll run out of space fast."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4402,10 +4478,10 @@
       },
       "options": [
         {
-          "id": "pass-inside-free",
-          "text": "Pass inside to your free teammate",
-          "grade": "best",
-          "why": "Two defenders on you means someone else is free. Find them."
+          "id": "kick-long-down",
+          "text": "Kick it long down the line",
+          "grade": "ok",
+          "why": "It gets you out of trouble, but you're likely to give the ball away."
         },
         {
           "id": "try-dribble-past",
@@ -4414,16 +4490,19 @@
           "why": "Beating two players in a tight space is really hard. You'll probably lose it."
         },
         {
-          "id": "kick-long-down",
-          "text": "Kick it long down the line",
-          "grade": "ok",
-          "why": "It gets you out of trouble, but you're likely to give the ball away."
+          "id": "pass-inside-free",
+          "text": "Pass inside to your free teammate",
+          "grade": "best",
+          "why": "Two defenders on you means someone else is free. Find them."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing",
+        "dribbling"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4468,10 +4547,10 @@
       },
       "options": [
         {
-          "id": "run-defender-pass",
-          "text": "Run at the defender, pass when they come to you",
-          "grade": "best",
-          "why": "Making the defender choose leaves your teammate free. Pass the moment they commit to you."
+          "id": "shoot-where-are",
+          "text": "Shoot early from where you are",
+          "grade": "poor",
+          "why": "It's a long way out with a defender in the way. You have a better option."
         },
         {
           "id": "pass-teammate-straight",
@@ -4480,16 +4559,18 @@
           "why": "Not bad, but the defender can just shift across. Draw them in first."
         },
         {
-          "id": "shoot-where-are",
-          "text": "Shoot from where you are",
-          "grade": "poor",
-          "why": "It's a long way out with a defender in the way. You have a better option."
+          "id": "run-defender-pass",
+          "text": "Run at them, pass when they commit",
+          "grade": "best",
+          "why": "Making the defender choose leaves your teammate free. Pass the moment they commit to you."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "passing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4498,7 +4579,7 @@
       "schema": "1.0",
       "id": "weaker-foot",
       "legacy_id": "a20",
-      "rev": 1,
+      "rev": 2,
       "category": "attack",
       "title": "Weaker foot",
       "text": "You have a chance to shoot, but the ball is on your weaker foot. A defender is closing in from your strong side.",
@@ -4538,28 +4619,30 @@
       },
       "options": [
         {
+          "id": "take-touch-onto",
+          "text": "Touch it onto your stronger foot",
+          "grade": "ok",
+          "why": "Your stronger foot gives a cleaner strike, but the touch moves you towards the defender. Only do it if there's room."
+        },
+        {
+          "id": "pass-teammate",
+          "text": "Pass to your teammate nearby",
+          "grade": "ok",
+          "why": "They have a defender nearby too. You have the clearer chance."
+        },
+        {
           "id": "shoot-weaker-foot",
           "text": "Shoot with your weaker foot",
           "grade": "best",
           "why": "A quick shot with your weaker foot beats a perfect one that gets blocked."
-        },
-        {
-          "id": "take-touch-onto",
-          "text": "Take a touch onto your stronger foot",
-          "grade": "poor",
-          "why": "That touch takes you straight into the defender."
-        },
-        {
-          "id": "pass-teammate",
-          "text": "Pass to your teammate",
-          "grade": "ok",
-          "why": "They have a defender nearby too. You have the clearer chance."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "finishing"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4684,7 +4767,7 @@
       "category": "attack",
       "title": "Winning, one minute left",
       "text": "Your team is 2–1 up with a minute to go. You have the ball near their corner flag.",
-      "tip": "Know the score and the time. They change the best decision.",
+      "tip": "Know the score and the time. They change the best decision. At youth level, going for another goal is fine too.",
       "scene": {
         "kind": "pitch",
         "own": false,
@@ -4720,20 +4803,20 @@
       },
       "options": [
         {
-          "id": "shield-ball-by",
-          "text": "Shield the ball by the corner flag",
-          "grade": "best",
-          "why": "Every second the ball stays there is a second they can't attack you."
-        },
-        {
           "id": "cross-box",
-          "text": "Cross it into the box",
+          "text": "Cross it into the box straight away",
           "grade": "poor",
           "why": "Nobody is there, so you'd hand them the ball and a chance to attack."
         },
         {
+          "id": "shield-ball-by",
+          "text": "Shield it by the corner flag",
+          "grade": "best",
+          "why": "Every second the ball stays there is a second they can't attack you."
+        },
+        {
           "id": "pass-back-teammate",
-          "text": "Pass back to your teammate",
+          "text": "Pass it back to your teammate",
           "grade": "ok",
           "why": "Keeps the ball, but brings play back towards your own goal."
         }
@@ -4741,7 +4824,9 @@
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "game-management"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
