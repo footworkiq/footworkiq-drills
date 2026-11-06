@@ -38,20 +38,20 @@
   },
   "options": [
     {
+      "id": "turn-back-jump",
+      "text": "Turn your back and jump out of the way",
+      "grade": "poor",
+      "why": "The ball goes straight past you towards goal."
+    },
+    {
       "id": "get-body-way",
       "text": "Get your body in the way, side-on",
       "grade": "best",
       "why": "Blocking the shot is brave and stops danger. Side-on keeps your arms tucked in."
     },
     {
-      "id": "turn-back-jump",
-      "text": "Turn your back and jump away",
-      "grade": "poor",
-      "why": "The ball goes straight past you towards goal."
-    },
-    {
       "id": "slide-last-second",
-      "text": "Slide in at the last second",
+      "text": "Slide in to block at the last second",
       "grade": "ok",
       "why": "It might block it, but you risk a foul or a penalty."
     }
@@ -59,7 +59,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "one-v-one"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

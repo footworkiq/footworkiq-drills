@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "last-defender",
   "legacy_id": "d1",
-  "rev": 1,
+  "rev": 2,
   "category": "defend",
   "title": "Last defender",
   "text": "An attacker is running at you with the ball. Your teammates are racing back.",
@@ -57,21 +57,23 @@
     },
     {
       "id": "dive-slide-tackle",
-      "text": "Dive in with a slide tackle",
+      "text": "Dive in with a quick slide tackle",
       "grade": "poor",
       "why": "If you miss, they're through on goal. Stay patient."
     },
     {
       "id": "run-back-goal",
-      "text": "Run back to your goal line",
-      "grade": "poor",
-      "why": "That gives them a free shot from the edge of the box."
+      "text": "Drop back towards the edge of your box",
+      "grade": "ok",
+      "why": "Backing off buys a little time, but go too far and they get a shot from the edge. Slow them down further out."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "one-v-one"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

@@ -38,20 +38,20 @@
   },
   "options": [
     {
-      "id": "stay-feet-stay",
-      "text": "Stay on your feet and stay goal-side",
-      "grade": "best",
-      "why": "Any foul in the box is a penalty. Stay between them and goal."
-    },
-    {
       "id": "slide-side",
-      "text": "Slide in from the side",
+      "text": "Slide in from the side to win it",
       "grade": "poor",
       "why": "Miss the ball and it's a penalty."
     },
     {
+      "id": "stay-feet-stay",
+      "text": "Stay on your feet and goal-side",
+      "grade": "best",
+      "why": "A foul in your box can give away a penalty. Stay between them and goal."
+    },
+    {
       "id": "back-off-six",
-      "text": "Back off to the six-yard box",
+      "text": "Back off towards the six-yard box",
       "grade": "ok",
       "why": "Gives them room to shoot."
     }
@@ -59,7 +59,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "one-v-one"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

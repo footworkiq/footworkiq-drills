@@ -48,22 +48,25 @@
       "why": "Delaying gives teammates time to recover, and the attackers might make a mistake."
     },
     {
-      "id": "run-player-ball",
-      "text": "Run at the player with the ball",
-      "grade": "poor",
-      "why": "They'll just pass to the free attacker."
-    },
-    {
       "id": "mark-player-without",
       "text": "Mark the player without the ball",
       "grade": "ok",
       "why": "The ball carrier can then run in and shoot."
+    },
+    {
+      "id": "run-player-ball",
+      "text": "Run at the player with the ball",
+      "grade": "poor",
+      "why": "They'll just pass to the free attacker."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "one-v-one",
+    "defensive-shape"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

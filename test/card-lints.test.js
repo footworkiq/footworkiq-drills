@@ -34,6 +34,10 @@ const BASE = (() => {
   );
   const c = JSON.parse(JSON.stringify(raw));
   c.tags = ['keeper', 'laws'];
+  // Pin the option order (best, ok, poor) so these tests don't depend on the
+  // seeded order the card file is stored in (reorder-card-options.js).
+  const order = ['pass-first-time', 'kick-long-pitch', 'pick-hands'];
+  c.options.sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
   return c;
 })();
 

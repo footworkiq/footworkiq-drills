@@ -50,28 +50,31 @@
   },
   "options": [
     {
-      "id": "shout-keeper-catch",
-      "text": "Shout \"Keeper!\" and catch it at its highest point",
-      "grade": "best",
-      "why": "Calling tells your team you're coming. Catching it high is above everyone else."
-    },
-    {
       "id": "punch-clear",
-      "text": "Punch it clear",
+      "text": "Punch it clear, away from the crowd",
       "grade": "ok",
       "why": "A good choice if it's too busy to catch, but the ball may come straight back."
     },
     {
       "id": "stay-line",
-      "text": "Stay on your line",
+      "text": "Stay on your goal line and wait",
       "grade": "poor",
-      "why": "The attackers get a free header."
+      "why": "The attackers get a free go at the ball."
+    },
+    {
+      "id": "shout-keeper-catch",
+      "text": "Shout \"Keeper!\" and catch it high",
+      "grade": "best",
+      "why": "Calling tells your team you're coming. Catching it high is above everyone else."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
-  "role": "outfield",
-  "tags": [],
+  "role": "keeper",
+  "tags": [
+    "keeper",
+    "communication"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

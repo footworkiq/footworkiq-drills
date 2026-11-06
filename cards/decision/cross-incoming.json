@@ -37,28 +37,30 @@
   },
   "options": [
     {
-      "id": "get-between-striker",
-      "text": "Get between the striker and goal, watch both",
-      "grade": "best",
-      "why": "From there you can attack the ball and the striker can't get in front of you."
+      "id": "run-out-block",
+      "text": "Run out wide to block the crosser",
+      "grade": "poor",
+      "why": "That leaves the striker free right in front of goal."
     },
     {
       "id": "watch-only-ball",
-      "text": "Watch only the ball",
+      "text": "Watch only the ball as it comes in",
       "grade": "ok",
       "why": "You might win it, but the striker can sneak in front of you."
     },
     {
-      "id": "run-out-block",
-      "text": "Run out to block the crosser",
-      "grade": "poor",
-      "why": "That leaves the striker free right in front of goal."
+      "id": "get-between-striker",
+      "text": "Stay goal-side, see ball and striker",
+      "grade": "best",
+      "why": "From there you can attack the ball and the striker can't get in front of you."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "marking"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

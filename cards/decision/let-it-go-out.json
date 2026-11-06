@@ -33,20 +33,20 @@
   },
   "options": [
     {
-      "id": "shield-let-roll",
-      "text": "Shield it and let it roll out for a goal kick",
-      "grade": "best",
-      "why": "Your body keeps the attacker away until it's out, and you get the ball back."
-    },
-    {
       "id": "try-dribble-out",
-      "text": "Try to dribble out",
+      "text": "Turn and try to dribble out",
       "grade": "poor",
       "why": "Risky right next to your goal."
     },
     {
+      "id": "shield-let-roll",
+      "text": "Shield it until it rolls out",
+      "grade": "best",
+      "why": "Your body keeps the attacker away until it's out, and you get the ball back."
+    },
+    {
       "id": "clear-line",
-      "text": "Clear it up the line",
+      "text": "Clear it away up the line",
       "grade": "ok",
       "why": "Fine, but you'd give up a free goal kick."
     }
@@ -54,7 +54,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "clearing",
+    "game-management"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

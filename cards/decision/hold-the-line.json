@@ -46,16 +46,16 @@
   },
   "options": [
     {
-      "id": "step-line-teammates",
-      "text": "Step up in line with your teammates",
-      "grade": "best",
-      "why": "A straight line can catch the striker offside and keeps your back line together."
-    },
-    {
       "id": "stay-deep-behind",
       "text": "Stay deep behind your teammates",
       "grade": "poor",
       "why": "You're keeping the striker onside, and they can get in behind."
+    },
+    {
+      "id": "step-line-teammates",
+      "text": "Step up in line with your teammates",
+      "grade": "best",
+      "why": "A straight line can catch the striker offside and keeps your back line together."
     },
     {
       "id": "run-out-player",
@@ -64,10 +64,13 @@
       "why": "Pressure helps, but now there's a gap in your line."
     }
   ],
-  "difficulty": "Intermediate",
-  "age_band": "all",
+  "difficulty": "Advanced",
+  "age_band": "U12",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "defensive-shape",
+    "laws"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
