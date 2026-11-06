@@ -63,7 +63,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "one-v-one",
+    "defensive-shape"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

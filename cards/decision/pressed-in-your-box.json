@@ -59,15 +59,18 @@
     },
     {
       "id": "kick-out-throw",
-      "text": "Kick it out for a throw-in",
+      "text": "Kick it out over the touchline",
       "grade": "ok",
       "why": "Safe, but you give the ball away close to your goal."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "clearing",
+    "passing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
