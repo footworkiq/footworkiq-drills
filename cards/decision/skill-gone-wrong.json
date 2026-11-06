@@ -27,7 +27,7 @@
     },
     {
       "id": "never-try-again",
-      "text": "Never try it again",
+      "text": "Never try that skill in a match again",
       "grade": "poor",
       "why": "Then you'll never get good at it."
     }
@@ -35,7 +35,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "composure"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
