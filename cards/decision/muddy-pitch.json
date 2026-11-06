@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "muddy-pitch",
   "legacy_id": "m15",
-  "rev": 1,
+  "rev": 2,
   "category": "mindset",
   "title": "Muddy pitch",
   "text": "It's pouring with rain and the pitch is slippery.",
@@ -15,13 +15,13 @@
   "options": [
     {
       "id": "complain-about-weather",
-      "text": "Complain about the weather",
-      "grade": "poor",
-      "why": "It's the same for both teams."
+      "text": "Kick it long so it doesn't get stuck",
+      "grade": "ok",
+      "why": "It can skip over the puddles, but long balls are hard to control. Keep it simple and safe."
     },
     {
       "id": "try-lots-fancy",
-      "text": "Try lots of fancy skills",
+      "text": "Try lots of fancy skills and tricks",
       "grade": "poor",
       "why": "The ball will skid away from you."
     },
@@ -32,10 +32,12 @@
       "why": "Slippery conditions make tricks hard. Simple football works best."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "composure"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

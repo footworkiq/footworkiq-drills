@@ -15,7 +15,7 @@
   "options": [
     {
       "id": "stop-running",
-      "text": "Stop running",
+      "text": "Stop running for it, they won't pass",
       "grade": "poor",
       "why": "Then they'll never pass to you."
     },
@@ -27,7 +27,7 @@
     },
     {
       "id": "talk-calmly-after",
-      "text": "Talk to them calmly after the game",
+      "text": "Have a calm word with them after the game",
       "grade": "ok",
       "why": "A good idea, but keep helping during the match too."
     }
@@ -35,7 +35,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "teamwork",
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

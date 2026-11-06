@@ -15,13 +15,13 @@
   "options": [
     {
       "id": "give-theyre-too",
-      "text": "Give up, they're too big",
+      "text": "Give up, they're far too big",
       "grade": "poor",
       "why": "Size isn't everything in football."
     },
     {
       "id": "avoid-all-challenges",
-      "text": "Avoid all challenges",
+      "text": "Avoid all of the challenges",
       "grade": "ok",
       "why": "Sensible sometimes, but you still need to compete."
     },
@@ -35,7 +35,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "teamwork"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
