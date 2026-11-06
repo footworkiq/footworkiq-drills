@@ -47,13 +47,13 @@
   "options": [
     {
       "id": "curve-run-block",
-      "text": "Curve your run to block the pass to one defender",
+      "text": "Curve your run to block one pass",
       "grade": "best",
       "why": "You stop one option and push the keeper to the other side, where your teammates can press."
     },
     {
       "id": "walk-back-halfway",
-      "text": "Walk back to halfway",
+      "text": "Walk back to the halfway line",
       "grade": "poor",
       "why": "It gives them an easy start."
     },
@@ -64,10 +64,12 @@
       "why": "Puts them under pressure, but they can pass either way."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "pressing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

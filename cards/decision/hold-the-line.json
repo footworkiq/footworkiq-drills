@@ -64,10 +64,13 @@
       "why": "Pressure helps, but now there's a gap in your line."
     }
   ],
-  "difficulty": "Intermediate",
-  "age_band": "all",
+  "difficulty": "Advanced",
+  "age_band": "U12",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "defensive-shape",
+    "laws"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
