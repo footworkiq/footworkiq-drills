@@ -43,19 +43,19 @@
   "options": [
     {
       "id": "let-cut-inside",
-      "text": "Let them cut inside",
+      "text": "Back off and let them cut inside",
       "grade": "poor",
       "why": "Inside is the shortest route to goal and opens up a shot."
     },
     {
       "id": "stand-side-push",
-      "text": "Stand side-on and push them to the touchline",
+      "text": "Stand side-on, show them the touchline",
       "grade": "best",
       "why": "The wing is less dangerous, and the touchline acts like an extra defender."
     },
     {
       "id": "stand-square-front",
-      "text": "Stand square in front of them",
+      "text": "Stand square right in front of them",
       "grade": "ok",
       "why": "Better than nothing, but they can go either way past you."
     }
@@ -63,7 +63,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "one-v-one"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

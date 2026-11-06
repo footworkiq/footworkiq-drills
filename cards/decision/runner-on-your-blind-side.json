@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "runner-on-your-blind-side",
   "legacy_id": "d3",
-  "rev": 1,
+  "rev": 2,
   "category": "defend",
   "title": "Runner on your blind side",
   "text": "Your teammate is closing down the ball. A striker starts a run behind you.",
@@ -61,21 +61,23 @@
     },
     {
       "id": "watch-ball",
-      "text": "Watch the ball",
+      "text": "Keep your eyes fixed on the ball",
       "grade": "poor",
       "why": "Ball-watching is how runners get in behind you."
     },
     {
       "id": "run-out-tackle",
-      "text": "Run out to tackle the player on the ball",
-      "grade": "poor",
-      "why": "Your teammate is already there, and you'd leave the runner free."
+      "text": "Close in to help your teammate win it",
+      "grade": "ok",
+      "why": "Two on the ball might win it, but the runner is then free behind you. Only go if someone else has them."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "marking"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
