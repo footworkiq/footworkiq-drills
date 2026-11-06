@@ -49,7 +49,7 @@
     },
     {
       "id": "cross-high-far",
-      "text": "Cross it high to the far post",
+      "text": "Cross high to the far post",
       "grade": "ok",
       "why": "Nobody is there yet, so the ball may just go out."
     },
@@ -63,7 +63,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "crossing",
+    "passing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
