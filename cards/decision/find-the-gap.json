@@ -55,13 +55,13 @@
   "options": [
     {
       "id": "move-gap-between",
-      "text": "Move into the gap between their midfield and defence",
+      "text": "Move between their midfield and defence",
       "grade": "best",
       "why": "In that pocket you can receive the ball and turn to face goal."
     },
     {
       "id": "stand-behind-midfielder",
-      "text": "Stand behind their midfielder",
+      "text": "Stand just behind their midfielder",
       "grade": "poor",
       "why": "Your teammate can't pass to you with someone in the way."
     },
@@ -72,10 +72,12 @@
       "why": "You might get a ball over the top, but it's much harder to receive and turn there."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

@@ -58,28 +58,30 @@
   },
   "options": [
     {
-      "id": "whip-low-across",
-      "text": "Whip it low across the six-yard box",
-      "grade": "best",
-      "why": "Low, fast crosses are hard for keepers to catch and easy for strikers to tap in."
+      "id": "shoot-out-wide",
+      "text": "Shoot at the near post from out wide",
+      "grade": "poor",
+      "why": "The angle is too tight. Your striker is in a much better spot."
     },
     {
       "id": "float-high-cross",
-      "text": "Float a high cross to the far post",
+      "text": "Float a high cross over to the far post",
       "grade": "ok",
       "why": "Can work, but gives the keeper time to come and claim it."
     },
     {
-      "id": "shoot-out-wide",
-      "text": "Shoot from out wide",
-      "grade": "poor",
-      "why": "The angle is too tight. Your striker is in a much better spot."
+      "id": "whip-low-across",
+      "text": "Whip it low across the six-yard box",
+      "grade": "best",
+      "why": "Low, fast crosses are hard for keepers to catch and easy for strikers to tap in."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "crossing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

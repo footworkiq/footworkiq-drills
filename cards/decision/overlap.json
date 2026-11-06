@@ -54,6 +54,12 @@
   },
   "options": [
     {
+      "id": "hold-ball-until",
+      "text": "Hold it until the defender tackles",
+      "grade": "poor",
+      "why": "Waiting gives the defender time and wastes your teammate's run."
+    },
+    {
       "id": "pass-teammates-path",
       "text": "Pass into your teammate's path",
       "grade": "best",
@@ -64,18 +70,15 @@
       "text": "Try to beat the defender yourself",
       "grade": "ok",
       "why": "Possible, but you're ignoring a teammate who's already free."
-    },
-    {
-      "id": "hold-ball-until",
-      "text": "Hold the ball until the defender tackles",
-      "grade": "poor",
-      "why": "Waiting gives the defender time and wastes your teammate's run."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "passing",
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

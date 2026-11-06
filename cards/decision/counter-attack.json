@@ -69,20 +69,20 @@
   },
   "options": [
     {
-      "id": "run-pass-whoevers",
-      "text": "Run at them, then pass to whoever's free",
-      "grade": "best",
-      "why": "Driving forward forces a defender to step up, which leaves a teammate free."
-    },
-    {
       "id": "slow-down-wait",
       "text": "Slow down and wait for support",
       "grade": "poor",
       "why": "Counters work because the other team isn't set. Waiting gives them time."
     },
     {
+      "id": "run-pass-whoevers",
+      "text": "Run at them, then pass to whoever's free",
+      "grade": "best",
+      "why": "Driving forward forces a defender to step up, which leaves a teammate free."
+    },
+    {
       "id": "pass-wide-straight",
-      "text": "Pass wide straight away",
+      "text": "Pass it out wide straight away",
       "grade": "ok",
       "why": "Fine, but running at them first drags a defender with you."
     }
@@ -90,7 +90,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "transition",
+    "passing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

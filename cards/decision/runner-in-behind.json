@@ -58,28 +58,31 @@
   },
   "options": [
     {
-      "id": "pass-space-ahead",
-      "text": "Pass into the space ahead of them",
-      "grade": "best",
-      "why": "Passing into space lets your teammate run onto it without slowing down."
+      "id": "shoot-here",
+      "text": "Shoot now, before the defenders close in",
+      "grade": "poor",
+      "why": "It's too far out with three defenders in the way."
     },
     {
       "id": "pass-teammates-feet",
-      "text": "Pass to your teammate's feet",
+      "text": "Play it short to your teammate's feet",
       "grade": "ok",
       "why": "They'd have to stop running, and the defenders would catch up."
     },
     {
-      "id": "shoot-here",
-      "text": "Shoot from here",
-      "grade": "poor",
-      "why": "It's too far out with three defenders in the way."
+      "id": "pass-space-ahead",
+      "text": "Pass into the space ahead of them",
+      "grade": "best",
+      "why": "Passing into space lets your teammate run onto it without slowing down."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "passing",
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

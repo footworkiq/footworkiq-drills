@@ -28,12 +28,6 @@
   },
   "options": [
     {
-      "id": "pick-corner-before",
-      "text": "Pick a corner before your run-up and stick to it",
-      "grade": "best",
-      "why": "Deciding early means a confident strike. Changing your mind mid run-up leads to scuffed kicks."
-    },
-    {
       "id": "change-mind-run",
       "text": "Change your mind as you run up",
       "grade": "poor",
@@ -41,15 +35,25 @@
     },
     {
       "id": "blast-hard-can",
-      "text": "Blast it as hard as you can, no aim",
+      "text": "Just blast it hard, with no aim",
       "grade": "ok",
       "why": "Power can beat a keeper, but without a target it often flies over or straight at them."
+    },
+    {
+      "id": "pick-corner-before",
+      "text": "Pick a corner early and stick to it",
+      "grade": "best",
+      "why": "Deciding early means a confident strike. Changing your mind mid run-up leads to scuffed kicks."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "finishing",
+    "set-piece",
+    "composure"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

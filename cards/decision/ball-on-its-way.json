@@ -55,27 +55,29 @@
   "options": [
     {
       "id": "first-touch-forward",
-      "text": "First touch forward into the space",
+      "text": "Touch it forward into the space",
       "grade": "best",
       "why": "A forward first touch gets you moving and saves time."
     },
     {
-      "id": "stop-ball-dead",
-      "text": "Stop the ball dead under your foot",
-      "grade": "ok",
-      "why": "Safe, but you lose time and the defenders get organised."
-    },
-    {
       "id": "kick-first-time",
-      "text": "Kick it first time without looking",
+      "text": "Hit it first time without looking",
       "grade": "poor",
       "why": "With this much time, a rushed kick usually gives the ball away."
+    },
+    {
+      "id": "stop-ball-dead",
+      "text": "Stop it dead under your foot",
+      "grade": "ok",
+      "why": "Safe, but you lose time and the defenders get organised."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "first-touch"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

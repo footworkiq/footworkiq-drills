@@ -6,7 +6,7 @@
   "category": "attack",
   "title": "Winning, one minute left",
   "text": "Your team is 2–1 up with a minute to go. You have the ball near their corner flag.",
-  "tip": "Know the score and the time. They change the best decision.",
+  "tip": "Know the score and the time. They change the best decision. At youth level, going for another goal is fine too.",
   "scene": {
     "kind": "pitch",
     "own": false,
@@ -42,20 +42,20 @@
   },
   "options": [
     {
-      "id": "shield-ball-by",
-      "text": "Shield the ball by the corner flag",
-      "grade": "best",
-      "why": "Every second the ball stays there is a second they can't attack you."
-    },
-    {
       "id": "cross-box",
-      "text": "Cross it into the box",
+      "text": "Cross it into the box straight away",
       "grade": "poor",
       "why": "Nobody is there, so you'd hand them the ball and a chance to attack."
     },
     {
+      "id": "shield-ball-by",
+      "text": "Shield it by the corner flag",
+      "grade": "best",
+      "why": "Every second the ball stays there is a second they can't attack you."
+    },
+    {
       "id": "pass-back-teammate",
-      "text": "Pass back to your teammate",
+      "text": "Pass it back to your teammate",
       "grade": "ok",
       "why": "Keeps the ball, but brings play back towards your own goal."
     }
@@ -63,7 +63,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "game-management"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

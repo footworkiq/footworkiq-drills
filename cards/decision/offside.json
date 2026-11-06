@@ -43,27 +43,30 @@
   "options": [
     {
       "id": "step-back-level",
-      "text": "Step back level with the defender, then run as they pass",
+      "text": "Step back level, then run as they pass",
       "grade": "best",
       "why": "Being level when the pass is played keeps you onside. Then you can run in behind."
+    },
+    {
+      "id": "drop-deep-get",
+      "text": "Drop deep to get the ball to feet",
+      "grade": "ok",
+      "why": "Keeps you onside, but you lose the chance to get in behind."
     },
     {
       "id": "stay-where-are",
       "text": "Stay where you are and call for it",
       "grade": "poor",
       "why": "If they pass now, you're offside and the other team gets a free kick."
-    },
-    {
-      "id": "drop-deep-get",
-      "text": "Drop deep to get it to feet",
-      "grade": "ok",
-      "why": "Keeps you onside, but you lose the chance to get in behind."
     }
   ],
-  "difficulty": "Intermediate",
-  "age_band": "all",
+  "difficulty": "Advanced",
+  "age_band": "U12",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "laws",
+    "movement"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

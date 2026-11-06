@@ -51,27 +51,30 @@
   "options": [
     {
       "id": "take-quickly-free",
-      "text": "Take it quickly to your free teammate",
+      "text": "Take it quickly to a free teammate",
       "grade": "best",
       "why": "While they're switched off, a quick free kick can set up a big chance."
+    },
+    {
+      "id": "wait-everyone-get",
+      "text": "Wait until everyone is set and ready",
+      "grade": "ok",
+      "why": "Fine, but you lose the surprise."
     },
     {
       "id": "argue-player-who",
       "text": "Argue with the player who fouled you",
       "grade": "poor",
       "why": "You waste the chance and might get a card."
-    },
-    {
-      "id": "wait-everyone-get",
-      "text": "Wait for everyone to get set",
-      "grade": "ok",
-      "why": "Fine, but you lose the surprise."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "set-piece",
+    "fair-play"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

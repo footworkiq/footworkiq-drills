@@ -55,7 +55,7 @@
   "options": [
     {
       "id": "whip-between-six",
-      "text": "Whip it in between the six-yard box and the spot",
+      "text": "Whip it in towards the penalty spot",
       "grade": "best",
       "why": "That's where your teammates are, and it's too far out for the keeper to come and catch easily."
     },
@@ -67,15 +67,18 @@
     },
     {
       "id": "play-short-corner",
-      "text": "Play a short corner",
+      "text": "Play it short along the ground",
       "grade": "ok",
       "why": "Can work, but only if a teammate comes over for it. Right now nobody is there."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "set-piece",
+    "crossing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
