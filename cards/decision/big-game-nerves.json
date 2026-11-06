@@ -14,10 +14,10 @@
   },
   "options": [
     {
-      "id": "think-about-everything",
-      "text": "Go over everything you have to do in your head",
-      "grade": "ok",
-      "why": "Knowing your job helps, but thinking about too much can make nerves worse. Pick one simple thing."
+      "id": "hide-dont-get",
+      "text": "Hide out wide so you don't get the ball",
+      "grade": "poor",
+      "why": "Getting involved early is the best way to settle."
     },
     {
       "id": "breathe-slowly-think",
@@ -26,10 +26,10 @@
       "why": "Focusing on one small thing calms your nerves and gets you into the game."
     },
     {
-      "id": "hide-dont-get",
-      "text": "Hide out wide so you don't get the ball",
-      "grade": "poor",
-      "why": "Getting involved early is the best way to settle."
+      "id": "think-about-everything",
+      "text": "Go over everything you have to do in your head",
+      "grade": "ok",
+      "why": "Knowing your job helps, but thinking about too much can make nerves worse. Pick one simple thing."
     }
   ],
   "difficulty": "Intermediate",

@@ -14,16 +14,16 @@
   },
   "options": [
     {
-      "id": "put-head-down",
-      "text": "Drop back into your position to defend",
-      "grade": "ok",
-      "why": "Getting back into shape is sensible, but the first few seconds are the best time to win it back."
-    },
-    {
       "id": "complain-referee",
       "text": "Complain to the referee about the tackle",
       "grade": "poor",
       "why": "The game doesn't stop. While you complain, they attack."
+    },
+    {
+      "id": "put-head-down",
+      "text": "Drop back into your position to defend",
+      "grade": "ok",
+      "why": "Getting back into shape is sensible, but the first few seconds are the best time to win it back."
     },
     {
       "id": "press-straight-away",
