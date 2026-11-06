@@ -38,16 +38,16 @@
   },
   "options": [
     {
-      "id": "stay-feet-stay",
-      "text": "Stay on your feet and stay goal-side",
-      "grade": "best",
-      "why": "Any foul in the box is a penalty. Stay between them and goal."
-    },
-    {
       "id": "slide-side",
       "text": "Slide in from the side",
       "grade": "poor",
       "why": "Miss the ball and it's a penalty."
+    },
+    {
+      "id": "stay-feet-stay",
+      "text": "Stay on your feet and stay goal-side",
+      "grade": "best",
+      "why": "Any foul in the box is a penalty. Stay between them and goal."
     },
     {
       "id": "back-off-six",

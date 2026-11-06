@@ -42,6 +42,12 @@
   },
   "options": [
     {
+      "id": "watch-corner-taker",
+      "text": "Watch the corner taker",
+      "grade": "poor",
+      "why": "Your player can run off you and score a header."
+    },
+    {
       "id": "stay-close-goal",
       "text": "Stay close, goal-side, watching ball and player",
       "grade": "best",
@@ -52,12 +58,6 @@
       "text": "Stand on the post",
       "grade": "ok",
       "why": "Useful, but your player is now completely free."
-    },
-    {
-      "id": "watch-corner-taker",
-      "text": "Watch the corner taker",
-      "grade": "poor",
-      "why": "Your player can run off you and score a header."
     }
   ],
   "difficulty": "Intermediate",

@@ -46,16 +46,16 @@
   },
   "options": [
     {
-      "id": "pass-back-keeper",
-      "text": "Pass back to your keeper",
-      "grade": "best",
-      "why": "Your keeper is free, and it relieves the pressure safely."
-    },
-    {
       "id": "dribble-across-own",
       "text": "Dribble across your own box",
       "grade": "poor",
       "why": "Losing it here would give them a free shot."
+    },
+    {
+      "id": "pass-back-keeper",
+      "text": "Pass back to your keeper",
+      "grade": "best",
+      "why": "Your keeper is free, and it relieves the pressure safely."
     },
     {
       "id": "kick-out-throw",

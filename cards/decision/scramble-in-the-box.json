@@ -37,12 +37,6 @@
   },
   "options": [
     {
-      "id": "clear-high-wide",
-      "text": "Clear it high and wide",
-      "grade": "best",
-      "why": "High and wide gets it away from danger and out of the middle."
-    },
-    {
       "id": "try-dribble-out",
       "text": "Try to dribble out",
       "grade": "poor",
@@ -53,6 +47,12 @@
       "text": "Clear it straight up the middle",
       "grade": "ok",
       "why": "Gets it away, but it might land at an opponent's feet in front of goal."
+    },
+    {
+      "id": "clear-high-wide",
+      "text": "Clear it high and wide",
+      "grade": "best",
+      "why": "High and wide gets it away from danger and out of the middle."
     }
   ],
   "difficulty": "Intermediate",

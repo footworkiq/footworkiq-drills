@@ -48,16 +48,16 @@
       "why": "If the attacker beats your teammate, you're there next."
     },
     {
-      "id": "run-ball-too",
-      "text": "Run at the ball too",
-      "grade": "poor",
-      "why": "Two of you on one player leaves another attacker free."
-    },
-    {
       "id": "stay-where-are",
       "text": "Stay where you are",
       "grade": "ok",
       "why": "Not terrible, but you're too far away to help if your teammate gets beaten."
+    },
+    {
+      "id": "run-ball-too",
+      "text": "Run at the ball too",
+      "grade": "poor",
+      "why": "Two of you on one player leaves another attacker free."
     }
   ],
   "difficulty": "Intermediate",

@@ -50,10 +50,10 @@
   },
   "options": [
     {
-      "id": "sprint-back-towards",
-      "text": "Sprint back towards your goal",
-      "grade": "best",
-      "why": "Getting back between the ball and goal means you can help again."
+      "id": "pull-shirt",
+      "text": "Pull their shirt",
+      "grade": "poor",
+      "why": "That's a foul, maybe a yellow card, and a free kick in a dangerous place."
     },
     {
       "id": "stop-appeal-foul",
@@ -62,10 +62,10 @@
       "why": "The game carries on, and now your team is a player short."
     },
     {
-      "id": "pull-shirt",
-      "text": "Pull their shirt",
-      "grade": "poor",
-      "why": "That's a foul, maybe a yellow card, and a free kick in a dangerous place."
+      "id": "sprint-back-towards",
+      "text": "Sprint back towards your goal",
+      "grade": "best",
+      "why": "Getting back between the ball and goal means you can help again."
     }
   ],
   "difficulty": "Intermediate",

@@ -60,16 +60,16 @@
       "why": "Pull-backs are the danger. You need to be between that runner and the ball."
     },
     {
-      "id": "run-over-help",
-      "text": "Run over to help on the ball",
-      "grade": "ok",
-      "why": "Your teammate is already there. Now the runner is free."
-    },
-    {
       "id": "jog-back-slowly",
       "text": "Jog back slowly",
       "grade": "poor",
       "why": "The runner will beat you to it."
+    },
+    {
+      "id": "run-over-help",
+      "text": "Run over to help on the ball",
+      "grade": "ok",
+      "why": "Your teammate is already there. Now the runner is free."
     }
   ],
   "difficulty": "Intermediate",

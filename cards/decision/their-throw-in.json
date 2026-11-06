@@ -41,16 +41,16 @@
   },
   "options": [
     {
-      "id": "get-tight-goal",
-      "text": "Get tight and goal-side of the nearest attacker",
-      "grade": "best",
-      "why": "A throw-in is an easy pass for them, so make it hard to receive."
-    },
-    {
       "id": "watch-thrower",
       "text": "Watch the thrower",
       "grade": "poor",
       "why": "Your attacker can get free while you're looking."
+    },
+    {
+      "id": "get-tight-goal",
+      "text": "Get tight and goal-side of the nearest attacker",
+      "grade": "best",
+      "why": "A throw-in is an easy pass for them, so make it hard to receive."
     },
     {
       "id": "stand-back-give",

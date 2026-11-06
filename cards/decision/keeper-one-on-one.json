@@ -50,6 +50,12 @@
   },
   "options": [
     {
+      "id": "dive-feet-early",
+      "text": "Dive at their feet early",
+      "grade": "poor",
+      "why": "Go down too early and they just go round you or chip you."
+    },
+    {
       "id": "come-off-line",
       "text": "Come off your line, make yourself big, stay on your feet",
       "grade": "best",
@@ -60,12 +66,6 @@
       "text": "Stay on your goal line",
       "grade": "ok",
       "why": "Gives them the whole goal to aim at."
-    },
-    {
-      "id": "dive-feet-early",
-      "text": "Dive at their feet early",
-      "grade": "poor",
-      "why": "Go down too early and they just go round you or chip you."
     }
   ],
   "difficulty": "Intermediate",

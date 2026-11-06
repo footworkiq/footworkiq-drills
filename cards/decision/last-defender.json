@@ -56,16 +56,16 @@
       "why": "Jockeying buys time for your teammates to get back. Make the attacker make the decision."
     },
     {
-      "id": "dive-slide-tackle",
-      "text": "Dive in with a slide tackle",
-      "grade": "poor",
-      "why": "If you miss, they're through on goal. Stay patient."
-    },
-    {
       "id": "run-back-goal",
       "text": "Run back to your goal line",
       "grade": "poor",
       "why": "That gives them a free shot from the edge of the box."
+    },
+    {
+      "id": "dive-slide-tackle",
+      "text": "Dive in with a slide tackle",
+      "grade": "poor",
+      "why": "If you miss, they're through on goal. Stay patient."
     }
   ],
   "difficulty": "Intermediate",

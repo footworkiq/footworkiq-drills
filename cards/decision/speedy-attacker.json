@@ -44,16 +44,16 @@
       "why": "Then they can't knock it past and outrun you."
     },
     {
-      "id": "stand-really-close",
-      "text": "Stand really close to them",
-      "grade": "poor",
-      "why": "They'll knock it past and sprint away."
-    },
-    {
       "id": "dive-early",
       "text": "Dive in early",
       "grade": "ok",
       "why": "You might win it, but if you miss they're gone."
+    },
+    {
+      "id": "stand-really-close",
+      "text": "Stand really close to them",
+      "grade": "poor",
+      "why": "They'll knock it past and sprint away."
     }
   ],
   "difficulty": "Intermediate",

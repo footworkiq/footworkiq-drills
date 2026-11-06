@@ -33,16 +33,16 @@
   },
   "options": [
     {
-      "id": "shield-let-roll",
-      "text": "Shield it and let it roll out for a goal kick",
-      "grade": "best",
-      "why": "Your body keeps the attacker away until it's out, and you get the ball back."
-    },
-    {
       "id": "try-dribble-out",
       "text": "Try to dribble out",
       "grade": "poor",
       "why": "Risky right next to your goal."
+    },
+    {
+      "id": "shield-let-roll",
+      "text": "Shield it and let it roll out for a goal kick",
+      "grade": "best",
+      "why": "Your body keeps the attacker away until it's out, and you get the ball back."
     },
     {
       "id": "clear-line",

@@ -42,16 +42,16 @@
   },
   "options": [
     {
-      "id": "stand-side-push",
-      "text": "Stand side-on and push them to the touchline",
-      "grade": "best",
-      "why": "The wing is less dangerous, and the touchline acts like an extra defender."
-    },
-    {
       "id": "let-cut-inside",
       "text": "Let them cut inside",
       "grade": "poor",
       "why": "Inside is the shortest route to goal and opens up a shot."
+    },
+    {
+      "id": "stand-side-push",
+      "text": "Stand side-on and push them to the touchline",
+      "grade": "best",
+      "why": "The wing is less dangerous, and the touchline acts like an extra defender."
     },
     {
       "id": "stand-square-front",

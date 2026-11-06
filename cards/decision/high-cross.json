@@ -50,12 +50,6 @@
   },
   "options": [
     {
-      "id": "shout-keeper-catch",
-      "text": "Shout \"Keeper!\" and catch it at its highest point",
-      "grade": "best",
-      "why": "Calling tells your team you're coming. Catching it high is above everyone else."
-    },
-    {
       "id": "punch-clear",
       "text": "Punch it clear",
       "grade": "ok",
@@ -66,6 +60,12 @@
       "text": "Stay on your line",
       "grade": "poor",
       "why": "The attackers get a free header."
+    },
+    {
+      "id": "shout-keeper-catch",
+      "text": "Shout \"Keeper!\" and catch it at its highest point",
+      "grade": "best",
+      "why": "Calling tells your team you're coming. Catching it high is above everyone else."
     }
   ],
   "difficulty": "Intermediate",

@@ -42,10 +42,10 @@
   },
   "options": [
     {
-      "id": "stay-tight-cant",
-      "text": "Stay tight so they can't turn",
-      "grade": "best",
-      "why": "An attacker facing away from goal isn't dangerous yet. Don't let them turn."
+      "id": "tackle-through-back",
+      "text": "Tackle through the back of them",
+      "grade": "poor",
+      "why": "That's a foul and could earn a card."
     },
     {
       "id": "step-off-give",
@@ -54,10 +54,10 @@
       "why": "Now they can turn and run at you."
     },
     {
-      "id": "tackle-through-back",
-      "text": "Tackle through the back of them",
-      "grade": "poor",
-      "why": "That's a foul and could earn a card."
+      "id": "stay-tight-cant",
+      "text": "Stay tight so they can't turn",
+      "grade": "best",
+      "why": "An attacker facing away from goal isn't dangerous yet. Don't let them turn."
     }
   ],
   "difficulty": "Intermediate",

@@ -56,16 +56,16 @@
       "why": "Quick and safe. Keepers can't pick up a deliberate pass from a teammate's foot."
     },
     {
-      "id": "kick-long-pitch",
-      "text": "Kick it long up the pitch",
-      "grade": "ok",
-      "why": "Safe, but it might give the ball away."
-    },
-    {
       "id": "pick-hands",
       "text": "Pick it up with your hands",
       "grade": "poor",
       "why": "That breaks the rules and gives them a free kick in your box."
+    },
+    {
+      "id": "kick-long-pitch",
+      "text": "Kick it long up the pitch",
+      "grade": "ok",
+      "why": "Safe, but it might give the ball away."
     }
   ],
   "difficulty": "Intermediate",

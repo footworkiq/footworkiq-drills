@@ -46,12 +46,6 @@
   },
   "options": [
     {
-      "id": "press-curved-run",
-      "text": "Press them with a curved run that blocks their easy pass",
-      "grade": "best",
-      "why": "A curved run cuts off one option, pushing them towards your teammates or a long hopeful kick."
-    },
-    {
       "id": "sprint-straight",
       "text": "Sprint straight at them",
       "grade": "ok",
@@ -62,6 +56,12 @@
       "text": "Stand still and wait",
       "grade": "poor",
       "why": "It gives them time to pick the perfect pass."
+    },
+    {
+      "id": "press-curved-run",
+      "text": "Press them with a curved run that blocks their easy pass",
+      "grade": "best",
+      "why": "A curved run cuts off one option, pushing them towards your teammates or a long hopeful kick."
     }
   ],
   "difficulty": "Intermediate",

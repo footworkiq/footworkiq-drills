@@ -37,10 +37,10 @@
   },
   "options": [
     {
-      "id": "get-between-striker",
-      "text": "Get between the striker and goal, watch both",
-      "grade": "best",
-      "why": "From there you can attack the ball and the striker can't get in front of you."
+      "id": "run-out-block",
+      "text": "Run out to block the crosser",
+      "grade": "poor",
+      "why": "That leaves the striker free right in front of goal."
     },
     {
       "id": "watch-only-ball",
@@ -49,10 +49,10 @@
       "why": "You might win it, but the striker can sneak in front of you."
     },
     {
-      "id": "run-out-block",
-      "text": "Run out to block the crosser",
-      "grade": "poor",
-      "why": "That leaves the striker free right in front of goal."
+      "id": "get-between-striker",
+      "text": "Get between the striker and goal, watch both",
+      "grade": "best",
+      "why": "From there you can attack the ball and the striker can't get in front of you."
     }
   ],
   "difficulty": "Intermediate",

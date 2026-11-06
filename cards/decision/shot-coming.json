@@ -38,16 +38,16 @@
   },
   "options": [
     {
-      "id": "get-body-way",
-      "text": "Get your body in the way, side-on",
-      "grade": "best",
-      "why": "Blocking the shot is brave and stops danger. Side-on keeps your arms tucked in."
-    },
-    {
       "id": "turn-back-jump",
       "text": "Turn your back and jump away",
       "grade": "poor",
       "why": "The ball goes straight past you towards goal."
+    },
+    {
+      "id": "get-body-way",
+      "text": "Get your body in the way, side-on",
+      "grade": "best",
+      "why": "Blocking the shot is brave and stops danger. Side-on keeps your arms tucked in."
     },
     {
       "id": "slide-last-second",
