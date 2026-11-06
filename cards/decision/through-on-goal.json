@@ -63,10 +63,12 @@
       "why": "Low shots into the corners are the hardest for a keeper to reach. Shoot early, before the defender catches you."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "finishing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

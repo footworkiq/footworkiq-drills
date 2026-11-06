@@ -39,7 +39,7 @@
   "options": [
     {
       "id": "shoot-where-are",
-      "text": "Shoot from where you are",
+      "text": "Shoot early from where you are",
       "grade": "poor",
       "why": "It's a long way out with a defender in the way. You have a better option."
     },
@@ -51,7 +51,7 @@
     },
     {
       "id": "run-defender-pass",
-      "text": "Run at the defender, pass when they come to you",
+      "text": "Run at them, pass when they commit",
       "grade": "best",
       "why": "Making the defender choose leaves your teammate free. Pass the moment they commit to you."
     }
@@ -59,7 +59,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "passing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
