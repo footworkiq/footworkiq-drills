@@ -51,27 +51,30 @@
   "options": [
     {
       "id": "dive-feet-early",
-      "text": "Dive at their feet early",
+      "text": "Dive at their feet as early as you can",
       "grade": "poor",
       "why": "Go down too early and they just go round you or chip you."
     },
     {
       "id": "come-off-line",
-      "text": "Come off your line, make yourself big, stay on your feet",
+      "text": "Come out, stay big and on your feet",
       "grade": "best",
       "why": "Coming out shrinks the goal they can see. Staying up makes them choose first."
     },
     {
       "id": "stay-goal-line",
-      "text": "Stay on your goal line",
+      "text": "Stay on your goal line and wait",
       "grade": "ok",
       "why": "Gives them the whole goal to aim at."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
-  "role": "outfield",
-  "tags": [],
+  "role": "keeper",
+  "tags": [
+    "keeper",
+    "one-v-one"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

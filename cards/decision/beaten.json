@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "beaten",
   "legacy_id": "d8",
-  "rev": 1,
+  "rev": 2,
   "category": "defend",
   "title": "Beaten",
   "text": "An attacker has just got past you and is running towards your goal.",
@@ -51,27 +51,29 @@
   "options": [
     {
       "id": "pull-shirt",
-      "text": "Pull their shirt",
+      "text": "Pull their shirt to slow them down",
       "grade": "poor",
       "why": "That's a foul, maybe a yellow card, and a free kick in a dangerous place."
     },
     {
       "id": "stop-appeal-foul",
-      "text": "Stop and appeal for a foul",
-      "grade": "poor",
-      "why": "The game carries on, and now your team is a player short."
+      "text": "Stop and shout for a teammate to cover",
+      "grade": "ok",
+      "why": "Talking helps, but stopping takes you out of the game. Shout while you sprint back."
     },
     {
       "id": "sprint-back-towards",
-      "text": "Sprint back towards your goal",
+      "text": "Sprint back towards your own goal",
       "grade": "best",
       "why": "Getting back between the ball and goal means you can help again."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "transition"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

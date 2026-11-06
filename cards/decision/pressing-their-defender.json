@@ -47,27 +47,29 @@
   "options": [
     {
       "id": "sprint-straight",
-      "text": "Sprint straight at them",
+      "text": "Sprint straight at them to rush them",
       "grade": "ok",
       "why": "Puts them under pressure, but they can simply pass round you."
     },
     {
       "id": "stand-still-wait",
-      "text": "Stand still and wait",
+      "text": "Stand still and wait for a mistake",
       "grade": "poor",
       "why": "It gives them time to pick the perfect pass."
     },
     {
       "id": "press-curved-run",
-      "text": "Press them with a curved run that blocks their easy pass",
+      "text": "Curve your run to block the easy pass",
       "grade": "best",
       "why": "A curved run cuts off one option, pushing them towards your teammates or a long hopeful kick."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "pressing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
