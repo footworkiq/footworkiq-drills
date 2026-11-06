@@ -15,27 +15,29 @@
   "options": [
     {
       "id": "cheer-team-ask",
-      "text": "Cheer your team on, ask the coach later what to work on",
+      "text": "Cheer on your team, ask the coach later",
       "grade": "best",
       "why": "Supporting your team and learning from it shows great character."
     },
     {
       "id": "sit-quietly-bench",
-      "text": "Sit quietly on the bench",
+      "text": "Sit quietly on the bench and watch",
       "grade": "ok",
       "why": "Fine, but cheering helps your team."
     },
     {
       "id": "kick-water-bottle",
-      "text": "Kick a water bottle",
+      "text": "Kick a water bottle in frustration",
       "grade": "poor",
       "why": "It upsets the team and the coach."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "teamwork"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
