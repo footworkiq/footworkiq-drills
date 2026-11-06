@@ -14,10 +14,10 @@
   },
   "options": [
     {
-      "id": "get-back-position",
-      "text": "Get back into position quickly",
-      "grade": "best",
-      "why": "Their free kick is coming either way. Being organised is what helps your team."
+      "id": "stand-still-sulk",
+      "text": "Stand still and sulk",
+      "grade": "poor",
+      "why": "The other team will take it quickly while you're switched off."
     },
     {
       "id": "argue-referee",
@@ -26,10 +26,10 @@
       "why": "It won't change the decision and could get you a yellow card."
     },
     {
-      "id": "stand-still-sulk",
-      "text": "Stand still and sulk",
-      "grade": "poor",
-      "why": "The other team will take it quickly while you're switched off."
+      "id": "get-back-position",
+      "text": "Get back into position quickly",
+      "grade": "best",
+      "why": "Their free kick is coming either way. Being organised is what helps your team."
     }
   ],
   "difficulty": "Intermediate",

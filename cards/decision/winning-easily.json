@@ -20,16 +20,16 @@
       "why": "Playing the right way is how you keep improving, and it shows respect."
     },
     {
-      "id": "show-off-tricks",
-      "text": "Show off with tricks to embarrass them",
-      "grade": "poor",
-      "why": "Disrespectful and how injuries and fights start."
-    },
-    {
       "id": "stop-trying",
       "text": "Stop trying",
       "grade": "ok",
       "why": "You lose the chance to practise."
+    },
+    {
+      "id": "show-off-tricks",
+      "text": "Show off with tricks to embarrass them",
+      "grade": "poor",
+      "why": "Disrespectful and how injuries and fights start."
     }
   ],
   "difficulty": "Intermediate",

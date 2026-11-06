@@ -14,10 +14,10 @@
   },
   "options": [
     {
-      "id": "celebrate-team-get",
-      "text": "Celebrate with your team, then get back ready",
-      "grade": "best",
-      "why": "Teams often concede right after scoring because they switch off."
+      "id": "relax-hard-bit",
+      "text": "Relax, the hard bit is done",
+      "grade": "poor",
+      "why": "There's still lots of time left."
     },
     {
       "id": "show-off-front",
@@ -26,10 +26,10 @@
       "why": "It's disrespectful and fires them up."
     },
     {
-      "id": "relax-hard-bit",
-      "text": "Relax, the hard bit is done",
-      "grade": "poor",
-      "why": "There's still lots of time left."
+      "id": "celebrate-team-get",
+      "text": "Celebrate with your team, then get back ready",
+      "grade": "best",
+      "why": "Teams often concede right after scoring because they switch off."
     }
   ],
   "difficulty": "Intermediate",

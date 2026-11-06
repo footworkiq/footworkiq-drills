@@ -14,6 +14,12 @@
   },
   "options": [
     {
+      "id": "say-nothing",
+      "text": "Say nothing",
+      "grade": "ok",
+      "why": "Better than shouting, but a quick word of support helps a lot."
+    },
+    {
       "id": "encourage-next-one",
       "text": "Encourage them: \"Next one!\"",
       "grade": "best",
@@ -24,12 +30,6 @@
       "text": "Shout at them",
       "grade": "poor",
       "why": "It knocks their confidence and doesn't help the team."
-    },
-    {
-      "id": "say-nothing",
-      "text": "Say nothing",
-      "grade": "ok",
-      "why": "Better than shouting, but a quick word of support helps a lot."
     }
   ],
   "difficulty": "Intermediate",

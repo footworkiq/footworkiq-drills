@@ -14,10 +14,10 @@
   },
   "options": [
     {
-      "id": "keep-passes-touches",
-      "text": "Keep passes and touches simple",
-      "grade": "best",
-      "why": "Slippery conditions make tricks hard. Simple football works best."
+      "id": "complain-about-weather",
+      "text": "Complain about the weather",
+      "grade": "poor",
+      "why": "It's the same for both teams."
     },
     {
       "id": "try-lots-fancy",
@@ -26,10 +26,10 @@
       "why": "The ball will skid away from you."
     },
     {
-      "id": "complain-about-weather",
-      "text": "Complain about the weather",
-      "grade": "poor",
-      "why": "It's the same for both teams."
+      "id": "keep-passes-touches",
+      "text": "Keep passes and touches simple",
+      "grade": "best",
+      "why": "Slippery conditions make tricks hard. Simple football works best."
     }
   ],
   "difficulty": "Intermediate",

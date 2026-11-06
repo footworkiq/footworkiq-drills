@@ -14,16 +14,16 @@
   },
   "options": [
     {
-      "id": "stay-calm-let",
-      "text": "Stay calm and let the ref deal with it",
-      "grade": "best",
-      "why": "The ref handles fouls. Staying calm keeps your team at full strength."
-    },
-    {
       "id": "get-revenge-foul",
       "text": "Get revenge with a foul of your own",
       "grade": "poor",
       "why": "You could get sent off, and the team suffers."
+    },
+    {
+      "id": "stay-calm-let",
+      "text": "Stay calm and let the ref deal with it",
+      "grade": "best",
+      "why": "The ref handles fouls. Staying calm keeps your team at full strength."
     },
     {
       "id": "complain-about-all",

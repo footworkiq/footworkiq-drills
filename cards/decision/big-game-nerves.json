@@ -14,16 +14,16 @@
   },
   "options": [
     {
-      "id": "breathe-slowly-think",
-      "text": "Breathe slowly and think about your first easy pass",
-      "grade": "best",
-      "why": "Focusing on one small thing calms your nerves and gets you into the game."
-    },
-    {
       "id": "think-about-everything",
       "text": "Think about everything that could go wrong",
       "grade": "poor",
       "why": "That makes nerves bigger."
+    },
+    {
+      "id": "breathe-slowly-think",
+      "text": "Breathe slowly and think about your first easy pass",
+      "grade": "best",
+      "why": "Focusing on one small thing calms your nerves and gets you into the game."
     },
     {
       "id": "hide-dont-get",

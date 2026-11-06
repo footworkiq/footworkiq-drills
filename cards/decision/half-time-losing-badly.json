@@ -20,16 +20,16 @@
       "why": "A team that sticks together can come back. Arguing just makes it worse."
     },
     {
-      "id": "join-argument",
-      "text": "Join the argument",
-      "grade": "poor",
-      "why": "More shouting splits the team further."
-    },
-    {
       "id": "sit-away-everyone",
       "text": "Sit away from everyone",
       "grade": "ok",
       "why": "Avoids trouble, but your team needs you."
+    },
+    {
+      "id": "join-argument",
+      "text": "Join the argument",
+      "grade": "poor",
+      "why": "More shouting splits the team further."
     }
   ],
   "difficulty": "Intermediate",

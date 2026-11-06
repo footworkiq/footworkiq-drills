@@ -14,16 +14,16 @@
   },
   "options": [
     {
-      "id": "keep-moving-space",
-      "text": "Keep moving into space and call for it",
-      "grade": "best",
-      "why": "It makes the pass easier to see. Keep offering."
-    },
-    {
       "id": "stop-running",
       "text": "Stop running",
       "grade": "poor",
       "why": "Then they'll never pass to you."
+    },
+    {
+      "id": "keep-moving-space",
+      "text": "Keep moving into space and call for it",
+      "grade": "best",
+      "why": "It makes the pass easier to see. Keep offering."
     },
     {
       "id": "talk-calmly-after",

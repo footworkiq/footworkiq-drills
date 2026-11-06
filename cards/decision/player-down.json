@@ -14,12 +14,6 @@
   },
   "options": [
     {
-      "id": "kick-ball-out",
-      "text": "Kick the ball out so they can get help",
-      "grade": "best",
-      "why": "Their safety comes first. That's good sportsmanship."
-    },
-    {
       "id": "keep-attacking",
       "text": "Keep attacking",
       "grade": "poor",
@@ -30,6 +24,12 @@
       "text": "Stop and stand there",
       "grade": "ok",
       "why": "Kindly meant, but kicking it out makes the game stop properly."
+    },
+    {
+      "id": "kick-ball-out",
+      "text": "Kick the ball out so they can get help",
+      "grade": "best",
+      "why": "Their safety comes first. That's good sportsmanship."
     }
   ],
   "difficulty": "Intermediate",
