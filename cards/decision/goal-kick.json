@@ -5,7 +5,7 @@
   "rev": 2,
   "category": "attack",
   "title": "Goal kick",
-  "text": "You're taking a goal kick. The other team are pressing high, but one of your defenders is free on the right.",
+  "text": "You're taking a goal kick. Their forwards are waiting on halfway to press, but one of your defenders is free on the right.",
   "tip": "Building from the back starts with finding the free player.",
   "scene": {
     "kind": "pitch",

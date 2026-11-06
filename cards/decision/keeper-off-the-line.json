@@ -42,16 +42,16 @@
   },
   "options": [
     {
-      "id": "pass-teammate",
-      "text": "Pass forward to a teammate",
-      "grade": "ok",
-      "why": "Fine, but you'd miss a rare chance to catch the keeper out."
-    },
-    {
       "id": "blast-low-goal",
       "text": "Blast it low at goal",
       "grade": "ok",
       "why": "A shot on target can still go in, so it's not a bad idea. But the keeper is out in its path, so going over is better."
+    },
+    {
+      "id": "pass-teammate",
+      "text": "Pass forward to a teammate",
+      "grade": "ok",
+      "why": "Fine, but you'd miss a rare chance to catch the keeper out."
     },
     {
       "id": "chip-over-keeper",
