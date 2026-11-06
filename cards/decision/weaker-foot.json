@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "weaker-foot",
   "legacy_id": "a20",
-  "rev": 1,
+  "rev": 2,
   "category": "attack",
   "title": "Weaker foot",
   "text": "You have a chance to shoot, but the ball is on your weaker foot. A defender is closing in from your strong side.",
@@ -43,13 +43,13 @@
   "options": [
     {
       "id": "take-touch-onto",
-      "text": "Take a touch onto your stronger foot",
-      "grade": "poor",
-      "why": "That touch takes you straight into the defender."
+      "text": "Touch it onto your stronger foot",
+      "grade": "ok",
+      "why": "Your stronger foot gives a cleaner strike, but the touch moves you towards the defender. Only do it if there's room."
     },
     {
       "id": "pass-teammate",
-      "text": "Pass to your teammate",
+      "text": "Pass to your teammate nearby",
       "grade": "ok",
       "why": "They have a defender nearby too. You have the clearer chance."
     },
@@ -63,7 +63,9 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "finishing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

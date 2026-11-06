@@ -53,21 +53,24 @@
     },
     {
       "id": "aim-over-wall",
-      "text": "Aim over the wall into the side the keeper left open",
+      "text": "Aim over the wall into the open side",
       "grade": "best",
       "why": "The keeper has moved across, leaving one side of the goal more open."
     },
     {
       "id": "smash-hard-straight",
-      "text": "Smash it hard straight ahead",
+      "text": "Smash it hard and straight at goal",
       "grade": "poor",
       "why": "That's where the wall is. It'll most likely be blocked."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "set-piece",
+    "finishing"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

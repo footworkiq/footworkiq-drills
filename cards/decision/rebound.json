@@ -46,7 +46,7 @@
     },
     {
       "id": "control-look-shoot",
-      "text": "Control it, look up, then shoot",
+      "text": "Control it, look up, shoot",
       "grade": "ok",
       "why": "Calm, but every second lets the keeper and defenders recover."
     }
@@ -54,7 +54,10 @@
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "finishing",
+    "laws"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
