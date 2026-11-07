@@ -14,28 +14,30 @@
   },
   "options": [
     {
-      "id": "use-quick-passing",
-      "text": "Use quick passing and movement",
-      "grade": "best",
-      "why": "Speed and smart passing beat size."
+      "id": "give-theyre-too",
+      "text": "Give up, they're far too big",
+      "grade": "poor",
+      "why": "Size isn't everything in football."
     },
     {
       "id": "avoid-all-challenges",
-      "text": "Avoid all challenges",
+      "text": "Avoid all of the challenges",
       "grade": "ok",
       "why": "Sensible sometimes, but you still need to compete."
     },
     {
-      "id": "give-theyre-too",
-      "text": "Give up, they're too big",
-      "grade": "poor",
-      "why": "Size isn't everything in football."
+      "id": "use-quick-passing",
+      "text": "Use quick passing and movement",
+      "grade": "best",
+      "why": "Speed and smart passing beat size."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "teamwork"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

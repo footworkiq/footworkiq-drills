@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "you-scored",
   "legacy_id": "m8",
-  "rev": 1,
+  "rev": 2,
   "category": "mindset",
   "title": "You scored!",
   "text": "You've just scored a great goal.",
@@ -14,10 +14,10 @@
   },
   "options": [
     {
-      "id": "celebrate-team-get",
-      "text": "Celebrate with your team, then get back ready",
-      "grade": "best",
-      "why": "Teams often concede right after scoring because they switch off."
+      "id": "relax-hard-bit",
+      "text": "Skip the celebration and run straight back",
+      "grade": "ok",
+      "why": "Staying switched on is right, but enjoy it with your team first. Celebrating together lifts everyone."
     },
     {
       "id": "show-off-front",
@@ -26,16 +26,18 @@
       "why": "It's disrespectful and fires them up."
     },
     {
-      "id": "relax-hard-bit",
-      "text": "Relax, the hard bit is done",
-      "grade": "poor",
-      "why": "There's still lots of time left."
+      "id": "celebrate-team-get",
+      "text": "Celebrate with your team, then get ready",
+      "grade": "best",
+      "why": "Teams often concede right after scoring because they switch off."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "game-management"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

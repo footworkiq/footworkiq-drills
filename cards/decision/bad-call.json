@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "bad-call",
   "legacy_id": "m4",
-  "rev": 1,
+  "rev": 2,
   "category": "mindset",
   "title": "Bad call",
   "text": "The ref gives a free kick against you. You don't think it was a foul.",
@@ -14,28 +14,30 @@
   },
   "options": [
     {
+      "id": "stand-still-sulk",
+      "text": "Stand there and sulk about the call",
+      "grade": "poor",
+      "why": "The other team will take it quickly while you're switched off."
+    },
+    {
+      "id": "argue-referee",
+      "text": "Ask the referee calmly what it was for",
+      "grade": "ok",
+      "why": "Asking politely is fine, but not now. Their free kick is coming, so get organised first."
+    },
+    {
       "id": "get-back-position",
       "text": "Get back into position quickly",
       "grade": "best",
       "why": "Their free kick is coming either way. Being organised is what helps your team."
-    },
-    {
-      "id": "argue-referee",
-      "text": "Argue with the referee",
-      "grade": "poor",
-      "why": "It won't change the decision and could get you a yellow card."
-    },
-    {
-      "id": "stand-still-sulk",
-      "text": "Stand still and sulk",
-      "grade": "poor",
-      "why": "The other team will take it quickly while you're switched off."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "composure"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

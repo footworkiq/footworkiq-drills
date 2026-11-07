@@ -14,6 +14,12 @@
   },
   "options": [
     {
+      "id": "say-nothing",
+      "text": "Say nothing and get on with the game",
+      "grade": "ok",
+      "why": "Better than shouting, but a quick word of support helps a lot."
+    },
+    {
       "id": "encourage-next-one",
       "text": "Encourage them: \"Next one!\"",
       "grade": "best",
@@ -21,21 +27,18 @@
     },
     {
       "id": "shout",
-      "text": "Shout at them",
+      "text": "Shout at them to do better",
       "grade": "poor",
       "why": "It knocks their confidence and doesn't help the team."
-    },
-    {
-      "id": "say-nothing",
-      "text": "Say nothing",
-      "grade": "ok",
-      "why": "Better than shouting, but a quick word of support helps a lot."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "teamwork",
+    "communication"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

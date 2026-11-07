@@ -15,27 +15,30 @@
   "options": [
     {
       "id": "keep-playing-properly",
-      "text": "Keep playing properly and respect the other team",
+      "text": "Keep playing properly and respect them",
       "grade": "best",
       "why": "Playing the right way is how you keep improving, and it shows respect."
     },
     {
-      "id": "show-off-tricks",
-      "text": "Show off with tricks to embarrass them",
-      "grade": "poor",
-      "why": "Disrespectful and how injuries and fights start."
-    },
-    {
       "id": "stop-trying",
-      "text": "Stop trying",
+      "text": "Stop trying now the game is won",
       "grade": "ok",
       "why": "You lose the chance to practise."
+    },
+    {
+      "id": "show-off-tricks",
+      "text": "Show off tricks to embarrass them",
+      "grade": "poor",
+      "why": "Disrespectful and how injuries and fights start."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "game-management",
+    "fair-play"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

@@ -2,10 +2,10 @@
   "schema": "1.0",
   "id": "player-down",
   "legacy_id": "m10",
-  "rev": 1,
+  "rev": 2,
   "category": "mindset",
   "title": "Player down",
-  "text": "An opponent is lying on the ground hurt. Your team has the ball.",
+  "text": "An opponent is lying on the ground hurt. Your team has the ball and play is still going.",
   "tip": "Respect first, always.",
   "scene": {
     "kind": "board",
@@ -14,28 +14,30 @@
   },
   "options": [
     {
-      "id": "kick-ball-out",
-      "text": "Kick the ball out so they can get help",
-      "grade": "best",
-      "why": "Their safety comes first. That's good sportsmanship."
-    },
-    {
       "id": "keep-attacking",
-      "text": "Keep attacking",
+      "text": "Keep attacking while the player is still down",
       "grade": "poor",
       "why": "Winning matters less than someone being hurt."
     },
     {
       "id": "stop-stand-there",
-      "text": "Stop and stand there",
+      "text": "Stop and stand still until someone notices",
       "grade": "ok",
-      "why": "Kindly meant, but kicking it out makes the game stop properly."
+      "why": "Kindly meant, but the referee might not have seen. Tell them, or kick it out."
+    },
+    {
+      "id": "kick-ball-out",
+      "text": "Stop and tell the referee, or kick it out",
+      "grade": "best",
+      "why": "Their safety comes first. The referee can stop the game so they get help."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "fair-play"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

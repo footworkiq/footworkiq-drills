@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "tackled",
   "legacy_id": "m1",
-  "rev": 1,
+  "rev": 2,
   "category": "mindset",
   "title": "Tackled",
   "text": "You've just lost the ball in midfield.",
@@ -14,28 +14,31 @@
   },
   "options": [
     {
-      "id": "press-straight-away",
-      "text": "Press straight away to win it back",
-      "grade": "best",
-      "why": "The best time to win the ball back is the first few seconds after losing it."
-    },
-    {
       "id": "complain-referee",
-      "text": "Complain to the referee",
+      "text": "Complain to the referee about the tackle",
       "grade": "poor",
       "why": "The game doesn't stop. While you complain, they attack."
     },
     {
       "id": "put-head-down",
-      "text": "Put your head down and jog back",
-      "grade": "poor",
-      "why": "Everyone loses the ball. How you react matters more."
+      "text": "Drop back into your position to defend",
+      "grade": "ok",
+      "why": "Getting back into shape is sensible, but the first few seconds are the best time to win it back."
+    },
+    {
+      "id": "press-straight-away",
+      "text": "Press straight away to win it back",
+      "grade": "best",
+      "why": "The best time to win the ball back is the first few seconds after losing it."
     }
   ],
-  "difficulty": "Intermediate",
+  "difficulty": "Beginner",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "pressing",
+    "transition"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"

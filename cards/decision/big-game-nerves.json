@@ -2,7 +2,7 @@
   "schema": "1.0",
   "id": "big-game-nerves",
   "legacy_id": "m11",
-  "rev": 1,
+  "rev": 2,
   "category": "mindset",
   "title": "Big-game nerves",
   "text": "It's a big match and you feel really nervous.",
@@ -14,28 +14,30 @@
   },
   "options": [
     {
+      "id": "hide-dont-get",
+      "text": "Hide out wide so you don't get the ball",
+      "grade": "poor",
+      "why": "Getting involved early is the best way to settle."
+    },
+    {
       "id": "breathe-slowly-think",
-      "text": "Breathe slowly and think about your first easy pass",
+      "text": "Breathe slowly and plan an easy first pass",
       "grade": "best",
       "why": "Focusing on one small thing calms your nerves and gets you into the game."
     },
     {
       "id": "think-about-everything",
-      "text": "Think about everything that could go wrong",
-      "grade": "poor",
-      "why": "That makes nerves bigger."
-    },
-    {
-      "id": "hide-dont-get",
-      "text": "Hide so you don't get the ball",
-      "grade": "poor",
-      "why": "Getting involved early is the best way to settle."
+      "text": "Go over everything you have to do in your head",
+      "grade": "ok",
+      "why": "Knowing your job helps, but thinking about too much can make nerves worse. Pick one simple thing."
     }
   ],
   "difficulty": "Intermediate",
   "age_band": "all",
   "role": "outfield",
-  "tags": [],
+  "tags": [
+    "composure"
+  ],
   "contributor": "FootworkIQ",
   "reviewed_by": [],
   "license": "CC0"
