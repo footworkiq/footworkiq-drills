@@ -107,13 +107,15 @@ The tag list is fixed. Adding or removing a tag is a policy change, so it needs 
 | At most 3 tags | `MAX_TAGS` | 3 | Strict |
 | File format: 2-space indent plus a trailing newline | none | | Strict |
 | A grade change needs a higher `rev` (PRs only, checked against `main`) | none | | Strict |
-| At least one tag | `MIN_TAGS` | 1 | Warning until the 2026-11 audit completes, then strict |
-| Option balance: the longest option is at most 1.5 times the shortest, unless they are within 12 characters of each other | `MAX_OPTION_LENGTH_RATIO`, `OPTION_LENGTH_SLACK_CHARS` | 1.5, 12 | Warning until the 2026-11 audit completes, then strict |
-| Share of cards where the best option is the longest (ties count) | `MAX_BEST_LONGEST_SHARE` | 0.45 | Warning until the 2026-11 audit completes, then strict |
-| Share of cards where the best option is stored first | `MAX_BEST_FIRST_SHARE` | 0.45 | Warning until the 2026-11 audit completes, then strict |
-| Share of cards where the best option is the shortest (ties count) | `MAX_BEST_SHORTEST_SHARE` | 0.45 | Warning until the 2026-11 audit completes, then strict |
+| At least one tag | `MIN_TAGS` | 1 | Strict |
+| Option balance: the longest option is at most 1.5 times the shortest, unless they are within 12 characters of each other | `MAX_OPTION_LENGTH_RATIO`, `OPTION_LENGTH_SLACK_CHARS` | 1.5, 12 | Strict |
+| Share of cards where the best option is the longest (ties count) | `MAX_BEST_LONGEST_SHARE` | 0.45 | Strict |
+| Share of cards where the best option is stored first | `MAX_BEST_FIRST_SHARE` | 0.45 | Strict |
+| Share of cards where the best option is the shortest (ties count) | `MAX_BEST_SHORTEST_SHARE` | 0.45 | Strict |
 
 The three share rules look at the whole deck. They are checked over all cards and again over `outfield` cards only, and they are skipped when there are fewer than `MIN_CARDS_FOR_DECK_LINT` (20) cards.
+
+CI also fails if a card's options aren't stored in the seeded order: `npm test` checks every card, and `node scripts/reorder-card-options.js` fixes it.
 
 Some problems are schema errors, which always fail: a card with two best options or no best option, scene coordinates out of bounds, and a missing or invalid `age_band` or `role`.
 
@@ -122,7 +124,7 @@ Write in short, plain sentences. Don't use abbreviations with full stops, such a
 ### Before you open a card PR
 
 1. Run `npm test`.
-2. Run `node scripts/validate-cards.js --strict-balance` to see the warning-level rules as failures.
+2. Run `node scripts/validate-cards.js`. Every rule above is strict, so fix anything it reports.
 3. Run `node scripts/reorder-card-options.js`. It stores each card's options in a fixed shuffled order, so the best answer isn't always first. Commit the result.
 4. Run `node scripts/card-report.js --base origin/main` to see your changes, including any grade changes and whether `rev` went up.
 
