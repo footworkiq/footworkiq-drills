@@ -1,18 +1,31 @@
 // Tests for scripts/lib/reorder.js and scripts/reorder-card-options.js (D-03).
-// Distribution tests read the real cards in cards/decision; CLI tests run on
-// temp copies so the real deck is never rewritten.
+// Tests that read the real cards in cards/decision assert invariants only
+// (seeded order, best-first share, no deck-lint failures), never a deck size
+// or a slot-count snapshot, so adding or retiring a card can't break them.
+// The audit snapshot numbers live in docs/cards/AUDIT-2026-11.md.
+// CLI, growth and retirement tests run on temp copies so the real deck is
+// never rewritten. No test may assume a deck size.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { canonical, shuffledOptions, bestSlot, isSeededOrder } from '../scripts/lib/reorder.js';
+import {
+  MAX_BEST_FIRST_SHARE,
+  MIN_CARDS_FOR_DECK_LINT,
+  lintDeck,
+  isFailure,
+} from '../scripts/lib/card-lints.js';
 
 const repoRoot = fileURLToPath(new URL('..', import.meta.url));
 const CARDS_DIR = join(repoRoot, 'cards/decision');
+const RETIRED = join(repoRoot, 'cards/decision.retired.json');
 const SCRIPT = join(repoRoot, 'scripts/reorder-card-options.js');
+const VALIDATOR = join(repoRoot, 'scripts/validate-cards.js');
+const FIXTURE = join(repoRoot, 'test/fixtures/cards/good/back-pass.json');
 
 const cardFiles = readdirSync(CARDS_DIR)
   .filter((f) => f.endsWith('.json'))
@@ -27,6 +40,49 @@ function slotCounts(list) {
 
 function run(...args) {
   return spawnSync(process.execPath, [SCRIPT, ...args], { cwd: repoRoot, encoding: 'utf8' });
+}
+
+function validate(...args) {
+  return spawnSync(process.execPath, [VALIDATOR, ...args], { cwd: repoRoot, encoding: 'utf8' });
+}
+
+function loadDeck(dir) {
+  return readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .sort()
+    .map((f) => JSON.parse(readFileSync(join(dir, f), 'utf8')));
+}
+
+/**
+ * Invariants that hold for any deck size. The thresholds come from
+ * scripts/lib/card-lints.js, so these tests are exactly as strict as the
+ * validator and can't drift from it.
+ */
+function assertDeckInvariants(list, label) {
+  const total = slotCounts(list);
+  assert.equal(
+    total[0] + total[1] + total[2],
+    list.length,
+    `${label}: slot counts ${JSON.stringify(total)} don't sum to ${list.length}`,
+  );
+  const subsets = [
+    ['all', list],
+    ['outfield', list.filter((c) => c.role === 'outfield')],
+  ];
+  for (const [name, subset] of subsets) {
+    const n = subset.length;
+    if (n < MIN_CARDS_FOR_DECK_LINT) continue;
+    const counts = slotCounts(subset);
+    assert.ok(
+      counts[0] / n <= MAX_BEST_FIRST_SHARE,
+      `${label} (${name}): best is first on ${counts[0]}/${n} cards (max ${MAX_BEST_FIRST_SHARE})`,
+    );
+  }
+  assert.deepEqual(
+    lintDeck(list).filter((i) => isFailure(i)),
+    [],
+    `${label}: deck lints fail`,
+  );
 }
 
 const opt = (id, grade) => ({ id, text: id, grade, why: id });
@@ -65,22 +121,72 @@ test('every real card is stored in seeded order', () => {
   }
 });
 
-test('best slot distribution over the real deck is 26/20/26', () => {
-  assert.equal(cards.length, 72);
-  assert.deepEqual(slotCounts(cards), [26, 20, 26]);
+test('live deck satisfies the deck invariants at any size', () => {
+  assertDeckInvariants(cards, 'cards/decision');
 });
 
-test('best slot distribution without the keeper cards (d6, d14, d22) is 25/19/25', () => {
-  const outfield = cards.filter((c) => !['d6', 'd14', 'd22'].includes(c.legacy_id));
-  assert.equal(outfield.length, 69);
-  assert.deepEqual(slotCounts(outfield), [25, 19, 25]);
+test('bestSlot spreads synthetic ids across all three slots', () => {
+  const counts = [0, 0, 0];
+  for (let i = 0; i < 600; i++) counts[bestSlot(`synthetic-card-${i}`)]++;
+  for (const [slot, n] of counts.entries()) {
+    assert.ok(n >= 150 && n <= 252, `slot ${slot} got ${n}/600 (want 150..252): ${JSON.stringify(counts)}`);
+  }
 });
 
-test('best slot distribution per category', () => {
-  const by = (cat) => slotCounts(cards.filter((c) => c.category === cat));
-  assert.deepEqual(by('attack'), [13, 7, 12]);
-  assert.deepEqual(by('defend'), [8, 9, 7]);
-  assert.deepEqual(by('mindset'), [5, 4, 7]);
+test('a deck with one extra valid card passes reorder, the validator and the deck invariants', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'deck-growth-'));
+  try {
+    for (const f of cardFiles) copyFileSync(join(CARDS_DIR, f), join(dir, f));
+    // A keeper card (role !== 'outfield') with a fresh id and no legacy_id,
+    // because the fixture's legacy_id is already used by the live deck.
+    const card = JSON.parse(readFileSync(FIXTURE, 'utf8'));
+    card.id = 'deck-growth-test-card';
+    delete card.legacy_id;
+    const seeded = shuffledOptions(card);
+    card.options = [...seeded.slice(1), seeded[0]];
+    assert.equal(isSeededOrder(card), false);
+    writeFileSync(join(dir, `${card.id}.json`), JSON.stringify(card, null, 2) + '\n');
+
+    let r = run('--dir', dir);
+    assert.equal(r.status, 0, r.stdout + r.stderr);
+    assert.match(r.stdout, new RegExp(`written 1, unchanged ${cards.length}\\b`));
+
+    r = run('--dir', dir, '--check');
+    assert.equal(r.status, 0, r.stdout + r.stderr);
+
+    r = validate('--dir', dir, '--retired', RETIRED);
+    assert.equal(r.status, 0, r.stdout + r.stderr);
+    assert.ok(
+      r.stdout.includes(`All ${cards.length + 1} card(s) valid (0 warning(s)).`),
+      r.stdout + r.stderr,
+    );
+
+    assertDeckInvariants(loadDeck(dir), 'deck + 1 card');
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('a deck with one retired card passes the validator and the deck invariants', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'deck-retire-'));
+  try {
+    const [gone, ...kept] = cardFiles;
+    const goneId = JSON.parse(readFileSync(join(CARDS_DIR, gone), 'utf8')).id;
+    const cardsDir = join(dir, 'decision');
+    const retiredPath = join(dir, 'decision.retired.json');
+    mkdirSync(cardsDir);
+    for (const f of kept) copyFileSync(join(CARDS_DIR, f), join(cardsDir, f));
+    const retired = JSON.parse(readFileSync(RETIRED, 'utf8'));
+    writeFileSync(retiredPath, JSON.stringify([...retired, goneId], null, 2) + '\n');
+
+    const r = validate('--dir', cardsDir, '--retired', retiredPath);
+    assert.equal(r.status, 0, r.stdout + r.stderr);
+    assert.ok(r.stdout.includes(`All ${cards.length - 1} card(s) valid`), r.stdout + r.stderr);
+
+    assertDeckInvariants(loadDeck(cardsDir), 'deck - 1 card');
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 });
 
 test('regrading a non-best option never moves best', () => {
