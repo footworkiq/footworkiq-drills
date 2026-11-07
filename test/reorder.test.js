@@ -56,6 +56,15 @@ test('shuffledOptions returns the same objects and is idempotent', () => {
   }
 });
 
+test('every real card is stored in seeded order', () => {
+  for (const [i, card] of cards.entries()) {
+    assert.ok(
+      isSeededOrder(card),
+      `cards/decision/${cardFiles[i]} is not in seeded order. Run: node scripts/reorder-card-options.js`,
+    );
+  }
+});
+
 test('best slot distribution over the real deck is 26/20/26', () => {
   assert.equal(cards.length, 72);
   assert.deepEqual(slotCounts(cards), [26, 20, 26]);

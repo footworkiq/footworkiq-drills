@@ -11,9 +11,10 @@
 // caps), sentence-length (max words per sentence), no-url (no links or domains
 // in any string), and the tag rules (tag-unknown, tag-duplicate, tag-count).
 //
-// Warns (fails with BALANCE_LINTS_STRICT or --strict-balance): option-balance,
-// tags-missing, and the deck-share rules (deck-best-longest, deck-best-first,
-// deck-best-shortest).
+// Also fails on the balance rules, strict since the 2026-11 audit
+// (BALANCE_LINTS_STRICT): option-balance, tags-missing, and the deck-share
+// rules (deck-best-longest, deck-best-first, deck-best-shortest).
+// --strict-balance is still accepted but has no extra effect.
 //
 // Frozen ids (ADR 0009 D-06..D-08): with --base <git-ref> (CI passes the PR's
 // base branch) each card file that exists at <ref> is compared with the

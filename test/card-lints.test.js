@@ -270,7 +270,7 @@ test('isFailure: deferred issues fail only in strict mode', () => {
   const deferred = { rule: 'option-balance', path: '/options', message: '', deferred: true };
   assert.equal(isFailure(deferred, false), false);
   assert.equal(isFailure(deferred, true), true);
-  assert.equal(isFailure(deferred), false);
+  assert.equal(isFailure(deferred), BALANCE_LINTS_STRICT);
 });
 
 test('isFailure: non-deferred issues always fail', () => {
@@ -279,8 +279,8 @@ test('isFailure: non-deferred issues always fail', () => {
   assert.equal(isFailure(hard, true), true);
 });
 
-test('BALANCE_LINTS_STRICT is off until the audit PRs merge', () => {
-  assert.equal(BALANCE_LINTS_STRICT, false);
+test('BALANCE_LINTS_STRICT is on after the 2026-11 audit', () => {
+  assert.equal(BALANCE_LINTS_STRICT, true);
 });
 
 // ---------------------------------------------------------------- checkFormat

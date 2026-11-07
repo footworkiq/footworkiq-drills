@@ -116,3 +116,14 @@ test('real deck: cards/decision passes in default mode', () => {
   assert.equal(r.status, 0, r.stderr);
   assert.match(r.stdout, /All \d+ card\(s\) valid \(\d+ warning\(s\)\)\./);
 });
+
+test('real deck: cards/decision has no balance warnings in default mode', () => {
+  const r = spawnSync(process.execPath, ['scripts/validate-cards.js', '--dir', 'cards/decision'], {
+    cwd: repoRoot,
+    encoding: 'utf8',
+  });
+  assert.equal(r.status, 0, r.stderr);
+  assert.match(r.stdout, /Balance lints: strict/);
+  assert.doesNotMatch(r.stdout + r.stderr, /^WARN/m);
+  assert.match(r.stdout, /\(0 warning\(s\)\)/);
+});

@@ -38,11 +38,11 @@
 
 /**
  * Balance lints (option-balance, tags-missing, deck shares) fail CI only when
- * this is true. It is false until the attack, defend and mindset audit PRs
- * have all merged (D-06). Rebuild Artifacts validates main on every push, so
- * turning this on early would stop the bundle rebuild.
+ * this is true. It was turned on after the November 2026 audit, once the
+ * attack, defend and mindset audit PRs had all merged (D-06). Turning it off
+ * again is a policy change, not a fix for a failing card.
  */
-export const BALANCE_LINTS_STRICT = false;
+export const BALANCE_LINTS_STRICT = true;
 
 /**
  * Maximum ratio of the longest option text to the shortest on one card.
