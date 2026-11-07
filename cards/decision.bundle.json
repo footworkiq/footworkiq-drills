@@ -306,7 +306,7 @@
       "schema": "1.0",
       "id": "bad-call",
       "legacy_id": "m4",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "Bad call",
       "text": "The ref gives a free kick against you. You don't think it was a foul.",
@@ -318,28 +318,30 @@
       },
       "options": [
         {
+          "id": "stand-still-sulk",
+          "text": "Stand there and sulk about the call",
+          "grade": "poor",
+          "why": "The other team will take it quickly while you're switched off."
+        },
+        {
+          "id": "argue-referee",
+          "text": "Ask the referee calmly what it was for",
+          "grade": "ok",
+          "why": "Asking politely is fine, but not now. Their free kick is coming, so get organised first."
+        },
+        {
           "id": "get-back-position",
           "text": "Get back into position quickly",
           "grade": "best",
           "why": "Their free kick is coming either way. Being organised is what helps your team."
-        },
-        {
-          "id": "argue-referee",
-          "text": "Argue with the referee",
-          "grade": "poor",
-          "why": "It won't change the decision and could get you a yellow card."
-        },
-        {
-          "id": "stand-still-sulk",
-          "text": "Stand still and sulk",
-          "grade": "poor",
-          "why": "The other team will take it quickly while you're switched off."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "composure"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -512,7 +514,7 @@
       "schema": "1.0",
       "id": "big-game-nerves",
       "legacy_id": "m11",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "Big-game nerves",
       "text": "It's a big match and you feel really nervous.",
@@ -524,28 +526,30 @@
       },
       "options": [
         {
+          "id": "hide-dont-get",
+          "text": "Hide out wide so you don't get the ball",
+          "grade": "poor",
+          "why": "Getting involved early is the best way to settle."
+        },
+        {
           "id": "breathe-slowly-think",
-          "text": "Breathe slowly and think about your first easy pass",
+          "text": "Breathe slowly and plan an easy first pass",
           "grade": "best",
           "why": "Focusing on one small thing calms your nerves and gets you into the game."
         },
         {
           "id": "think-about-everything",
-          "text": "Think about everything that could go wrong",
-          "grade": "poor",
-          "why": "That makes nerves bigger."
-        },
-        {
-          "id": "hide-dont-get",
-          "text": "Hide so you don't get the ball",
-          "grade": "poor",
-          "why": "Getting involved early is the best way to settle."
+          "text": "Go over everything you have to do in your head",
+          "grade": "ok",
+          "why": "Knowing your job helps, but thinking about too much can make nerves worse. Pick one simple thing."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "composure"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -566,28 +570,30 @@
       },
       "options": [
         {
-          "id": "use-quick-passing",
-          "text": "Use quick passing and movement",
-          "grade": "best",
-          "why": "Speed and smart passing beat size."
+          "id": "give-theyre-too",
+          "text": "Give up, they're far too big",
+          "grade": "poor",
+          "why": "Size isn't everything in football."
         },
         {
           "id": "avoid-all-challenges",
-          "text": "Avoid all challenges",
+          "text": "Avoid all of the challenges",
           "grade": "ok",
           "why": "Sensible sometimes, but you still need to compete."
         },
         {
-          "id": "give-theyre-too",
-          "text": "Give up, they're too big",
-          "grade": "poor",
-          "why": "Size isn't everything in football."
+          "id": "use-quick-passing",
+          "text": "Use quick passing and movement",
+          "grade": "best",
+          "why": "Speed and smart passing beat size."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "teamwork"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1737,27 +1743,30 @@
       "options": [
         {
           "id": "calm-things-down",
-          "text": "Calm things down and talk about one thing to fix",
+          "text": "Calm them down and agree one thing to fix",
           "grade": "best",
           "why": "A team that sticks together can come back. Arguing just makes it worse."
         },
         {
-          "id": "join-argument",
-          "text": "Join the argument",
-          "grade": "poor",
-          "why": "More shouting splits the team further."
-        },
-        {
           "id": "sit-away-everyone",
-          "text": "Sit away from everyone",
+          "text": "Sit away from everyone and stay quiet",
           "grade": "ok",
           "why": "Avoids trouble, but your team needs you."
+        },
+        {
+          "id": "join-argument",
+          "text": "Join in and tell them who's to blame",
+          "grade": "poor",
+          "why": "More shouting splits the team further."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "teamwork",
+        "communication"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -1766,7 +1775,7 @@
       "schema": "1.0",
       "id": "hard-foul",
       "legacy_id": "m7",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "Hard foul",
       "text": "An opponent fouls your teammate badly.",
@@ -1778,28 +1787,31 @@
       },
       "options": [
         {
+          "id": "get-revenge-foul",
+          "text": "Get your own back with a hard foul later",
+          "grade": "poor",
+          "why": "You could get sent off, and the team suffers."
+        },
+        {
           "id": "stay-calm-let",
           "text": "Stay calm and let the ref deal with it",
           "grade": "best",
           "why": "The ref handles fouls. Staying calm keeps your team at full strength."
         },
         {
-          "id": "get-revenge-foul",
-          "text": "Get revenge with a foul of your own",
-          "grade": "poor",
-          "why": "You could get sent off, and the team suffers."
-        },
-        {
           "id": "complain-about-all",
-          "text": "Complain about it all game",
-          "grade": "poor",
-          "why": "It takes your mind off playing well."
+          "text": "Calmly ask the ref to watch that player",
+          "grade": "ok",
+          "why": "Fair to mention once and calmly, but it's the ref's job. Then forget it and play."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "fair-play",
+        "composure"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2499,6 +2511,12 @@
       },
       "options": [
         {
+          "id": "say-nothing",
+          "text": "Say nothing and get on with the game",
+          "grade": "ok",
+          "why": "Better than shouting, but a quick word of support helps a lot."
+        },
+        {
           "id": "encourage-next-one",
           "text": "Encourage them: \"Next one!\"",
           "grade": "best",
@@ -2506,21 +2524,18 @@
         },
         {
           "id": "shout",
-          "text": "Shout at them",
+          "text": "Shout at them to do better",
           "grade": "poor",
           "why": "It knocks their confidence and doesn't help the team."
-        },
-        {
-          "id": "say-nothing",
-          "text": "Say nothing",
-          "grade": "ok",
-          "why": "Better than shouting, but a quick word of support helps a lot."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "teamwork",
+        "communication"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2529,7 +2544,7 @@
       "schema": "1.0",
       "id": "muddy-pitch",
       "legacy_id": "m15",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "Muddy pitch",
       "text": "It's pouring with rain and the pitch is slippery.",
@@ -2541,28 +2556,30 @@
       },
       "options": [
         {
-          "id": "keep-passes-touches",
-          "text": "Keep passes and touches simple",
-          "grade": "best",
-          "why": "Slippery conditions make tricks hard. Simple football works best."
+          "id": "complain-about-weather",
+          "text": "Kick it long so it doesn't get stuck",
+          "grade": "ok",
+          "why": "It can skip over the puddles, but long balls are hard to control. Keep it simple and safe."
         },
         {
           "id": "try-lots-fancy",
-          "text": "Try lots of fancy skills",
+          "text": "Try lots of fancy skills and tricks",
           "grade": "poor",
           "why": "The ball will skid away from you."
         },
         {
-          "id": "complain-about-weather",
-          "text": "Complain about the weather",
-          "grade": "poor",
-          "why": "It's the same for both teams."
+          "id": "keep-passes-touches",
+          "text": "Keep passes and touches simple",
+          "grade": "best",
+          "why": "Slippery conditions make tricks hard. Simple football works best."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "composure"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2583,20 +2600,20 @@
       },
       "options": [
         {
+          "id": "stop-running",
+          "text": "Stop running for it, they won't pass",
+          "grade": "poor",
+          "why": "Then they'll never pass to you."
+        },
+        {
           "id": "keep-moving-space",
           "text": "Keep moving into space and call for it",
           "grade": "best",
           "why": "It makes the pass easier to see. Keep offering."
         },
         {
-          "id": "stop-running",
-          "text": "Stop running",
-          "grade": "poor",
-          "why": "Then they'll never pass to you."
-        },
-        {
           "id": "talk-calmly-after",
-          "text": "Talk to them calmly after the game",
+          "text": "Have a calm word with them after the game",
           "grade": "ok",
           "why": "A good idea, but keep helping during the match too."
         }
@@ -2604,7 +2621,10 @@
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "teamwork",
+        "movement"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -2980,10 +3000,10 @@
       "schema": "1.0",
       "id": "player-down",
       "legacy_id": "m10",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "Player down",
-      "text": "An opponent is lying on the ground hurt. Your team has the ball.",
+      "text": "An opponent is lying on the ground hurt. Your team has the ball and play is still going.",
       "tip": "Respect first, always.",
       "scene": {
         "kind": "board",
@@ -2992,28 +3012,30 @@
       },
       "options": [
         {
-          "id": "kick-ball-out",
-          "text": "Kick the ball out so they can get help",
-          "grade": "best",
-          "why": "Their safety comes first. That's good sportsmanship."
-        },
-        {
           "id": "keep-attacking",
-          "text": "Keep attacking",
+          "text": "Keep attacking while the player is still down",
           "grade": "poor",
           "why": "Winning matters less than someone being hurt."
         },
         {
           "id": "stop-stand-there",
-          "text": "Stop and stand there",
+          "text": "Stop and stand still until someone notices",
           "grade": "ok",
-          "why": "Kindly meant, but kicking it out makes the game stop properly."
+          "why": "Kindly meant, but the referee might not have seen. Tell them, or kick it out."
+        },
+        {
+          "id": "kick-ball-out",
+          "text": "Stop and tell the referee, or kick it out",
+          "grade": "best",
+          "why": "Their safety comes first. The referee can stop the game so they get help."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "fair-play"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3596,28 +3618,30 @@
       },
       "options": [
         {
-          "id": "keep-playing-way",
-          "text": "Keep playing your way, but move the ball quicker",
-          "grade": "best",
-          "why": "Calm, quick passing creates chances. Panic doesn't."
+          "id": "give-its-over",
+          "text": "Give up, there's no time left now",
+          "grade": "poor",
+          "why": "Plenty of games turn around in the last five minutes."
         },
         {
           "id": "kick-long-every",
-          "text": "Kick it long every time",
+          "text": "Kick it long into their box every time",
           "grade": "ok",
           "why": "Sometimes works, but mostly gives the ball away."
         },
         {
-          "id": "give-its-over",
-          "text": "Give up, it's over",
-          "grade": "poor",
-          "why": "Plenty of games turn around in the last five minutes."
+          "id": "keep-playing-way",
+          "text": "Keep playing your way, only quicker",
+          "grade": "best",
+          "why": "Calm, quick passing creates chances. Panic doesn't."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "game-management"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3779,22 +3803,24 @@
           "why": "Every good player failed loads while learning. Pick a better moment next time."
         },
         {
-          "id": "never-try-again",
-          "text": "Never try it again",
-          "grade": "poor",
-          "why": "Then you'll never get good at it."
-        },
-        {
           "id": "try-every-time",
           "text": "Try it every time you get the ball",
           "grade": "ok",
           "why": "Skills work when they fit the situation. Choosing when is the real skill."
+        },
+        {
+          "id": "never-try-again",
+          "text": "Never try that skill in a match again",
+          "grade": "poor",
+          "why": "Then you'll never get good at it."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "composure"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3968,27 +3994,29 @@
       "options": [
         {
           "id": "cheer-team-ask",
-          "text": "Cheer your team on, ask the coach later what to work on",
+          "text": "Cheer on your team, ask the coach later",
           "grade": "best",
           "why": "Supporting your team and learning from it shows great character."
         },
         {
           "id": "sit-quietly-bench",
-          "text": "Sit quietly on the bench",
+          "text": "Sit quietly on the bench and watch",
           "grade": "ok",
           "why": "Fine, but cheering helps your team."
         },
         {
           "id": "kick-water-bottle",
-          "text": "Kick a water bottle",
+          "text": "Kick a water bottle in frustration",
           "grade": "poor",
           "why": "It upsets the team and the coach."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "teamwork"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -3997,7 +4025,7 @@
       "schema": "1.0",
       "id": "tackled",
       "legacy_id": "m1",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "Tackled",
       "text": "You've just lost the ball in midfield.",
@@ -4009,28 +4037,31 @@
       },
       "options": [
         {
-          "id": "press-straight-away",
-          "text": "Press straight away to win it back",
-          "grade": "best",
-          "why": "The best time to win the ball back is the first few seconds after losing it."
-        },
-        {
           "id": "complain-referee",
-          "text": "Complain to the referee",
+          "text": "Complain to the referee about the tackle",
           "grade": "poor",
           "why": "The game doesn't stop. While you complain, they attack."
         },
         {
           "id": "put-head-down",
-          "text": "Put your head down and jog back",
-          "grade": "poor",
-          "why": "Everyone loses the ball. How you react matters more."
+          "text": "Drop back into your position to defend",
+          "grade": "ok",
+          "why": "Getting back into shape is sensible, but the first few seconds are the best time to win it back."
+        },
+        {
+          "id": "press-straight-away",
+          "text": "Press straight away to win it back",
+          "grade": "best",
+          "why": "The best time to win the ball back is the first few seconds after losing it."
         }
       ],
-      "difficulty": "Intermediate",
+      "difficulty": "Beginner",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "pressing",
+        "transition"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4795,27 +4826,30 @@
       "options": [
         {
           "id": "keep-playing-properly",
-          "text": "Keep playing properly and respect the other team",
+          "text": "Keep playing properly and respect them",
           "grade": "best",
           "why": "Playing the right way is how you keep improving, and it shows respect."
         },
         {
-          "id": "show-off-tricks",
-          "text": "Show off with tricks to embarrass them",
-          "grade": "poor",
-          "why": "Disrespectful and how injuries and fights start."
-        },
-        {
           "id": "stop-trying",
-          "text": "Stop trying",
+          "text": "Stop trying now the game is won",
           "grade": "ok",
           "why": "You lose the chance to practise."
+        },
+        {
+          "id": "show-off-tricks",
+          "text": "Show off tricks to embarrass them",
+          "grade": "poor",
+          "why": "Disrespectful and how injuries and fights start."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "game-management",
+        "fair-play"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4896,7 +4930,7 @@
       "schema": "1.0",
       "id": "you-scored",
       "legacy_id": "m8",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "You scored!",
       "text": "You've just scored a great goal.",
@@ -4908,10 +4942,10 @@
       },
       "options": [
         {
-          "id": "celebrate-team-get",
-          "text": "Celebrate with your team, then get back ready",
-          "grade": "best",
-          "why": "Teams often concede right after scoring because they switch off."
+          "id": "relax-hard-bit",
+          "text": "Skip the celebration and run straight back",
+          "grade": "ok",
+          "why": "Staying switched on is right, but enjoy it with your team first. Celebrating together lifts everyone."
         },
         {
           "id": "show-off-front",
@@ -4920,16 +4954,18 @@
           "why": "It's disrespectful and fires them up."
         },
         {
-          "id": "relax-hard-bit",
-          "text": "Relax, the hard bit is done",
-          "grade": "poor",
-          "why": "There's still lots of time left."
+          "id": "celebrate-team-get",
+          "text": "Celebrate with your team, then get ready",
+          "grade": "best",
+          "why": "Teams often concede right after scoring because they switch off."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "game-management"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
@@ -4938,7 +4974,7 @@
       "schema": "1.0",
       "id": "your-mistake",
       "legacy_id": "m13",
-      "rev": 1,
+      "rev": 2,
       "category": "mindset",
       "title": "Your mistake",
       "text": "Your mistake has just led to a goal for the other team.",
@@ -4951,27 +4987,29 @@
       "options": [
         {
           "id": "shake-off-focus",
-          "text": "Shake it off and focus on your next action",
+          "text": "Shake it off, focus on the next action",
           "grade": "best",
           "why": "Mistakes happen to everyone. The next action is the one you can control."
         },
         {
           "id": "hide-dont-make",
-          "text": "Hide so you don't make another",
+          "text": "Keep out of the way so you can't do it again",
           "grade": "poor",
           "why": "Your team needs you involved."
         },
         {
           "id": "blame-keeper",
-          "text": "Blame the keeper",
-          "grade": "poor",
-          "why": "It upsets teammates and doesn't help."
+          "text": "Go and say sorry to your keeper and team",
+          "grade": "ok",
+          "why": "Owning up is good, but keep it quick. Say \"My fault\", then get your head back in the game."
         }
       ],
       "difficulty": "Intermediate",
       "age_band": "all",
       "role": "outfield",
-      "tags": [],
+      "tags": [
+        "composure"
+      ],
       "contributor": "FootworkIQ",
       "reviewed_by": [],
       "license": "CC0"
