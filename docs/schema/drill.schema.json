@@ -2,14 +2,15 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://footworkiq.com/schema/drill/1.0",
   "title": "OpenMat Drill",
-  "description": "Schema for OpenMat drill definition files (v1.0)",
+  "description": "Schema for OpenMat drill definition files (v1.0 2x3, v1.1 custom grids)",
   "type": "object",
   "required": ["schema", "metadata", "sequence"],
   "additionalProperties": false,
   "properties": {
     "schema": {
       "type": "string",
-      "const": "1.0"
+      "enum": ["1.0", "1.1"],
+      "description": "1.0 for the legacy 2x3 mat; 1.1 for grids 3x3, 3x4 and 4x4"
     },
     "metadata": {
       "type": "object",
@@ -99,6 +100,11 @@
           "type": "string",
           "enum": ["CC0"],
           "description": "All drills in footworkiq/footworkiq-drills must be CC0"
+        },
+        "grid": {
+          "type": "string",
+          "enum": ["2x3", "3x3", "3x4", "4x4"],
+          "description": "Mat preset as rows x cols; absent means 2x3"
         }
       }
     },
@@ -122,26 +128,324 @@
       }
     }
   },
+  "allOf": [
+    {
+      "if": {
+        "required": ["metadata"],
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "required": ["grid"],
+            "properties": { "grid": { "enum": ["3x3", "3x4", "4x4"] } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "schema": { "const": "1.1" },
+          "sequence": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "object",
+                "required": ["left_foot", "right_foot"],
+                "properties": { "left_foot": true, "right_foot": true }
+              }
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "schema": { "const": "1.0" },
+          "sequence": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/markers_2x3" }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["metadata"],
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "required": ["grid"],
+            "properties": { "grid": { "const": "3x3" } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sequence": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/markers_3x3" }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["metadata"],
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "required": ["grid"],
+            "properties": { "grid": { "const": "3x4" } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sequence": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/markers_3x4" }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": ["metadata"],
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "required": ["grid"],
+            "properties": { "grid": { "const": "4x4" } }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sequence": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/markers_4x4" }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "allOf": [
+          {
+            "required": ["metadata"],
+            "properties": {
+              "metadata": {
+                "type": "object",
+                "required": ["grid"],
+                "properties": { "grid": { "enum": ["3x3", "3x4", "4x4"] } }
+              }
+            }
+          },
+          {
+            "required": ["sequence"],
+            "properties": {
+              "sequence": {
+                "type": "array",
+                "contains": {
+                  "type": "object",
+                  "required": ["ball"],
+                  "properties": { "ball": true }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "then": {
+        "properties": {
+          "sequence": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "object",
+                "required": ["ball"],
+                "properties": { "ball": true }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
+    "zone": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 6,
+      "description": "Named zone (2x3 only) — top row: 3=Top Left, 4=Top Centre, 5=Top Right; bottom row: 2=Bottom Left, 1=Bottom Centre (home), 6=Bottom Right"
+    },
+    "xy": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "description": "Explicit normalised screen-space coordinate (origin top-left); valid on every grid"
+    },
+    "rowcol": {
+      "type": "object",
+      "required": ["row", "col"],
+      "additionalProperties": false,
+      "properties": {
+        "row": { "type": "integer", "minimum": 1, "maximum": 4 },
+        "col": { "type": "integer", "minimum": 1, "maximum": 4 }
+      },
+      "description": "Grid cell, 1-based: row 1 = near row (player's feet), col 1 = player's left; new grids only"
+    },
     "pos": {
+      "description": "Any position kind; per-grid rules are applied by the root allOf",
       "oneOf": [
-        {
-          "type": "integer",
-          "minimum": 1,
-          "maximum": 6,
-          "description": "Named zone — top row: 3=Top Left, 4=Top Centre, 5=Top Right; bottom row: 2=Bottom Left, 1=Bottom Centre (home), 6=Bottom Right"
-        },
+        { "$ref": "#/$defs/zone" },
+        { "$ref": "#/$defs/xy" },
+        { "$ref": "#/$defs/rowcol" }
+      ]
+    },
+    "pos_2x3": {
+      "description": "Position on the legacy 2x3 mat: integer zone or {x,y}",
+      "oneOf": [
+        { "$ref": "#/$defs/zone" },
+        { "$ref": "#/$defs/xy" }
+      ]
+    },
+    "pos_3x3": {
+      "description": "Position on the 3x3 grid: {x,y} or {row,col} within 3 rows x 3 cols",
+      "oneOf": [
+        { "$ref": "#/$defs/xy" },
         {
           "type": "object",
-          "required": ["x", "y"],
+          "required": ["row", "col"],
           "additionalProperties": false,
           "properties": {
-            "x": { "type": "number", "minimum": 0, "maximum": 1 },
-            "y": { "type": "number", "minimum": 0, "maximum": 1 }
+            "row": { "type": "integer", "minimum": 1, "maximum": 3 },
+            "col": { "type": "integer", "minimum": 1, "maximum": 3 }
           },
-          "description": "Explicit normalised screen-space coordinate (origin top-left)"
+          "description": "Cell on the 3x3 grid (row 1..3, col 1..3)"
         }
       ]
+    },
+    "pos_3x4": {
+      "description": "Position on the 3x4 grid: {x,y} or {row,col} within 3 rows x 4 cols",
+      "oneOf": [
+        { "$ref": "#/$defs/xy" },
+        {
+          "type": "object",
+          "required": ["row", "col"],
+          "additionalProperties": false,
+          "properties": {
+            "row": { "type": "integer", "minimum": 1, "maximum": 3 },
+            "col": { "type": "integer", "minimum": 1, "maximum": 4 }
+          },
+          "description": "Cell on the 3x4 grid (row 1..3, col 1..4)"
+        }
+      ]
+    },
+    "pos_4x4": {
+      "description": "Position on the 4x4 grid: {x,y} or {row,col} within 4 rows x 4 cols",
+      "oneOf": [
+        { "$ref": "#/$defs/xy" },
+        {
+          "type": "object",
+          "required": ["row", "col"],
+          "additionalProperties": false,
+          "properties": {
+            "row": { "type": "integer", "minimum": 1, "maximum": 4 },
+            "col": { "type": "integer", "minimum": 1, "maximum": 4 }
+          },
+          "description": "Cell on the 4x4 grid (row 1..4, col 1..4)"
+        }
+      ]
+    },
+    "markers_2x3": {
+      "type": "object",
+      "description": "Beat whose foot and ball positions are valid on the 2x3 grid",
+      "properties": {
+        "left_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_2x3" } }
+        },
+        "right_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_2x3" } }
+        },
+        "ball": {
+          "type": "object",
+          "properties": {
+            "pos": { "$ref": "#/$defs/pos_2x3" },
+            "from": { "$ref": "#/$defs/pos_2x3" },
+            "to": { "$ref": "#/$defs/pos_2x3" }
+          }
+        }
+      }
+    },
+    "markers_3x3": {
+      "type": "object",
+      "description": "Beat whose foot and ball positions are valid on the 3x3 grid",
+      "properties": {
+        "left_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_3x3" } }
+        },
+        "right_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_3x3" } }
+        },
+        "ball": {
+          "type": "object",
+          "properties": {
+            "pos": { "$ref": "#/$defs/pos_3x3" },
+            "from": { "$ref": "#/$defs/pos_3x3" },
+            "to": { "$ref": "#/$defs/pos_3x3" }
+          }
+        }
+      }
+    },
+    "markers_3x4": {
+      "type": "object",
+      "description": "Beat whose foot and ball positions are valid on the 3x4 grid",
+      "properties": {
+        "left_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_3x4" } }
+        },
+        "right_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_3x4" } }
+        },
+        "ball": {
+          "type": "object",
+          "properties": {
+            "pos": { "$ref": "#/$defs/pos_3x4" },
+            "from": { "$ref": "#/$defs/pos_3x4" },
+            "to": { "$ref": "#/$defs/pos_3x4" }
+          }
+        }
+      }
+    },
+    "markers_4x4": {
+      "type": "object",
+      "description": "Beat whose foot and ball positions are valid on the 4x4 grid",
+      "properties": {
+        "left_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_4x4" } }
+        },
+        "right_foot": {
+          "type": "object",
+          "properties": { "pos": { "$ref": "#/$defs/pos_4x4" } }
+        },
+        "ball": {
+          "type": "object",
+          "properties": {
+            "pos": { "$ref": "#/$defs/pos_4x4" },
+            "from": { "$ref": "#/$defs/pos_4x4" },
+            "to": { "$ref": "#/$defs/pos_4x4" }
+          }
+        }
+      }
     },
     "footAction": {
       "type": "object",
