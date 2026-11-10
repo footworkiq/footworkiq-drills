@@ -4367,11 +4367,11 @@
       "schema": "1.0",
       "id": "throw-in",
       "legacy_id": "a15",
-      "rev": 1,
+      "rev": 2,
       "category": "attack",
-      "title": "Throw-in",
-      "text": "You're taking a throw-in. One teammate is close and free. Another is further away with a defender on them.",
-      "tip": "Throw-ins are a free pass. Don't waste them.",
+      "title": "Throw-in or kick-in",
+      "text": "You're taking a throw-in or kick-in. One teammate is close and free. Another is further away with a defender on them.",
+      "tip": "Throw-ins and kick-ins are a free pass. Don't waste them.",
       "scene": {
         "kind": "pitch",
         "own": false,
@@ -4408,21 +4408,21 @@
       "options": [
         {
           "id": "throw-down-line",
-          "text": "Throw it down the line for a chase",
+          "text": "Play it down the line for a chase",
           "grade": "ok",
           "why": "Can work, but often gives the ball back to the other team."
         },
         {
           "id": "throw-long-marked",
-          "text": "Throw it long to the marked teammate",
+          "text": "Play it long to the marked teammate",
           "grade": "poor",
           "why": "The defender is right there and will probably win it."
         },
         {
           "id": "throw-free-teammates",
-          "text": "Throw to the free teammate's feet",
+          "text": "Pass to the free teammate's feet",
           "grade": "best",
-          "why": "A short, easy throw keeps the ball. Feet are easier to control than a bouncing ball at head height."
+          "why": "A short, easy pass keeps the ball. Feet are easier to control than a bouncing ball."
         }
       ],
       "difficulty": "Intermediate",
