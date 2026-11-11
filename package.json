@@ -7,6 +7,7 @@
     "build-index": "node scripts/build-index.js",
     "validate": "node scripts/validate-drills.js",
     "generate": "node scripts/generate.js",
+    "build-strict-schemas": "node scripts/build-strict-schemas.js",
     "validate-cards": "node scripts/validate-cards.js",
     "build-cards": "node scripts/build-card-bundle.js",
     "reorder-cards": "node scripts/reorder-card-options.js",
