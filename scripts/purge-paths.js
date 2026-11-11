@@ -22,7 +22,9 @@ function git(args) {
 function changedDrills() {
   if (!isSha(before) || !isSha(after)) return [];
   if (git(['cat-file', '-e', `${before}^{commit}`]) === null) return [];
-  const out = git(['diff', '--name-only', before, after, '--', 'drills/']);
+  // --no-renames: with rename detection (git's default) a renamed drill lists
+  // only its new path, and the old URL keeps serving a stale copy at the edge.
+  const out = git(['diff', '--no-renames', '--name-only', before, after, '--', 'drills/']);
   return out === null ? [] : out.split('\n');
 }
 

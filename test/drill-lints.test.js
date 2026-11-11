@@ -162,6 +162,32 @@ test('the loop message has the agreed prefix and suffix', () => {
   assert.ok(i.message.endsWith(' between reps (not adjacent)'));
 });
 
+test('the loop wrap is checked when beat 1 has no ball (WR-04)', () => {
+  // No ball on beat 1; the ball first appears at A1 on beat 2, then B2, C3.
+  // C3 -> A1 between reps is not adjacent and must be reported against beat 2.
+  // The schema already rejects a grid drill whose ball is missing on beat 1,
+  // and both validate-drills and generate run the schema first, so this is
+  // defence in depth: lintDrill must not depend on that ordering.
+  const d = fixture('bad-ball-jump-loop', '3x3-box-roll.json');
+  delete d.sequence[0].ball;
+  d.sequence[1].ball = { pos: { row: 1, col: 1 }, action: 'STILL' };
+  d.sequence[2].ball = { pos: { row: 2, col: 2 }, action: 'ROLL', from: { row: 1, col: 1 }, to: { row: 2, col: 2 } };
+  d.sequence[3].ball = { pos: { row: 3, col: 3 }, action: 'ROLL', from: { row: 2, col: 2 }, to: { row: 3, col: 3 } };
+  d.sequence[2].right_foot.pos = { row: 2, col: 3 };
+  d.sequence[3].left_foot.pos = { row: 3, col: 2 };
+  assert.equal(validate(d), false);
+  assert.deepEqual(lintDrill(d), [
+    { rule: 'ball-jump', beat: 2, marker: 'ball', message: 'loop: ball jumps C3 → A1 between reps (not adjacent)' },
+  ]);
+});
+
+test('the loop wrap passes when beat 1 has no ball and the wrap is adjacent', () => {
+  const d = fixture('bad-ball-jump-loop', '3x3-box-roll.json');
+  delete d.sequence[0].ball;
+  // First ball is now C2 (beat 2); last is B3, which is diagonally adjacent.
+  assert.deepEqual(lintDrill(d), []);
+});
+
 // ---------------------------------------------------------------- feet exemption (D-03)
 
 for (const action of ['TAP', 'STEP_OVER', 'LIFT']) {

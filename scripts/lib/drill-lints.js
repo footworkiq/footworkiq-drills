@@ -109,9 +109,11 @@ export function lintDrill(drill) {
   let L = null; // { cell, action }
   let R = null;
   let B = null;
+  // First beat that has a ball (not necessarily beat 1): the loop wrap compares against it.
   let firstBall = null;
+  let firstBallBeat = null;
 
-  beats.forEach((step, i) => {
+  beats.forEach((step) => {
     const beat = step.beat;
 
     // Feet
@@ -193,14 +195,17 @@ export function lintDrill(drill) {
     }
 
     B = { cell, action: ball.action };
-    if (i === 0) firstBall = cell;
+    if (firstBallBeat === null) {
+      firstBall = cell;
+      firstBallBeat = beat;
+    }
   });
 
   // Loop wrap (D-21): adjacency only, no action or from/to requirement.
   const last = B?.cell ?? null;
   if (firstBall && last && !isAdjacent(last, firstBall)) {
     issues.push(
-      issue('ball-jump', 1, 'ball', `loop: ball jumps ${name(last)} → ${name(firstBall)} between reps (not adjacent)`),
+      issue('ball-jump', firstBallBeat, 'ball', `loop: ball jumps ${name(last)} → ${name(firstBall)} between reps (not adjacent)`),
     );
   }
 
