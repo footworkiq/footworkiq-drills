@@ -1,18 +1,43 @@
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+// Generate a drill with OpenAI structured outputs.
+//
+//   npm run generate -- [--grid 3x3|3x4|4x4] [--out <dir>] [--force] "<concept>"
+//
+// Without --grid this is the original 2x3 generator (same strict schema and
+// prompt, D-08). With --grid it uses that grid's strict schema
+// (docs/schema/drill.strict-schema.<grid>.json) and prompt (D-09). Every
+// drill must pass the full schema (Ajv) and then the grid lints before it is
+// written (D-10). Set OPENAI_MODEL to override the model (default gpt-4o).
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { resolve, join, relative } from 'path';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import OpenAI from 'openai';
+import { lintDrill } from './lib/drill-lints.js';
+import {
+  modelName,
+  parseArgs,
+  postProcess,
+  strictSchemaPathFor,
+  systemPrompt,
+  usedCellNames,
+} from './lib/generate-lib.js';
 
-const fullSchemaPath = new URL('../docs/schema/drill.schema.json', import.meta.url).pathname;
-const strictSchemaPath = new URL('../docs/schema/drill.strict-schema.json', import.meta.url).pathname;
+const USAGE =
+  'Usage: npm run generate -- [--grid 3x3|3x4|4x4] [--out <dir>] [--force] "<drill concept, e.g. cruyff-turn intermediate ball-control>"';
 
-const fullSchemaRaw = JSON.parse(readFileSync(fullSchemaPath, 'utf8'));
-const strictSchema = JSON.parse(readFileSync(strictSchemaPath, 'utf8'));
+let args;
+try {
+  args = parseArgs(process.argv.slice(2));
+} catch (e) {
+  console.error(e.message);
+  console.error(USAGE);
+  process.exit(1);
+}
 
-const ajv = new Ajv2020({ strict: false, allErrors: true, validateSchema: false });
-addFormats(ajv);
-delete fullSchemaRaw['$schema'];
-const validate = ajv.compile(fullSchemaRaw);
+if (!args.concept) {
+  console.error(USAGE);
+  process.exit(1);
+}
 
 const apiKey = process.env.OPENAI_API_KEY;
 if (!apiKey) {
@@ -20,73 +45,23 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const rawArgs = process.argv.slice(2);
-const forceFlag = rawArgs.includes('--force');
-const conceptArgs = rawArgs.filter(a => a !== '--force');
-const concept = conceptArgs.join(' ').trim();
+const fullSchemaPath = new URL('../docs/schema/drill.schema.json', import.meta.url).pathname;
+const fullSchemaRaw = JSON.parse(readFileSync(fullSchemaPath, 'utf8'));
+const strictSchema = JSON.parse(readFileSync(strictSchemaPathFor(args.grid), 'utf8'));
 
-if (!concept) {
-  console.error('Usage: npm run generate -- "<drill concept, e.g. cruyff-turn intermediate ball-control>"');
-  process.exit(1);
-}
+const ajv = new Ajv2020({ strict: false, allErrors: true, validateSchema: false });
+addFormats(ajv);
+delete fullSchemaRaw['$schema'];
+const validate = ajv.compile(fullSchemaRaw);
 
 const client = new OpenAI({ apiKey });
 
-const systemPrompt = `You design football footwork drills for the OpenMat training mat.
-
-THE MAT (from the player's perspective, looking down at their feet):
-  A 6-zone grid, 3 columns x 2 rows. Zone 1 is the bottom-centre HOME position
-  (nearest the player). Coordinates are screen-space, Y increases DOWNWARD.
-
-    +-----+-----+-----+
-    |  3  |  4  |  5  |   far row  (top of screen, y = 0.3)
-    +-----+-----+-----+
-    |  2  |  1  |  6  |   near row (bottom of screen, y = 0.7)
-    +-----+-----+-----+
-       x=0.2 x=0.5 x=0.8
-
-  Zone 1 = bottom centre (home)
-  Zone 2 = bottom left
-  Zone 3 = top left
-  Zone 4 = top centre
-  Zone 5 = top right
-  Zone 6 = bottom right
-
-FOOT ACTIONS (closed enum, do not invent):
-  PLANT          - stationary weight-bearing foot
-  STEP           - simple step to target zone
-  INSIDE_TOUCH   - inside-of-foot touch on the ball
-  OUTSIDE_TOUCH  - outside-of-foot touch on the ball
-  SOLE_ROLL      - sole roll across the ball
-  TAP            - quick tap on the ball
-  DRAG           - drag ball with sole
-  STEP_OVER      - scissors / step-over feint (foot crosses over ball without touching)
-  LIFT           - foot leaves the mat (e.g., in the air)
-
-BALL ACTIONS (closed enum):
-  STILL  - ball does not move
-  ROLL   - ball rolls between zones (use from and to)
-  PUSH   - ball pushed to a new zone (use from and to)
-  LIFT   - ball is in the air
-
-RULES:
-  - Foot positions must be physically coherent: feet should not occupy the same zone
-    simultaneously unless one is TAP/STEP_OVER/LIFT.
-  - The ball moves continuously: if beat N has ball at zone A and beat N+1 at zone B,
-    beat N+1 must use ROLL or PUSH with from=A, to=B.
-  - License is always "CC0". Contributor is "FootworkIQ-AI".
-  - Use kebab-case for the drill id, matching the file naming convention.
-  - reps = 4, sets = 3, count_in = 1 are sensible defaults unless the concept demands otherwise.
-  - time_signature is almost always "4/4" — use this unless explicitly asked.
-  - subdivision = 1 (quarter notes) by default. Use 2 (eighths) for fast drills only.
-`;
-
-const userPrompt = `Generate a drill for this concept: ${concept}`;
+const userPrompt = `Generate a drill for this concept: ${args.concept}`;
 
 const completion = await client.chat.completions.parse({
-  model: 'gpt-4o',
+  model: modelName(process.env),
   messages: [
-    { role: 'system', content: systemPrompt },
+    { role: 'system', content: systemPrompt(args.grid) },
     { role: 'user', content: userPrompt }
   ],
   response_format: { type: 'json_schema', json_schema: strictSchema }
@@ -98,14 +73,7 @@ if (choice.message.refusal) {
   process.exit(1);
 }
 
-const drill = choice.message.parsed;
-
-for (const step of drill.sequence) {
-  if (step.ball && step.ball.action !== 'ROLL' && step.ball.action !== 'PUSH') {
-    delete step.ball.from;
-    delete step.ball.to;
-  }
-}
+const drill = postProcess(choice.message.parsed);
 
 const ok = validate(drill);
 if (!ok) {
@@ -117,23 +85,44 @@ if (!ok) {
   process.exit(1);
 }
 
-const outPath = new URL(`../drills/${drill.metadata.id}.json`, import.meta.url).pathname;
-
-if (existsSync(outPath) && !forceFlag) {
-  console.error(`Refusing to overwrite existing drills/${drill.metadata.id}.json. Re-run with a different concept or pass --force.`);
+// Grid lints (D-10). lintDrill returns [] for 2x3, so the no --grid path is unchanged.
+const issues = lintDrill(drill);
+if (issues.length > 0) {
+  console.error('Generated drill failed the grid lints:');
+  for (const i of issues) {
+    console.error(`  ${i.message}`);
+  }
+  console.error('\nNot writing to disk. Re-run to try again.');
   process.exit(1);
 }
 
-writeFileSync(outPath, JSON.stringify(drill, null, 2) + '\n');
+const outDir = args.out ? resolve(process.cwd(), args.out) : new URL('../drills', import.meta.url).pathname;
+const outPath = join(outDir, `${drill.metadata.id}.json`);
+const shownPath = args.out ? relative(process.cwd(), outPath) || outPath : `drills/${drill.metadata.id}.json`;
 
-const zones = new Set();
-for (const s of drill.sequence) {
-  if (typeof s.left_foot?.pos === 'number') zones.add(s.left_foot.pos);
-  if (typeof s.right_foot?.pos === 'number') zones.add(s.right_foot.pos);
+if (existsSync(outPath) && !args.force) {
+  console.error(`Refusing to overwrite existing ${shownPath}. Re-run with a different concept or pass --force.`);
+  process.exit(1);
 }
 
-console.log(`\nWrote drills/${drill.metadata.id}.json`);
+if (args.out) mkdirSync(outDir, { recursive: true });
+writeFileSync(outPath, JSON.stringify(drill, null, 2) + '\n');
+
+console.log(`\nWrote ${shownPath}`);
 console.log(`  Beats:      ${drill.sequence.length}`);
-console.log(`  Zones used: ${[...zones].sort((a, b) => a - b).join(', ')}`);
+if (args.grid) {
+  console.log(`  Grid:       ${args.grid.replace('x', '×')}`);
+  console.log(`  Cells used: ${usedCellNames(drill).join(', ')}`);
+} else {
+  const zones = new Set();
+  for (const s of drill.sequence) {
+    if (typeof s.left_foot?.pos === 'number') zones.add(s.left_foot.pos);
+    if (typeof s.right_foot?.pos === 'number') zones.add(s.right_foot.pos);
+  }
+  console.log(`  Zones used: ${[...zones].sort((a, b) => a - b).join(', ')}`);
+}
 console.log(`  Difficulty: ${drill.metadata.difficulty} @ ${drill.metadata.default_bpm} BPM`);
 console.log(`\nPlay-test on device before committing.`);
+if (args.grid) {
+  console.log('New-grid drills need an app version that supports schema 1.1 before they merge.');
+}
