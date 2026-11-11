@@ -13,6 +13,7 @@ import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { buildStrictSchema } from '../scripts/lib/strict-schema.js';
 import { lintDrill } from '../scripts/lib/drill-lints.js';
+import { postProcess } from '../scripts/lib/generate-lib.js';
 
 const GRIDS = { '3x3': [3, 3], '3x4': [3, 4], '4x4': [4, 4] };
 const range = (n) => Array.from({ length: n }, (_, i) => i + 1);
@@ -32,17 +33,6 @@ function walk(node, path, visit) {
   if (node === null || typeof node !== 'object') return;
   visit(node, path);
   for (const [k, v] of Object.entries(node)) walk(v, `${path}/${k}`, visit);
-}
-
-/** Inline copy of generate.js's post-process (until generate-lib exists). */
-function postProcess(drill) {
-  for (const step of drill.sequence) {
-    if (step.ball && step.ball.action !== 'ROLL' && step.ball.action !== 'PUSH') {
-      delete step.ball.from;
-      delete step.ball.to;
-    }
-  }
-  return drill;
 }
 
 for (const [g, [rows, cols]] of Object.entries(GRIDS)) {
