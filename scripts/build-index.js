@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import { buildIndexEntry } from './lib/index-entry.js';
 
 const drillsDir = new URL('../drills', import.meta.url).pathname;
 const files = readdirSync(drillsDir).filter((f) => f.endsWith('.json'));
@@ -17,10 +18,7 @@ for (const file of files) {
     console.error(`Skipping ${file}: missing metadata.id`);
     continue;
   }
-  const { id, name, contributor, difficulty, default_bpm, tags, description } = raw.metadata;
-  index.push(description !== undefined
-    ? { id, name, contributor, difficulty, default_bpm, tags, description }
-    : { id, name, contributor, difficulty, default_bpm, tags });
+  index.push(buildIndexEntry(raw));
 }
 
 writeFileSync(
