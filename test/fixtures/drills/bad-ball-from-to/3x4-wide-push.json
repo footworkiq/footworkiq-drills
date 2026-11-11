@@ -1,0 +1,193 @@
+{
+  "schema": "1.1",
+  "metadata": {
+    "id": "3x4-wide-push",
+    "name": "3x4 Wide Push",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "grid"
+    ],
+    "description": "Push the ball across the wide 3x4 mat with both feet and bring it home.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "grid": "3x4",
+    "reps": 4,
+    "rest_beats": 0,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 3
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "OUTSIDE_TOUCH"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 5,
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 6,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 2,
+          "col": 3
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    }
+  ]
+}
