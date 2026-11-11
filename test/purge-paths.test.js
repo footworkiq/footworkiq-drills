@@ -4,6 +4,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync, execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { purgePaths, isSha } from '../scripts/lib/purge-paths.js';
 
 const repoRoot = fileURLToPath(new URL('..', import.meta.url));
@@ -82,7 +85,7 @@ test('CLI over a real range that touched drills/ lists those drills', (t) => {
     t.skip('drill commit has no parent');
     return;
   }
-  const changed = git('diff', '--name-only', parent, sha, '--', 'drills/')
+  const changed = git('diff', '--no-renames', '--name-only', parent, sha, '--', 'drills/')
     .split('\n')
     .filter((f) => /^drills\/[a-z0-9-]+\.json$/.test(f));
   const r = runCli(parent, sha);
@@ -91,4 +94,31 @@ test('CLI over a real range that touched drills/ lists those drills', (t) => {
   assert.equal(lines[0], 'index.json');
   assert.ok(lines.length > 1, 'expected at least one drill path');
   assert.deepEqual(lines.slice(1), [...new Set(changed)]);
+});
+
+test('CLI purges both the old and the new path of a renamed drill', (t) => {
+  const dir = mkdtempSync(join(tmpdir(), 'purge-rename-'));
+  t.after(() => rmSync(dir, { recursive: true, force: true }));
+  const g = (...args) => execFileSync('git', args, { cwd: dir, encoding: 'utf8' }).trim();
+  g('init', '-q');
+  g('config', 'user.email', 'test@example.com');
+  g('config', 'user.name', 'Test');
+  g('config', 'commit.gpgsign', 'false');
+  mkdirSync(join(dir, 'drills'));
+  writeFileSync(join(dir, 'drills', 'old-name.json'), '{"schema":"1.0","metadata":{"id":"old-name"}}\n');
+  g('add', '.');
+  g('commit', '-q', '-m', 'add');
+  const before = g('rev-parse', 'HEAD');
+  g('mv', 'drills/old-name.json', 'drills/new-name.json');
+  g('commit', '-q', '-m', 'rename');
+  const after = g('rev-parse', 'HEAD');
+
+  const r = spawnSync(process.execPath, [join(repoRoot, 'scripts', 'purge-paths.js'), before, after], {
+    cwd: dir,
+    encoding: 'utf8',
+  });
+  assert.equal(r.status, 0, r.stderr);
+  const lines = r.stdout.trim().split('\n');
+  assert.equal(lines[0], 'index.json');
+  assert.deepEqual([...lines.slice(1)].sort(), ['drills/new-name.json', 'drills/old-name.json']);
 });
