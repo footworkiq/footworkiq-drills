@@ -6,7 +6,9 @@ on:
     paths:
       - 'drills/**'
       - 'cards/**'
-      - 'docs/schema/card.schema.json'
+      - 'docs/schema/**'
+      - 'scripts/build-index.js'
+      - 'scripts/validate-drills.js'
       - 'scripts/build-card-bundle.js'
       - 'scripts/validate-cards.js'
       - 'scripts/lib/**'
@@ -24,6 +26,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history: the push's BEFORE commit must exist locally so the
+          # purge step can diff it to find changed drills.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
@@ -45,3 +51,25 @@ jobs:
       - name: Purge jsDelivr card bundle
         if: steps.autocommit.outputs.changes_detected == 'true'
         run: sleep 15 && curl -fsS --retry 3 --retry-delay 10 https://purge.jsdelivr.net/gh/footworkiq/footworkiq-drills@main/cards/decision.bundle.json
+      # Not gated on changes_detected: a sequence-only drill fix leaves
+      # index.json unchanged but the drill file itself is still stale at the CDN.
+      # SHAs reach the script only via env; purge-paths.js validates them and
+      # allow-lists every path. On workflow_dispatch BEFORE is empty, so only
+      # index.json is purged.
+      - name: Purge jsDelivr index and changed drills
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          paths="$(node scripts/purge-paths.js "$BEFORE" "$AFTER")"
+          sleep 15
+          while IFS= read -r p; do
+            [ -n "$p" ] || continue
+            resp="$(curl -fsS --retry 3 --retry-delay 10 "https://purge.jsdelivr.net/gh/footworkiq/footworkiq-drills@main/$p")"
+            echo "purged $p"
+            echo "$resp"
+            if printf '%s' "$resp" | grep -Eq '"throttled": ?true'; then
+              echo "::warning::jsDelivr throttled purge of $p"
+            fi
+          done <<< "$paths"

@@ -1,0 +1,228 @@
+{
+  "schema": "1.1",
+  "metadata": {
+    "id": "4x4-diagonal-xy",
+    "name": "4x4 Diagonal Roll",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "grid"
+    ],
+    "description": "Roll the ball diagonally round the 4x4 mat, starting from a between-cell stance.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "grid": "4x4",
+    "reps": 4,
+    "rest_beats": 0,
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": {
+          "x": 0.03,
+          "y": 0.55
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 3,
+      "right_foot": {
+        "pos": {
+          "row": 3,
+          "col": 4
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 3,
+          "col": 4
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 3
+        },
+        "to": {
+          "row": 3,
+          "col": 4
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "right_foot": {
+        "pos": {
+          "row": 4,
+          "col": 3
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 4,
+          "col": 3
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 3,
+          "col": 4
+        },
+        "to": {
+          "row": 4,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 5,
+      "left_foot": {
+        "pos": {
+          "row": 3,
+          "col": 2
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 3,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 4,
+          "col": 3
+        },
+        "to": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 6,
+      "left_foot": {
+        "pos": {
+          "row": 2,
+          "col": 1
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 1
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 3,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 1
+        }
+      }
+    },
+    {
+      "beat": 7,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 1
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 8,
+      "left_foot": {
+        "pos": {
+          "x": 0.3,
+          "y": 0.55
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    }
+  ]
+}

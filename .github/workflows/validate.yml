@@ -5,9 +5,8 @@ on:
     branches: [main]
     paths:
       - 'drills/**'
-      - 'docs/schema/drill.schema.json'
+      - 'docs/schema/**'
       - 'cards/**'
-      - 'docs/schema/card.schema.json'
       - 'scripts/**'
       - 'package*.json'
       - 'test/**'

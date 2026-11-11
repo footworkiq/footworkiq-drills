@@ -7,9 +7,9 @@ Thank you for contributing to the FootworkIQ community drill catalogue!
 1. **Fork** this repository.
 2. Add your drill as `drills/<your-drill-id>.json` — the filename must match the `metadata.id` field inside.
 3. Open a **pull request** targeting `main`.
-4. The **Validate Drills** CI workflow runs AJV against your file using `docs/schema/drill.schema.json`. The PR cannot be merged until it passes.
+4. The **Validate Content** CI workflow runs AJV against your file using `docs/schema/drill.schema.json`, then the grid lints for grid drills. The PR cannot be merged until it passes.
 5. A maintainer reviews and merges.
-6. On merge, the **Rebuild Index** action automatically updates `index.json`.
+6. On merge, the **Rebuild Artifacts** action automatically updates `index.json`.
 
 ## Required Schema
 
@@ -36,9 +36,37 @@ Drills must conform to `docs/schema/drill.schema.json` (JSON Schema draft 2020-1
 
 `sequence` and other drill-execution fields belong inside the `sequence` array, not in `metadata`.
 
+## Grid drills (3×3, 3×4, 4×4)
+
+Drills for the larger mats use `"schema": "1.1"` and set `metadata.grid` to `"3x3"`, `"3x4"` or `"4x4"`. A drill with no `grid` is a 2×3 drill (`"schema": "1.0"`, zones 1 to 6).
+
+Positions are cells written as `{"row": R, "col": C}`. Row 1 is the near row (your feet) and col 1 is your left. Cells are named chess style, so A1 is row 1 col 1. The 3×4 mat:
+
+```
+       A       B       C       D
+  3  [ A3 ]  [ B3 ]  [ C3 ]  [ D3 ]   far row
+  2  [ A2 ]  [ B2 ]  [ C2 ]  [ D2 ]
+  1  [ A1 ]  [ B1 ]  [ C1 ]  [ D1 ]   (near row, your feet)
+```
+
+CI runs these lints on grid drills (2×3 drills are not linted):
+
+- The ball moves at most one cell per beat, diagonals included. A beat that moves it uses `ROLL` or `PUSH`, with `from` = the previous cell and `to` = the new cell.
+- The drill loops, so the last beat's ball cell must be the same as or next to beat 1's.
+- Both feet never share a cell unless one of them is doing `TAP`, `STEP_OVER` or `LIFT`.
+- An `{x, y}` position must sit far enough from every edge for the whole marker to show.
+
+To draft a grid drill with the generator (needs `OPENAI_API_KEY`; set `OPENAI_MODEL` to change the model):
+
+```
+npm run generate -- --grid 3x3 "<concept>"
+```
+
+The generator only writes a drill that passes the schema and the lints. Play-test it on a device before opening a PR. Grid drills need an app version that supports schema 1.1 before they merge.
+
 ## ⚠️ Do Not Edit `index.json`
 
-`index.json` is CI-generated. Any manual edits will be overwritten by the **Rebuild Index** action on the next `drills/` push. Never edit this file in a PR.
+`index.json` is CI-generated. Any manual edits will be overwritten by the **Rebuild Artifacts** action on the next `drills/` push. Never edit this file in a PR.
 
 ## Decision Cards: Frozen Ids
 
