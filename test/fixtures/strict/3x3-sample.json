@@ -1,0 +1,153 @@
+{
+  "schema": "1.1",
+  "metadata": {
+    "id": "3x3-sample-pullback",
+    "name": "3x3 Sample Pull-back",
+    "contributor": "FootworkIQ-AI",
+    "difficulty": "Beginner",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "grid"
+    ],
+    "description": "Roll the ball forward a cell with the right sole and pull it back.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "subdivision": 1,
+    "license": "CC0",
+    "grid": "3x3"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    }
+  ]
+}
