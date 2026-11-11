@@ -64,20 +64,24 @@ test('systemPrompt(null) is the legacy 2x3 prompt', () => {
   assert.equal(systemPrompt(undefined), LEGACY_SYSTEM_PROMPT);
 });
 
-test('LEGACY_SYSTEM_PROMPT is byte-identical to the prompt in main:scripts/generate.js', (t) => {
+// Pinned to the last commit before the grid refactor: main now holds the
+// refactored generate.js, which no longer has the inline prompt.
+const PRE_GRID_GENERATOR = 'dedbb92';
+
+test('LEGACY_SYSTEM_PROMPT is byte-identical to the pre-grid prompt in scripts/generate.js', (t) => {
   let src;
   try {
-    src = execFileSync('git', ['show', 'main:scripts/generate.js'], {
+    src = execFileSync('git', ['show', `${PRE_GRID_GENERATOR}:scripts/generate.js`], {
       cwd: repoRoot,
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'ignore'],
     });
   } catch {
-    t.skip('main is not available locally');
+    t.skip(`${PRE_GRID_GENERATOR} is not available locally`);
     return;
   }
   const start = src.indexOf('const systemPrompt = `');
-  assert.ok(start >= 0, 'main generate.js has a systemPrompt template literal');
+  assert.ok(start >= 0, 'pre-grid generate.js has a systemPrompt template literal');
   const bodyStart = start + 'const systemPrompt = `'.length;
   const end = src.indexOf('`;', bodyStart);
   assert.equal(LEGACY_SYSTEM_PROMPT, src.slice(bodyStart, end));
