@@ -18,6 +18,10 @@
     "reps": 4,
     "sets": 3,
     "rest_beats": 0,
+    "mirror": {
+      "enabled": true,
+      "ballMirrors": true
+    },
     "license": "CC0"
   },
   "sequence": [
