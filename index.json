@@ -1,5 +1,65 @@
 [
   {
+    "id": "3x3-box-roll",
+    "name": "Box Roll",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 75,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Roll the ball round the box from the near side to the far corner and back.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x3-corner-pull-back",
+    "name": "Corner Pull-Back",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "drag-back",
+      "grid"
+    ],
+    "description": "Tap the ball in the centre, drag it back to the near corner, then push it back to the middle.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x3-step-over-corners",
+    "name": "Step-Over Corners",
+    "contributor": "FootworkIQ",
+    "difficulty": "Advanced",
+    "default_bpm": 85,
+    "tags": [
+      "feints",
+      "step-overs",
+      "grid"
+    ],
+    "description": "Step over the ball, push it out to a far corner and drag it back, then repeat on the other side.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x3-up-and-back-roll",
+    "name": "Up and Back Roll",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Sole-roll the ball forward up the middle lane, then drag it back to the start.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
     "id": "alternating-soles",
     "name": "Alternating Soles",
     "contributor": "FootworkIQ-AI",

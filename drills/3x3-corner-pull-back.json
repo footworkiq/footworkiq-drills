@@ -1,0 +1,141 @@
+{
+  "schema": "1.1",
+  "metadata": {
+    "id": "3x3-corner-pull-back",
+    "name": "Corner Pull-Back",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "drag-back",
+      "grid"
+    ],
+    "description": "Tap the ball in the centre, drag it back to the near corner, then push it back to the middle.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "grid": "3x3",
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "mirror": {
+      "enabled": true,
+      "ballMirrors": true
+    },
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "TAP"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 3
+        },
+        "to": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    }
+  ]
+}
