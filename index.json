@@ -10,7 +10,7 @@
       "sole-rolls",
       "grid"
     ],
-    "description": "Roll the ball round the box from the near side to the far corner and back.",
+    "description": "Roll the ball up the middle, across the far row to the corner, and back down the side.",
     "grid": "3x3",
     "schema": "1.1"
   },
@@ -25,7 +25,7 @@
       "drag-back",
       "grid"
     ],
-    "description": "Tap the ball in the centre, drag it back to the near corner, then push it back to the middle.",
+    "description": "Roll the ball out to the far corner, pull it back down the side, then cut it inside to the start.",
     "grid": "3x3",
     "schema": "1.1"
   },
@@ -40,7 +40,7 @@
       "step-overs",
       "grid"
     ],
-    "description": "Step over the ball, push it out to a far corner and drag it back, then repeat on the other side.",
+    "description": "Step over the ball, take it to the far corner with the other foot, then drag it back.",
     "grid": "3x3",
     "schema": "1.1"
   },
@@ -55,7 +55,7 @@
       "sole-rolls",
       "grid"
     ],
-    "description": "Sole-roll the ball forward up the middle lane, then drag it back to the start.",
+    "description": "Roll the ball up the middle lane with your sole to the far row, then drag it back.",
     "grid": "3x3",
     "schema": "1.1"
   },
@@ -71,7 +71,7 @@
       "lateral",
       "grid"
     ],
-    "description": "Sole-roll the ball sideways across the wide mat and shuffle to follow it.",
+    "description": "Roll the ball sideways across the wide mat with your sole, shuffling to follow, then drag it back.",
     "grid": "3x4",
     "schema": "1.1"
   },
@@ -86,7 +86,7 @@
       "sole-rolls",
       "grid"
     ],
-    "description": "Roll and drag the ball in one lane, push it across, then repeat in the next lane.",
+    "description": "Roll forward and back in one lane, roll across, then forward and back in the next lane.",
     "grid": "3x4",
     "schema": "1.1"
   },
@@ -101,7 +101,7 @@
       "turns",
       "grid"
     ],
-    "description": "Step over, cut the ball out wide, then drag it back across the mat to turn.",
+    "description": "Two outside touches across the mat, cut inside, then drag it back to the start.",
     "grid": "3x4",
     "schema": "1.1"
   },
@@ -116,7 +116,7 @@
       "rhythm",
       "grid"
     ],
-    "description": "Zigzag the ball across the full width with inside and outside touches.",
+    "description": "Outside touch forward, drag back and wide, inside touch forward, drag back to the start.",
     "grid": "3x4",
     "schema": "1.1"
   },
@@ -131,13 +131,13 @@
       "diagonals",
       "grid"
     ],
-    "description": "Push the ball up a diagonal to the far side, then drag it back down to the start.",
+    "description": "Outside and inside touches zigzag up to the far row, then drag the ball back down.",
     "grid": "4x4",
     "schema": "1.1"
   },
   {
-    "id": "4x4-diagonal-v",
-    "name": "Diagonal V",
+    "id": "4x4-diagonal-roll",
+    "name": "Diagonal Roll",
     "contributor": "FootworkIQ",
     "difficulty": "Beginner",
     "default_bpm": 70,
@@ -146,7 +146,7 @@
       "diagonals",
       "grid"
     ],
-    "description": "Roll the ball out on one diagonal and back, then out on the other diagonal with the other foot.",
+    "description": "Roll the ball out on the diagonal to the far side, then drag it back along the same line.",
     "grid": "4x4",
     "schema": "1.1"
   },
@@ -161,7 +161,7 @@
       "sole-rolls",
       "grid"
     ],
-    "description": "Sole-roll the ball up to the far row while the plant foot walks up beside it, then drag it back down.",
+    "description": "Roll the ball straight up to the far row, stepping up behind it, then drag it all the way back.",
     "grid": "4x4",
     "schema": "1.1"
   },
@@ -176,7 +176,7 @@
       "agility",
       "grid"
     ],
-    "description": "Take the ball all the way round the outside of the mat and back to the start.",
+    "description": "Take the ball all the way round the outside of the mat: right foot up and across, left foot back down.",
     "grid": "4x4",
     "schema": "1.1"
   },

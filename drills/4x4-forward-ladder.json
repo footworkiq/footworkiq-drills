@@ -11,7 +11,7 @@
       "sole-rolls",
       "grid"
     ],
-    "description": "Sole-roll the ball up to the far row while the plant foot walks up beside it, then drag it back down.",
+    "description": "Roll the ball straight up to the far row, stepping up behind it, then drag it all the way back.",
     "time_signature": "4/4",
     "count_in": 1,
     "grid": "4x4",
@@ -37,9 +37,9 @@
       "right_foot": {
         "pos": {
           "row": 1,
-          "col": 3
+          "col": 2
         },
-        "action": "PLANT"
+        "action": "SOLE_ROLL"
       },
       "ball": {
         "pos": {
@@ -56,7 +56,7 @@
           "row": 1,
           "col": 1
         },
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": {
@@ -120,7 +120,7 @@
           "row": 3,
           "col": 1
         },
-        "action": "STEP"
+        "action": "PLANT"
       },
       "right_foot": {
         "pos": {
@@ -152,7 +152,7 @@
           "row": 3,
           "col": 1
         },
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": {
@@ -216,7 +216,7 @@
           "row": 1,
           "col": 1
         },
-        "action": "STEP"
+        "action": "PLANT"
       },
       "right_foot": {
         "pos": {
@@ -253,9 +253,9 @@
       "right_foot": {
         "pos": {
           "row": 1,
-          "col": 3
+          "col": 2
         },
-        "action": "STEP"
+        "action": "TAP"
       },
       "ball": {
         "pos": {

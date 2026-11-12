@@ -11,7 +11,7 @@
       "sole-rolls",
       "grid"
     ],
-    "description": "Roll the ball round the box from the near side to the far corner and back.",
+    "description": "Roll the ball up the middle, across the far row to the corner, and back down the side.",
     "time_signature": "4/4",
     "count_in": 1,
     "grid": "3x3",
@@ -37,9 +37,9 @@
       "right_foot": {
         "pos": {
           "row": 1,
-          "col": 3
+          "col": 2
         },
-        "action": "PLANT"
+        "action": "SOLE_ROLL"
       },
       "ball": {
         "pos": {
@@ -56,19 +56,19 @@
           "row": 1,
           "col": 1
         },
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": {
           "row": 2,
-          "col": 3
+          "col": 2
         },
         "action": "SOLE_ROLL"
       },
       "ball": {
         "pos": {
           "row": 2,
-          "col": 3
+          "col": 2
         },
         "action": "ROLL",
         "from": {
@@ -77,7 +77,7 @@
         },
         "to": {
           "row": 2,
-          "col": 3
+          "col": 2
         }
       }
     },
@@ -86,9 +86,41 @@
       "left_foot": {
         "pos": {
           "row": 2,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 3,
           "col": 2
         },
-        "action": "STEP"
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 3,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": {
+          "row": 2,
+          "col": 1
+        },
+        "action": "PLANT"
       },
       "right_foot": {
         "pos": {
@@ -104,44 +136,12 @@
         },
         "action": "ROLL",
         "from": {
-          "row": 2,
-          "col": 3
+          "row": 3,
+          "col": 2
         },
         "to": {
           "row": 3,
           "col": 3
-        }
-      }
-    },
-    {
-      "beat": 4,
-      "left_foot": {
-        "pos": {
-          "row": 3,
-          "col": 2
-        },
-        "action": "DRAG"
-      },
-      "right_foot": {
-        "pos": {
-          "row": 2,
-          "col": 3
-        },
-        "action": "STEP"
-      },
-      "ball": {
-        "pos": {
-          "row": 3,
-          "col": 2
-        },
-        "action": "ROLL",
-        "from": {
-          "row": 3,
-          "col": 3
-        },
-        "to": {
-          "row": 3,
-          "col": 2
         }
       }
     },
@@ -149,31 +149,31 @@
       "beat": 5,
       "left_foot": {
         "pos": {
-          "row": 3,
+          "row": 2,
           "col": 1
         },
-        "action": "SOLE_ROLL"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": {
           "row": 2,
-          "col": 2
+          "col": 3
         },
-        "action": "STEP"
+        "action": "DRAG"
       },
       "ball": {
         "pos": {
-          "row": 3,
-          "col": 1
+          "row": 2,
+          "col": 3
         },
         "action": "ROLL",
         "from": {
           "row": 3,
-          "col": 2
+          "col": 3
         },
         "to": {
-          "row": 3,
-          "col": 1
+          "row": 2,
+          "col": 3
         }
       }
     },
@@ -181,31 +181,31 @@
       "beat": 6,
       "left_foot": {
         "pos": {
-          "row": 2,
+          "row": 1,
           "col": 1
         },
-        "action": "SOLE_ROLL"
+        "action": "PLANT"
       },
       "right_foot": {
         "pos": {
           "row": 1,
-          "col": 2
+          "col": 3
         },
-        "action": "STEP"
+        "action": "DRAG"
       },
       "ball": {
         "pos": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 3
         },
         "action": "ROLL",
         "from": {
-          "row": 3,
-          "col": 1
+          "row": 2,
+          "col": 3
         },
         "to": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 3
         }
       }
     },
@@ -232,8 +232,8 @@
         },
         "action": "PUSH",
         "from": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 3
         },
         "to": {
           "row": 1,
@@ -253,9 +253,9 @@
       "right_foot": {
         "pos": {
           "row": 1,
-          "col": 3
+          "col": 2
         },
-        "action": "STEP"
+        "action": "TAP"
       },
       "ball": {
         "pos": {

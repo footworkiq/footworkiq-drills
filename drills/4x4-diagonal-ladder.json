@@ -11,7 +11,7 @@
       "diagonals",
       "grid"
     ],
-    "description": "Push the ball up a diagonal to the far side, then drag it back down to the start.",
+    "description": "Outside and inside touches zigzag up to the far row, then drag the ball back down.",
     "time_signature": "4/4",
     "count_in": 1,
     "grid": "4x4",
@@ -39,12 +39,12 @@
           "row": 1,
           "col": 2
         },
-        "action": "PLANT"
+        "action": "INSIDE_TOUCH"
       },
       "ball": {
         "pos": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 2
         },
         "action": "STILL"
       }
@@ -56,28 +56,28 @@
           "row": 1,
           "col": 1
         },
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": {
           "row": 2,
-          "col": 2
+          "col": 3
         },
-        "action": "INSIDE_TOUCH"
+        "action": "OUTSIDE_TOUCH"
       },
       "ball": {
         "pos": {
-          "row": 3,
-          "col": 2
+          "row": 2,
+          "col": 3
         },
         "action": "PUSH",
         "from": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 2
         },
         "to": {
-          "row": 3,
-          "col": 2
+          "row": 2,
+          "col": 3
         }
       }
     },
@@ -86,30 +86,30 @@
       "left_foot": {
         "pos": {
           "row": 2,
-          "col": 2
+          "col": 1
         },
         "action": "STEP"
       },
       "right_foot": {
         "pos": {
           "row": 3,
-          "col": 3
+          "col": 2
         },
         "action": "INSIDE_TOUCH"
       },
       "ball": {
         "pos": {
-          "row": 4,
-          "col": 3
-        },
-        "action": "PUSH",
-        "from": {
           "row": 3,
           "col": 2
         },
-        "to": {
-          "row": 4,
+        "action": "PUSH",
+        "from": {
+          "row": 2,
           "col": 3
+        },
+        "to": {
+          "row": 3,
+          "col": 2
         }
       }
     },
@@ -120,21 +120,29 @@
           "row": 3,
           "col": 2
         },
-        "action": "STEP"
+        "action": "PLANT"
       },
       "right_foot": {
         "pos": {
-          "row": 3,
-          "col": 4
+          "row": 4,
+          "col": 3
         },
-        "action": "STEP"
+        "action": "OUTSIDE_TOUCH"
       },
       "ball": {
         "pos": {
           "row": 4,
           "col": 3
         },
-        "action": "STILL"
+        "action": "PUSH",
+        "from": {
+          "row": 3,
+          "col": 2
+        },
+        "to": {
+          "row": 4,
+          "col": 3
+        }
       }
     },
     {
@@ -144,7 +152,7 @@
           "row": 3,
           "col": 2
         },
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": {
@@ -174,7 +182,7 @@
       "left_foot": {
         "pos": {
           "row": 2,
-          "col": 1
+          "col": 2
         },
         "action": "STEP"
       },
@@ -188,7 +196,7 @@
       "ball": {
         "pos": {
           "row": 2,
-          "col": 2
+          "col": 3
         },
         "action": "ROLL",
         "from": {
@@ -197,7 +205,7 @@
         },
         "to": {
           "row": 2,
-          "col": 2
+          "col": 3
         }
       }
     },
@@ -208,7 +216,7 @@
           "row": 1,
           "col": 1
         },
-        "action": "STEP"
+        "action": "PLANT"
       },
       "right_foot": {
         "pos": {
@@ -219,17 +227,17 @@
       },
       "ball": {
         "pos": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 2
         },
         "action": "ROLL",
         "from": {
           "row": 2,
-          "col": 2
+          "col": 3
         },
         "to": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 2
         }
       }
     },
@@ -247,12 +255,12 @@
           "row": 1,
           "col": 2
         },
-        "action": "PLANT"
+        "action": "TAP"
       },
       "ball": {
         "pos": {
-          "row": 2,
-          "col": 1
+          "row": 1,
+          "col": 2
         },
         "action": "STILL"
       }
