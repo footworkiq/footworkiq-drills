@@ -60,6 +60,67 @@
     "schema": "1.1"
   },
   {
+    "id": "3x4-lateral-sole-rolls",
+    "name": "Lateral Sole Rolls",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "lateral",
+      "grid"
+    ],
+    "description": "Sole-roll the ball sideways across the wide mat and shuffle to follow it.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x4-two-lane-rolls",
+    "name": "Two-Lane Rolls",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Roll and drag the ball in one lane, push it across, then repeat in the next lane.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x4-wide-cut-and-turn",
+    "name": "Wide Cut and Turn",
+    "contributor": "FootworkIQ",
+    "difficulty": "Advanced",
+    "default_bpm": 85,
+    "tags": [
+      "feints",
+      "turns",
+      "grid"
+    ],
+    "description": "Step over, cut the ball out wide, then drag it back across the mat to turn.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x4-wide-zigzag",
+    "name": "Wide Zigzag",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "rhythm",
+      "grid"
+    ],
+    "description": "Zigzag the ball across the full width with inside and outside touches.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
     "id": "alternating-soles",
     "name": "Alternating Soles",
     "contributor": "FootworkIQ-AI",
