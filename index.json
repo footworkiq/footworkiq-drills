@@ -1,5 +1,186 @@
 [
   {
+    "id": "3x3-box-roll",
+    "name": "Box Roll",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 75,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Roll the ball up the middle, across the far row to the corner, and back down the side.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x3-corner-pull-back",
+    "name": "Corner Pull-Back",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "drag-back",
+      "grid"
+    ],
+    "description": "Roll the ball out to the far corner, pull it back down the side, then cut it inside to the start.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x3-step-over-corners",
+    "name": "Step-Over Corners",
+    "contributor": "FootworkIQ",
+    "difficulty": "Advanced",
+    "default_bpm": 85,
+    "tags": [
+      "feints",
+      "step-overs",
+      "grid"
+    ],
+    "description": "Step over the ball, take it to the far corner with the other foot, then drag it back.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x3-up-and-back-roll",
+    "name": "Up and Back Roll",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Roll the ball up the middle lane with your sole to the far row, then drag it back.",
+    "grid": "3x3",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x4-lateral-sole-rolls",
+    "name": "Lateral Sole Rolls",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "lateral",
+      "grid"
+    ],
+    "description": "Roll the ball sideways across the wide mat with your sole, shuffling to follow, then drag it back.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x4-two-lane-rolls",
+    "name": "Two-Lane Rolls",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Roll forward and back in one lane, roll across, then forward and back in the next lane.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x4-wide-cut-and-turn",
+    "name": "Wide Cut and Turn",
+    "contributor": "FootworkIQ",
+    "difficulty": "Advanced",
+    "default_bpm": 85,
+    "tags": [
+      "feints",
+      "turns",
+      "grid"
+    ],
+    "description": "Two outside touches across the mat, cut inside, then drag it back to the start.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "3x4-wide-zigzag",
+    "name": "Wide Zigzag",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "rhythm",
+      "grid"
+    ],
+    "description": "Outside touch forward, drag back and wide, inside touch forward, drag back to the start.",
+    "grid": "3x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "4x4-diagonal-ladder",
+    "name": "Diagonal Ladder",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 75,
+    "tags": [
+      "ball-control",
+      "diagonals",
+      "grid"
+    ],
+    "description": "Outside and inside touches zigzag up to the far row, then drag the ball back down.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "4x4-diagonal-roll",
+    "name": "Diagonal Roll",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "diagonals",
+      "grid"
+    ],
+    "description": "Roll the ball out on the diagonal to the far side, then drag it back along the same line.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "4x4-forward-ladder",
+    "name": "Forward Ladder",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Roll the ball straight up to the far row, stepping up behind it, then drag it all the way back.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "4x4-outer-ring",
+    "name": "Outer Ring",
+    "contributor": "FootworkIQ",
+    "difficulty": "Advanced",
+    "default_bpm": 85,
+    "tags": [
+      "ball-control",
+      "agility",
+      "grid"
+    ],
+    "description": "Take the ball all the way round the outside of the mat: right foot up and across, left foot back down.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
     "id": "alternating-soles",
     "name": "Alternating Soles",
     "contributor": "FootworkIQ-AI",

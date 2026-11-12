@@ -1,0 +1,157 @@
+{
+  "schema": "1.1",
+  "metadata": {
+    "id": "3x4-wide-zigzag",
+    "name": "Wide Zigzag",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 80,
+    "tags": [
+      "ball-control",
+      "rhythm",
+      "grid"
+    ],
+    "description": "Outside touch forward, drag back and wide, inside touch forward, drag back to the start.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "grid": "3x4",
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "mirror": {
+      "enabled": true,
+      "ballMirrors": true
+    },
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 3
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "OUTSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 3
+        },
+        "to": {
+          "row": 1,
+          "col": 4
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 4
+        },
+        "to": {
+          "row": 2,
+          "col": 3
+        }
+      }
+    }
+  ]
+}
