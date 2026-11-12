@@ -121,6 +121,66 @@
     "schema": "1.1"
   },
   {
+    "id": "4x4-diagonal-ladder",
+    "name": "Diagonal Ladder",
+    "contributor": "FootworkIQ",
+    "difficulty": "Intermediate",
+    "default_bpm": 75,
+    "tags": [
+      "ball-control",
+      "diagonals",
+      "grid"
+    ],
+    "description": "Push the ball up a diagonal to the far side, then drag it back down to the start.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "4x4-diagonal-v",
+    "name": "Diagonal V",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "diagonals",
+      "grid"
+    ],
+    "description": "Roll the ball out on one diagonal and back, then out on the other diagonal with the other foot.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "4x4-forward-ladder",
+    "name": "Forward Ladder",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Sole-roll the ball up to the far row while the plant foot walks up beside it, then drag it back down.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
+    "id": "4x4-outer-ring",
+    "name": "Outer Ring",
+    "contributor": "FootworkIQ",
+    "difficulty": "Advanced",
+    "default_bpm": 85,
+    "tags": [
+      "ball-control",
+      "agility",
+      "grid"
+    ],
+    "description": "Take the ball all the way round the outside of the mat and back to the start.",
+    "grid": "4x4",
+    "schema": "1.1"
+  },
+  {
     "id": "alternating-soles",
     "name": "Alternating Soles",
     "contributor": "FootworkIQ-AI",

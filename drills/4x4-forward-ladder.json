@@ -1,0 +1,269 @@
+{
+  "schema": "1.1",
+  "metadata": {
+    "id": "4x4-forward-ladder",
+    "name": "Forward Ladder",
+    "contributor": "FootworkIQ",
+    "difficulty": "Beginner",
+    "default_bpm": 70,
+    "tags": [
+      "ball-control",
+      "sole-rolls",
+      "grid"
+    ],
+    "description": "Sole-roll the ball up to the far row while the plant foot walks up beside it, then drag it back down.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "grid": "4x4",
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "mirror": {
+      "enabled": true,
+      "ballMirrors": true
+    },
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "PLANT"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": {
+          "row": 2,
+          "col": 1
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 3,
+          "col": 2
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 3,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": {
+          "row": 3,
+          "col": 1
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 4,
+          "col": 2
+        },
+        "action": "SOLE_ROLL"
+      },
+      "ball": {
+        "pos": {
+          "row": 4,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 3,
+          "col": 2
+        },
+        "to": {
+          "row": 4,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 5,
+      "left_foot": {
+        "pos": {
+          "row": 3,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 3,
+          "col": 2
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 3,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 4,
+          "col": 2
+        },
+        "to": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 6,
+      "left_foot": {
+        "pos": {
+          "row": 2,
+          "col": 1
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 3,
+          "col": 2
+        },
+        "to": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 7,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 8,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "STEP"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    }
+  ]
+}
