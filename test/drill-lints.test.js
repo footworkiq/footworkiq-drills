@@ -168,6 +168,101 @@ const BAD = [
       { rule: 'cell-range', beat: 7, marker: 'left foot', message: 'beat 7: left foot cell row 1 col 4 is outside the 3×3 mat' },
     ],
   },
+  // ---- the D-01 ball/foot rules: one defect each
+  {
+    // Beat 3's right foot STEPs instead of SOLE_ROLLing the ball B2 -> B3.
+    dir: 'bad-ball-no-touch',
+    file: '3x3-box-roll.json',
+    issues: [
+      {
+        rule: 'ball-no-touch',
+        beat: 3,
+        marker: 'ball',
+        message: 'beat 3: ball moves B2 → B3 but no foot on or next to it touches it',
+      },
+    ],
+  },
+  {
+    // Beat 3's right foot pushes the ball to D1 from D2 and never stands in D1
+    // before the ball leaves it on beat 4.
+    dir: 'bad-ball-push-wait',
+    file: '3x4-wide-cut-and-turn.json',
+    issues: [
+      {
+        rule: 'ball-push-wait',
+        beat: 4,
+        marker: 'ball',
+        message: 'beat 4: ball moves off D1 after a PUSH before a foot reaches it',
+      },
+    ],
+  },
+  {
+    // Beat 6's right foot DRAGs from C2 while the ball is in C1.
+    dir: 'bad-sole-on-ball',
+    file: '3x3-box-roll.json',
+    issues: [
+      { rule: 'sole-on-ball', beat: 6, marker: 'right foot', message: 'beat 6: right foot DRAG in C2 but the ball is in C1' },
+    ],
+  },
+  {
+    // Beat 4's right foot TAPs from C3 instead of D3, so beat 5's DRAG rolls
+    // the ball D3 -> C2 without starting on it.
+    dir: 'bad-sole-start',
+    file: '4x4-diagonal-xy.json',
+    issues: [
+      {
+        rule: 'sole-start',
+        beat: 5,
+        marker: 'right foot',
+        message: 'beat 5: right foot DRAG rolls the ball D3 → C2 but started in C3',
+      },
+    ],
+  },
+  {
+    // Beat 5's left foot goes straight from C1 to A1.
+    dir: 'bad-foot-step',
+    file: '3x4-wide-cut-and-turn.json',
+    issues: [
+      { rule: 'foot-step', beat: 5, marker: 'left foot', message: 'beat 5: left foot moves C1 → A1 (more than one square)' },
+    ],
+  },
+  {
+    // 2x3 (D-02): beat 2's right foot is relabelled PLANT but moves to zone 4.
+    dir: 'bad-plant-moves',
+    file: '2x3-pull-push.json',
+    issues: [
+      {
+        rule: 'plant-moves',
+        beat: 2,
+        marker: 'right foot',
+        message: 'beat 2: right foot is PLANT in B1 but moves to B2 next beat',
+      },
+    ],
+  },
+  {
+    // The left foot stays in A1 on beats 3-4 (one defect, two values) while
+    // the right foot reaches D1. 2x3 can't hold this: its widest gap is 2.
+    dir: 'bad-feet-apart',
+    file: '3x4-wide-cut-and-turn.json',
+    issues: [
+      { rule: 'feet-apart', beat: 3, marker: 'right foot', message: 'beat 3: right foot is 3 squares from the left foot' },
+    ],
+  },
+  {
+    // The left foot stays in C1 on beat 5, right of the right foot in B2. Beat
+    // 6's left foot moves to B2 and STEPs, so the foot can still get home in
+    // single squares; only the crossing is wrong.
+    dir: 'bad-feet-crossed',
+    file: '3x4-wide-cut-and-turn.json',
+    issues: [
+      {
+        rule: 'feet-crossed',
+        beat: 5,
+        marker: 'right foot',
+        message: 'beat 5: right foot in B2 is left of the left foot in C1',
+      },
+    ],
+  },
 ];
 
 for (const c of BAD) {
@@ -175,6 +270,15 @@ for (const c of BAD) {
     assert.deepEqual(lintDrill(fixture(c.dir, c.file)), c.issues);
   });
 }
+
+test('every new-rule message starts with the beat and the marker (D-04)', () => {
+  for (const c of BAD) {
+    for (const i of lintDrill(fixture(c.dir, c.file))) {
+      assert.ok(['left foot', 'right foot', 'ball'].includes(i.marker), c.dir);
+      if (!i.message.startsWith('loop: ')) assert.ok(i.message.startsWith(`beat ${i.beat}: ${i.marker} `), i.message);
+    }
+  }
+});
 
 test('every bad fixture except bad-cell-range passes the schema', () => {
   for (const c of BAD) {
@@ -235,6 +339,55 @@ test('feet sharing a cell are compared by cell for {x, y} positions', () => {
   assert.deepEqual(lintDrill(d), [
     { rule: 'feet-same-cell', beat: 5, marker: 'right foot', message: 'beat 5: right foot shares B2 with the left foot' },
   ]);
+});
+
+// ---------------------------------------------------------------- ball/foot rule details (D-01)
+
+test('a STEP_OVER foot does not count as a touch for ball-no-touch', () => {
+  const d = fixture('bad-ball-no-touch', '3x3-box-roll.json');
+  d.sequence[2].right_foot.action = 'STEP_OVER';
+  assert.deepEqual(rules(lintDrill(d)), ['ball-no-touch']);
+});
+
+test('a LIFT foot counts as a touch for ball-no-touch', () => {
+  const d = fixture('bad-ball-no-touch', '3x3-box-roll.json');
+  d.sequence[2].right_foot.action = 'LIFT';
+  assert.deepEqual(lintDrill(d), []);
+});
+
+test('feet in the same column are not feet-crossed', () => {
+  const d = fixture('good', '3x4-wide-cut-and-turn.json');
+  // Beat 4: left foot C1, right foot C2.
+  assert.equal(d.sequence[3].left_foot.pos.col, d.sequence[3].right_foot.pos.col);
+  assert.deepEqual(lintDrill(d), []);
+});
+
+test('a STEP_OVER foot exempts feet-crossed', () => {
+  const d = fixture('bad-feet-crossed', '3x4-wide-cut-and-turn.json');
+  d.sequence[4].left_foot.action = 'STEP_OVER';
+  assert.deepEqual(lintDrill(d), []);
+});
+
+test('plant-moves wraps: a PLANT on the last beat is checked against beat 1', () => {
+  const d = fixture('good', '3x3-box-roll.json');
+  // Beat 8's left foot is PLANT in A1; beat 1's left foot now STEPs in A2.
+  d.sequence[0].left_foot = { pos: { row: 2, col: 1 }, action: 'STEP' };
+  assert.deepEqual(lintDrill(d), [
+    { rule: 'plant-moves', beat: 8, marker: 'left foot', message: 'beat 8: left foot is PLANT in A1 but moves to A2 next beat' },
+  ]);
+});
+
+test('a 2x3 foot at {x: 0.34, y: 0.7} is linted as zone 2 (D-03)', () => {
+  // Zone 2 is at x 0.2 and zone 1 at x 0.5, so 0.34 snaps to zone 2 (A1),
+  // where the left foot is on every other beat. 0.36 snaps to zone 1 (B1),
+  // the right foot's cell, and is reported.
+  const d = fixture('good', '2x3-pull-push.json');
+  d.sequence[0].left_foot.pos = { x: 0.34, y: 0.7 };
+  assert.deepEqual(lintDrill(d), []);
+  d.sequence[0].left_foot.pos = { x: 0.36, y: 0.7 };
+  assert.ok(
+    lintDrill(d).some((i) => i.rule === 'feet-same-cell' && i.message === 'beat 1: right foot shares B1 with the left foot'),
+  );
 });
 
 // ---------------------------------------------------------------- ball details

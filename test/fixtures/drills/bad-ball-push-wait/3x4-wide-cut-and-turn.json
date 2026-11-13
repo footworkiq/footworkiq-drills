@@ -1,0 +1,261 @@
+{
+  "schema": "1.1",
+  "metadata": {
+    "id": "3x4-wide-cut-and-turn",
+    "name": "Wide Cut and Turn",
+    "contributor": "FootworkIQ",
+    "difficulty": "Advanced",
+    "default_bpm": 85,
+    "tags": [
+      "feints",
+      "turns",
+      "grid"
+    ],
+    "description": "Two outside touches across the mat, cut inside, then drag it back to the start.",
+    "time_signature": "4/4",
+    "count_in": 1,
+    "grid": "3x4",
+    "reps": 4,
+    "sets": 3,
+    "rest_beats": 0,
+    "mirror": {
+      "enabled": true,
+      "ballMirrors": true
+    },
+    "license": "CC0"
+  },
+  "sequence": [
+    {
+      "beat": 1,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 2,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "OUTSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 3,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 4
+        },
+        "action": "OUTSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 4
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 3
+        },
+        "to": {
+          "row": 1,
+          "col": 4
+        }
+      }
+    },
+    {
+      "beat": 4,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 3
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "INSIDE_TOUCH"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 3
+        },
+        "action": "PUSH",
+        "from": {
+          "row": 1,
+          "col": 4
+        },
+        "to": {
+          "row": 2,
+          "col": 3
+        }
+      }
+    },
+    {
+      "beat": 5,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STEP"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 2,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 3
+        },
+        "to": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 6,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "DRAG"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "ROLL",
+        "from": {
+          "row": 2,
+          "col": 2
+        },
+        "to": {
+          "row": 1,
+          "col": 2
+        }
+      }
+    },
+    {
+      "beat": 7,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "TAP"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    },
+    {
+      "beat": 8,
+      "left_foot": {
+        "pos": {
+          "row": 1,
+          "col": 1
+        },
+        "action": "PLANT"
+      },
+      "right_foot": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "TAP"
+      },
+      "ball": {
+        "pos": {
+          "row": 1,
+          "col": 2
+        },
+        "action": "STILL"
+      }
+    }
+  ]
+}
