@@ -64,10 +64,10 @@
         "action": "OUTSIDE_TOUCH"
       },
       "ball": {
-        "pos": 2,
+        "pos": 1,
         "action": "PUSH",
         "from": 6,
-        "to": 2
+        "to": 1
       }
     },
     {
@@ -78,13 +78,11 @@
       },
       "right_foot": {
         "pos": 6,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "ball": {
         "pos": 1,
-        "action": "PUSH",
-        "from": 2,
-        "to": 1
+        "action": "STILL"
       }
     }
   ]
