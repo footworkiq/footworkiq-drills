@@ -6,11 +6,42 @@
 // No file writes, no exiting, no network.
 //
 // LEGACY_SYSTEM_PROMPT is the 2x3 prompt moved verbatim from generate.js
-// (D-08: the 2x3 path is unchanged); a test checks it byte for byte against
-// main. Grid prompts never mention {x, y} positions (D-09).
+// (D-08) plus the Phase 46 ball/foot rules (LEGACY_BALL_FOOT_RULES); a test
+// strips those rules and checks the rest byte for byte against the pre-grid
+// prompt. Grid prompts never mention {x, y} positions (D-09).
 import { PRESETS, cellName } from './grid.js';
 
-/** The original 2x3 system prompt, unchanged. */
+/**
+ * Ball/foot rule bullets for the prompts (Phase 46 D-01, D-02): the same
+ * rules lintDrill enforces on every grid. `unit` is "zone" (2x3) or "cell".
+ */
+function ballFootRules(unit) {
+  return `  - "Next to" means one ${unit} away in any direction, diagonals included. The
+    drill loops, so the beat after the last beat is beat 1.
+  - The ball moves only on a beat when a foot that was on or next to its ${unit}
+    touches it (INSIDE_TOUCH, OUTSIDE_TOUCH, SOLE_ROLL, TAP, DRAG or LIFT) and
+    ends on or next to the ball's new ${unit}. PLANT, STEP and STEP_OVER never move the ball.
+  - After a PUSH, the ball waits in its new ${unit} until a foot reaches that ${unit}.
+  - A SOLE_ROLL or DRAG foot keeps its sole on the ball: it is in the ball's ${unit},
+    and when it rolls the ball it started in the ${unit} the ball left.
+  - A foot moves at most one ${unit} per beat.
+  - Use PLANT only when the foot stays in the same ${unit} next beat. A foot that
+    moves next beat is a STEP (or a touch) this beat.
+  - Keep the feet within two ${unit}s of each other, and never put the right foot
+    left of the left foot, except during a STEP_OVER.
+  - The ball never jumps a ${unit}, including from the last beat back to beat 1.
+`;
+}
+
+/**
+ * The ball/foot rules added to the 2x3 prompt in Phase 46. Exported so the
+ * test can strip it and compare the rest byte for byte with the pre-grid prompt.
+ */
+export const LEGACY_BALL_FOOT_RULES = `${ballFootRules('zone')}  - Zones next to each other: 1 and 4 touch every zone; 2 touches 1, 3, 4;
+    3 touches 1, 2, 4; 5 touches 1, 4, 6; 6 touches 1, 4, 5.
+`;
+
+/** The original 2x3 system prompt plus LEGACY_BALL_FOOT_RULES (Phase 46). */
 export const LEGACY_SYSTEM_PROMPT = `You design football footwork drills for the OpenMat training mat.
 
 THE MAT (from the player's perspective, looking down at their feet):
@@ -53,7 +84,7 @@ RULES:
     simultaneously unless one is TAP/STEP_OVER/LIFT.
   - The ball moves continuously: if beat N has ball at zone A and beat N+1 at zone B,
     beat N+1 must use ROLL or PUSH with from=A, to=B.
-  - License is always "CC0". Contributor is "FootworkIQ-AI".
+${LEGACY_BALL_FOOT_RULES}  - License is always "CC0". Contributor is "FootworkIQ-AI".
   - Use kebab-case for the drill id, matching the file naming convention.
   - reps = 4, sets = 3, count_in = 1 are sensible defaults unless the concept demands otherwise.
   - time_signature is almost always "4/4" — use this unless explicitly asked.
@@ -158,7 +189,7 @@ RULES:
     to, beat 1's ball cell.
   - Never put both feet in the same cell unless one foot is doing TAP,
     STEP_OVER or LIFT.
-  - Every beat gives left_foot, right_foot and ball.
+${ballFootRules('cell')}  - Every beat gives left_foot, right_foot and ball.
   - License is always "CC0". Contributor is "FootworkIQ-AI".
   - Use kebab-case for the drill id, matching the file naming convention.
   - reps = 4, sets = 3, count_in = 1 are sensible defaults unless the concept demands otherwise.

@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'fs';
 import { execFileSync } from 'child_process';
 import {
+  LEGACY_BALL_FOOT_RULES,
   LEGACY_SYSTEM_PROMPT,
   asciiMat,
   modelName,
@@ -68,7 +69,7 @@ test('systemPrompt(null) is the legacy 2x3 prompt', () => {
 // refactored generate.js, which no longer has the inline prompt.
 const PRE_GRID_GENERATOR = 'dedbb92';
 
-test('LEGACY_SYSTEM_PROMPT is byte-identical to the pre-grid prompt in scripts/generate.js', (t) => {
+test('LEGACY_SYSTEM_PROMPT is the pre-grid prompt in scripts/generate.js plus the ball/foot rules', (t) => {
   let src;
   try {
     src = execFileSync('git', ['show', `${PRE_GRID_GENERATOR}:scripts/generate.js`], {
@@ -84,7 +85,9 @@ test('LEGACY_SYSTEM_PROMPT is byte-identical to the pre-grid prompt in scripts/g
   assert.ok(start >= 0, 'pre-grid generate.js has a systemPrompt template literal');
   const bodyStart = start + 'const systemPrompt = `'.length;
   const end = src.indexOf('`;', bodyStart);
-  assert.equal(LEGACY_SYSTEM_PROMPT, src.slice(bodyStart, end));
+  // Phase 46 added the ball/foot rules (D-02); everything else is unchanged.
+  assert.ok(LEGACY_SYSTEM_PROMPT.includes(LEGACY_BALL_FOOT_RULES));
+  assert.equal(LEGACY_SYSTEM_PROMPT.replace(LEGACY_BALL_FOOT_RULES, ''), src.slice(bodyStart, end));
 });
 
 test('systemPrompt(3x4) has the mat, cell rules and actions, and no zones or {x, y}', () => {
