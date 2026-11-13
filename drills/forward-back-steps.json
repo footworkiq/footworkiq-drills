@@ -24,11 +24,11 @@
       "beat": 1,
       "left_foot": {
         "pos": 2,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": 1,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "ball": {
         "pos": 1,
@@ -54,11 +54,11 @@
       "beat": 3,
       "left_foot": {
         "pos": 3,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": 4,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "ball": {
         "pos": 1,

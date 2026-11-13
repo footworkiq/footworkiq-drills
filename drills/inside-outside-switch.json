@@ -37,7 +37,7 @@
     {
       "beat": 4,
       "left_foot":  { "pos": 2, "action": "PLANT" },
-      "right_foot": { "pos": 2, "action": "OUTSIDE_TOUCH" },
+      "right_foot": { "pos": 1, "action": "OUTSIDE_TOUCH" },
       "ball":       { "pos": 6, "action": "ROLL" }
     }
   ]
