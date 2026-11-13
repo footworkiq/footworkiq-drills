@@ -1,5 +1,5 @@
 // Spawn-based tests for scripts/validate-drills.js over test/fixtures/drills/<case>/.
-// The good directory holds lint-clean grid drills; each bad-* directory holds
+// The good directory holds lint-clean drills (2x3 and grid); each bad-* directory holds
 // one drill with exactly one defect. Every rejection test asserts the reason,
 // not just the exit code.
 import { test } from 'node:test';
@@ -22,8 +22,8 @@ test('good grid fixtures pass Ajv and the lints', () => {
   const r = run('--dir', join(FIXTURES, 'good'));
   assert.equal(r.status, 0, r.stderr);
   const oks = r.stdout.split('\n').filter((l) => l.startsWith('OK   '));
-  assert.equal(oks.length, 3);
-  assert.match(r.stdout, /All 3 drill\(s\) valid\./);
+  assert.equal(oks.length, 4);
+  assert.match(r.stdout, /All 4 drill\(s\) valid\./);
 });
 
 const BAD_CASES = {
@@ -32,7 +32,7 @@ const BAD_CASES = {
   'bad-ball-jump-loop': /between reps \(not adjacent\)/,
   'bad-ball-action': /use ROLL or PUSH/,
   'bad-ball-from-to': /from\/to|needs from and to/,
-  'bad-feet-same-cell': /left and right foot both in/,
+  'bad-feet-same-cell': /right foot shares \S+ with the left foot/,
   'bad-xy-edge': /too close to the edge/,
 };
 
