@@ -24,20 +24,20 @@
     },
     {
       "beat": 2,
-      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "left_foot":  { "pos": 2, "action": "STEP" },
       "right_foot": { "pos": 1, "action": "DRAG" },
       "ball":       { "pos": 1, "action": "ROLL" }
     },
     {
       "beat": 3,
       "left_foot":  { "pos": 3, "action": "OUTSIDE_TOUCH" },
-      "right_foot": { "pos": 6, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "STEP" },
       "ball":       { "pos": 3, "action": "PUSH" }
     },
     {
       "beat": 4,
-      "left_foot":  { "pos": 2, "action": "STEP" },
-      "right_foot": { "pos": 4, "action": "SOLE_ROLL" },
+      "left_foot":  { "pos": 2, "action": "INSIDE_TOUCH" },
+      "right_foot": { "pos": 4, "action": "STEP" },
       "ball":       { "pos": 4, "action": "ROLL" }
     }
   ]

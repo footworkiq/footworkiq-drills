@@ -56,34 +56,34 @@
       "beat": 3,
       "left_foot": {
         "pos": 2,
-        "action": "INSIDE_TOUCH"
+        "action": "PLANT"
       },
       "right_foot": {
         "pos": 6,
-        "action": "PLANT"
+        "action": "INSIDE_TOUCH"
       },
       "ball": {
-        "pos": 2,
-        "action": "PUSH",
+        "pos": 1,
+        "action": "ROLL",
         "from": 6,
-        "to": 2
+        "to": 1
       }
     },
     {
       "beat": 4,
       "left_foot": {
         "pos": 2,
-        "action": "PLANT"
+        "action": "INSIDE_TOUCH"
       },
       "right_foot": {
         "pos": 6,
-        "action": "INSIDE_TOUCH"
+        "action": "PLANT"
       },
       "ball": {
-        "pos": 6,
+        "pos": 2,
         "action": "PUSH",
-        "from": 2,
-        "to": 6
+        "from": 1,
+        "to": 2
       }
     },
     {
@@ -94,13 +94,13 @@
       },
       "right_foot": {
         "pos": 6,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "ball": {
-        "pos": 2,
+        "pos": 1,
         "action": "PUSH",
-        "from": 6,
-        "to": 2
+        "from": 2,
+        "to": 1
       }
     },
     {
@@ -115,9 +115,7 @@
       },
       "ball": {
         "pos": 1,
-        "action": "PUSH",
-        "from": 2,
-        "to": 1
+        "action": "STILL"
       }
     }
   ]

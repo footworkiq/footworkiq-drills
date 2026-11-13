@@ -19,14 +19,14 @@
   "sequence": [
     {
       "beat": 1,
-      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "left_foot":  { "pos": 2, "action": "STEP" },
       "right_foot": { "pos": 6, "action": "PLANT" },
       "ball":       { "pos": 1, "action": "STILL" }
     },
     {
       "beat": 2,
       "left_foot":  { "pos": 1, "action": "STEP_OVER" },
-      "right_foot": { "pos": 6, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "STEP" },
       "ball":       { "pos": 1, "action": "STILL" }
     },
     {
@@ -38,7 +38,7 @@
     {
       "beat": 4,
       "left_foot":  { "pos": 2, "action": "PLANT" },
-      "right_foot": { "pos": 6, "action": "STEP" },
+      "right_foot": { "pos": 6, "action": "OUTSIDE_TOUCH" },
       "ball":       { "pos": 6, "action": "ROLL" }
     },
     {
@@ -50,7 +50,7 @@
     {
       "beat": 6,
       "left_foot":  { "pos": 2, "action": "PLANT" },
-      "right_foot": { "pos": 1, "action": "PLANT" },
+      "right_foot": { "pos": 1, "action": "INSIDE_TOUCH" },
       "ball":       { "pos": 1, "action": "ROLL" }
     },
     {
