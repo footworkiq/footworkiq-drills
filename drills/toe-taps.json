@@ -18,26 +18,26 @@
   "sequence": [
     {
       "beat": 1,
-      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "left_foot":  { "pos": 2, "action": "STEP" },
       "right_foot": { "pos": 1, "action": "TAP" },
       "ball":       { "pos": 1, "action": "STILL" }
     },
     {
       "beat": 2,
       "left_foot":  { "pos": 1, "action": "TAP" },
-      "right_foot": { "pos": 6, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "STEP" },
       "ball":       { "pos": 1, "action": "STILL" }
     },
     {
       "beat": 3,
-      "left_foot":  { "pos": 2, "action": "PLANT" },
+      "left_foot":  { "pos": 2, "action": "STEP" },
       "right_foot": { "pos": 1, "action": "TAP" },
       "ball":       { "pos": 1, "action": "STILL" }
     },
     {
       "beat": 4,
       "left_foot":  { "pos": 1, "action": "TAP" },
-      "right_foot": { "pos": 6, "action": "PLANT" },
+      "right_foot": { "pos": 6, "action": "STEP" },
       "ball":       { "pos": 1, "action": "STILL" }
     }
   ]

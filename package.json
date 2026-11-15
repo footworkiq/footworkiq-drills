@@ -12,6 +12,7 @@
     "build-cards": "node scripts/build-card-bundle.js",
     "reorder-cards": "node scripts/reorder-card-options.js",
     "card-report": "node scripts/card-report.js",
+    "drill-diff": "node scripts/drill-diff.js",
     "test": "node --test test/*.test.js"
   },
   "devDependencies": {

@@ -85,7 +85,7 @@ if (!ok) {
   process.exit(1);
 }
 
-// Grid lints (D-10). lintDrill returns [] for 2x3, so the no --grid path is unchanged.
+// Lints run on every grid, 2x3 included (Phase 46 D-02).
 const issues = lintDrill(drill);
 if (issues.length > 0) {
   console.error('Generated drill failed the grid lints:');

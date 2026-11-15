@@ -72,11 +72,11 @@
       "beat": 4,
       "left_foot": {
         "pos": 2,
-        "action": "INSIDE_TOUCH"
+        "action": "PLANT"
       },
       "right_foot": {
-        "pos": 6,
-        "action": "PLANT"
+        "pos": 5,
+        "action": "OUTSIDE_TOUCH"
       },
       "ball": {
         "pos": 5,
@@ -106,7 +106,7 @@
       "beat": 6,
       "left_foot": {
         "pos": 2,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "right_foot": {
         "pos": 4,

@@ -49,12 +49,30 @@ Positions are cells written as `{"row": R, "col": C}`. Row 1 is the near row (yo
   1  [ A1 ]  [ B1 ]  [ C1 ]  [ D1 ]   (near row, your feet)
 ```
 
-CI runs these lints on grid drills (2×3 drills are not linted):
+CI runs these lints on every drill, 2×3 included. "Next to" means one square away in any direction, diagonals included. The drill loops, so the beat after the last one is beat 1.
 
-- The ball moves at most one cell per beat, diagonals included. A beat that moves it uses `ROLL` or `PUSH`, with `from` = the previous cell and `to` = the new cell.
-- The drill loops, so the last beat's ball cell must be the same as or next to beat 1's.
-- Both feet never share a cell unless one of them is doing `TAP`, `STEP_OVER` or `LIFT`.
+- The ball moves only on a beat when a foot that was on or next to it touches it (`INSIDE_TOUCH`, `OUTSIDE_TOUCH`, `SOLE_ROLL`, `TAP`, `DRAG` or `LIFT`) and ends on or next to its new square. `PLANT`, `STEP` and `STEP_OVER` don't touch the ball.
+- After a `PUSH`, the ball waits in its new square until a foot reaches that square.
+- A `SOLE_ROLL` or `DRAG` foot keeps its sole on the ball: it is in the ball's square, and when it rolls the ball it started where the ball was.
+- A foot moves at most one square a beat.
+- Use `PLANT` only when the foot stays in the same square next beat. A foot that moves next beat is a `STEP` (or a touch).
+- The feet stay within two squares of each other, and the right foot is never left of the left foot, except during a `STEP_OVER`.
+- The ball never jumps a square, including from the last beat back to beat 1.
+- Both feet never share a square unless one of them is doing `TAP`, `STEP_OVER` or `LIFT`.
+
+Grid drills only (3×3, 3×4, 4×4):
+
+- A beat that moves the ball uses `ROLL` or `PUSH`, with `from` = the previous cell and `to` = the new cell.
+- Every `ROLL` or `PUSH` has `from` and `to`, and they are next to each other.
 - An `{x, y}` position must sit far enough from every edge for the whole marker to show.
+
+Lint messages name squares by cell, even on the 2×3 mat. The 2×3 zones map to cells like this:
+
+| Zone | 1 | 2 | 3 | 4 | 5 | 6 |
+|------|----|----|----|----|----|----|
+| Cell | B1 | A1 | A2 | B2 | C2 | C1 |
+
+To see what a fix changed, beat by beat, run `npm run drill-diff -- --base main`.
 
 To draft a grid drill with the generator (needs `OPENAI_API_KEY`; set `OPENAI_MODEL` to change the model):
 

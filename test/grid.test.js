@@ -9,7 +9,9 @@ import {
   cellCentre,
   cellName,
   cellOf,
+  ZONE_CELLS,
   isAdjacent,
+  kingDistance,
   nearestCell,
   sameCell,
 } from '../scripts/lib/grid.js';
@@ -71,4 +73,56 @@ test('cellOf and sameCell handle both position kinds', () => {
   assert.deepEqual(cellOf({ x: 0.45, y: 0.55 }, g), { row: 2, col: 2 });
   assert.equal(sameCell(cellOf({ x: 0.5, y: 0.5 }, g), { row: 2, col: 2 }), true);
   assert.equal(sameCell({ row: 1, col: 2 }, { row: 2, col: 1 }), false);
+});
+
+test('ZONE_CELLS maps the six 2x3 zones to cells and is frozen', () => {
+  assert.deepEqual(
+    { ...ZONE_CELLS },
+    {
+      1: { row: 1, col: 2 },
+      2: { row: 1, col: 1 },
+      3: { row: 2, col: 1 },
+      4: { row: 2, col: 2 },
+      5: { row: 2, col: 3 },
+      6: { row: 1, col: 3 },
+    },
+  );
+  assert.ok(Object.isFrozen(ZONE_CELLS));
+  for (const v of Object.values(ZONE_CELLS)) assert.ok(Object.isFrozen(v));
+});
+
+test('cellOf maps integer zones through ZONE_CELLS (a copy) and rejects non-zones', () => {
+  const g = PRESETS['2x3'];
+  for (let z = 1; z <= 6; z++) {
+    const c = cellOf(z, g);
+    assert.deepEqual(c, { ...ZONE_CELLS[z] });
+    assert.notEqual(c, ZONE_CELLS[z]);
+    assert.ok(!Object.isFrozen(c));
+  }
+  assert.equal(cellOf(7, g), null);
+  assert.equal(cellOf(0, g), null);
+});
+
+test('cellOf snaps 2x3 {x, y} against the app ZONE_COORDS', () => {
+  const g = PRESETS['2x3'];
+  // Uniform cell centres would give col 2 here; the app's zone points give col 1.
+  assert.deepEqual(cellOf({ x: 0.34, y: 0.7 }, g), { row: 1, col: 1 });
+  assert.deepEqual(cellOf({ x: 0.66, y: 0.3 }, g), { row: 2, col: 3 });
+  // Tie between zones 1 and 4: zone 1 is checked first.
+  assert.deepEqual(cellOf({ x: 0.5, y: 0.5 }, g), { row: 1, col: 2 });
+});
+
+test('cellOf leaves {row, col} and non-2x3 {x, y} unchanged', () => {
+  assert.deepEqual(cellOf({ row: 2, col: 3 }, PRESETS['2x3']), { row: 2, col: 3 });
+  assert.deepEqual(cellOf({ row: 3, col: 1 }, PRESETS['3x3']), { row: 3, col: 1 });
+  const g = PRESETS['4x4'];
+  const n = nearestCell(g, { x: 0.5, y: 0.875 });
+  assert.deepEqual(cellOf({ x: 0.5, y: 0.875 }, g), { row: n.row, col: n.col });
+});
+
+test('kingDistance is the larger of the row and col deltas', () => {
+  assert.equal(kingDistance({ row: 1, col: 1 }, { row: 3, col: 2 }), 2);
+  const a = { row: 2, col: 2 };
+  assert.equal(kingDistance(a, a), 0);
+  assert.equal(kingDistance({ row: 1, col: 4 }, { row: 2, col: 1 }), 3);
 });

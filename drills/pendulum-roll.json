@@ -56,34 +56,32 @@
       "beat": 3,
       "left_foot": {
         "pos": 2,
-        "action": "SOLE_ROLL"
+        "action": "STEP"
       },
       "right_foot": {
-        "pos": 6,
-        "action": "PLANT"
+        "pos": 1,
+        "action": "SOLE_ROLL"
       },
       "ball": {
-        "pos": 2,
+        "pos": 1,
         "action": "ROLL",
         "from": 6,
-        "to": 2
+        "to": 1
       }
     },
     {
       "beat": 4,
       "left_foot": {
-        "pos": 2,
-        "action": "DRAG"
+        "pos": 1,
+        "action": "SOLE_ROLL"
       },
       "right_foot": {
         "pos": 6,
-        "action": "PLANT"
+        "action": "STEP"
       },
       "ball": {
         "pos": 1,
-        "action": "ROLL",
-        "from": 2,
-        "to": 1
+        "action": "STILL"
       }
     }
   ]
