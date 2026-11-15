@@ -16,6 +16,7 @@
 import { execFileSync } from 'child_process';
 import { readFileSync, readdirSync } from 'fs';
 import { basename, join } from 'path';
+import { fileURLToPath } from 'url';
 import { lintDrill } from './lib/drill-lints.js';
 
 function argValue(name) {
@@ -30,7 +31,9 @@ function argValue(name) {
 }
 
 const BASE_DRILLS_DIR = 'drills';
-const repoRoot = new URL('..', import.meta.url).pathname;
+// fileURLToPath, not URL.pathname: pathname keeps percent-encoding (a space
+// is %20), which breaks readdirSync and git's cwd in such a checkout path.
+const repoRoot = fileURLToPath(new URL('..', import.meta.url));
 const drillsDir = join(repoRoot, BASE_DRILLS_DIR);
 
 const baseRef = argValue('--base');
