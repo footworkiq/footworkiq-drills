@@ -16,6 +16,7 @@
 import { execFileSync } from 'child_process';
 import { readFileSync, readdirSync } from 'fs';
 import { basename, join } from 'path';
+import { fileURLToPath } from 'url';
 import { lintDrill } from './lib/drill-lints.js';
 
 function argValue(name) {
@@ -30,7 +31,9 @@ function argValue(name) {
 }
 
 const BASE_DRILLS_DIR = 'drills';
-const repoRoot = new URL('..', import.meta.url).pathname;
+// fileURLToPath, not URL.pathname: pathname keeps percent-encoding (a space
+// is %20), which breaks readdirSync and git's cwd in such a checkout path.
+const repoRoot = fileURLToPath(new URL('..', import.meta.url));
 const drillsDir = join(repoRoot, BASE_DRILLS_DIR);
 
 const baseRef = argValue('--base');
@@ -38,6 +41,9 @@ if (baseRef === undefined) {
   console.error('Usage: node scripts/drill-diff.js --base <git-ref>');
   process.exit(1);
 }
+
+/** Identity of a lint issue across the before and after versions of a drill. */
+const issueKey = (i) => `${i.rule}|${i.beat}|${i.marker}`;
 
 /** Run git in the repo root; returns stdout, or throws with git's message. */
 function git(args) {
@@ -132,12 +138,14 @@ for (const file of currentFiles) {
   const id = after.metadata?.id ?? file.replace(/\.json$/, '');
   out.push(`### ${id}`, '');
 
-  // (a) rules cleared
-  const cleared = lintDrill(before);
+  // (a) rules cleared: base issues with no matching issue in the new version
+  // (same rule, beat and marker), so one still failing isn't counted as fixed.
+  const remaining = lintDrill(after);
+  const still = new Set(remaining.map(issueKey));
+  const cleared = lintDrill(before).filter((i) => !still.has(issueKey(i)));
   out.push('Rules cleared:');
   if (cleared.length === 0) out.push('- none');
   for (const i of cleared) out.push(`- ${i.rule}: ${i.message}`);
-  const remaining = lintDrill(after);
   if (remaining.length > 0) {
     out.push('', 'Still failing:');
     for (const i of remaining) out.push(`- ${i.rule}: ${i.message}`);

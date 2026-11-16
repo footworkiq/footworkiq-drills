@@ -44,7 +44,8 @@
 // lintDrill assumes an Ajv-valid drill. An unknown grid id returns [].
 //
 // Beats are walked in beat order with carry-forward state, as the engine
-// does: a beat without a marker keeps that marker where it was, and before
+// does: a beat without a marker keeps that marker where it was (a foot
+// missing from a beat is a STEP there, like the engine's ?? 'STEP'), and before
 // the first marker the grid's home positions apply (app homePositions). The
 // drill loops, so the D-01 rules are cyclic: the beat before the first is
 // the last, and the beat after the last is the first. Adjacency is king-move.
@@ -180,11 +181,17 @@ export function lintDrill(drill) {
   const S = [];
   for (const step of beats) {
     const beat = step.beat;
+    // A beat without a foot keeps its cell but not its action: the engine
+    // reads b.left_foot?.action ?? 'STEP' (matFrame.ts), so it's a STEP there.
     if (step.left_foot) {
       L = { cell: checkPos(step.left_foot.pos, g, 'foot', beat, 'left foot', issues), action: step.left_foot.action };
+    } else {
+      L = { cell: L.cell, action: 'STEP' };
     }
     if (step.right_foot) {
       R = { cell: checkPos(step.right_foot.pos, g, 'foot', beat, 'right foot', issues), action: step.right_foot.action };
+    } else {
+      R = { cell: R.cell, action: 'STEP' };
     }
     if (step.ball) {
       const ball = step.ball;
@@ -196,8 +203,9 @@ export function lintDrill(drill) {
         authored: true,
       };
     } else if (B.authored) {
-      // Carried forward: not a new ball entry at this beat.
-      B = { cell: B.cell, action: B.action, authored: true, carried: true };
+      // Carried forward: not a new ball entry at this beat. The cell carries,
+      // the action doesn't (the ball has no action at a beat that omits it).
+      B = { cell: B.cell, action: undefined, authored: true, carried: true };
     }
     S.push({ beat, L, R, B, hasFoot: Boolean(step.left_foot || step.right_foot), hasBall: Boolean(step.ball) });
   }

@@ -377,6 +377,91 @@ test('plant-moves wraps: a PLANT on the last beat is checked against beat 1', ()
   ]);
 });
 
+// ---------------------------------------------------------------- omitted markers (WR-01)
+// The engine reads b.left_foot?.action ?? 'STEP' (matFrame.ts): a foot
+// missing from a beat keeps its cell but is a STEP there, not a copy of its
+// last action. The lint must agree.
+
+const cell = (row, col) => ({ row, col });
+const sparse3x3 = (sequence) => ({
+  schema: '1.0',
+  metadata: { id: 'sparse', name: 'Sparse', grid: '3x3' },
+  sequence,
+});
+
+test('a beat that omits a foot after its PLANT is a STEP, so a later move is not plant-moves', () => {
+  const d = sparse3x3([
+    {
+      beat: 1,
+      left_foot: { pos: cell(1, 1), action: 'PLANT' },
+      right_foot: { pos: cell(1, 3), action: 'PLANT' },
+      ball: { pos: cell(1, 2), action: 'STILL' },
+    },
+    // No left_foot: the engine animates it as a STEP, held in A1.
+    { beat: 2, right_foot: { pos: cell(1, 3), action: 'PLANT' }, ball: { pos: cell(1, 2), action: 'STILL' } },
+    {
+      beat: 3,
+      left_foot: { pos: cell(2, 1), action: 'STEP' },
+      right_foot: { pos: cell(1, 3), action: 'PLANT' },
+      ball: { pos: cell(1, 2), action: 'STILL' },
+    },
+  ]);
+  assert.deepEqual(lintDrill(d), []);
+});
+
+test('a ball move on beats that omit both feet is ball-no-touch, even after a touch', () => {
+  const d = sparse3x3([
+    {
+      beat: 1,
+      left_foot: { pos: cell(1, 1), action: 'INSIDE_TOUCH' },
+      right_foot: { pos: cell(1, 3), action: 'PLANT' },
+      ball: { pos: cell(1, 2), action: 'STILL' },
+    },
+    // No feet: beat 1's INSIDE_TOUCH is not carried forward.
+    { beat: 2, ball: { pos: cell(2, 2), action: 'ROLL', from: cell(1, 2), to: cell(2, 2) } },
+    { beat: 3, ball: { pos: cell(1, 2), action: 'ROLL', from: cell(2, 2), to: cell(1, 2) } },
+  ]);
+  assert.deepEqual(lintDrill(d), [
+    {
+      rule: 'ball-no-touch',
+      beat: 2,
+      marker: 'ball',
+      message: 'beat 2: ball moves B1 → B2 but no foot on or next to it touches it',
+    },
+    {
+      rule: 'ball-no-touch',
+      beat: 3,
+      marker: 'ball',
+      message: 'beat 3: ball moves B2 → B1 but no foot on or next to it touches it',
+    },
+  ]);
+});
+
+test('a SOLE_ROLL is not carried onto a beat that omits that foot (sole-on-ball)', () => {
+  const d = sparse3x3([
+    {
+      beat: 1,
+      left_foot: { pos: cell(1, 1), action: 'PLANT' },
+      right_foot: { pos: cell(1, 2), action: 'SOLE_ROLL' },
+      ball: { pos: cell(1, 2), action: 'STILL' },
+    },
+    // No right_foot: it stays in B1 as a STEP while the left foot pushes the ball.
+    {
+      beat: 2,
+      left_foot: { pos: cell(1, 1), action: 'INSIDE_TOUCH' },
+      ball: { pos: cell(2, 1), action: 'PUSH', from: cell(1, 2), to: cell(2, 1) },
+    },
+    {
+      beat: 3,
+      left_foot: { pos: cell(2, 1), action: 'INSIDE_TOUCH' },
+      right_foot: { pos: cell(1, 2), action: 'STEP' },
+      ball: { pos: cell(1, 2), action: 'PUSH', from: cell(2, 1), to: cell(1, 2) },
+    },
+  ]);
+  assert.ok(!rules(lintDrill(d)).includes('sole-on-ball'));
+  assert.ok(!rules(lintDrill(d)).includes('sole-start'));
+});
+
 test('a 2x3 foot at {x: 0.34, y: 0.7} is linted as zone 2 (D-03)', () => {
   // Zone 2 is at x 0.2 and zone 1 at x 0.5, so 0.34 snaps to zone 2 (A1),
   // where the left foot is on every other beat. 0.36 snaps to zone 1 (B1),
