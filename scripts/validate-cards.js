@@ -10,6 +10,9 @@
 // format (2-space JSON plus trailing newline), field-cap (per-field length
 // caps), sentence-length (max words per sentence), no-url (no links or domains
 // in any string), and the tag rules (tag-unknown, tag-duplicate, tag-count).
+// Also fails on copy-claim (shared app copy-lint rules,
+// docs/schema/copy-rules.json, via the copy-lints module): a banned claim
+// phrase in a card's title, text, tip, option text or why line.
 //
 // Also fails on the balance rules, strict since the 2026-11 audit
 // (BALANCE_LINTS_STRICT): option-balance, tags-missing, and the deck-share
@@ -42,6 +45,7 @@ import {
   isFailure,
   BALANCE_LINTS_STRICT,
 } from './lib/card-lints.js';
+import { lintCardCopy } from './lib/copy-lints.js';
 
 function argValue(name) {
   const i = process.argv.indexOf(name);
@@ -214,7 +218,7 @@ for (const file of files) {
   // still see a card that fails a lint.
   current.set(data.id, data);
 
-  const issues = [checkFormat(text), ...lintCard(data)].filter(Boolean);
+  const issues = [checkFormat(text), ...lintCard(data), ...lintCardCopy(data)].filter(Boolean);
   let lintFailed = false;
   for (const issue of issues) {
     if (reportIssue(file, issue)) lintFailed = true;
