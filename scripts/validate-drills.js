@@ -3,10 +3,13 @@ import { join, resolve } from 'path';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { lintDrill } from './lib/drill-lints.js';
+import { lintDrillCopy } from './lib/copy-lints.js';
 
 // Usage: node scripts/validate-drills.js [--dir <path>]
 // Each drill must pass the JSON Schema (Ajv) and then the grid-aware lints in
-// ./lib/drill-lints.js. Lints run only on schema-valid drills.
+// ./lib/drill-lints.js, then copy-claim (shared app copy-lint rules,
+// docs/schema/copy-rules.json, via the copy-lints module) on the drill's name,
+// description and tags. Lints run only on schema-valid drills.
 
 function argValue(name) {
   const i = process.argv.indexOf(name);
@@ -55,11 +58,11 @@ for (const file of files) {
     failed++;
     continue;
   }
-  const issues = lintDrill(data);
+  const issues = [...lintDrill(data), ...lintDrillCopy(data)];
   if (issues.length > 0) {
     console.error(`FAIL ${file}:`);
     for (const issue of issues) {
-      console.error(`  ${issue.message}`);
+      console.error(issue.rule === 'copy-claim' ? `  [copy-claim] ${issue.message}` : `  ${issue.message}`);
     }
     failed++;
   } else {

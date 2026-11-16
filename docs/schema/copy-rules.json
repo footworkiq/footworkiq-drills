@@ -1,0 +1,63 @@
+{
+  "_comment": "Canonical copy in the app repo. footworkiq-drills/docs/schema/copy-rules.json must be a byte copy (npm run check:schema-drift).",
+  "version": 1,
+  "phrases": [
+    "IQ score",
+    "Scan IQ",
+    "improve",
+    "improves",
+    "improved",
+    "improvement",
+    "improvements",
+    "improving",
+    "brain",
+    "brains",
+    "reaction speed",
+    "reaction time",
+    "reaction times",
+    "cognitive",
+    "sharpen",
+    "sharpens",
+    "sharpened",
+    "sharpening",
+    "boost",
+    "boosts",
+    "boosted",
+    "boosting",
+    "smarter",
+    "proven",
+    "science-backed",
+    "vision training"
+  ],
+  "vectors": {
+    "flag": [
+      "Boost your game",
+      "Get smarter",
+      "Your IQ score",
+      "Scan IQ",
+      "Reaction-time drills",
+      "Train your brain",
+      "Science-backed method",
+      "Proven results",
+      "Vision training mode",
+      "Sharpen your touch",
+      "This improves control",
+      "Cognitive drills",
+      "Improved first touch",
+      "Big improvements",
+      "Boosts your game",
+      "A boosted session",
+      "Sharpens your passing",
+      "Train your brains",
+      "Faster reaction times"
+    ],
+    "pass": [
+      "FootworkIQ",
+      "IQ",
+      "Decision IQ round",
+      "Shoulder Check",
+      "Keep your eyes up",
+      "Support development"
+    ]
+  }
+}
