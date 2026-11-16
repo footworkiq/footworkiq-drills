@@ -12,7 +12,7 @@
 // The matcher is built exactly like the app's (scripts/lib/copyLint.cjs): each
 // phrase becomes one case-insensitive regex with (?<![A-Za-z0-9]) and
 // (?![A-Za-z0-9]) look-arounds, and a space or hyphen in a phrase matches any
-// run of whitespace or hyphens. "FootworkIQ" and "boosted" do not match.
+// run of whitespace or hyphens. "FootworkIQ" and "booster" do not match.
 //
 // Text that is checked (user-facing copy):
 //   cards  title, text, tip, every options[].text, every options[].why, and

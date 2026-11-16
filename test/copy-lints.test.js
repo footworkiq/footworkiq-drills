@@ -50,7 +50,8 @@ test('every pass vector passes', () => {
 
 test('matching is case-insensitive and word-bounded', () => {
   assert.deepEqual(findPhrases('BOOST your game', compiled), ['boost']);
-  assert.deepEqual(findPhrases('a boosted shot', compiled), []);
+  assert.deepEqual(findPhrases('a boosted shot', compiled), ['boosted']);
+  assert.deepEqual(findPhrases('a booster seat', compiled), []);
   assert.deepEqual(findPhrases('FootworkIQ', compiled), []);
 });
 
