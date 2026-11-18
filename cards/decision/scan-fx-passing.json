@@ -1,0 +1,106 @@
+{
+  "schema": "1.1",
+  "id": "scan-fx-passing",
+  "rev": 1,
+  "category": "attack",
+  "title": "Pick the pass",
+  "text": "Where does your next pass go?",
+  "tip": "Know where your pass is going before the ball reaches you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 48,
+      "y": 50
+    },
+    "ball": {
+      "x": 48,
+      "y": 66
+    },
+    "mates": [
+      {
+        "x": 48,
+        "y": 66
+      },
+      {
+        "x": 80,
+        "y": 30
+      },
+      {
+        "x": 20,
+        "y": 40
+      }
+    ],
+    "opps": [
+      {
+        "x": 30,
+        "y": 42
+      },
+      {
+        "x": 55,
+        "y": 40
+      },
+      {
+        "x": 70,
+        "y": 45
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 48,
+          "y": 66
+        },
+        "to": {
+          "x": 48,
+          "y": 53
+        },
+        "kind": "ball"
+      },
+      {
+        "from": {
+          "x": 80,
+          "y": 30
+        },
+        "to": {
+          "x": 75,
+          "y": 20
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "short-left",
+      "text": "Play it short to the left",
+      "grade": "ok",
+      "why": "It keeps the ball, but the left side was crowded."
+    },
+    {
+      "id": "switch-right",
+      "text": "Switch it to the right wing",
+      "grade": "best",
+      "why": "Your look showed the right side was the way through."
+    },
+    {
+      "id": "dribble-on",
+      "text": "Dribble straight ahead",
+      "grade": "poor",
+      "why": "Running into the middle walks you into trouble."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "U16",
+  "role": "outfield",
+  "tags": [
+    "passing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "You are about to receive in midfield. Look first.",
+    "area": "passing"
+  }
+}

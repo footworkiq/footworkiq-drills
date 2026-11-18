@@ -3647,6 +3647,462 @@
       "license": "CC0"
     },
     {
+      "schema": "1.1",
+      "id": "scan-fx-intercepting",
+      "rev": 1,
+      "category": "defend",
+      "title": "Read the pass",
+      "text": "Where do you move as the pass is played?",
+      "tip": "Watching the passer and the runner lets you step in early.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 45,
+          "y": 40
+        },
+        "ball": {
+          "x": 60,
+          "y": 62
+        },
+        "mates": [
+          {
+            "x": 25,
+            "y": 35
+          },
+          {
+            "x": 70,
+            "y": 30
+          }
+        ],
+        "opps": [
+          {
+            "x": 60,
+            "y": 62
+          },
+          {
+            "x": 38,
+            "y": 30
+          },
+          {
+            "x": 75,
+            "y": 45
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 38,
+              "y": 30
+            },
+            "to": {
+              "x": 40,
+              "y": 22
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "drop-off",
+          "text": "Drop off and stay goal-side",
+          "grade": "ok",
+          "why": "Safe, but you gave them the pass for free."
+        },
+        {
+          "id": "step-across",
+          "text": "Step across and cut out the pass",
+          "grade": "best",
+          "why": "Your look told you where the pass was going, so you got there first."
+        },
+        {
+          "id": "charge-ball",
+          "text": "Charge straight at the ball",
+          "grade": "poor",
+          "why": "They just pass around you into the gap you left."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U12",
+      "role": "outfield",
+      "tags": [
+        "marking",
+        "transition"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "They are about to pass. Look first.",
+        "glimpse_ms": 2000,
+        "area": "intercepting"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-fx-passing",
+      "rev": 1,
+      "category": "attack",
+      "title": "Pick the pass",
+      "text": "Where does your next pass go?",
+      "tip": "Know where your pass is going before the ball reaches you.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 48,
+          "y": 50
+        },
+        "ball": {
+          "x": 48,
+          "y": 66
+        },
+        "mates": [
+          {
+            "x": 48,
+            "y": 66
+          },
+          {
+            "x": 80,
+            "y": 30
+          },
+          {
+            "x": 20,
+            "y": 40
+          }
+        ],
+        "opps": [
+          {
+            "x": 30,
+            "y": 42
+          },
+          {
+            "x": 55,
+            "y": 40
+          },
+          {
+            "x": 70,
+            "y": 45
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 48,
+              "y": 66
+            },
+            "to": {
+              "x": 48,
+              "y": 53
+            },
+            "kind": "ball"
+          },
+          {
+            "from": {
+              "x": 80,
+              "y": 30
+            },
+            "to": {
+              "x": 75,
+              "y": 20
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "short-left",
+          "text": "Play it short to the left",
+          "grade": "ok",
+          "why": "It keeps the ball, but the left side was crowded."
+        },
+        {
+          "id": "switch-right",
+          "text": "Switch it to the right wing",
+          "grade": "best",
+          "why": "Your look showed the right side was the way through."
+        },
+        {
+          "id": "dribble-on",
+          "text": "Dribble straight ahead",
+          "grade": "poor",
+          "why": "Running into the middle walks you into trouble."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U16",
+      "role": "outfield",
+      "tags": [
+        "passing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "You are about to receive in midfield. Look first.",
+        "area": "passing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-fx-pressing",
+      "rev": 1,
+      "category": "defend",
+      "title": "Keeper on the ball",
+      "text": "How do you start the press?",
+      "tip": "Know who is near you before you go, so you can block a pass as you run.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 22
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "ball": {
+          "x": 50,
+          "y": 6
+        },
+        "mates": [
+          {
+            "x": 25,
+            "y": 28
+          },
+          {
+            "x": 75,
+            "y": 28
+          }
+        ],
+        "opps": [
+          {
+            "x": 30,
+            "y": 12
+          },
+          {
+            "x": 70,
+            "y": 12
+          },
+          {
+            "x": 50,
+            "y": 30
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "stay-put",
+          "text": "Stay where you are and wait",
+          "grade": "poor",
+          "why": "The keeper gets an easy pass to start their attack."
+        },
+        {
+          "id": "run-straight",
+          "text": "Run straight at the keeper",
+          "grade": "ok",
+          "why": "Pressure helps, but it leaves both sides to pass to."
+        },
+        {
+          "id": "curve-run",
+          "text": "Curve your run to block one side",
+          "grade": "best",
+          "why": "It pushes the keeper one way, so your team can squeeze."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U16",
+      "role": "outfield",
+      "tags": [
+        "pressing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Their keeper has the ball. Check before you go.",
+        "glimpse_ms": 3000,
+        "area": "pressing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-fx-receiving",
+      "rev": 1,
+      "category": "attack",
+      "title": "Ball on its way",
+      "text": "What do you do with your first touch?",
+      "tip": "Look before the ball arrives, then decide.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 55
+        },
+        "ball": {
+          "x": 22,
+          "y": 58
+        },
+        "mates": [
+          {
+            "x": 22,
+            "y": 58
+          },
+          {
+            "x": 70,
+            "y": 35
+          }
+        ],
+        "opps": [
+          {
+            "x": 55,
+            "y": 63
+          },
+          {
+            "x": 42,
+            "y": 40
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 22,
+              "y": 58
+            },
+            "to": {
+              "x": 48,
+              "y": 55
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "go-back",
+          "text": "Play it straight back",
+          "grade": "poor",
+          "why": "Safe, but you missed the better pass you could have seen."
+        },
+        {
+          "id": "play-forward",
+          "text": "Play it forward first time",
+          "grade": "best",
+          "why": "You looked first, so you already knew the forward pass was on."
+        },
+        {
+          "id": "take-a-touch",
+          "text": "Take a touch and look up",
+          "grade": "ok",
+          "why": "It keeps the ball, but the chance to go forward may have gone."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U9",
+      "role": "outfield",
+      "tags": [
+        "first-touch"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Ball's coming to you from the left. Look first.",
+        "glimpse_ms": 1500,
+        "area": "receiving"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-fx-turning",
+      "rev": 1,
+      "category": "attack",
+      "title": "Back to goal",
+      "text": "The pass is on its way. What do you do?",
+      "tip": "A quick look over your shoulder tells you if you can turn.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 45
+        },
+        "ball": {
+          "x": 50,
+          "y": 70
+        },
+        "mates": [
+          {
+            "x": 50,
+            "y": 70
+          },
+          {
+            "x": 25,
+            "y": 30
+          }
+        ],
+        "opps": [
+          {
+            "x": 62,
+            "y": 38
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 50,
+              "y": 70
+            },
+            "to": {
+              "x": 50,
+              "y": 48
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "lay-it-off",
+          "text": "Lay it off with one touch",
+          "grade": "ok",
+          "why": "Keeps the ball moving, but you could have turned and gone."
+        },
+        {
+          "id": "hold-it-up",
+          "text": "Hold it up and wait",
+          "grade": "poor",
+          "why": "Waiting lets them get back in front of you."
+        },
+        {
+          "id": "turn-and-go",
+          "text": "Turn and run at goal",
+          "grade": "best",
+          "why": "You checked before it came, so you knew you had room to turn."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U12",
+      "role": "outfield",
+      "tags": [
+        "first-touch",
+        "movement"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Ball's played into your feet. Check before it arrives.",
+        "glimpse_ms": 1000,
+        "area": "turning"
+      }
+    },
+    {
       "schema": "1.0",
       "id": "scramble-in-the-box",
       "legacy_id": "d10",

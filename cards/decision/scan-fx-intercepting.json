@@ -1,0 +1,93 @@
+{
+  "schema": "1.1",
+  "id": "scan-fx-intercepting",
+  "rev": 1,
+  "category": "defend",
+  "title": "Read the pass",
+  "text": "Where do you move as the pass is played?",
+  "tip": "Watching the passer and the runner lets you step in early.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 45,
+      "y": 40
+    },
+    "ball": {
+      "x": 60,
+      "y": 62
+    },
+    "mates": [
+      {
+        "x": 25,
+        "y": 35
+      },
+      {
+        "x": 70,
+        "y": 30
+      }
+    ],
+    "opps": [
+      {
+        "x": 60,
+        "y": 62
+      },
+      {
+        "x": 38,
+        "y": 30
+      },
+      {
+        "x": 75,
+        "y": 45
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 38,
+          "y": 30
+        },
+        "to": {
+          "x": 40,
+          "y": 22
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "drop-off",
+      "text": "Drop off and stay goal-side",
+      "grade": "ok",
+      "why": "Safe, but you gave them the pass for free."
+    },
+    {
+      "id": "step-across",
+      "text": "Step across and cut out the pass",
+      "grade": "best",
+      "why": "Your look told you where the pass was going, so you got there first."
+    },
+    {
+      "id": "charge-ball",
+      "text": "Charge straight at the ball",
+      "grade": "poor",
+      "why": "They just pass around you into the gap you left."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "U12",
+  "role": "outfield",
+  "tags": [
+    "marking",
+    "transition"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "They are about to pass. Look first.",
+    "glimpse_ms": 2000,
+    "area": "intercepting"
+  }
+}

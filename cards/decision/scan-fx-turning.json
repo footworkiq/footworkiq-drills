@@ -1,0 +1,85 @@
+{
+  "schema": "1.1",
+  "id": "scan-fx-turning",
+  "rev": 1,
+  "category": "attack",
+  "title": "Back to goal",
+  "text": "The pass is on its way. What do you do?",
+  "tip": "A quick look over your shoulder tells you if you can turn.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 45
+    },
+    "ball": {
+      "x": 50,
+      "y": 70
+    },
+    "mates": [
+      {
+        "x": 50,
+        "y": 70
+      },
+      {
+        "x": 25,
+        "y": 30
+      }
+    ],
+    "opps": [
+      {
+        "x": 62,
+        "y": 38
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 50,
+          "y": 70
+        },
+        "to": {
+          "x": 50,
+          "y": 48
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "lay-it-off",
+      "text": "Lay it off with one touch",
+      "grade": "ok",
+      "why": "Keeps the ball moving, but you could have turned and gone."
+    },
+    {
+      "id": "hold-it-up",
+      "text": "Hold it up and wait",
+      "grade": "poor",
+      "why": "Waiting lets them get back in front of you."
+    },
+    {
+      "id": "turn-and-go",
+      "text": "Turn and run at goal",
+      "grade": "best",
+      "why": "You checked before it came, so you knew you had room to turn."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "U12",
+  "role": "outfield",
+  "tags": [
+    "first-touch",
+    "movement"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Ball's played into your feet. Check before it arrives.",
+    "glimpse_ms": 1000,
+    "area": "turning"
+  }
+}
