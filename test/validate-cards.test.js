@@ -2,6 +2,8 @@
 // Each fixture directory holds one back-pass.json that is the `good` card plus
 // exactly one defect. Lint fixtures stay schema-valid apart from that defect,
 // and every rejection test asserts the reason, not just the exit code.
+// The scan-* directories (card schema 1.1, app Phase 50) each hold one scan
+// card named <id>.json instead.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
@@ -50,18 +52,56 @@ const DEFERRED_CASES = {
   'no-tags': 'tags-missing',
 };
 
+// Scan cards (schema 1.1): case -> the single file it holds.
+const SCAN_CASES = {
+  'scan-good': 'scan-fx-receiving.json',
+  'scan-describing-prompt': 'scan-fx-describing.json',
+  'scan-board-scene': 'scan-fx-board.json',
+  'scan-wrong-version': 'scan-fx-version.json',
+};
+
 const ALL_CASES = ['good', ...Object.keys(SCHEMA_CASES), ...Object.keys(LINT_CASES), ...Object.keys(DEFERRED_CASES)];
 
-test('fixture guard: every case directory exists and holds exactly back-pass.json', () => {
+test('fixture guard: every case directory exists and holds exactly its one card', () => {
   assert.ok(ALL_CASES.length >= 20, `expected at least 20 cases, got ${ALL_CASES.length}`);
   for (const name of ALL_CASES) {
     const dir = join(repoRoot, FIXTURES, name);
     assert.ok(existsSync(dir), `missing fixture directory ${name}`);
     assert.deepEqual(readdirSync(dir), ['back-pass.json'], `${name} must hold exactly back-pass.json`);
   }
+  for (const [name, file] of Object.entries(SCAN_CASES)) {
+    const dir = join(repoRoot, FIXTURES, name);
+    assert.ok(existsSync(dir), `missing fixture directory ${name}`);
+    assert.deepEqual(readdirSync(dir), [file], `${name} must hold exactly ${file}`);
+  }
   const onDisk = readdirSync(join(repoRoot, FIXTURES)).sort();
-  assert.deepEqual(onDisk, [...ALL_CASES].sort(), 'every fixture directory must have a test');
+  assert.deepEqual(onDisk, [...ALL_CASES, ...Object.keys(SCAN_CASES)].sort(), 'every fixture directory must have a test');
 });
+
+test('scan: scan-good (1.1 pitch attack card) passes', () => {
+  const r = run('scan-good');
+  assert.equal(r.status, 0, r.stderr);
+  assert.match(r.stdout, /OK {3}scan-fx-receiving\.json/);
+});
+
+test('scan: scan-describing-prompt is rejected [scan-prompt-word] naming the card', () => {
+  const r = run('scan-describing-prompt');
+  assert.equal(r.status, 1, r.stdout);
+  assert.ok(r.stderr.includes('FAIL scan-fx-describing.json: [scan-prompt-word]'), r.stderr);
+  assert.ok(!r.stdout.includes('OK   scan-fx-describing.json'), r.stdout);
+});
+
+for (const [name, file] of [
+  ['scan-board-scene', 'scan-fx-board.json'],
+  ['scan-wrong-version', 'scan-fx-version.json'],
+]) {
+  test(`scan: ${name} is rejected by the schema`, () => {
+    const r = run(name);
+    assert.equal(r.status, 1, r.stdout);
+    assert.ok(r.stderr.includes(`FAIL ${file}:`), r.stderr);
+    assert.ok(r.stderr.includes('must match "then" schema'), r.stderr);
+  });
+}
 
 test('good: passes in default mode', () => {
   const r = run('good');
