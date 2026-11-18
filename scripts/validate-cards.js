@@ -14,6 +14,15 @@
 // docs/schema/copy-rules.json, via the copy-lints module): a banned claim
 // phrase in a card's title, text, tip, option text or why line.
 //
+// Scan cards (card schema 1.1, app Phase 50): the schema only accepts a
+// `scan` block on a '1.1' card with a pitch scene in the attack or defend
+// category, and every card without scan must be '1.0'. Scan cards also run
+// the scan lints (shared app rules, docs/schema/scan-rules.json, via the
+// scan-lints module): scan-prompt-word, scan-text-word, scan-option-word,
+// scan-prompt-length and scan-area-side. Exceptions live in
+// docs/scan-allowlist.json. The deck-share rules below count standard cards
+// only, so adding scan cards never shifts the main deck's balance.
+//
 // Also fails on the balance rules, strict since the 2026-11 audit
 // (BALANCE_LINTS_STRICT): option-balance, tags-missing, and the deck-share
 // rules (deck-best-longest, deck-best-first, deck-best-shortest).
@@ -46,6 +55,7 @@ import {
   BALANCE_LINTS_STRICT,
 } from './lib/card-lints.js';
 import { lintCardCopy } from './lib/copy-lints.js';
+import { lintScanCard, SCAN_ALLOWLIST } from './lib/scan-lints.js';
 
 function argValue(name) {
   const i = process.argv.indexOf(name);
@@ -72,6 +82,8 @@ const retiredPath = retiredArg
 const BASE_CARDS_DIR = 'cards/decision';
 const BASE_RETIRED_PATH = 'cards/decision.retired.json';
 const baseRef = argValue('--base');
+// Scan-lint exceptions, loaded once (docs/scan-allowlist.json).
+const allowlist = SCAN_ALLOWLIST;
 const strictBalance = BALANCE_LINTS_STRICT || process.argv.includes('--strict-balance');
 
 // unicode: false makes maxLength/minLength count UTF-16 code units, matching
@@ -218,7 +230,12 @@ for (const file of files) {
   // still see a card that fails a lint.
   current.set(data.id, data);
 
-  const issues = [checkFormat(text), ...lintCard(data), ...lintCardCopy(data)].filter(Boolean);
+  const issues = [
+    checkFormat(text),
+    ...lintCard(data),
+    ...lintCardCopy(data),
+    ...lintScanCard(data, { allowlist }),
+  ].filter(Boolean);
   let lintFailed = false;
   for (const issue of issues) {
     if (reportIssue(file, issue)) lintFailed = true;
@@ -230,7 +247,8 @@ for (const file of files) {
   console.log(`OK   ${file}`);
 }
 
-for (const issue of lintDeck([...current.values()])) {
+// Deck shares count standard cards only: scan cards are a separate round.
+for (const issue of lintDeck([...current.values()].filter((c) => c.scan === undefined))) {
   const deckIssue = { ...issue, message: `${issue.path}: ${issue.message}` };
   if (reportIssue('deck', deckIssue)) failed++;
 }

@@ -4,7 +4,10 @@
   "properties": {
     "schema": {
       "type": "string",
-      "const": "1.0"
+      "enum": [
+        "1.0",
+        "1.1"
+      ]
     },
     "id": {
       "type": "string",
@@ -254,6 +257,41 @@
     "license": {
       "type": "string",
       "const": "CC0"
+    },
+    "scan": {
+      "type": "object",
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "glimpse_ms": {
+          "type": "integer",
+          "minimum": 500,
+          "maximum": 3000
+        },
+        "area": {
+          "type": "string",
+          "enum": [
+            "turning",
+            "passing",
+            "receiving",
+            "moving-with-ball",
+            "finishing",
+            "intercepting",
+            "covering-recovering",
+            "challenging",
+            "marking",
+            "pressing"
+          ]
+        }
+      },
+      "required": [
+        "prompt",
+        "area"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -275,9 +313,45 @@
     "license"
   ],
   "additionalProperties": false,
-  "$id": "https://footworkiq.com/schema/card/1.0",
+  "$id": "https://footworkiq.com/schema/card/1.1",
   "title": "FootworkIQ Decision Card",
-  "description": "Schema for FootworkIQ decision-deck card files (v1.0)",
+  "description": "Schema for FootworkIQ decision-deck card files (v1.1)",
+  "if": {
+    "properties": {
+      "scan": true
+    },
+    "required": [
+      "scan"
+    ]
+  },
+  "then": {
+    "properties": {
+      "schema": {
+        "const": "1.1"
+      },
+      "scene": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "const": "pitch"
+          }
+        }
+      },
+      "category": {
+        "enum": [
+          "attack",
+          "defend"
+        ]
+      }
+    }
+  },
+  "else": {
+    "properties": {
+      "schema": {
+        "const": "1.0"
+      }
+    }
+  },
   "$defs": {
     "Point": {
       "type": "object",

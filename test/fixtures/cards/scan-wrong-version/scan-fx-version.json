@@ -1,0 +1,79 @@
+{
+  "schema": "1.0",
+  "id": "scan-fx-version",
+  "rev": 1,
+  "category": "attack",
+  "title": "Before it arrives",
+  "text": "What do you do with your first touch?",
+  "tip": "Look before the ball arrives, then decide.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 24
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "ball": {
+      "x": 53,
+      "y": 21.4
+    },
+    "mates": [],
+    "opps": [
+      {
+        "x": 46,
+        "y": 40
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 46,
+          "y": 40
+        },
+        "to": {
+          "x": 48,
+          "y": 30
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "play-forward",
+      "text": "Play it forward first time",
+      "grade": "best",
+      "why": "You looked first, so you already knew the forward pass was on."
+    },
+    {
+      "id": "take-a-touch",
+      "text": "Take a touch and look up",
+      "grade": "ok",
+      "why": "It keeps the ball, but the chance to go forward may have gone."
+    },
+    {
+      "id": "go-back",
+      "text": "Play it straight back",
+      "grade": "poor",
+      "why": "Safe, but you missed the better pass you could have seen."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "first-touch"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Ball's coming to you from the left. Look first.",
+    "area": "receiving",
+    "glimpse_ms": 1500
+  }
+}

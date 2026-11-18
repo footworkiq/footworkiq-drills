@@ -1,0 +1,122 @@
+{
+  "_comment": "Canonical copy in the app repo. footworkiq-drills/docs/schema/scan-rules.json must be a byte copy (npm run check:schema-drift). Scan prompts give the situation, not the scene: sceneWords apply to scan.prompt and the question text, optionWords to option labels; why and tip are never checked.",
+  "version": 1,
+  "promptMaxChars": 80,
+  "sceneWords": [
+    "unmarked",
+    "free",
+    "open",
+    "space",
+    "spaces",
+    "gap",
+    "gaps",
+    "marked",
+    "pressure",
+    "pressing you",
+    "closing",
+    "closing down",
+    "defender",
+    "defenders",
+    "team-mate",
+    "team-mates",
+    "teammate",
+    "teammates",
+    "opponent",
+    "opponents",
+    "behind you"
+  ],
+  "optionWords": [
+    "unmarked",
+    "free",
+    "open",
+    "behind you",
+    "left of you",
+    "right of you",
+    "near",
+    "far"
+  ],
+  "optionExclusions": [
+    "open your body",
+    "open up your body",
+    "free kick",
+    "near post",
+    "far post"
+  ],
+  "countNumbers": [
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten",
+    "eleven"
+  ],
+  "countNouns": [
+    "defender",
+    "defenders",
+    "opponent",
+    "opponents",
+    "team-mate",
+    "team-mates",
+    "teammate",
+    "teammates",
+    "player",
+    "players",
+    "attacker",
+    "attackers",
+    "marker",
+    "markers"
+  ],
+  "areas": {
+    "attack": ["turning", "passing", "receiving", "moving-with-ball", "finishing"],
+    "defend": ["intercepting", "covering-recovering", "challenging", "marking", "pressing"]
+  },
+  "vectors": {
+    "prompt": {
+      "flag": [
+        "You're unmarked in midfield.",
+        "There's space behind you. Look first.",
+        "A defender is closing you down.",
+        "Two defenders are coming. Look first.",
+        "2 opponents near the ball.",
+        "Your team-mate is free on the right.",
+        "Their striker is pressing you.",
+        "There's a gap between the lines.",
+        "You're under pressure from the left.",
+        "Three team-mates are in the box."
+      ],
+      "pass": [
+        "Ball's coming to you from the left. Look first.",
+        "The ball is played into your feet from the right.",
+        "You are about to receive in midfield. Look first.",
+        "Their keeper has the ball. Check before you go.",
+        "Take two touches if you need them."
+      ]
+    },
+    "option": {
+      "flag": [
+        "Pass to the unmarked player",
+        "Play it to whoever is free",
+        "Find the open man",
+        "Turn away from the man behind you",
+        "Pass to the one left of you",
+        "Switch to the far winger",
+        "Play the near option",
+        "Beat the two defenders"
+      ],
+      "pass": [
+        "Pass back to a team-mate",
+        "Turn into space",
+        "Play it first time",
+        "Open your body and play forward",
+        "Take a quick free kick",
+        "Shoot at the near post",
+        "Aim for the far post"
+      ]
+    }
+  }
+}
