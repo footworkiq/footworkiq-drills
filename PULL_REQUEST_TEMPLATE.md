@@ -23,6 +23,9 @@ Delete the checklist section that doesn't apply to your PR.
 - [ ] `rev` bumped if a grade or the card's meaning changed (CI checks grade changes)
 - [ ] Ran `node scripts/reorder-card-options.js` and `npm test` locally
 - [ ] `reviewed_by` left empty unless a qualified coach reviewed the card
+- [ ] Scan cards: the best answer can't be picked from the prompt, question and options alone; you need the look
+- [ ] Scan cards: `scan.prompt` gives the situation, not the scene (CI checks the obvious words)
+- [ ] Scan cards: `glimpse_ms` suits how busy the scene is (simple 1000–1500, busy 1500–2500)
 
 ## Contributor notes
 
