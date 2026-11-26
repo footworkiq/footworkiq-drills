@@ -1,0 +1,91 @@
+{
+  "schema": "1.1",
+  "id": "scan-receiving-take-it-away",
+  "rev": 1,
+  "category": "attack",
+  "title": "Coming from your right",
+  "text": "How do you take the ball?",
+  "tip": "A quick look before the ball comes shows you who is arriving, so you can touch it away from them.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 44,
+      "y": 50
+    },
+    "ball": {
+      "x": 14,
+      "y": 58
+    },
+    "mates": [
+      {
+        "x": 14,
+        "y": 58
+      }
+    ],
+    "opps": [
+      {
+        "x": 70,
+        "y": 42
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 14,
+          "y": 58
+        },
+        "to": {
+          "x": 41,
+          "y": 50
+        },
+        "kind": "ball"
+      },
+      {
+        "from": {
+          "x": 70,
+          "y": 42
+        },
+        "to": {
+          "x": 54,
+          "y": 47
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "let-it-run",
+      "text": "Let it run across you",
+      "grade": "poor",
+      "why": "That carries the ball right into the opponent arriving from your right."
+    },
+    {
+      "id": "take-it-back",
+      "text": "Take it back the way it came",
+      "grade": "best",
+      "why": "The look showed an opponent coming from your right. Touch it away from them and keep it."
+    },
+    {
+      "id": "pass-straight-back",
+      "text": "Pass it straight back",
+      "grade": "ok",
+      "why": "Safe, and you keep the ball, but your team doesn't move forward."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "U9",
+  "role": "outfield",
+  "tags": [
+    "first-touch"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "A pass is rolling to you from the left. Check before it arrives.",
+    "glimpse_ms": 1500,
+    "area": "receiving"
+  }
+}

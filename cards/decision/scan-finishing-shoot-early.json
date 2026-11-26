@@ -1,0 +1,103 @@
+{
+  "schema": "1.1",
+  "id": "scan-finishing-shoot-early",
+  "rev": 1,
+  "category": "attack",
+  "title": "Hit it early",
+  "text": "The ball is arriving. What do you do?",
+  "tip": "Look at the goal and who is coming before the ball arrives. Then you can strike first time.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 46,
+      "y": 21
+    },
+    "ball": {
+      "x": 84,
+      "y": 28
+    },
+    "gk": {
+      "x": 50,
+      "y": 3
+    },
+    "mates": [
+      {
+        "x": 84,
+        "y": 28
+      },
+      {
+        "x": 24,
+        "y": 14
+      }
+    ],
+    "opps": [
+      {
+        "x": 32,
+        "y": 18
+      },
+      {
+        "x": 58,
+        "y": 12
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 84,
+          "y": 28
+        },
+        "to": {
+          "x": 49,
+          "y": 21
+        },
+        "kind": "ball"
+      },
+      {
+        "from": {
+          "x": 58,
+          "y": 12
+        },
+        "to": {
+          "x": 50,
+          "y": 17
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "pass-square",
+      "text": "Pass it square",
+      "grade": "poor",
+      "why": "Your mate was covered, and you had the clearer chance."
+    },
+    {
+      "id": "touch-then-shoot",
+      "text": "Take a touch, then shoot",
+      "grade": "ok",
+      "why": "A touch can set it up, but the closing player may block it."
+    },
+    {
+      "id": "shoot-first-time",
+      "text": "Shoot first time",
+      "grade": "best",
+      "why": "The look showed a clear line to goal and an opponent closing fast. Hit it before they arrive."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "finishing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Ball's coming across to you at the edge of the box. Look first.",
+    "glimpse_ms": 1200,
+    "area": "finishing"
+  }
+}

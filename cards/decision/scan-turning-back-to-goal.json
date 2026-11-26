@@ -1,0 +1,81 @@
+{
+  "schema": "1.1",
+  "id": "scan-turning-back-to-goal",
+  "rev": 1,
+  "category": "attack",
+  "title": "Room to turn",
+  "text": "The ball reaches your feet. What is your first move?",
+  "tip": "Look over your shoulder just before the pass is played, then once more as it travels.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 46,
+      "y": 40
+    },
+    "ball": {
+      "x": 44,
+      "y": 62
+    },
+    "mates": [
+      {
+        "x": 44,
+        "y": 62
+      }
+    ],
+    "opps": [
+      {
+        "x": 74,
+        "y": 24
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 44,
+          "y": 62
+        },
+        "to": {
+          "x": 46,
+          "y": 43
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "turn-and-run",
+      "text": "Turn and run at goal",
+      "grade": "best",
+      "why": "Your look showed nobody near your back, so you could turn and face goal."
+    },
+    {
+      "id": "hold-and-wait",
+      "text": "Hold it and wait",
+      "grade": "poor",
+      "why": "Waiting gives the far opponent time to get across to you."
+    },
+    {
+      "id": "lay-it-back",
+      "text": "Lay it back first time",
+      "grade": "ok",
+      "why": "Safe, but you had time to turn and go forward yourself."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "first-touch",
+    "movement"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Pass is coming into your feet, back to their goal. Check your shoulder.",
+    "glimpse_ms": 1200,
+    "area": "turning"
+  }
+}

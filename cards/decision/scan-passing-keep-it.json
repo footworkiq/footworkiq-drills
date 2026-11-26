@@ -1,0 +1,88 @@
+{
+  "schema": "1.1",
+  "id": "scan-passing-keep-it",
+  "rev": 1,
+  "category": "attack",
+  "title": "Keep it moving",
+  "text": "Where does your next pass go?",
+  "tip": "Check the runner and who is covering them. If the run is covered, look for the simple pass.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 56,
+      "y": 50
+    },
+    "ball": {
+      "x": 55,
+      "y": 47
+    },
+    "mates": [
+      {
+        "x": 40,
+        "y": 38
+      },
+      {
+        "x": 80,
+        "y": 54
+      }
+    ],
+    "opps": [
+      {
+        "x": 46,
+        "y": 32
+      },
+      {
+        "x": 38,
+        "y": 18
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 40,
+          "y": 38
+        },
+        "to": {
+          "x": 38,
+          "y": 22
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "long-over-top",
+      "text": "Hit it long over the top",
+      "grade": "ok",
+      "why": "It gets the ball forward, but the covering player is well placed to win it."
+    },
+    {
+      "id": "slide-it-through",
+      "text": "Slide it through for the run",
+      "grade": "poor",
+      "why": "The run was covered, so the pass goes straight to them."
+    },
+    {
+      "id": "short-to-side",
+      "text": "Play it short to the side",
+      "grade": "best",
+      "why": "The look showed the runner was covered and a mate alone to the side. Keep it and go again."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "passing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "The ball is at your feet in the middle. Look up before you pass it.",
+    "glimpse_ms": 1500,
+    "area": "passing"
+  }
+}

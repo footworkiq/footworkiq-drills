@@ -1,0 +1,110 @@
+{
+  "schema": "1.1",
+  "id": "scan-receiving-one-touch",
+  "rev": 1,
+  "category": "attack",
+  "title": "No time for a touch",
+  "text": "What's your first touch?",
+  "tip": "When the ball is hit hard, look early. You need the answer before it reaches you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 44
+    },
+    "ball": {
+      "x": 84,
+      "y": 50
+    },
+    "mates": [
+      {
+        "x": 84,
+        "y": 50
+      },
+      {
+        "x": 34,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 36,
+        "y": 44
+      },
+      {
+        "x": 60,
+        "y": 30
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 84,
+          "y": 50
+        },
+        "to": {
+          "x": 53,
+          "y": 44
+        },
+        "kind": "ball"
+      },
+      {
+        "from": {
+          "x": 36,
+          "y": 44
+        },
+        "to": {
+          "x": 45,
+          "y": 44
+        },
+        "kind": "opp"
+      },
+      {
+        "from": {
+          "x": 60,
+          "y": 30
+        },
+        "to": {
+          "x": 53,
+          "y": 38
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "stop-it-dead",
+      "text": "Stop it dead at your feet",
+      "grade": "ok",
+      "why": "You keep it for now, but both opponents arrive before you can move it."
+    },
+    {
+      "id": "touch-and-look",
+      "text": "Take a touch and look up",
+      "grade": "poor",
+      "why": "Looking after the touch is too late here. You get closed down."
+    },
+    {
+      "id": "play-forward-first",
+      "text": "Play it forward first time",
+      "grade": "best",
+      "why": "The look showed opponents closing from both sides and a mate ahead. One touch beats them both."
+    }
+  ],
+  "difficulty": "Advanced",
+  "age_band": "U16",
+  "role": "outfield",
+  "tags": [
+    "first-touch"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Ball's being fizzed in from the right. Scan before it comes.",
+    "glimpse_ms": 900,
+    "area": "receiving"
+  }
+}

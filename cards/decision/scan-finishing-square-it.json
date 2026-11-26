@@ -1,0 +1,92 @@
+{
+  "schema": "1.1",
+  "id": "scan-finishing-square-it",
+  "rev": 1,
+  "category": "attack",
+  "title": "Square it for a tap-in",
+  "text": "It's coming across fast. What's your choice?",
+  "tip": "Look at the goal and at your mates before the ball comes. The best chance might not be yours.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 40,
+      "y": 18
+    },
+    "ball": {
+      "x": 12,
+      "y": 30
+    },
+    "gk": {
+      "x": 48,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 12,
+        "y": 30
+      },
+      {
+        "x": 62,
+        "y": 18
+      }
+    ],
+    "opps": [
+      {
+        "x": 44,
+        "y": 11
+      },
+      {
+        "x": 26,
+        "y": 22
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 12,
+          "y": 30
+        },
+        "to": {
+          "x": 37,
+          "y": 18
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "pass-square",
+      "text": "Pass it square",
+      "grade": "best",
+      "why": "The look showed an opponent in your shooting line and a mate alone in front of goal. Give it to them."
+    },
+    {
+      "id": "shoot-first-time",
+      "text": "Shoot first time",
+      "grade": "poor",
+      "why": "The opponent in front of you was right in the way, so it gets blocked."
+    },
+    {
+      "id": "touch-then-shoot",
+      "text": "Take a touch, then shoot",
+      "grade": "ok",
+      "why": "A touch might find a new angle, but the chance for your mate goes."
+    }
+  ],
+  "difficulty": "Advanced",
+  "age_band": "U16",
+  "role": "outfield",
+  "tags": [
+    "finishing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "A pass is coming across to you near their box. Check before it arrives.",
+    "glimpse_ms": 1000,
+    "area": "finishing"
+  }
+}

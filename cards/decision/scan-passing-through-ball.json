@@ -1,0 +1,92 @@
+{
+  "schema": "1.1",
+  "id": "scan-passing-through-ball",
+  "rev": 1,
+  "category": "attack",
+  "title": "Through the middle",
+  "text": "Which pass do you play?",
+  "tip": "Look at the runners before the ball comes to you, so the pass is ready in your head.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 54
+    },
+    "ball": {
+      "x": 50,
+      "y": 51
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 60,
+        "y": 36
+      },
+      {
+        "x": 24,
+        "y": 56
+      }
+    ],
+    "opps": [
+      {
+        "x": 46,
+        "y": 32
+      },
+      {
+        "x": 74,
+        "y": 32
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 60,
+          "y": 36
+        },
+        "to": {
+          "x": 62,
+          "y": 16
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "short-to-side",
+      "text": "Play it short to the side",
+      "grade": "ok",
+      "why": "It keeps the ball, but you missed a run that could have gone through."
+    },
+    {
+      "id": "slide-it-through",
+      "text": "Slide it through for the run",
+      "grade": "best",
+      "why": "The look showed a mate running between two opponents, with room beyond. Play it into their path."
+    },
+    {
+      "id": "long-over-top",
+      "text": "Hit it long over the top",
+      "grade": "poor",
+      "why": "Too long for the run, so the keeper comes out and collects it."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "passing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "You've got the ball in midfield. Have a look before your next pass.",
+    "glimpse_ms": 1500,
+    "area": "passing"
+  }
+}
