@@ -3,9 +3,9 @@
   "id": "scan-pressing-hold-shape",
   "rev": 1,
   "category": "defend",
-  "title": "Hold until the moment comes",
+  "title": "Curve in on the square pass",
   "text": "What do you do as the pass travels?",
-  "tip": "Before you press, check your mates. If you go alone with them spread out, one pass beats all of you.",
+  "tip": "A pass across their back line is a cue to press. Curve your run to block the pass behind you.",
   "scene": {
     "kind": "pitch",
     "own": false,
@@ -61,22 +61,22 @@
   },
   "options": [
     {
-      "id": "curve-run",
-      "text": "Curve your run to one side",
-      "grade": "ok",
-      "why": "It cuts off one pass, but you are still alone up there."
-    },
-    {
       "id": "press-now",
       "text": "Press the ball now",
-      "grade": "poor",
-      "why": "You go alone and one pass takes them past you."
+      "grade": "ok",
+      "why": "You might get there, but run straight and he can pass into the player behind you."
     },
     {
       "id": "hold-shape",
       "text": "Hold your shape and wait",
+      "grade": "poor",
+      "why": "A long square pass is your chance. Wait and they get it under control."
+    },
+    {
+      "id": "curve-run",
+      "text": "Curve your run to one side",
       "grade": "best",
-      "why": "The look showed them with passes on and your mates spread wide. Hold your shape until they close up."
+      "why": "The look showed a long pass across and a player behind you. Curve in from his inside so he can't pass into that player."
     }
   ],
   "difficulty": "Intermediate",

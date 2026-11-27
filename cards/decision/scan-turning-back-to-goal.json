@@ -51,10 +51,10 @@
       "why": "Your look showed nobody near your back, so you could turn and face goal."
     },
     {
-      "id": "hold-and-wait",
-      "text": "Hold it and wait",
+      "id": "play-wide-spin",
+      "text": "Play it wide, then spin",
       "grade": "poor",
-      "why": "Waiting gives the far opponent time to get across to you."
+      "why": "Your look showed nobody out wide to play it to, and nobody near your back. Turn and go yourself."
     },
     {
       "id": "lay-it-back",

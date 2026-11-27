@@ -5,7 +5,7 @@
   "category": "attack",
   "title": "Tight on your back",
   "text": "The pass is about to arrive. What do you do with it?",
-  "tip": "Check both shoulders before the ball comes. Knowing who is close tells you if you can turn.",
+  "tip": "Check both shoulders before the ball comes. Know who's close and who's free out wide.",
   "scene": {
     "kind": "pitch",
     "own": false,
@@ -59,16 +59,16 @@
       "why": "Turning with someone right on your back usually loses the ball."
     },
     {
-      "id": "lay-it-back",
-      "text": "Lay it back first time",
+      "id": "play-wide-spin",
+      "text": "Play it wide, then spin",
       "grade": "best",
-      "why": "The look showed an opponent tight on your back and a mate at an angle. One touch back keeps it."
+      "why": "The look showed someone tight on your back and a mate free to your left. Set it wide, then spin off your marker for the return."
     },
     {
-      "id": "hold-and-wait",
-      "text": "Hold it and wait",
+      "id": "lay-it-back",
+      "text": "Lay it back first time",
       "grade": "ok",
-      "why": "You can protect it for a moment, but the tight marker may nick it."
+      "why": "Safe, but it goes backwards when a mate out wide was free."
     }
   ],
   "difficulty": "Intermediate",
