@@ -1,0 +1,107 @@
+{
+  "schema": "1.1",
+  "id": "scan-covering-recovering-drop-in",
+  "rev": 1,
+  "category": "defend",
+  "title": "Slide in behind your partner",
+  "text": "Where do you go now?",
+  "tip": "When your partner goes to the ball, check the middle. Someone has to fill it, and it is often you.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 58,
+      "y": 40
+    },
+    "ball": {
+      "x": 84,
+      "y": 33
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 70,
+        "y": 28
+      },
+      {
+        "x": 28,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 87,
+        "y": 36
+      },
+      {
+        "x": 36,
+        "y": 20
+      },
+      {
+        "x": 50,
+        "y": 54
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 70,
+          "y": 28
+        },
+        "to": {
+          "x": 80,
+          "y": 32
+        },
+        "kind": "mate"
+      },
+      {
+        "from": {
+          "x": 50,
+          "y": 54
+        },
+        "to": {
+          "x": 70,
+          "y": 54
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "track-runner",
+      "text": "Track the runner",
+      "grade": "poor",
+      "why": "That run takes you out wide and leaves the middle to them."
+    },
+    {
+      "id": "drop-in",
+      "text": "Drop in to cover",
+      "grade": "best",
+      "why": "The look showed your partner going to the winger and the middle left empty. Slide in behind them."
+    },
+    {
+      "id": "sprint-back",
+      "text": "Sprint back towards goal",
+      "grade": "ok",
+      "why": "Getting back is safe, but dropping in beside your partner covers the middle better."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "defensive-shape"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "The ball has just gone out wide to their winger. Take a look.",
+    "glimpse_ms": 1800,
+    "area": "covering-recovering"
+  }
+}

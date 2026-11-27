@@ -1,0 +1,96 @@
+{
+  "schema": "1.1",
+  "id": "scan-pressing-hold-shape",
+  "rev": 1,
+  "category": "defend",
+  "title": "Hold until the moment comes",
+  "text": "What do you do as the pass travels?",
+  "tip": "Before you press, check your mates. If you go alone with them spread out, one pass beats all of you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 48,
+      "y": 30
+    },
+    "ball": {
+      "x": 72,
+      "y": 12
+    },
+    "mates": [
+      {
+        "x": 86,
+        "y": 48
+      },
+      {
+        "x": 14,
+        "y": 50
+      }
+    ],
+    "opps": [
+      {
+        "x": 75,
+        "y": 10
+      },
+      {
+        "x": 34,
+        "y": 14
+      },
+      {
+        "x": 18,
+        "y": 32
+      },
+      {
+        "x": 52,
+        "y": 42
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 72,
+          "y": 12
+        },
+        "to": {
+          "x": 37,
+          "y": 14
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "curve-run",
+      "text": "Curve your run to one side",
+      "grade": "ok",
+      "why": "It cuts off one pass, but you are still alone up there."
+    },
+    {
+      "id": "press-now",
+      "text": "Press the ball now",
+      "grade": "poor",
+      "why": "You go alone and one pass takes them past you."
+    },
+    {
+      "id": "hold-shape",
+      "text": "Hold your shape and wait",
+      "grade": "best",
+      "why": "The look showed them with passes on and your mates spread wide. Hold your shape until they close up."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "U12",
+  "role": "outfield",
+  "tags": [
+    "pressing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "The ball's being passed across their back line. Look before you go.",
+    "glimpse_ms": 2000,
+    "area": "pressing"
+  }
+}

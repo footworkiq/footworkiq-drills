@@ -1,0 +1,81 @@
+{
+  "schema": "1.1",
+  "id": "scan-intercepting-mark-the-lane",
+  "rev": 1,
+  "category": "defend",
+  "title": "Shut the inside pass",
+  "text": "They're looking up to pass. What's your job?",
+  "tip": "When a midfielder turns, look where the danger is. Make them pass where it hurts you least.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 60,
+      "y": 40
+    },
+    "ball": {
+      "x": 52,
+      "y": 49
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 82,
+        "y": 34
+      }
+    ],
+    "opps": [
+      {
+        "x": 52,
+        "y": 53
+      },
+      {
+        "x": 44,
+        "y": 28
+      },
+      {
+        "x": 88,
+        "y": 42
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "block-inside",
+      "text": "Block the pass inside",
+      "grade": "best",
+      "why": "The look showed a pass into the middle that would hurt you. Cut that line and let them go wide."
+    },
+    {
+      "id": "run-at-passer",
+      "text": "Run at the passer",
+      "grade": "poor",
+      "why": "Run straight at them and they slip it inside past you."
+    },
+    {
+      "id": "drop-off",
+      "text": "Drop off and wait",
+      "grade": "ok",
+      "why": "You stay between them and goal, but the pass inside is still on."
+    }
+  ],
+  "difficulty": "Advanced",
+  "age_band": "U16",
+  "role": "outfield",
+  "tags": [
+    "defensive-shape",
+    "transition"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Their midfielder has just turned with the ball. Quick look.",
+    "glimpse_ms": 1000,
+    "area": "intercepting"
+  }
+}

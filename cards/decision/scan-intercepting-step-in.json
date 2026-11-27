@@ -1,0 +1,89 @@
+{
+  "schema": "1.1",
+  "id": "scan-intercepting-step-in",
+  "rev": 1,
+  "category": "defend",
+  "title": "Cut out the short pass",
+  "text": "The pass is about to go. What do you do?",
+  "tip": "Look at the passer and where they want to play it. Then you know if you can step in.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 46,
+      "y": 34
+    },
+    "ball": {
+      "x": 63,
+      "y": 43
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 62,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 65,
+        "y": 46
+      },
+      {
+        "x": 32,
+        "y": 38
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 63,
+          "y": 43
+        },
+        "to": {
+          "x": 35,
+          "y": 38
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "drop-off",
+      "text": "Drop off and wait",
+      "grade": "ok",
+      "why": "Safe, but you let them keep the ball when you could have won it."
+    },
+    {
+      "id": "run-at-passer",
+      "text": "Run at the passer",
+      "grade": "poor",
+      "why": "They just play it past you to the player you left."
+    },
+    {
+      "id": "step-across",
+      "text": "Step across and cut it out",
+      "grade": "best",
+      "why": "The look showed a short pass you could reach and nobody running past you. Step in and win it."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "defensive-shape",
+    "transition"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "They're about to play a short pass near you. Look before it goes.",
+    "glimpse_ms": 1200,
+    "area": "intercepting"
+  }
+}

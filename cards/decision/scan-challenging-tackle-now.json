@@ -1,0 +1,72 @@
+{
+  "schema": "1.1",
+  "id": "scan-challenging-tackle-now",
+  "rev": 1,
+  "category": "defend",
+  "title": "Heavy touch, go in",
+  "text": "They're coming at you. What do you do?",
+  "tip": "Watch the ball, not their feet. A big touch is your moment, if a mate is there to help.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 50,
+      "y": 30
+    },
+    "ball": {
+      "x": 52,
+      "y": 37
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 42,
+        "y": 23
+      }
+    ],
+    "opps": [
+      {
+        "x": 54,
+        "y": 46
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "back-off",
+      "text": "Back off towards your goal",
+      "grade": "poor",
+      "why": "Backing off lets them collect it and run at you again."
+    },
+    {
+      "id": "stay-on-feet",
+      "text": "Stay on your feet and wait",
+      "grade": "ok",
+      "why": "Safe, but you give them time to get the ball back under control."
+    },
+    {
+      "id": "tackle-now",
+      "text": "Go in for the tackle now",
+      "grade": "best",
+      "why": "The look showed a heavy touch and cover close by. Go in now while the ball is loose."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "one-v-one"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Their attacker is running at you with the ball. Look before you decide.",
+    "glimpse_ms": 1200,
+    "area": "challenging"
+  }
+}

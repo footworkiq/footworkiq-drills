@@ -1,0 +1,92 @@
+{
+  "schema": "1.1",
+  "id": "scan-marking-goal-side",
+  "rev": 1,
+  "category": "defend",
+  "title": "Goal side, always",
+  "text": "The cross is coming. Where do you go?",
+  "tip": "While the winger gets ready to cross, check where your player is. Keep yourself between them and goal.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 52,
+      "y": 22
+    },
+    "ball": {
+      "x": 86,
+      "y": 24
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 32,
+        "y": 15
+      }
+    ],
+    "opps": [
+      {
+        "x": 89,
+        "y": 21
+      },
+      {
+        "x": 57,
+        "y": 18
+      },
+      {
+        "x": 30,
+        "y": 25
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 57,
+          "y": 18
+        },
+        "to": {
+          "x": 50,
+          "y": 11
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "swap-runner",
+      "text": "Swap to the other runner",
+      "grade": "ok",
+      "why": "It might work if you talk, but your own player is now the bigger danger."
+    },
+    {
+      "id": "goal-side",
+      "text": "Get goal side of your player",
+      "grade": "best",
+      "why": "The look showed your player drifting in between you and goal. Get back in front of them."
+    },
+    {
+      "id": "watch-ball",
+      "text": "Stay with the ball",
+      "grade": "poor",
+      "why": "Watching only the ball lets your player get to the cross first."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "marking"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Their winger is about to cross it in. Look before it comes.",
+    "glimpse_ms": 1500,
+    "area": "marking"
+  }
+}

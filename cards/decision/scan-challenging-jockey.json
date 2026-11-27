@@ -1,0 +1,84 @@
+{
+  "schema": "1.1",
+  "id": "scan-challenging-jockey",
+  "rev": 1,
+  "category": "defend",
+  "title": "Stay on your feet",
+  "text": "What do you do as they come at you?",
+  "tip": "Before you tackle, check if anyone can help. With no help yet, stay on your feet and slow them down.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 46,
+      "y": 28
+    },
+    "ball": {
+      "x": 47,
+      "y": 38
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 26,
+        "y": 52
+      }
+    ],
+    "opps": [
+      {
+        "x": 48,
+        "y": 41
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 26,
+          "y": 52
+        },
+        "to": {
+          "x": 36,
+          "y": 36
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "stay-on-feet",
+      "text": "Stay on your feet and wait",
+      "grade": "best",
+      "why": "The look showed the ball under control and help on its way. Stay on your feet until it arrives."
+    },
+    {
+      "id": "back-off",
+      "text": "Back off towards your goal",
+      "grade": "ok",
+      "why": "You stay in the way, but every step back lets them get nearer your goal."
+    },
+    {
+      "id": "tackle-now",
+      "text": "Go in for the tackle now",
+      "grade": "poor",
+      "why": "Dive in now and they go round you with nobody else to stop them."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "U9",
+  "role": "outfield",
+  "tags": [
+    "one-v-one"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "An attacker is dribbling straight at you. Have a quick look first.",
+    "glimpse_ms": 1500,
+    "area": "challenging"
+  }
+}

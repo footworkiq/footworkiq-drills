@@ -1,0 +1,92 @@
+{
+  "schema": "1.1",
+  "id": "scan-marking-swap-runner",
+  "rev": 1,
+  "category": "defend",
+  "title": "Swap onto the free runner",
+  "text": "It's about to come in. What do you do?",
+  "tip": "Look around before the cross. If a mate already has your player, find the runner nobody has.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 54,
+      "y": 26
+    },
+    "ball": {
+      "x": 14,
+      "y": 27
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 58,
+        "y": 15
+      }
+    ],
+    "opps": [
+      {
+        "x": 11,
+        "y": 24
+      },
+      {
+        "x": 60,
+        "y": 20
+      },
+      {
+        "x": 38,
+        "y": 22
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 38,
+          "y": 22
+        },
+        "to": {
+          "x": 44,
+          "y": 10
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "swap-runner",
+      "text": "Swap to the other runner",
+      "grade": "best",
+      "why": "The look showed a mate already on your player and a runner alone nearer goal. Take that runner."
+    },
+    {
+      "id": "goal-side",
+      "text": "Get goal side of your player",
+      "grade": "ok",
+      "why": "You do your own job, but two of you mark one player and the runner is left."
+    },
+    {
+      "id": "watch-ball",
+      "text": "Stay with the ball",
+      "grade": "poor",
+      "why": "Watching only the ball lets the runner arrive alone."
+    }
+  ],
+  "difficulty": "Advanced",
+  "age_band": "U16",
+  "role": "outfield",
+  "tags": [
+    "marking"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "A cross is about to come in from the wing. Check before it's hit.",
+    "glimpse_ms": 1200,
+    "area": "marking"
+  }
+}

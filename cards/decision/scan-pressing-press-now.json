@@ -1,0 +1,92 @@
+{
+  "schema": "1.1",
+  "id": "scan-pressing-press-now",
+  "rev": 1,
+  "category": "defend",
+  "title": "Go on the slow pass",
+  "text": "The pass is on its way. What do you do?",
+  "tip": "Look at the pass and at your mates before you go. A slow ball and help nearby mean press.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 54,
+      "y": 32
+    },
+    "ball": {
+      "x": 26,
+      "y": 20
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 62,
+        "y": 40
+      },
+      {
+        "x": 40,
+        "y": 38
+      }
+    ],
+    "opps": [
+      {
+        "x": 23,
+        "y": 18
+      },
+      {
+        "x": 70,
+        "y": 16
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 26,
+          "y": 20
+        },
+        "to": {
+          "x": 67,
+          "y": 17
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "hold-shape",
+      "text": "Hold your shape and wait",
+      "grade": "poor",
+      "why": "Waiting lets them take a calm touch and pick a pass."
+    },
+    {
+      "id": "press-now",
+      "text": "Press the ball now",
+      "grade": "best",
+      "why": "The look showed a slow pass and mates close to you. Go now and they have no easy way out."
+    },
+    {
+      "id": "curve-run",
+      "text": "Curve your run to one side",
+      "grade": "ok",
+      "why": "Curving is good, but a slower start gives them time."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "pressing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Their centre-back is about to get the ball. Look before you go.",
+    "glimpse_ms": 1200,
+    "area": "pressing"
+  }
+}
