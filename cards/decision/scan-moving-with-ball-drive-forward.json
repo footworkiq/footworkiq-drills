@@ -1,0 +1,68 @@
+{
+  "schema": "1.1",
+  "id": "scan-moving-with-ball-drive-forward",
+  "rev": 1,
+  "category": "attack",
+  "title": "Empty lane ahead",
+  "text": "What do you do with the ball now?",
+  "tip": "The moment you win the ball, look up. Room ahead is your cue to run with it.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 44,
+      "y": 52
+    },
+    "ball": {
+      "x": 44,
+      "y": 49
+    },
+    "mates": [
+      {
+        "x": 18,
+        "y": 58
+      }
+    ],
+    "opps": [
+      {
+        "x": 80,
+        "y": 30
+      }
+    ],
+    "runs": []
+  },
+  "options": [
+    {
+      "id": "pass-sideways",
+      "text": "Pass it sideways",
+      "grade": "ok",
+      "why": "You keep it, but you gave up a chance to run at them."
+    },
+    {
+      "id": "drive-forward",
+      "text": "Drive forward with it",
+      "grade": "best",
+      "why": "Your look showed an empty lane and the nearest opponent far off. Run into it."
+    },
+    {
+      "id": "stop-and-shield",
+      "text": "Stop and shield it",
+      "grade": "poor",
+      "why": "Nobody was near, so stopping only gives them time to get back."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "dribbling"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "You've just won the ball in midfield. Look up before you go.",
+    "glimpse_ms": 1200,
+    "area": "moving-with-ball"
+  }
+}

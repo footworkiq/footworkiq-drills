@@ -174,6 +174,17 @@ Write in short, plain sentences. Don't use abbreviations with full stops, such a
 3. Run `node scripts/reorder-card-options.js`. It stores each card's options in a fixed shuffled order, so the best answer isn't always first. Commit the result.
 4. Run `node scripts/card-report.js --base origin/main` to see your changes, including any grade changes and whether `rev` went up.
 
+## Decision Cards: Scan cards
+
+A scan card uses `"schema": "1.1"`, a pitch scene and a `scan` block. The player sees only the prompt, gets a short look at the scene, and then answers with the scene hidden.
+
+- `scan.prompt`: at most 80 characters. Give the situation plus a look cue, such as "Ball's coming to you from the left. Look first." Never say what's around the player.
+- `scan.glimpse_ms`: optional, default 1500. The schema allows 500–3000. In practice use 750–2500: simple scenes 1000–1500, busy scenes 1500–2500.
+- `scan.area`: one of the closed list for the card's `category`. Attack: `turning`, `passing`, `receiving`, `moving-with-ball`, `finishing`. Defend: `intercepting`, `covering-recovering`, `challenging`, `marking`, `pressing`.
+- Ids use the form `scan-<area>-<slug>`, such as `scan-turning-back-to-goal`.
+- The question `text` and the option labels must not describe the scene either (CI checks them). `title`, `why` and `tip` show only at feedback, so they may.
+- Every scan card needs a fresh scene that no standard card uses. Scan cards never appear in standard rounds or the Daily Deck.
+
 ## License
 
 By submitting a pull request, you agree that your drill and card JSON is released under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — no rights reserved. This is required for drills and cards to be freely distributable by the FootworkIQ app.

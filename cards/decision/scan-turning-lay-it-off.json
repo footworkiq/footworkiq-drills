@@ -1,0 +1,89 @@
+{
+  "schema": "1.1",
+  "id": "scan-turning-lay-it-off",
+  "rev": 1,
+  "category": "attack",
+  "title": "Tight on your back",
+  "text": "The pass is about to arrive. What do you do with it?",
+  "tip": "Check both shoulders before the ball comes. Know who's close and who's free out wide.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 58,
+      "y": 34
+    },
+    "ball": {
+      "x": 62,
+      "y": 60
+    },
+    "mates": [
+      {
+        "x": 62,
+        "y": 60
+      },
+      {
+        "x": 34,
+        "y": 48
+      }
+    ],
+    "opps": [
+      {
+        "x": 57,
+        "y": 28
+      },
+      {
+        "x": 80,
+        "y": 20
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 62,
+          "y": 60
+        },
+        "to": {
+          "x": 58,
+          "y": 37
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "turn-and-run",
+      "text": "Turn and run at goal",
+      "grade": "poor",
+      "why": "Turning with someone right on your back usually loses the ball."
+    },
+    {
+      "id": "play-wide-spin",
+      "text": "Play it wide, then spin",
+      "grade": "best",
+      "why": "The look showed someone tight on your back and a mate free to your left. Set it wide, then spin off your marker for the return."
+    },
+    {
+      "id": "lay-it-back",
+      "text": "Lay it back first time",
+      "grade": "ok",
+      "why": "Safe, but it goes backwards when a mate out wide was free."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "first-touch",
+    "movement"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Ball's being played up to you with your back to goal. Have a look first.",
+    "glimpse_ms": 1500,
+    "area": "turning"
+  }
+}

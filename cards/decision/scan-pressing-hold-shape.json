@@ -1,0 +1,96 @@
+{
+  "schema": "1.1",
+  "id": "scan-pressing-hold-shape",
+  "rev": 1,
+  "category": "defend",
+  "title": "Curve in on the square pass",
+  "text": "What do you do as the pass travels?",
+  "tip": "A pass across their back line is a cue to press. Curve your run to block the pass behind you.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 48,
+      "y": 30
+    },
+    "ball": {
+      "x": 72,
+      "y": 12
+    },
+    "mates": [
+      {
+        "x": 86,
+        "y": 48
+      },
+      {
+        "x": 14,
+        "y": 50
+      }
+    ],
+    "opps": [
+      {
+        "x": 75,
+        "y": 10
+      },
+      {
+        "x": 34,
+        "y": 14
+      },
+      {
+        "x": 18,
+        "y": 32
+      },
+      {
+        "x": 52,
+        "y": 42
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 72,
+          "y": 12
+        },
+        "to": {
+          "x": 37,
+          "y": 14
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "press-now",
+      "text": "Press the ball now",
+      "grade": "ok",
+      "why": "You might get there, but run straight and he can pass into the player behind you."
+    },
+    {
+      "id": "hold-shape",
+      "text": "Hold your shape and wait",
+      "grade": "poor",
+      "why": "A long square pass is your chance. Wait and they get it under control."
+    },
+    {
+      "id": "curve-run",
+      "text": "Curve your run to one side",
+      "grade": "best",
+      "why": "The look showed a long pass across and a player behind you. Curve in from his inside so he can't pass into that player."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "U12",
+  "role": "outfield",
+  "tags": [
+    "pressing"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "The ball's being passed across their back line. Look before you go.",
+    "glimpse_ms": 2000,
+    "area": "pressing"
+  }
+}

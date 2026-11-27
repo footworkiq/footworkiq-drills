@@ -1,0 +1,80 @@
+{
+  "schema": "1.1",
+  "id": "scan-receiving-open-body",
+  "rev": 1,
+  "category": "attack",
+  "title": "Let it run",
+  "text": "What do you do with your first touch?",
+  "tip": "Look to the side the ball is going, before it arrives. Then your first touch can take you there.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 52,
+      "y": 46
+    },
+    "ball": {
+      "x": 18,
+      "y": 48
+    },
+    "mates": [
+      {
+        "x": 18,
+        "y": 48
+      }
+    ],
+    "opps": [
+      {
+        "x": 32,
+        "y": 34
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 18,
+          "y": 48
+        },
+        "to": {
+          "x": 49,
+          "y": 46
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "let-it-run",
+      "text": "Let it run across you",
+      "grade": "best",
+      "why": "Your look showed nobody on your right. Let it run and you are away into room."
+    },
+    {
+      "id": "take-it-back",
+      "text": "Take it back the way it came",
+      "grade": "ok",
+      "why": "You keep the ball, but you turn back towards the opponent on the left."
+    },
+    {
+      "id": "pass-straight-back",
+      "text": "Pass it straight back",
+      "grade": "poor",
+      "why": "Safe, but you had room to go forward and wasted it."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "first-touch"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "Ball's coming to you from the left. Look first.",
+    "glimpse_ms": 1200,
+    "area": "receiving"
+  }
+}

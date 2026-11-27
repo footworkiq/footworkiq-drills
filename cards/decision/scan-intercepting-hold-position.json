@@ -1,0 +1,93 @@
+{
+  "schema": "1.1",
+  "id": "scan-intercepting-hold-position",
+  "rev": 1,
+  "category": "defend",
+  "title": "Don't leave the runner",
+  "text": "Where do you go as the pass is played?",
+  "tip": "Before you step in, check who is running past you. Going for the ball only pays if you get it.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 54,
+      "y": 36
+    },
+    "ball": {
+      "x": 38,
+      "y": 47
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 26,
+        "y": 26
+      }
+    ],
+    "opps": [
+      {
+        "x": 36,
+        "y": 50
+      },
+      {
+        "x": 64,
+        "y": 44
+      },
+      {
+        "x": 74,
+        "y": 34
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 74,
+          "y": 34
+        },
+        "to": {
+          "x": 58,
+          "y": 20
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "step-across",
+      "text": "Step across and cut it out",
+      "grade": "poor",
+      "why": "If you miss it, the runner is through on goal with nobody near."
+    },
+    {
+      "id": "drop-off",
+      "text": "Drop off and wait",
+      "grade": "best",
+      "why": "The look showed a runner heading for the room you would leave. Drop off and keep them in front."
+    },
+    {
+      "id": "run-at-passer",
+      "text": "Run at the passer",
+      "grade": "ok",
+      "why": "It might stop the pass, but the runner is still going past you."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "defensive-shape",
+    "transition"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "A pass is about to be played into midfield. Look before you move.",
+    "glimpse_ms": 1500,
+    "area": "intercepting"
+  }
+}

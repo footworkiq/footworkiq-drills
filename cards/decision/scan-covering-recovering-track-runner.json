@@ -1,0 +1,88 @@
+{
+  "schema": "1.1",
+  "id": "scan-covering-recovering-track-runner",
+  "rev": 1,
+  "category": "defend",
+  "title": "Pick up the blind-side run",
+  "text": "What's your next move?",
+  "tip": "When the ball goes past you, check your other shoulder. Runners love the side you are not watching.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 56,
+      "y": 40
+    },
+    "ball": {
+      "x": 78,
+      "y": 30
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 70,
+        "y": 22
+      }
+    ],
+    "opps": [
+      {
+        "x": 81,
+        "y": 32
+      },
+      {
+        "x": 38,
+        "y": 46
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 38,
+          "y": 46
+        },
+        "to": {
+          "x": 46,
+          "y": 20
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "drop-in",
+      "text": "Drop in to cover",
+      "grade": "ok",
+      "why": "You fill the middle, but the runner can still get there first."
+    },
+    {
+      "id": "sprint-back",
+      "text": "Sprint back towards goal",
+      "grade": "poor",
+      "why": "Heading for your goal line leaves the runner alone in front of it."
+    },
+    {
+      "id": "track-runner",
+      "text": "Track the runner",
+      "grade": "best",
+      "why": "The look showed a runner going past your other shoulder. Go with them before they reach the box."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "U12",
+  "role": "outfield",
+  "tags": [
+    "defensive-shape"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "The ball's just been played past you down the wing. Check your shoulder.",
+    "glimpse_ms": 1500,
+    "area": "covering-recovering"
+  }
+}

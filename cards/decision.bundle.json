@@ -3647,6 +3647,2166 @@
       "license": "CC0"
     },
     {
+      "schema": "1.1",
+      "id": "scan-challenging-jockey",
+      "rev": 1,
+      "category": "defend",
+      "title": "Stay on your feet",
+      "text": "What do you do as they come at you?",
+      "tip": "Before you tackle, check if anyone can help. With no help yet, stay on your feet and slow them down.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 46,
+          "y": 28
+        },
+        "ball": {
+          "x": 47,
+          "y": 38
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 26,
+            "y": 52
+          }
+        ],
+        "opps": [
+          {
+            "x": 48,
+            "y": 41
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 26,
+              "y": 52
+            },
+            "to": {
+              "x": 36,
+              "y": 36
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "stay-on-feet",
+          "text": "Stay on your feet and wait",
+          "grade": "best",
+          "why": "The look showed the ball under control and help on its way. Stay on your feet until it arrives."
+        },
+        {
+          "id": "back-off",
+          "text": "Back off towards your goal",
+          "grade": "ok",
+          "why": "You stay in the way, but every step back lets them get nearer your goal."
+        },
+        {
+          "id": "tackle-now",
+          "text": "Go in for the tackle now",
+          "grade": "poor",
+          "why": "Dive in now and they go round you with nobody else to stop them."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "U9",
+      "role": "outfield",
+      "tags": [
+        "one-v-one"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "An attacker is dribbling straight at you. Have a quick look first.",
+        "glimpse_ms": 1500,
+        "area": "challenging"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-challenging-tackle-now",
+      "rev": 1,
+      "category": "defend",
+      "title": "Heavy touch, go in",
+      "text": "They're coming at you. What do you do?",
+      "tip": "Watch the ball, not their feet. A big touch is your moment, if a mate is there to help.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 50,
+          "y": 30
+        },
+        "ball": {
+          "x": 51,
+          "y": 40
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 42,
+            "y": 23
+          }
+        ],
+        "opps": [
+          {
+            "x": 53,
+            "y": 50
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "back-off",
+          "text": "Back off towards your goal",
+          "grade": "poor",
+          "why": "Backing off lets them collect it and run at you again."
+        },
+        {
+          "id": "stay-on-feet",
+          "text": "Stay on your feet and wait",
+          "grade": "ok",
+          "why": "Safe, but you give them time to get the ball back under control."
+        },
+        {
+          "id": "tackle-now",
+          "text": "Go in for the tackle now",
+          "grade": "best",
+          "why": "The look showed a heavy touch and cover close by. Go in now while the ball is loose."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "one-v-one"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Their attacker is running at you with the ball. Look before you decide.",
+        "glimpse_ms": 1200,
+        "area": "challenging"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-covering-recovering-drop-in",
+      "rev": 1,
+      "category": "defend",
+      "title": "Slide in behind your partner",
+      "text": "Where do you go now?",
+      "tip": "When your partner goes to the ball, check the middle. Someone has to fill it, and it is often you.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 58,
+          "y": 40
+        },
+        "ball": {
+          "x": 84,
+          "y": 33
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 70,
+            "y": 28
+          },
+          {
+            "x": 28,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 87,
+            "y": 36
+          },
+          {
+            "x": 36,
+            "y": 20
+          },
+          {
+            "x": 50,
+            "y": 54
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 70,
+              "y": 28
+            },
+            "to": {
+              "x": 80,
+              "y": 32
+            },
+            "kind": "mate"
+          },
+          {
+            "from": {
+              "x": 50,
+              "y": 54
+            },
+            "to": {
+              "x": 70,
+              "y": 54
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "track-runner",
+          "text": "Track the runner",
+          "grade": "poor",
+          "why": "That run takes you out wide and leaves the middle to them."
+        },
+        {
+          "id": "drop-in",
+          "text": "Drop in to cover",
+          "grade": "best",
+          "why": "The look showed your partner going to the winger and the middle left empty. Slide in behind them."
+        },
+        {
+          "id": "sprint-back",
+          "text": "Sprint back towards goal",
+          "grade": "ok",
+          "why": "Getting back is safe, but dropping in beside your partner covers the middle better."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "defensive-shape"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "The ball has just gone out wide to their winger. Take a look.",
+        "glimpse_ms": 1800,
+        "area": "covering-recovering"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-covering-recovering-goal-side",
+      "rev": 1,
+      "category": "defend",
+      "title": "Get back the quickest way",
+      "text": "What do you do first?",
+      "tip": "When you lose the ball, look for the danger first. The ball heading for goal comes before anything else.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 38,
+          "y": 60
+        },
+        "ball": {
+          "x": 58,
+          "y": 54
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 18,
+            "y": 48
+          }
+        ],
+        "opps": [
+          {
+            "x": 60,
+            "y": 57
+          },
+          {
+            "x": 28,
+            "y": 64
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 60,
+              "y": 57
+            },
+            "to": {
+              "x": 56,
+              "y": 36
+            },
+            "kind": "opp"
+          },
+          {
+            "from": {
+              "x": 28,
+              "y": 64
+            },
+            "to": {
+              "x": 26,
+              "y": 44
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "sprint-back",
+          "text": "Sprint back towards goal",
+          "grade": "best",
+          "why": "The look showed nobody between their attacker and your goal. Sprint back and get in the way."
+        },
+        {
+          "id": "drop-in",
+          "text": "Drop in to cover",
+          "grade": "poor",
+          "why": "There is nobody to cover for. The attacker with the ball has a clear run."
+        },
+        {
+          "id": "track-runner",
+          "text": "Track the runner",
+          "grade": "ok",
+          "why": "That runner matters, but the ball is the bigger danger with nobody back."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "defensive-shape"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "We've just lost the ball up the pitch. Look before you react.",
+        "glimpse_ms": 1500,
+        "area": "covering-recovering"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-covering-recovering-track-runner",
+      "rev": 1,
+      "category": "defend",
+      "title": "Pick up the blind-side run",
+      "text": "What's your next move?",
+      "tip": "When the ball goes past you, check your other shoulder. Runners love the side you are not watching.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 56,
+          "y": 40
+        },
+        "ball": {
+          "x": 78,
+          "y": 30
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 70,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 81,
+            "y": 32
+          },
+          {
+            "x": 38,
+            "y": 46
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 38,
+              "y": 46
+            },
+            "to": {
+              "x": 46,
+              "y": 20
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "drop-in",
+          "text": "Drop in to cover",
+          "grade": "ok",
+          "why": "You fill the middle, but the runner can still get there first."
+        },
+        {
+          "id": "sprint-back",
+          "text": "Sprint back towards goal",
+          "grade": "poor",
+          "why": "Heading for your goal line leaves the runner alone in front of it."
+        },
+        {
+          "id": "track-runner",
+          "text": "Track the runner",
+          "grade": "best",
+          "why": "The look showed a runner going past your other shoulder. Go with them before they reach the box."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U12",
+      "role": "outfield",
+      "tags": [
+        "defensive-shape"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "The ball's just been played past you down the wing. Check your shoulder.",
+        "glimpse_ms": 1500,
+        "area": "covering-recovering"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-finishing-shoot-early",
+      "rev": 1,
+      "category": "attack",
+      "title": "Hit it early",
+      "text": "The ball is arriving. What do you do?",
+      "tip": "Look at the goal and who is coming before the ball arrives. Then you can strike first time.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 46,
+          "y": 21
+        },
+        "ball": {
+          "x": 84,
+          "y": 28
+        },
+        "gk": {
+          "x": 50,
+          "y": 3
+        },
+        "mates": [
+          {
+            "x": 84,
+            "y": 28
+          },
+          {
+            "x": 24,
+            "y": 14
+          }
+        ],
+        "opps": [
+          {
+            "x": 32,
+            "y": 18
+          },
+          {
+            "x": 58,
+            "y": 12
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 84,
+              "y": 28
+            },
+            "to": {
+              "x": 49,
+              "y": 21
+            },
+            "kind": "ball"
+          },
+          {
+            "from": {
+              "x": 58,
+              "y": 12
+            },
+            "to": {
+              "x": 50,
+              "y": 17
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "pass-square",
+          "text": "Pass it square",
+          "grade": "poor",
+          "why": "Your mate was covered, and you had the clearer chance."
+        },
+        {
+          "id": "touch-then-shoot",
+          "text": "Take a touch, then shoot",
+          "grade": "ok",
+          "why": "A touch can set it up, but the closing player may block it."
+        },
+        {
+          "id": "shoot-first-time",
+          "text": "Shoot first time",
+          "grade": "best",
+          "why": "The look showed a clear line to goal and an opponent closing fast. Hit it before they arrive."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "finishing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Ball's coming across to you at the edge of the box. Look first.",
+        "glimpse_ms": 1200,
+        "area": "finishing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-finishing-square-it",
+      "rev": 1,
+      "category": "attack",
+      "title": "Square it for a tap-in",
+      "text": "It's coming across fast. What's your choice?",
+      "tip": "Look at the goal and at your mates before the ball comes. The best chance might not be yours.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 40,
+          "y": 18
+        },
+        "ball": {
+          "x": 12,
+          "y": 30
+        },
+        "gk": {
+          "x": 48,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 12,
+            "y": 30
+          },
+          {
+            "x": 62,
+            "y": 18
+          }
+        ],
+        "opps": [
+          {
+            "x": 44,
+            "y": 11
+          },
+          {
+            "x": 26,
+            "y": 22
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 12,
+              "y": 30
+            },
+            "to": {
+              "x": 37,
+              "y": 18
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "pass-square",
+          "text": "Pass it square",
+          "grade": "best",
+          "why": "The look showed an opponent in your shooting line and a mate alone in front of goal. Give it to them."
+        },
+        {
+          "id": "shoot-first-time",
+          "text": "Shoot first time",
+          "grade": "poor",
+          "why": "The opponent in front of you was right in the way, so it gets blocked."
+        },
+        {
+          "id": "touch-then-shoot",
+          "text": "Take a touch, then shoot",
+          "grade": "ok",
+          "why": "A touch might find a new angle, but the chance for your mate goes."
+        }
+      ],
+      "difficulty": "Advanced",
+      "age_band": "U16",
+      "role": "outfield",
+      "tags": [
+        "finishing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "A pass is coming across to you near their box. Check before it arrives.",
+        "glimpse_ms": 1000,
+        "area": "finishing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-intercepting-hold-position",
+      "rev": 1,
+      "category": "defend",
+      "title": "Don't leave the runner",
+      "text": "Where do you go as the pass is played?",
+      "tip": "Before you step in, check who is running past you. Going for the ball only pays if you get it.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 54,
+          "y": 36
+        },
+        "ball": {
+          "x": 38,
+          "y": 47
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 26,
+            "y": 26
+          }
+        ],
+        "opps": [
+          {
+            "x": 36,
+            "y": 50
+          },
+          {
+            "x": 64,
+            "y": 44
+          },
+          {
+            "x": 74,
+            "y": 34
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 74,
+              "y": 34
+            },
+            "to": {
+              "x": 58,
+              "y": 20
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "step-across",
+          "text": "Step across and cut it out",
+          "grade": "poor",
+          "why": "If you miss it, the runner is through on goal with nobody near."
+        },
+        {
+          "id": "drop-off",
+          "text": "Drop off and wait",
+          "grade": "best",
+          "why": "The look showed a runner heading for the room you would leave. Drop off and keep them in front."
+        },
+        {
+          "id": "run-at-passer",
+          "text": "Run at the passer",
+          "grade": "ok",
+          "why": "It might stop the pass, but the runner is still going past you."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "defensive-shape",
+        "transition"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "A pass is about to be played into midfield. Look before you move.",
+        "glimpse_ms": 1500,
+        "area": "intercepting"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-intercepting-mark-the-lane",
+      "rev": 1,
+      "category": "defend",
+      "title": "Shut the inside pass",
+      "text": "They're looking up to pass. What's your job?",
+      "tip": "When a midfielder turns, look where the danger is. Make them pass where it hurts you least.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 60,
+          "y": 40
+        },
+        "ball": {
+          "x": 52,
+          "y": 49
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 82,
+            "y": 34
+          }
+        ],
+        "opps": [
+          {
+            "x": 52,
+            "y": 53
+          },
+          {
+            "x": 44,
+            "y": 28
+          },
+          {
+            "x": 88,
+            "y": 42
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "block-inside",
+          "text": "Block the pass inside",
+          "grade": "best",
+          "why": "The look showed a pass into the middle that would hurt you. Cut that line and let them go wide."
+        },
+        {
+          "id": "run-at-passer",
+          "text": "Run at the passer",
+          "grade": "poor",
+          "why": "Run straight at them and they slip it inside past you."
+        },
+        {
+          "id": "drop-off",
+          "text": "Drop off and wait",
+          "grade": "ok",
+          "why": "You stay between them and goal, but the pass inside is still on."
+        }
+      ],
+      "difficulty": "Advanced",
+      "age_band": "U16",
+      "role": "outfield",
+      "tags": [
+        "defensive-shape",
+        "transition"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Their midfielder has just turned with the ball. Quick look.",
+        "glimpse_ms": 1000,
+        "area": "intercepting"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-intercepting-step-in",
+      "rev": 1,
+      "category": "defend",
+      "title": "Cut out the short pass",
+      "text": "The pass is about to go. What do you do?",
+      "tip": "Look at the passer and where they want to play it. Then you know if you can step in.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 46,
+          "y": 34
+        },
+        "ball": {
+          "x": 63,
+          "y": 43
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 62,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 65,
+            "y": 46
+          },
+          {
+            "x": 32,
+            "y": 38
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 63,
+              "y": 43
+            },
+            "to": {
+              "x": 35,
+              "y": 38
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "drop-off",
+          "text": "Drop off and wait",
+          "grade": "ok",
+          "why": "Safe, but you let them keep the ball when you could have won it."
+        },
+        {
+          "id": "run-at-passer",
+          "text": "Run at the passer",
+          "grade": "poor",
+          "why": "They just play it past you to the player you left."
+        },
+        {
+          "id": "step-across",
+          "text": "Step across and cut it out",
+          "grade": "best",
+          "why": "The look showed a short pass you could reach and nobody running past you. Step in and win it."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "defensive-shape",
+        "transition"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "They're about to play a short pass near you. Look before it goes.",
+        "glimpse_ms": 1200,
+        "area": "intercepting"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-marking-goal-side",
+      "rev": 1,
+      "category": "defend",
+      "title": "Goal side, always",
+      "text": "The cross is coming. Where do you go?",
+      "tip": "While the winger gets ready to cross, check where your player is. Keep yourself between them and goal.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 52,
+          "y": 22
+        },
+        "ball": {
+          "x": 86,
+          "y": 24
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 32,
+            "y": 15
+          }
+        ],
+        "opps": [
+          {
+            "x": 89,
+            "y": 21
+          },
+          {
+            "x": 57,
+            "y": 18
+          },
+          {
+            "x": 30,
+            "y": 25
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 57,
+              "y": 18
+            },
+            "to": {
+              "x": 50,
+              "y": 11
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "swap-runner",
+          "text": "Swap to the other runner",
+          "grade": "ok",
+          "why": "It might work if you talk, but your own player is now the bigger danger."
+        },
+        {
+          "id": "goal-side",
+          "text": "Get goal side of your player",
+          "grade": "best",
+          "why": "The look showed your player drifting in between you and goal. Get back in front of them."
+        },
+        {
+          "id": "watch-ball",
+          "text": "Stay with the ball",
+          "grade": "poor",
+          "why": "Watching only the ball lets your player get to the cross first."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "marking"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Their winger is about to cross it in. Look before it comes.",
+        "glimpse_ms": 1500,
+        "area": "marking"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-marking-swap-runner",
+      "rev": 1,
+      "category": "defend",
+      "title": "Swap onto the free runner",
+      "text": "It's about to come in. What do you do?",
+      "tip": "Look around before the cross. If a mate already has your player, find the runner nobody has.",
+      "scene": {
+        "kind": "pitch",
+        "own": true,
+        "you": {
+          "x": 54,
+          "y": 26
+        },
+        "ball": {
+          "x": 14,
+          "y": 27
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 58,
+            "y": 15
+          }
+        ],
+        "opps": [
+          {
+            "x": 11,
+            "y": 24
+          },
+          {
+            "x": 60,
+            "y": 20
+          },
+          {
+            "x": 38,
+            "y": 22
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 38,
+              "y": 22
+            },
+            "to": {
+              "x": 44,
+              "y": 10
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "swap-runner",
+          "text": "Swap to the other runner",
+          "grade": "best",
+          "why": "The look showed a mate already on your player and a runner alone nearer goal. Take that runner."
+        },
+        {
+          "id": "goal-side",
+          "text": "Get goal side of your player",
+          "grade": "ok",
+          "why": "You do your own job, but two of you mark one player and the runner is left."
+        },
+        {
+          "id": "watch-ball",
+          "text": "Stay with the ball",
+          "grade": "poor",
+          "why": "Watching only the ball lets the runner arrive alone."
+        }
+      ],
+      "difficulty": "Advanced",
+      "age_band": "U16",
+      "role": "outfield",
+      "tags": [
+        "marking"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "A cross is about to come in from the wing. Check before it's hit.",
+        "glimpse_ms": 1200,
+        "area": "marking"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-moving-with-ball-drive-forward",
+      "rev": 1,
+      "category": "attack",
+      "title": "Empty lane ahead",
+      "text": "What do you do with the ball now?",
+      "tip": "The moment you win the ball, look up. Room ahead is your cue to run with it.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 44,
+          "y": 52
+        },
+        "ball": {
+          "x": 44,
+          "y": 49
+        },
+        "mates": [
+          {
+            "x": 18,
+            "y": 58
+          }
+        ],
+        "opps": [
+          {
+            "x": 80,
+            "y": 30
+          }
+        ],
+        "runs": []
+      },
+      "options": [
+        {
+          "id": "pass-sideways",
+          "text": "Pass it sideways",
+          "grade": "ok",
+          "why": "You keep it, but you gave up a chance to run at them."
+        },
+        {
+          "id": "drive-forward",
+          "text": "Drive forward with it",
+          "grade": "best",
+          "why": "Your look showed an empty lane and the nearest opponent far off. Run into it."
+        },
+        {
+          "id": "stop-and-shield",
+          "text": "Stop and shield it",
+          "grade": "poor",
+          "why": "Nobody was near, so stopping only gives them time to get back."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "dribbling"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "You've just won the ball in midfield. Look up before you go.",
+        "glimpse_ms": 1200,
+        "area": "moving-with-ball"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-moving-with-ball-shield",
+      "rev": 1,
+      "category": "attack",
+      "title": "Crowded in the middle",
+      "text": "What's your next move?",
+      "tip": "Check before you set off. If you are hemmed in, keep the ball until help arrives.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 52,
+          "y": 46
+        },
+        "ball": {
+          "x": 52,
+          "y": 43
+        },
+        "mates": [
+          {
+            "x": 46,
+            "y": 64
+          }
+        ],
+        "opps": [
+          {
+            "x": 52,
+            "y": 36
+          },
+          {
+            "x": 64,
+            "y": 44
+          },
+          {
+            "x": 40,
+            "y": 44
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 46,
+              "y": 64
+            },
+            "to": {
+              "x": 50,
+              "y": 54
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "stop-and-shield",
+          "text": "Stop and shield it",
+          "grade": "best",
+          "why": "The look showed opponents round you and a mate coming. Shield it, then give it to them."
+        },
+        {
+          "id": "pass-sideways",
+          "text": "Pass it sideways",
+          "grade": "ok",
+          "why": "Possible, but there were opponents on both sides to cut it out."
+        },
+        {
+          "id": "drive-forward",
+          "text": "Drive forward with it",
+          "grade": "poor",
+          "why": "You run straight into the opponent in front of you."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U12",
+      "role": "outfield",
+      "tags": [
+        "dribbling"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "You've nicked the ball in the middle of the pitch. Take a look.",
+        "glimpse_ms": 1800,
+        "area": "moving-with-ball"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-passing-keep-it",
+      "rev": 1,
+      "category": "attack",
+      "title": "Keep it moving",
+      "text": "Where does your next pass go?",
+      "tip": "Check the runner and who is covering them. If the run is covered, look for the simple pass.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 56,
+          "y": 50
+        },
+        "ball": {
+          "x": 55,
+          "y": 47
+        },
+        "mates": [
+          {
+            "x": 40,
+            "y": 38
+          },
+          {
+            "x": 80,
+            "y": 54
+          }
+        ],
+        "opps": [
+          {
+            "x": 46,
+            "y": 32
+          },
+          {
+            "x": 38,
+            "y": 18
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 40,
+              "y": 38
+            },
+            "to": {
+              "x": 38,
+              "y": 22
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "long-over-top",
+          "text": "Hit it long over the top",
+          "grade": "ok",
+          "why": "It gets the ball forward, but the covering player is well placed to win it."
+        },
+        {
+          "id": "slide-it-through",
+          "text": "Slide it through for the run",
+          "grade": "poor",
+          "why": "The run was covered, so the pass goes straight to them."
+        },
+        {
+          "id": "short-to-side",
+          "text": "Play it short to the side",
+          "grade": "best",
+          "why": "The look showed the runner was covered and a mate alone to the side. Keep it and go again."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "passing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "The ball is at your feet in the middle. Look up before you pass it.",
+        "glimpse_ms": 1500,
+        "area": "passing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-passing-through-ball",
+      "rev": 1,
+      "category": "attack",
+      "title": "Through the middle",
+      "text": "Which pass do you play?",
+      "tip": "Look at the runners before the ball comes to you, so the pass is ready in your head.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 54
+        },
+        "ball": {
+          "x": 50,
+          "y": 51
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 60,
+            "y": 36
+          },
+          {
+            "x": 24,
+            "y": 56
+          }
+        ],
+        "opps": [
+          {
+            "x": 46,
+            "y": 32
+          },
+          {
+            "x": 74,
+            "y": 32
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 60,
+              "y": 36
+            },
+            "to": {
+              "x": 62,
+              "y": 16
+            },
+            "kind": "mate"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "short-to-side",
+          "text": "Play it short to the side",
+          "grade": "ok",
+          "why": "It keeps the ball, but you missed a run that could have gone through."
+        },
+        {
+          "id": "slide-it-through",
+          "text": "Slide it through for the run",
+          "grade": "best",
+          "why": "The look showed a mate running between two opponents, with room beyond. Play it into their path."
+        },
+        {
+          "id": "long-over-top",
+          "text": "Hit it long over the top",
+          "grade": "poor",
+          "why": "Too long for the run, so the keeper comes out and collects it."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "passing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "You've got the ball in midfield. Have a look before your next pass.",
+        "glimpse_ms": 1500,
+        "area": "passing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-pressing-hold-shape",
+      "rev": 1,
+      "category": "defend",
+      "title": "Curve in on the square pass",
+      "text": "What do you do as the pass travels?",
+      "tip": "A pass across their back line is a cue to press. Curve your run to block the pass behind you.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 48,
+          "y": 30
+        },
+        "ball": {
+          "x": 72,
+          "y": 12
+        },
+        "mates": [
+          {
+            "x": 86,
+            "y": 48
+          },
+          {
+            "x": 14,
+            "y": 50
+          }
+        ],
+        "opps": [
+          {
+            "x": 75,
+            "y": 10
+          },
+          {
+            "x": 34,
+            "y": 14
+          },
+          {
+            "x": 18,
+            "y": 32
+          },
+          {
+            "x": 52,
+            "y": 42
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 72,
+              "y": 12
+            },
+            "to": {
+              "x": 37,
+              "y": 14
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "press-now",
+          "text": "Press the ball now",
+          "grade": "ok",
+          "why": "You might get there, but run straight and he can pass into the player behind you."
+        },
+        {
+          "id": "hold-shape",
+          "text": "Hold your shape and wait",
+          "grade": "poor",
+          "why": "A long square pass is your chance. Wait and they get it under control."
+        },
+        {
+          "id": "curve-run",
+          "text": "Curve your run to one side",
+          "grade": "best",
+          "why": "The look showed a long pass across and a player behind you. Curve in from his inside so he can't pass into that player."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "U12",
+      "role": "outfield",
+      "tags": [
+        "pressing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "The ball's being passed across their back line. Look before you go.",
+        "glimpse_ms": 2000,
+        "area": "pressing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-pressing-press-now",
+      "rev": 1,
+      "category": "defend",
+      "title": "Go on the slow pass",
+      "text": "The pass is on its way. What do you do?",
+      "tip": "Look at the pass and at your mates before you go. A slow ball and help nearby mean press.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 54,
+          "y": 32
+        },
+        "ball": {
+          "x": 26,
+          "y": 20
+        },
+        "gk": {
+          "x": 50,
+          "y": 4
+        },
+        "mates": [
+          {
+            "x": 62,
+            "y": 40
+          },
+          {
+            "x": 40,
+            "y": 38
+          }
+        ],
+        "opps": [
+          {
+            "x": 23,
+            "y": 18
+          },
+          {
+            "x": 70,
+            "y": 16
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 26,
+              "y": 20
+            },
+            "to": {
+              "x": 67,
+              "y": 17
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "hold-shape",
+          "text": "Hold your shape and wait",
+          "grade": "poor",
+          "why": "Waiting lets them take a calm touch and pick a pass."
+        },
+        {
+          "id": "press-now",
+          "text": "Press the ball now",
+          "grade": "best",
+          "why": "The look showed a slow pass and mates close to you. Go now and they have no easy way out."
+        },
+        {
+          "id": "curve-run",
+          "text": "Curve your run to one side",
+          "grade": "ok",
+          "why": "Curving is good, but a slower start gives them time."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "pressing"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Their centre-back is about to get the ball. Look before you go.",
+        "glimpse_ms": 1200,
+        "area": "pressing"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-receiving-one-touch",
+      "rev": 1,
+      "category": "attack",
+      "title": "No time for a touch",
+      "text": "What's your first touch?",
+      "tip": "When the ball is hit hard, look early. You need the answer before it reaches you.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 44
+        },
+        "ball": {
+          "x": 84,
+          "y": 50
+        },
+        "mates": [
+          {
+            "x": 84,
+            "y": 50
+          },
+          {
+            "x": 34,
+            "y": 22
+          }
+        ],
+        "opps": [
+          {
+            "x": 36,
+            "y": 44
+          },
+          {
+            "x": 60,
+            "y": 30
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 84,
+              "y": 50
+            },
+            "to": {
+              "x": 53,
+              "y": 44
+            },
+            "kind": "ball"
+          },
+          {
+            "from": {
+              "x": 36,
+              "y": 44
+            },
+            "to": {
+              "x": 45,
+              "y": 44
+            },
+            "kind": "opp"
+          },
+          {
+            "from": {
+              "x": 60,
+              "y": 30
+            },
+            "to": {
+              "x": 53,
+              "y": 38
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "stop-it-dead",
+          "text": "Stop it dead at your feet",
+          "grade": "ok",
+          "why": "You keep it for now, but both opponents arrive before you can move it."
+        },
+        {
+          "id": "touch-and-look",
+          "text": "Take a touch and look up",
+          "grade": "poor",
+          "why": "Looking after the touch is too late here. You get closed down."
+        },
+        {
+          "id": "play-forward-first",
+          "text": "Play it forward first time",
+          "grade": "best",
+          "why": "The look showed opponents closing from both sides and a mate ahead. One touch beats them both."
+        }
+      ],
+      "difficulty": "Advanced",
+      "age_band": "U16",
+      "role": "outfield",
+      "tags": [
+        "first-touch"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Ball's being fizzed in from the right. Scan before it comes.",
+        "glimpse_ms": 900,
+        "area": "receiving"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-receiving-open-body",
+      "rev": 1,
+      "category": "attack",
+      "title": "Let it run",
+      "text": "What do you do with your first touch?",
+      "tip": "Look to the side the ball is going, before it arrives. Then your first touch can take you there.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 52,
+          "y": 46
+        },
+        "ball": {
+          "x": 18,
+          "y": 48
+        },
+        "mates": [
+          {
+            "x": 18,
+            "y": 48
+          }
+        ],
+        "opps": [
+          {
+            "x": 32,
+            "y": 34
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 18,
+              "y": 48
+            },
+            "to": {
+              "x": 49,
+              "y": 46
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "let-it-run",
+          "text": "Let it run across you",
+          "grade": "best",
+          "why": "Your look showed nobody on your right. Let it run and you are away into room."
+        },
+        {
+          "id": "take-it-back",
+          "text": "Take it back the way it came",
+          "grade": "ok",
+          "why": "You keep the ball, but you turn back towards the opponent on the left."
+        },
+        {
+          "id": "pass-straight-back",
+          "text": "Pass it straight back",
+          "grade": "poor",
+          "why": "Safe, but you had room to go forward and wasted it."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "first-touch"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Ball's coming to you from the left. Look first.",
+        "glimpse_ms": 1200,
+        "area": "receiving"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-receiving-take-it-away",
+      "rev": 1,
+      "category": "attack",
+      "title": "Coming from your right",
+      "text": "How do you take the ball?",
+      "tip": "A quick look before the ball comes shows you who is arriving, so you can touch it away from them.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 44,
+          "y": 50
+        },
+        "ball": {
+          "x": 14,
+          "y": 58
+        },
+        "mates": [
+          {
+            "x": 14,
+            "y": 58
+          }
+        ],
+        "opps": [
+          {
+            "x": 70,
+            "y": 42
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 14,
+              "y": 58
+            },
+            "to": {
+              "x": 41,
+              "y": 50
+            },
+            "kind": "ball"
+          },
+          {
+            "from": {
+              "x": 70,
+              "y": 42
+            },
+            "to": {
+              "x": 54,
+              "y": 47
+            },
+            "kind": "opp"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "let-it-run",
+          "text": "Let it run across you",
+          "grade": "poor",
+          "why": "That carries the ball right into the opponent arriving from your right."
+        },
+        {
+          "id": "take-it-back",
+          "text": "Take it back the way it came",
+          "grade": "best",
+          "why": "The look showed an opponent coming from your right. Touch it away from them and keep it."
+        },
+        {
+          "id": "pass-straight-back",
+          "text": "Pass it straight back",
+          "grade": "ok",
+          "why": "Safe, and you keep the ball, but your team doesn't move forward."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "U9",
+      "role": "outfield",
+      "tags": [
+        "first-touch"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "A pass is rolling to you from the left. Check before it arrives.",
+        "glimpse_ms": 1500,
+        "area": "receiving"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-turning-back-to-goal",
+      "rev": 1,
+      "category": "attack",
+      "title": "Room to turn",
+      "text": "The ball reaches your feet. What is your first move?",
+      "tip": "Look over your shoulder just before the pass is played, then once more as it travels.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 46,
+          "y": 40
+        },
+        "ball": {
+          "x": 44,
+          "y": 62
+        },
+        "mates": [
+          {
+            "x": 44,
+            "y": 62
+          }
+        ],
+        "opps": [
+          {
+            "x": 74,
+            "y": 24
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 44,
+              "y": 62
+            },
+            "to": {
+              "x": 46,
+              "y": 43
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "turn-and-run",
+          "text": "Turn and run at goal",
+          "grade": "best",
+          "why": "Your look showed nobody near your back, so you could turn and face goal."
+        },
+        {
+          "id": "play-wide-spin",
+          "text": "Play it wide, then spin",
+          "grade": "poor",
+          "why": "Your look showed nobody out wide to play it to, and nobody near your back. Turn and go yourself."
+        },
+        {
+          "id": "lay-it-back",
+          "text": "Lay it back first time",
+          "grade": "ok",
+          "why": "Safe, but you had time to turn and go forward yourself."
+        }
+      ],
+      "difficulty": "Beginner",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "first-touch",
+        "movement"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Pass is coming into your feet, back to their goal. Check your shoulder.",
+        "glimpse_ms": 1200,
+        "area": "turning"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-turning-half-turn",
+      "rev": 1,
+      "category": "attack",
+      "title": "Switch it on the half-turn",
+      "text": "How do you take this pass?",
+      "tip": "Between the lines, look away from the ball before it comes. The other side is often quiet.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 50,
+          "y": 38
+        },
+        "ball": {
+          "x": 14,
+          "y": 40
+        },
+        "mates": [
+          {
+            "x": 14,
+            "y": 40
+          },
+          {
+            "x": 86,
+            "y": 30
+          }
+        ],
+        "opps": [
+          {
+            "x": 42,
+            "y": 34
+          },
+          {
+            "x": 30,
+            "y": 20
+          },
+          {
+            "x": 52,
+            "y": 20
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 14,
+              "y": 40
+            },
+            "to": {
+              "x": 47,
+              "y": 38
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "turn-back",
+          "text": "Turn back the way it came",
+          "grade": "poor",
+          "why": "That takes you straight into the opponent on the ball side."
+        },
+        {
+          "id": "lay-it-back",
+          "text": "Lay it back first time",
+          "grade": "ok",
+          "why": "It keeps the ball, but the far wing was empty and waiting."
+        },
+        {
+          "id": "open-up-switch",
+          "text": "Open up your body and switch play",
+          "grade": "best",
+          "why": "The look showed the ball side was crowded and a mate alone on the far wing. Open up and find them."
+        }
+      ],
+      "difficulty": "Advanced",
+      "age_band": "U12",
+      "role": "outfield",
+      "tags": [
+        "first-touch",
+        "movement"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "You're between their lines and a pass is coming from the left. Look early.",
+        "glimpse_ms": 1800,
+        "area": "turning"
+      }
+    },
+    {
+      "schema": "1.1",
+      "id": "scan-turning-lay-it-off",
+      "rev": 1,
+      "category": "attack",
+      "title": "Tight on your back",
+      "text": "The pass is about to arrive. What do you do with it?",
+      "tip": "Check both shoulders before the ball comes. Know who's close and who's free out wide.",
+      "scene": {
+        "kind": "pitch",
+        "own": false,
+        "you": {
+          "x": 58,
+          "y": 34
+        },
+        "ball": {
+          "x": 62,
+          "y": 60
+        },
+        "mates": [
+          {
+            "x": 62,
+            "y": 60
+          },
+          {
+            "x": 34,
+            "y": 48
+          }
+        ],
+        "opps": [
+          {
+            "x": 57,
+            "y": 28
+          },
+          {
+            "x": 80,
+            "y": 20
+          }
+        ],
+        "runs": [
+          {
+            "from": {
+              "x": 62,
+              "y": 60
+            },
+            "to": {
+              "x": 58,
+              "y": 37
+            },
+            "kind": "ball"
+          }
+        ]
+      },
+      "options": [
+        {
+          "id": "turn-and-run",
+          "text": "Turn and run at goal",
+          "grade": "poor",
+          "why": "Turning with someone right on your back usually loses the ball."
+        },
+        {
+          "id": "play-wide-spin",
+          "text": "Play it wide, then spin",
+          "grade": "best",
+          "why": "The look showed someone tight on your back and a mate free to your left. Set it wide, then spin off your marker for the return."
+        },
+        {
+          "id": "lay-it-back",
+          "text": "Lay it back first time",
+          "grade": "ok",
+          "why": "Safe, but it goes backwards when a mate out wide was free."
+        }
+      ],
+      "difficulty": "Intermediate",
+      "age_band": "all",
+      "role": "outfield",
+      "tags": [
+        "first-touch",
+        "movement"
+      ],
+      "contributor": "FootworkIQ",
+      "reviewed_by": [],
+      "license": "CC0",
+      "scan": {
+        "prompt": "Ball's being played up to you with your back to goal. Have a look first.",
+        "glimpse_ms": 1500,
+        "area": "turning"
+      }
+    },
+    {
       "schema": "1.0",
       "id": "scramble-in-the-box",
       "legacy_id": "d10",

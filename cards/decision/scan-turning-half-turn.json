@@ -1,0 +1,93 @@
+{
+  "schema": "1.1",
+  "id": "scan-turning-half-turn",
+  "rev": 1,
+  "category": "attack",
+  "title": "Switch it on the half-turn",
+  "text": "How do you take this pass?",
+  "tip": "Between the lines, look away from the ball before it comes. The other side is often quiet.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 50,
+      "y": 38
+    },
+    "ball": {
+      "x": 14,
+      "y": 40
+    },
+    "mates": [
+      {
+        "x": 14,
+        "y": 40
+      },
+      {
+        "x": 86,
+        "y": 30
+      }
+    ],
+    "opps": [
+      {
+        "x": 42,
+        "y": 34
+      },
+      {
+        "x": 30,
+        "y": 20
+      },
+      {
+        "x": 52,
+        "y": 20
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 14,
+          "y": 40
+        },
+        "to": {
+          "x": 47,
+          "y": 38
+        },
+        "kind": "ball"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "turn-back",
+      "text": "Turn back the way it came",
+      "grade": "poor",
+      "why": "That takes you straight into the opponent on the ball side."
+    },
+    {
+      "id": "lay-it-back",
+      "text": "Lay it back first time",
+      "grade": "ok",
+      "why": "It keeps the ball, but the far wing was empty and waiting."
+    },
+    {
+      "id": "open-up-switch",
+      "text": "Open up your body and switch play",
+      "grade": "best",
+      "why": "The look showed the ball side was crowded and a mate alone on the far wing. Open up and find them."
+    }
+  ],
+  "difficulty": "Advanced",
+  "age_band": "U12",
+  "role": "outfield",
+  "tags": [
+    "first-touch",
+    "movement"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "You're between their lines and a pass is coming from the left. Look early.",
+    "glimpse_ms": 1800,
+    "area": "turning"
+  }
+}

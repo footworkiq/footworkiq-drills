@@ -1,0 +1,99 @@
+{
+  "schema": "1.1",
+  "id": "scan-covering-recovering-goal-side",
+  "rev": 1,
+  "category": "defend",
+  "title": "Get back the quickest way",
+  "text": "What do you do first?",
+  "tip": "When you lose the ball, look for the danger first. The ball heading for goal comes before anything else.",
+  "scene": {
+    "kind": "pitch",
+    "own": true,
+    "you": {
+      "x": 38,
+      "y": 60
+    },
+    "ball": {
+      "x": 58,
+      "y": 54
+    },
+    "gk": {
+      "x": 50,
+      "y": 4
+    },
+    "mates": [
+      {
+        "x": 18,
+        "y": 48
+      }
+    ],
+    "opps": [
+      {
+        "x": 60,
+        "y": 57
+      },
+      {
+        "x": 28,
+        "y": 64
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 60,
+          "y": 57
+        },
+        "to": {
+          "x": 56,
+          "y": 36
+        },
+        "kind": "opp"
+      },
+      {
+        "from": {
+          "x": 28,
+          "y": 64
+        },
+        "to": {
+          "x": 26,
+          "y": 44
+        },
+        "kind": "opp"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "sprint-back",
+      "text": "Sprint back towards goal",
+      "grade": "best",
+      "why": "The look showed nobody between their attacker and your goal. Sprint back and get in the way."
+    },
+    {
+      "id": "drop-in",
+      "text": "Drop in to cover",
+      "grade": "poor",
+      "why": "There is nobody to cover for. The attacker with the ball has a clear run."
+    },
+    {
+      "id": "track-runner",
+      "text": "Track the runner",
+      "grade": "ok",
+      "why": "That runner matters, but the ball is the bigger danger with nobody back."
+    }
+  ],
+  "difficulty": "Beginner",
+  "age_band": "all",
+  "role": "outfield",
+  "tags": [
+    "defensive-shape"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "We've just lost the ball up the pitch. Look before you react.",
+    "glimpse_ms": 1500,
+    "area": "covering-recovering"
+  }
+}

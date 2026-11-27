@@ -1,0 +1,88 @@
+{
+  "schema": "1.1",
+  "id": "scan-moving-with-ball-shield",
+  "rev": 1,
+  "category": "attack",
+  "title": "Crowded in the middle",
+  "text": "What's your next move?",
+  "tip": "Check before you set off. If you are hemmed in, keep the ball until help arrives.",
+  "scene": {
+    "kind": "pitch",
+    "own": false,
+    "you": {
+      "x": 52,
+      "y": 46
+    },
+    "ball": {
+      "x": 52,
+      "y": 43
+    },
+    "mates": [
+      {
+        "x": 46,
+        "y": 64
+      }
+    ],
+    "opps": [
+      {
+        "x": 52,
+        "y": 36
+      },
+      {
+        "x": 64,
+        "y": 44
+      },
+      {
+        "x": 40,
+        "y": 44
+      }
+    ],
+    "runs": [
+      {
+        "from": {
+          "x": 46,
+          "y": 64
+        },
+        "to": {
+          "x": 50,
+          "y": 54
+        },
+        "kind": "mate"
+      }
+    ]
+  },
+  "options": [
+    {
+      "id": "stop-and-shield",
+      "text": "Stop and shield it",
+      "grade": "best",
+      "why": "The look showed opponents round you and a mate coming. Shield it, then give it to them."
+    },
+    {
+      "id": "pass-sideways",
+      "text": "Pass it sideways",
+      "grade": "ok",
+      "why": "Possible, but there were opponents on both sides to cut it out."
+    },
+    {
+      "id": "drive-forward",
+      "text": "Drive forward with it",
+      "grade": "poor",
+      "why": "You run straight into the opponent in front of you."
+    }
+  ],
+  "difficulty": "Intermediate",
+  "age_band": "U12",
+  "role": "outfield",
+  "tags": [
+    "dribbling"
+  ],
+  "contributor": "FootworkIQ",
+  "reviewed_by": [],
+  "license": "CC0",
+  "scan": {
+    "prompt": "You've nicked the ball in the middle of the pitch. Take a look.",
+    "glimpse_ms": 1800,
+    "area": "moving-with-ball"
+  }
+}
